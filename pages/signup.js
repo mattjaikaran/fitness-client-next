@@ -1,10 +1,16 @@
-import Layout from "@/components/Layout"
-// import StudioLocations from '@/components/StudioLocations'
+import { Container, Card } from 'react-bootstrap'
+import Layout from '@/components/Layout'
+import SignUp from '@/components/SignUp'
 
 const SignupPage = () => {
   return (
     <Layout>
-      <h1>SignupPage</h1>
+      <Container>
+        <h1>Sign Up</h1>
+        <Card>
+          <SignUp />
+        </Card>
+      </Container>
     </Layout>
   )
 }

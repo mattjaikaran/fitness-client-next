@@ -33,6 +33,17 @@ h6 {
   text-transform: uppercase;
   font-size: 0.8rem;
 }
+
+.btn-primary {
+  border-color: $base-border-black;
+  background-color: $base-border-black;
+  color: $text-white;
+}
+.btn-secondary {
+  border-color: $base-border-white;
+  background-color: $base-border-white;
+  color: $text-black;
+}
 .btn-outline-primary {
   border-color: $base-border-white;
   background-color: $base-border-black;
