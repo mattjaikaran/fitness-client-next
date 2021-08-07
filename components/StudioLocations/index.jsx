@@ -1,6 +1,6 @@
 import { Row, Col } from 'react-bootstrap'
 import Location from './Location'
-import { studioLocations } from '@/copy/studio-locations'
+import { studioLocations } from '@/copy/studioLocations'
 
 const StudioLocations = () => {
   const renderStudioDetails = () => {
