@@ -1,16 +1,30 @@
 import { Button } from 'react-bootstrap'
 import Layout from '@/components/Layout'
+import Hero from '@/components/Hero'
+import TextWithCTA from '@/components/TextWithCTA'
+import CarouselHalfTextHalf from '@/components/CarouselHalfTextHalf'
+import { homeCopy } from '@/copy/home'
+
 import styles from '../styles/Home.module.scss'
 
-const Home = () => {
+const HomePage = () => {
   return (
     <Layout>
-      <h1>Home Page</h1>
-      <Button variant="outline-primary">Explore Instructors</Button>
-      <Button variant="outline-secondary">Explore Classes</Button>
+      <Hero />
+      <TextWithCTA
+        text={homeCopy.descriptionOne.copy}
+        btnText={homeCopy.descriptionOne.btnText}
+        btnLink={homeCopy.descriptionOne.copy}
+      />
+      <CarouselHalfTextHalf textCopy={homeCopy.carouselText} />
+      <TextWithCTA
+        text={homeCopy.descriptionTwo.copy}
+        btnText={homeCopy.descriptionTwo.btnText}
+        btnLink={homeCopy.descriptionTwo.copy}
+      />
     </Layout>
   )
 }
 
 
-export default Home
+export default HomePage

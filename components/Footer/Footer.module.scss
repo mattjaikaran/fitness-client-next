@@ -1,0 +1,19 @@
+@import '@/styles/colors.scss';
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  background-color: $base-white;
+  border-top: 1px solid black;
+  a {
+    font-size: 0.75rem;
+    color: $text-black;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    &:hover {
+      color: inherit;
+    }
+  }
+}
