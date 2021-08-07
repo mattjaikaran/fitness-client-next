@@ -3,9 +3,9 @@ import Layout from '@/components/Layout'
 import Hero from '@/components/Hero'
 import TextWithCTA from '@/components/TextWithCTA'
 import CarouselHalfTextHalf from '@/components/CarouselHalfTextHalf'
+import StudioLocations from '@/components/StudioLocations'
 import { homeCopy } from '@/copy/home'
-
-import styles from '../styles/Home.module.scss'
+import style from '../styles/Home.module.scss'
 
 const HomePage = () => {
   return (
@@ -22,6 +22,7 @@ const HomePage = () => {
         btnText={homeCopy.descriptionTwo.btnText}
         btnLink={homeCopy.descriptionTwo.copy}
       />
+      <StudioLocations />
     </Layout>
   )
 }

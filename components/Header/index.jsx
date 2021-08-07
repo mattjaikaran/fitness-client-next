@@ -12,7 +12,12 @@ import style from './Header.module.scss'
 
 const Header = () => {
   return (
-    <Navbar className={style.header} collapseOnSelect expand="md" bg="dark" variant="dark">
+    <Navbar
+      className={style.header}
+      collapseOnSelect
+      expand="md"
+      bg="dark"
+      variant="dark">
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Brand>
@@ -54,7 +59,9 @@ const Header = () => {
             </NavDropdown> */}
           </Nav>
           <Nav>
-            <Nav.Link href="/signin">Sign In</Nav.Link>
+            <Nav.Link>
+              <Link href="/signin">Sign In</Link>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {/* <Form className="d-flex">

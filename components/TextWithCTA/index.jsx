@@ -1,4 +1,4 @@
-import { Container, Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import style from './TextWithCTA.module.scss'
 
 const TextWithCTA = ({ text, btnText, btnLink }) => {
