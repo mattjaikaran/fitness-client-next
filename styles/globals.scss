@@ -1,0 +1,50 @@
+@import './colors.scss';
+
+* { box-sizing: border-box; }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: $text-white;
+  text-decoration: none !important;
+  &:hover {
+    color: inherit;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: '';
+}
+
+
+// Button Global Styles 
+.btn {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.btn-outline-primary {
+  border-color: $base-border-black;
+  background-color: $base-border-black;
+  color: $text-white;
+}
+.btn-outline-secondary {
+  border-color: $base-border-white;
+  background-color: $base-border-white;
+  color: $text-black;
+}
+
+.bg-dark {
+  background-color: $base-black !important;
+  color: $base-white !important;
+}

@@ -1,0 +1,12 @@
+@import '@/styles/colors.scss';
+
+.header {
+  a {
+    color: $text-white;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    &:hover {
+      color: inherit;
+    }
+  }
+}
