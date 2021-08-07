@@ -1,32 +1,6 @@
-import { Row, Col, Button } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
+import Location from './Location'
 import { studioLocations } from '@/copy/studio-locations'
-
-export const Location = ({ id, name, address, description, btnText, btnLink, text }) => {
-  return (
-    <div className="location">
-      <h3 className="my-3">{name}</h3>
-      {address && description ? (
-        <>
-          <p>
-            {address.street}
-            <br />
-            {address.city}, {address.state} {address.zip}
-            <br />
-            {address.phone}
-          </p>
-          <p>{description}</p>
-          <Button variant="outline-secondary" href={btnLink}>
-            {btnText}
-          </Button>
-        </>
-      ) : (
-        <>
-          <p>{text}</p>
-        </>
-      )}
-    </div>
-  )
-}
 
 const StudioLocations = () => {
   const renderStudioDetails = () => {
@@ -35,7 +9,6 @@ const StudioLocations = () => {
       return (
         <Col key={id} md={4}>
           <Location
-            id={id}
             name={name}
             address={address}
             description={description}
