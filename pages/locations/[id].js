@@ -1,10 +1,16 @@
 import Layout from '@/components/Layout'
-import StudioLocations from '@/components/StudioLocations'
+import LocationHeader from '@/components/LocationHeader'
+import RatesTabs from '@/components/RatesTabs'
 
 const Location = () => {
   return (
     <Layout>
-      <h1>Location</h1>
+      <LocationHeader 
+        name="Tribeca"
+        description="An intimate space ofering a bright and comfortable environment to broadcast your brand."
+        subDescription="Our energy her is soft, quiet, calming"
+      />
+      <RatesTabs />
     </Layout>
   )
 }
