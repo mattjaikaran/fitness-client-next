@@ -9,7 +9,7 @@ const Location = ({
   text
 }) => {
   return (
-    <div className="location">
+    <div className="location mb-3">
       <h3 className="my-3">{name}</h3>
       {address && description ? (
         <>

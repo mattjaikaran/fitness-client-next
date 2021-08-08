@@ -2,9 +2,9 @@ import { Row, Col } from 'react-bootstrap'
 import Location from './Location'
 import { studioLocations } from '@/copy/studioLocations'
 
-const StudioLocations = () => {
+const StudioLocations = ({ homePage }) => {
   const renderStudioDetails = () => {
-    return studioLocations.map(studio => {
+    return studioLocations.map((studio) => {
       const { id, name, address, description, btnText, btnLink, text } = studio
       return (
         <Col key={id} md={4}>
@@ -22,10 +22,8 @@ const StudioLocations = () => {
   }
   return (
     <div className="text-center">
-      <h2>Studios</h2>
-      <Row>
-        {renderStudioDetails()}
-      </Row>
+      {homePage && <h2>Studios</h2>}
+      <Row>{renderStudioDetails()}</Row>
     </div>
   )
 }

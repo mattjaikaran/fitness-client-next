@@ -1,11 +1,18 @@
+import { Container } from 'react-bootstrap'
 import Layout from '@/components/Layout'
+import PageHero from '@/components/PageHero'
 import StudioLocations from '@/components/StudioLocations'
 
 const LocationsPage = () => {
   return (
     <Layout>
-      <h1>LocationsPage</h1>
-      <StudioLocations />
+      <PageHero
+        title="Studios"
+        img={"https://via.placeholder.com/1440x768.png"}
+      />
+      <Container>
+        <StudioLocations />
+      </Container>
     </Layout>
   )
 }

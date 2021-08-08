@@ -22,7 +22,7 @@ const HomePage = () => {
         btnText={homeCopy.descriptionTwo.btnText}
         btnLink={homeCopy.descriptionTwo.copy}
       />
-      <StudioLocations />
+      <StudioLocations homePage />
     </Layout>
   )
 }

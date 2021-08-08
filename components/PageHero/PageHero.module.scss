@@ -1,0 +1,17 @@
+.pageHero {
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .title {
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .pageHero {
+    height: 40vh;
+  }
+}
