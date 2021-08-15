@@ -14,13 +14,13 @@ const HomePage = () => {
       <TextWithCTA
         text={homeCopy.descriptionOne.copy}
         btnText={homeCopy.descriptionOne.btnText}
-        btnLink={homeCopy.descriptionOne.copy}
+        btnLink={homeCopy.descriptionOne.btnLink}
       />
       <CarouselHalfTextHalf textCopy={homeCopy.carouselText} />
       <TextWithCTA
         text={homeCopy.descriptionTwo.copy}
         btnText={homeCopy.descriptionTwo.btnText}
-        btnLink={homeCopy.descriptionTwo.copy}
+        btnLink={homeCopy.descriptionTwo.btnLink}
       />
       <StudioLocations homePage />
     </Layout>

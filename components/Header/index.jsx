@@ -28,20 +28,20 @@ const Header = () => {
     <Navbar
       className={style.header}
       collapseOnSelect
-      expand='md'
-      bg='dark'
-      variant='dark'>
+      expand="lg"
+      bg="dark"
+      variant="dark">
       <Container>
-        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Brand>
-          <Link href='/'>Studios</Link>
+          <Link href="/">Studios</Link>
         </Navbar.Brand>
-        <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='mx-auto'>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mx-auto">
             {renderNavLinks()}
           </Nav>
           <Nav>
-            <Nav.Link href='/signin'>Sign In</Nav.Link>
+            <Nav.Link href="/signin">Sign In</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {/* <Form className="d-flex">

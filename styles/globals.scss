@@ -13,7 +13,8 @@ a {
   color: $text-white;
   text-decoration: none !important;
   &:hover {
-    color: inherit;
+    border-color: $base-black;
+    color: $text-black;
   }
 }
 
@@ -26,13 +27,19 @@ h6 {
   font-family: 'Montserrat', serif;
 }
 
+.bg-dark {
+  background-color: $base-black !important;
+  color: $base-white !important;
+}
+.border-light {
+  border: none;
+}
 
 // Button Global Styles 
 .btn {
   text-transform: uppercase;
   font-size: 0.8rem;
 }
-
 .btn-primary {
   border-color: $base-border-black;
   background-color: $base-border-black;
@@ -47,14 +54,19 @@ h6 {
   border-color: $base-border-white;
   background-color: $base-border-black;
   color: $text-white;
+  &:hover {
+    border-color: $base-border-black;
+    background-color: $base-border-white;
+    color: $text-black;
+  }
 }
 .btn-outline-secondary {
   border-color: $base-border-black;
   background-color: $base-border-white;
   color: $text-black;
-}
-
-.bg-dark {
-  background-color: $base-black !important;
-  color: $base-white !important;
+  &:hover {
+    border-color: $base-border-white;
+    background-color: $base-border-black;
+    color: $text-white;
+  }
 }

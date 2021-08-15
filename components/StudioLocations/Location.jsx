@@ -1,4 +1,5 @@
-import { Button } from 'react-bootstrap'
+import { Card, Button } from 'react-bootstrap'
+import styles from './StudioLocations.module.scss'
 
 const Location = ({
   name,
@@ -9,10 +10,11 @@ const Location = ({
   text
 }) => {
   return (
-    <div className="location mb-3">
+    <Card border="light" className={styles.location}>
       <h3 className="my-3">{name}</h3>
+
       {address && description ? (
-        <>
+        <Card.Body className="d-flex flex-column">
           <p>
             {address.street}
             <br />
@@ -21,16 +23,18 @@ const Location = ({
             {address.phone}
           </p>
           <p>{description}</p>
-          <Button variant="outline-secondary" href={btnLink}>
-            {btnText}
-          </Button>
-        </>
+          <div className="mt-auto">
+            <Button variant="outline-secondary" href={btnLink}>
+              {btnText}
+            </Button>
+          </div>
+        </Card.Body>
       ) : (
         <>
           <p>{text}</p>
         </>
       )}
-    </div>
+    </Card>
   )
 }
 

@@ -6,6 +6,7 @@
       "@/styles/*": ["styles/*"],
       "@/copy/*": ["copy/*"],
       "@/hooks/*": ["hooks/*"],
+      "@/assets/*": ["assets/*"],
     }
   }
 }
