@@ -1,12 +1,14 @@
+import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
 import LocationHeader from '@/components/LocationHeader'
 import RatesTabs from '@/components/RatesTabs'
 
 const Location = () => {
+  const router = useRouter()
   return (
     <Layout>
-      <LocationHeader 
-        name="Tribeca"
+      <LocationHeader
+        name={router.query.id === 'flatiron' ? 'Flatiron' : router.query.id === 'tribeca' ? 'Tribeca' : 'Midtown'}
         description="An intimate space ofering a bright and comfortable environment to broadcast your brand."
         subDescription="Our energy her is soft, quiet, calming"
       />

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { 
   Navbar, 
   Nav, 
@@ -8,60 +9,39 @@ import {
   FormControl,
   Button 
 } from 'react-bootstrap'
+import { navRoutes } from '@/copy/navRoutes'
 import style from './Header.module.scss'
 
 const Header = () => {
+  const router = useRouter()
+  
+  const renderNavLinks = () => {
+    return navRoutes.map((navItem) => {
+      return (
+        <Nav.Link key={navItem.id} onClick={() => router.push(navItem.link)}>
+          {navItem.name}
+        </Nav.Link>
+      )
+    })
+  }
   return (
     <Navbar
       className={style.header}
       collapseOnSelect
-      expand="md"
-      bg="dark"
-      variant="dark">
+      expand='md'
+      bg='dark'
+      variant='dark'>
       <Container>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Brand>
-          <Link href="/">Studios</Link>
+          <Link href='/'>Studios</Link>
         </Navbar.Brand>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto">
-            <Nav.Link>
-              <Link href="/locations">Locations</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link href="/instructors">Instructors</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link href="/calendar">Calendar</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link href="/actions">Actions</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link href="/style">Style</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link href="/curate">Curate</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link href="/membership">Membership</Link>
-            </Nav.Link>
-            {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
+        <Navbar.Collapse id='responsive-navbar-nav'>
+          <Nav className='mx-auto'>
+            {renderNavLinks()}
           </Nav>
           <Nav>
-            <Nav.Link>
-              <Link href="/signin">Sign In</Link>
-            </Nav.Link>
+            <Nav.Link href='/signin'>Sign In</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {/* <Form className="d-flex">

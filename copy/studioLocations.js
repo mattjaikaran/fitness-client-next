@@ -12,7 +12,7 @@ export const studioLocations = [
     },
     description: 'A two box studio for your community engagement as you wish. One large loft style space and one intimate Record, Stream, Inspire small space.',
     btnText: 'Explore',
-    btnLink: '#',
+    btnLink: '/locations/tribeca',
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const studioLocations = [
     },
     description: 'A four box studio for record and stream, intimate engagements. One large open floor space for events, energizing group classes.',
     btnText: 'Explore',
-    btnLink: '#',
+    btnLink: '/locations/flatiron',
   },
   {
     id: 3,

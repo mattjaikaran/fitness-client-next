@@ -1,0 +1,5 @@
+{
+  "turboConsoleLog.quote": "'",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true
+}
