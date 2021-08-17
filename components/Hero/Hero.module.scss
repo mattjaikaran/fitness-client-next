@@ -1,1 +1,10 @@
-.hero {}
+.hero {
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    height: 768px
+  }
+}

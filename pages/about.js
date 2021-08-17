@@ -1,5 +1,4 @@
 import Layout from '@/components/Layout'
-// import StudioLocations from '@/components/StudioLocations'
 
 const AboutPage = () => {
   return (

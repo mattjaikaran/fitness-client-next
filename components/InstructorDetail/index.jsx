@@ -1,11 +1,19 @@
-import Layout from '@/components/Layout'
+import InstructorHeader from './InstructorHeader'
+import InstructorBio from './InstructorBio'
+import InstructorImages from './InstructorImages'
+import InstructorExperience from './InstructorExperience'
+import InstructorInstagram from './InstructorInstagram'
 
-const InstructorPage = () => {
+const InstructorDetail = () => {
   return (
-    <Layout>
-      <h1>InstructorPage</h1>
-    </Layout>
+    <div>
+      <InstructorHeader />
+      <InstructorBio />
+      <InstructorImages />
+      <InstructorExperience />
+      <InstructorInstagram />
+    </div>
   )
 }
 
-export default InstructorPage
+export default InstructorDetail

@@ -1,12 +1,12 @@
-import Layout from "@/components/Layout"
-import StudioLocations from "@/components/StudioLocations"
+import Layout from '@/components/Layout'
+import InstructorDetail from '@/components/InstructorDetail'
 
-const Location = () => {
+const InstructorPage = () => {
   return (
     <Layout>
-      <h1>Location</h1>
+      <InstructorDetail />
     </Layout>
   )
 }
 
-export default Location
+export default InstructorPage

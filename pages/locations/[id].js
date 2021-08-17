@@ -4,7 +4,7 @@ import Layout from '@/components/Layout'
 import LocationHeader from '@/components/LocationHeader'
 import RatesTabs from '@/components/RatesTabs'
 
-const Location = () => {
+const LocationPage = () => {
   const router = useRouter()
   return (
     <Layout>
@@ -26,4 +26,4 @@ const Location = () => {
   )
 }
 
-export default Location
+export default LocationPage
