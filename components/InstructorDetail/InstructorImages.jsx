@@ -2,7 +2,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 
 const InstructorImages = () => {
   return (
-    <Container className="mt-3">
+    <Container className="mt-3 p-md-5">
       <Row>
         <Col xs={12} className="mb-3">
           <Image src="https://via.placeholder.com/1200x450.png" className="img-fluid" />

@@ -2,7 +2,7 @@ import { Container, Tabs, Tab } from 'react-bootstrap'
 
 const InstructorExperience = () => {
   return (
-    <Container className="mt-3">
+    <Container className="text-center mt-3 p-md-5">
       <Tabs
         defaultActiveKey="expertise"
         id="uncontrolled-tab-example"
