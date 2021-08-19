@@ -19,29 +19,29 @@ const CarouselHalfTextHalf = ({ textCopy }) => {
             <Carousel.Item>
               <Image
                 className="d-block w-100"
-                src="https://via.placeholder.com/350"
+                src="https://via.placeholder.com/450"
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <Image
                 className="d-block w-100"
-                src="https://via.placeholder.com/350"
+                src="https://via.placeholder.com/450"
                 alt="Second slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <Image
                 className="d-block w-100"
-                src="https://via.placeholder.com/350"
+                src="https://via.placeholder.com/450"
                 alt="Third slide"
               />
             </Carousel.Item>
           </Carousel>
         </Col>
         <Col className="mt-sm-3" sm={6}>
-          <Container>
-            <h3>{textCopy}</h3>
+          <Container className="p-md-5">
+            <h3 className="pt-5 py-sm-0 px-2">{textCopy}</h3>
           </Container>
         </Col>
       </Row>

@@ -6,7 +6,7 @@ export const homeCopy = {
     btnText: `Explore Classes`,
     btnLink: `#`
   },
-  carouselText: `Sometimes you just need your own space...sometimes you need another...sometimes you rally and sometimes you decompress...you decide. It's your own space`,
+  carouselText: `Sometimes you just need your own space... sometimes you need another... sometimes you rally and sometimes you decompress... you decide. It's your own space`,
   descriptionTwo: {
     copy: `We recognize that people respond to different likes, styles, methods, and processes, we recognize there are thousands of great fitness and wellness providers acros the Nation - we simple would like to offer them the space to excel, grow and connect with their community - on their terms!!`,
     btnText: `Explore Instructors`,

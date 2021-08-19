@@ -9,12 +9,19 @@ body {
   font-family: Helvetica Neue, sans-serif;
 }
 
-a {
-  color: $text-white;
-  text-decoration: none !important;
+// a {
+//   color: $text-white;
+//   text-decoration: none !important;
+//   &:hover {
+//     border-color: $base-black;
+//     color: $text-black;
+//   }
+// }
+
+.link-black {
+  color: $text-black;
   &:hover {
-    border-color: $base-black;
-    color: $text-black;
+    text-decoration: underline !important;
   }
 }
 

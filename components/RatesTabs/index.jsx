@@ -12,9 +12,23 @@ const RatesTabs = () => {
       const { timeSlotId, timeSlot, price} = time
       return (
         <tr key={timeSlotId}>
+          <td colSpan="2">
+            <p className="">{timeSlot}</p>
+          </td>
           <td>
-            <p className="d-inline mr-5">{timeSlot}</p>
-            <p className="d-inline">${price.toFixed(2)}</p>
+            <p className="">${price.toFixed(2)}</p>
+          </td>
+          <td colSpan="2">
+            <p>Saturday times</p>
+          </td>
+          <td>
+            <p className="">${price.toFixed(2)}</p>
+          </td>
+          <td colSpan="2">
+            <p>Sunday times</p>
+          </td>
+          <td>
+            <p className="">${price.toFixed(2)}</p>
           </td>
         </tr>
       )
@@ -32,16 +46,31 @@ const RatesTabs = () => {
         <Table>
           <thead>
             <tr>
-              <th>Monday to Friday</th>
-              <th>Saturday</th>
-              <th>Sunday</th>
+              <th colSpan="2">Monday to Friday</th>
+              <th>Rates</th>
+              <th colSpan="2">Saturday</th>
+              <th>Rates</th>
+              <th colSpan="2">Sunday</th>
+              <th>Rates</th>
             </tr>
           </thead>
           <tbody>{renderEtherealTableDetails()}</tbody>
         </Table>
       </Tab>
       <Tab className={style.tab} eventKey="rooted" title="Rooted Box">
-        <p className="text-primary">Rooted Box Rates</p>
+        <Table>
+          <thead>
+            <tr>
+              <th colSpan="2">Monday to Friday</th>
+              <th>Rates</th>
+              <th colSpan="2">Saturday</th>
+              <th>Rates</th>
+              <th colSpan="2">Sunday</th>
+              <th>Rates</th>
+            </tr>
+          </thead>
+          <tbody>{renderEtherealTableDetails()}</tbody>
+        </Table>
       </Tab>
     </Tabs>
   )

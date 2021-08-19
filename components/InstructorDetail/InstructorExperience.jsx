@@ -8,10 +8,10 @@ const InstructorExperience = () => {
         id="uncontrolled-tab-example"
         className="mb-3">
         <Tab eventKey="expertise" title="Expertise">
-          <p>Lorem Ipsum1</p>
+          <p>Expertise</p>
         </Tab>
         <Tab eventKey="credentials" title="Credentials">
-          <p>Lorem Ipsum2</p>
+          <p>Credentials</p>
         </Tab>
       </Tabs>
     </Container>

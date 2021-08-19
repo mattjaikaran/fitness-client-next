@@ -6,7 +6,7 @@ const InstructorsPage = () => {
   return (
     <Layout>
       <Container>
-        <h1>InstructorsPage</h1>
+        <h1>Instructors</h1>
         <Instructors />
       </Container>
     </Layout>
