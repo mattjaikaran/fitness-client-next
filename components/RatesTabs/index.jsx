@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Table, Tabs, Tab } from 'react-bootstrap'
+import { Container, Table, Tabs, Tab } from 'react-bootstrap'
 import { etherealBoxTimeRates } from '@/copy/studioLocations'
 import style from './RatesTabs.module.scss'
 
@@ -37,42 +37,44 @@ const RatesTabs = () => {
 
 
   return (
-    <Tabs
-      id="controlled-tab-example"
-      activeKey={key}
-      onSelect={(k) => setKey(k)}
-      className={style.ratesTabs}>
-      <Tab className={style.tab} eventKey="ethereal" title="Ethereal Box">
-        <Table>
-          <thead>
-            <tr>
-              <th colSpan="2">Monday to Friday</th>
-              <th>Rates</th>
-              <th colSpan="2">Saturday</th>
-              <th>Rates</th>
-              <th colSpan="2">Sunday</th>
-              <th>Rates</th>
-            </tr>
-          </thead>
-          <tbody>{renderEtherealTableDetails()}</tbody>
-        </Table>
-      </Tab>
-      <Tab className={style.tab} eventKey="rooted" title="Rooted Box">
-        <Table>
-          <thead>
-            <tr>
-              <th colSpan="2">Monday to Friday</th>
-              <th>Rates</th>
-              <th colSpan="2">Saturday</th>
-              <th>Rates</th>
-              <th colSpan="2">Sunday</th>
-              <th>Rates</th>
-            </tr>
-          </thead>
-          <tbody>{renderEtherealTableDetails()}</tbody>
-        </Table>
-      </Tab>
-    </Tabs>
+    <Container>
+      <Tabs
+        id="controlled-tab-example"
+        activeKey={key}
+        onSelect={(k) => setKey(k)}
+        className={style.ratesTabs}>
+        <Tab className={style.tab} eventKey="ethereal" title="Ethereal Box">
+          <Table responsive>
+            <thead>
+              <tr>
+                <th colSpan="2">Monday to Friday</th>
+                <th>Rates</th>
+                <th colSpan="2">Saturday</th>
+                <th>Rates</th>
+                <th colSpan="2">Sunday</th>
+                <th>Rates</th>
+              </tr>
+            </thead>
+            <tbody>{renderEtherealTableDetails()}</tbody>
+          </Table>
+        </Tab>
+        <Tab className={style.tab} eventKey="rooted" title="Rooted Box">
+          <Table responsive>
+            <thead>
+              <tr>
+                <th colSpan="2">Monday to Friday</th>
+                <th>Rates</th>
+                <th colSpan="2">Saturday</th>
+                <th>Rates</th>
+                <th colSpan="2">Sunday</th>
+                <th>Rates</th>
+              </tr>
+            </thead>
+            <tbody>{renderEtherealTableDetails()}</tbody>
+          </Table>
+        </Tab>
+      </Tabs>
+    </Container>
   )
 }
 

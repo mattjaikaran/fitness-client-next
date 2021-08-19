@@ -13,7 +13,7 @@ const LocationHeader = ({ name, description, subDescription }) => {
           <Card className="bg-dark">
             <h3>Ethereal Box</h3>
             <h4>500 sq ft.</h4>
-            <Card.Body className="d-flex flex-column">
+            <Card.Body className="">
               <p className="px-md-5">
                 All white flooring, walls, and celing. <br />
                 REFLECTIVE. ILLUMINARY. VAST. <br />
@@ -33,7 +33,7 @@ const LocationHeader = ({ name, description, subDescription }) => {
           <Card className="bg-dark">
             <h3>Rooted Box</h3>
             <h4>250 sq ft.</h4>
-            <Card.Body className="d-flex flex-column">
+            <Card.Body className="">
               <p className="px-md-5">
                 Natural Wood floors, white walls, living plants. <br />
                 EARTH. NATURE. ELEMENT. <br />
