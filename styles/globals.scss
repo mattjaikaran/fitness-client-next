@@ -10,7 +10,14 @@ body {
 }
 
 a {
-  color: $text-white;
+  color: $text-black;
+  text-decoration: none !important;
+  &:hover {
+    color: $text-black;
+    text-decoration: underline !important;
+  }
+}
+a.btn {
   text-decoration: none !important;
   &:hover {
     border-color: $base-black;
