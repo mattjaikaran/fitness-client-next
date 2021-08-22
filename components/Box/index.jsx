@@ -1,7 +1,7 @@
 import { Card, Button } from 'react-bootstrap'
-import styles from './BoxStyles.module.scss'
+import styles from './Box.module.scss'
 
-const Box = ({ name, description, btnLink }) => {
+const Box = ({ name, description, btnText, btnLink }) => {
   return (
     <Card border="light" className={styles.box}>
       <h3 className="my-3">{name}</h3>
@@ -9,7 +9,7 @@ const Box = ({ name, description, btnLink }) => {
         <p className={styles.boxDescription}>{description}</p>
         <div className="mt-3">
           <Button variant="outline-secondary" href={btnLink}>
-            Details
+            {btnText}
           </Button>
         </div>
       </Card.Body>

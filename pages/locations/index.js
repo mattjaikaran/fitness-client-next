@@ -8,7 +8,7 @@ const LocationsPage = () => {
     <Layout>
       <PageHero
         title="Studios"
-        img={"https://via.placeholder.com/1440x768.png"}
+        img={"https://via.placeholder.com/1200x450.png?text=Studios"}
       />
       <Container>
         <StudioLocations />

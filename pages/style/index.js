@@ -5,7 +5,10 @@ import BoxStyles from '@/components/BoxStyles'
 const StylePage = () => {
   return (
     <Layout>
-      <PageHero title="Box Styles" img="https://via.placeholder.com/1200x450" />
+      <PageHero
+        title="Box Styles"
+        img="https://via.placeholder.com/1200x450.png?text=Style"
+      />
       <BoxStyles />
     </Layout>
   )

@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import { boxStyles } from '@/copy/boxStyles'
-import Box from './Box'
+import Box from '@/components/Box'
 import styles from './BoxStyles.module.scss'
 
 const BoxStyles = () => {

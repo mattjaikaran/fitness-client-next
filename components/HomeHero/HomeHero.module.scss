@@ -1,0 +1,22 @@
+.hero {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  .heroContent {
+    position: relative;
+    top: 50%;
+    .title {
+    }
+    // .filterForm {
+    //   text-align: center;
+    //   position: relative;
+    //   top: 50%;
+    // }
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    height: 768px
+  }
+}

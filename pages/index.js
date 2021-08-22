@@ -1,6 +1,6 @@
 import { Button } from 'react-bootstrap'
 import Layout from '@/components/Layout'
-import Hero from '@/components/Hero'
+import HomeHero from '@/components/HomeHero'
 import TextWithCTA from '@/components/TextWithCTA'
 import CarouselHalfTextHalf from '@/components/CarouselHalfTextHalf'
 import StudioLocations from '@/components/StudioLocations'
@@ -10,7 +10,7 @@ import style from '../styles/Home.module.scss'
 const HomePage = () => {
   return (
     <Layout>
-      <Hero />
+      <HomeHero />
       <TextWithCTA
         text={homeCopy.descriptionOne.copy}
         btnText={homeCopy.descriptionOne.btnText}

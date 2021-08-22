@@ -1,43 +1,69 @@
 import { useRouter } from 'next/router'
-import { Container, Carousel, Tabs, Tab, Image, Form, Button } from 'react-bootstrap'
-import Box from '../BoxStyles/Box'
+import { Container, Carousel, Row, Col, Tabs, Tab, Image, Form, Button } from 'react-bootstrap'
+import Box from '@/components/Box'
 import { boxStyles } from '@/copy/boxStyles'
 
-
+// can make reusable for HomeHero component
 const FilterForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('submit')
   }
   return (
-    <Form className="mt-5" onSubmit={handleSubmit}>
-      <Form.Control as="select">
-        <option value="where">Where?</option>
-      </Form.Control>
-      <Form.Control as="select">
-        <option value="style">Style</option>
-      </Form.Control>
-      <Form.Control as="select">
-        <option value="when">When?</option>
-      </Form.Control>
-      <Button variant="outline-secondary" type="submit">
-        Submit
-      </Button>
+    <Form className="pt-5" onSubmit={handleSubmit}>
+      <Form.Row>
+        <Col md={3}>
+          <Form.Control as="select">
+            <option value="where">Where?</option>
+          </Form.Control>
+        </Col>
+        <Col md={3}>
+          <Form.Control as="select">
+            <option value="style">Style</option>
+          </Form.Control>
+        </Col>
+        <Col md={3}>
+          <Form.Control as="select">
+            <option value="when">When?</option>
+          </Form.Control>
+        </Col>
+        <Col sm={12} md={3}>
+          <Button block variant="outline-secondary" type="submit">
+            Find a Class
+          </Button>
+        </Col>
+      </Form.Row>
     </Form>
   )
 }
 
 const BoxStylesDetails = ({ id }) => {
+  const router = useRouter()
+  const routerId = parseFloat(router.query.id) 
   return (
     <Container>
       <FilterForm />
+      <Row className="text-center mt-5">
+        <Col></Col>
+        <Col sm={6} md={4}>
+          {routerId === id && (
+            <Box
+              name={boxStyles[routerId - 1].name}
+              description={boxStyles[routerId - 1].description}
+              btnText={boxStyles[routerId - 1].btnText}
+              btnLink={boxStyles[routerId - 1].btnLink}
+            />
+          )}
+        </Col>
+        <Col></Col>
+      </Row>
       <Image
         src="https://via.placeholder.com/1200x400"
         className="img-fluid my-5"
       />
       <Tabs defaultActiveKey="gallery" id="box-details-tabs">
         <Tab eventKey="gallery" title="Gallery">
-          <Carousel fade controls={false}>
+          <Carousel controls={false}>
             <Carousel.Item>
               <img
                 className="d-block w-100"
