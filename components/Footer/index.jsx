@@ -1,10 +1,13 @@
 import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
-import style from './Footer.module.scss'
+import { FaFacebookF } from 'react-icons/fa'
+import { AiOutlineInstagram } from 'react-icons/ai'
+import { SiTiktok } from 'react-icons/si'
+import styles from './Footer.module.scss'
 
 const Footer = () => {
   return (
-    <Container fluid className={style.footer}>
+    <Container fluid className={styles.footer}>
       <Row className="text-center mt-5">
         <Col md={4}>
           <p>
@@ -14,7 +17,9 @@ const Footer = () => {
             <Link href="/commitment">Commitment</Link>
           </p>
           <p>
-            <Link href="/curated-classes-and-events">Curated Classes &amp; Events</Link>
+            <Link href="/curated-classes-and-events">
+              Curated Classes &amp; Events
+            </Link>
           </p>
           <p>
             <Link href="/team">Team</Link>
@@ -48,10 +53,12 @@ const Footer = () => {
             <Link href="/customer-service">Customer Service</Link>
           </p>
         </Col>
+        <Col md={12} className="mt-5">
+          <FaFacebookF className={styles.social} />
+          <AiOutlineInstagram className={styles.social} />
+          <SiTiktok className={styles.social} />
+        </Col>
       </Row>
-      <div className="mt-5">
-        <p className="text-center">socials here</p>
-      </div>
     </Container>
   )
 }

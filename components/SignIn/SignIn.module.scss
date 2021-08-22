@@ -1,0 +1,18 @@
+@import '@/styles/colors.scss';
+
+.facebookPrepend {
+  background-color: $facebook;
+  color: white;
+}
+
+.twitterPrepend {
+  background-color: $twitter;
+  color: white;
+}
+
+.link {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}

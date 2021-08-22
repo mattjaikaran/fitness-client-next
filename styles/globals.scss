@@ -11,17 +11,21 @@ body {
 
 a {
   color: $text-black;
-  text-decoration: none !important;
+  // text-decoration: none !important;
   &:hover {
     color: $text-black;
-    text-decoration: underline !important;
+    // text-decoration: underline !important;
   }
 }
 a.btn {
   text-decoration: none !important;
+  border-radius: 0 !important;
   &:hover {
     border-color: $base-white;
   }
+}
+.form-label {
+  font-weight: 500;
 }
 
 h1,
@@ -75,4 +79,30 @@ h6 {
     background-color: $base-border-black;
     color: $text-white;
   }
+}
+.input-group-text {
+  border: none;
+}
+.btn-login {
+  background-color: $base-black;
+  color: $text-white;
+  font-size: 14px;
+  height: 50px;
+  &:hover {
+    border-color: $base-border-black;
+    background-color: $base-border-white;
+    color: $text-black;
+  }
+}
+.btn-facebook {
+  background-color: $facebook;
+  color: $text-white;
+  font-size: 14px;
+  height: 50px;
+}
+.btn-twitter {
+  background-color: $twitter;
+  color: $text-white;
+  font-size: 14px;
+  height: 50px;
 }

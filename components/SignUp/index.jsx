@@ -16,8 +16,8 @@ const SignUp = () => {
         <Form.Label>Password Confirmation</Form.Label>
         <Form.Control type="password" placeholder="Password Confirmation" />
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
+      <Button block variant="login" type="submit">
+        Sign Up
       </Button>
     </Form>
   )
