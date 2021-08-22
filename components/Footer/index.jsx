@@ -53,7 +53,7 @@ const Footer = () => {
             <Link href="/customer-service">Customer Service</Link>
           </p>
         </Col>
-        <Col md={12} className="mt-5">
+        <Col md={12} className="my-5">
           <FaFacebookF className={styles.social} />
           <AiOutlineInstagram className={styles.social} />
           <SiTiktok className={styles.social} />
