@@ -31,11 +31,11 @@ export const navRoutes = [
   //     }
   //   ]
   // },
-  // {
-  //   id: 5,
-  //   name: 'Style',
-  //   link: '/style'
-  // },
+  {
+    id: 5,
+    name: 'Style',
+    link: '/style'
+  },
   // {
   //   id: 6,
   //   name: 'Curate',

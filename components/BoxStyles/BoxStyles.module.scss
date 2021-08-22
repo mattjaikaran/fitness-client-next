@@ -1,0 +1,46 @@
+.boxDetails {
+  .boxDetailsRow {
+    .boxCol {
+      text-align: center;
+      padding: 0 12%;
+      margin-bottom: 2rem;
+      .box {
+        .boxCard {
+          .boxDescription {}
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .boxDetails {
+    .boxDetailsRow {
+      .boxCol {
+        padding: 0 20%;
+        .box {
+          .boxCard {
+            .boxDescription {}
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 992px) {
+  .boxDetails {
+    .boxDetailsRow {
+      .boxCol {
+        padding: 0 35%;
+        .box {
+          .boxCard {
+            .boxDescription {}
+          }
+        }
+      }
+    }
+  }
+}
