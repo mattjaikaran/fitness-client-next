@@ -65,7 +65,7 @@ const BoxStylesDetails = ({ id }) => {
         <Tab eventKey="gallery" title="Gallery">
           <Carousel controls={false}>
             <Carousel.Item>
-              <img
+              <Image
                 className="d-block w-100"
                 src="https://via.placeholder.com/600x400"
                 alt="First slide"
@@ -78,7 +78,7 @@ const BoxStylesDetails = ({ id }) => {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
+              <Image
                 className="d-block w-100"
                 src="https://via.placeholder.com/600x400"
                 alt="Second slide"
@@ -89,7 +89,7 @@ const BoxStylesDetails = ({ id }) => {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
+              <Image
                 className="d-block w-100"
                 src="https://via.placeholder.com/600x400"
                 alt="Third slide"
