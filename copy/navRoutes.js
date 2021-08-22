@@ -36,11 +36,11 @@ export const navRoutes = [
     name: 'Style',
     link: '/style'
   },
-  // {
-  //   id: 6,
-  //   name: 'Curate',
-  //   link: '/curate'
-  // },
+  {
+    id: 6,
+    name: 'Curate',
+    link: '/curate'
+  },
   // {
   //   id: 7,
   //   name: 'Membership',

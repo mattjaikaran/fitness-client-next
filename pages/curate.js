@@ -1,10 +1,10 @@
-import { Button } from 'react-bootstrap'
 import Layout from '@/components/Layout'
+import Curate from '@/components/Curate'
 
 const CuratePage = () => {
   return (
     <Layout>
-      <h1>CuratePage</h1>
+      <Curate />
     </Layout>
   )
 }

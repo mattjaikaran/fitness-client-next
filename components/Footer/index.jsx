@@ -5,7 +5,7 @@ import style from './Footer.module.scss'
 const Footer = () => {
   return (
     <Container fluid className={style.footer}>
-      <Row className="text-center">
+      <Row className="text-center mt-5">
         <Col md={4}>
           <p>
             <Link href="/methodology">Methodology</Link>
@@ -49,7 +49,7 @@ const Footer = () => {
           </p>
         </Col>
       </Row>
-      <div>
+      <div className="mt-5">
         <p className="text-center">socials here</p>
       </div>
     </Container>
