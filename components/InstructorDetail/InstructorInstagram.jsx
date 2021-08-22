@@ -5,7 +5,11 @@ const InstructorInstagram = () => {
     <Container className="text-center p-md-5">
       <h3 className="mt-3">Instagram</h3>
       <h6 className="my-3">
-        <a className="text-black" href="https://instagram.com/" target="_blank">
+        <a
+          className="text-black"
+          href="https://instagram.com/"
+          target="_blank"
+          rel="noreferrer">
           @josie.norman
         </a>
         | 93.k Followers
