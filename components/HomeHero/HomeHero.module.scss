@@ -4,7 +4,7 @@
   height: 400px;
   .heroContent {
     position: relative;
-    top: 50%;
+    padding-top: 10%;
     .title {
     }
     // .filterForm {
@@ -15,8 +15,20 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    height: 600px;
+    .heroContent {
+      padding-top: 25%;
+    }
+  }
+}
+
 @media (min-width: 992px) {
   .hero {
-    height: 768px
+    height: 600px;
+    .heroContent {
+      padding-top: 15%;
+    }
   }
 }
