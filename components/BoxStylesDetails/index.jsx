@@ -60,6 +60,7 @@ const BoxStylesDetails = ({ id }) => {
       <Image
         src="https://via.placeholder.com/1200x400"
         className="img-fluid my-5"
+        alt="Box featured image"
       />
       <Tabs defaultActiveKey="gallery" id="box-details-tabs">
         <Tab eventKey="gallery" title="Gallery">

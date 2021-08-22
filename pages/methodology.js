@@ -11,7 +11,6 @@ const MethodologyPage = () => {
         p2={methodology.p2}
         p3={methodology.p3}
         p4={methodology.p4}
-        p4={methodology.p4}
         p5={methodology.p5}
       />
     </Layout>
