@@ -1,8 +1,35 @@
 export const instructorsList = [
   {
     id: 1,
-    name: 'Xavien Howard',
-    classesTaught: ['Yoga']
+    name: 'Rachel Ackerley',
+    classesTaught: ['Yoga'],
+    photos: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1629686577/Rachel%20Ackerley/matteophotographs---2_tfllpx.jpg'
+      },
+      {
+        id: 2,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1629686578/Rachel%20Ackerley/matteophotographs---5_ip3vph.jpg'
+      },
+      {
+        id: 3,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1629686578/Rachel%20Ackerley/matteophotographs---4_uqz6c5.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1629686578/Rachel%20Ackerley/matteophotographs--_iikryv.jpg'
+      },
+      {
+        id: 5,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1629686578/Rachel%20Ackerley/matteophotographs---3_siw43q.jpg'
+      }
+    ]
   },
   {
     id: 2,

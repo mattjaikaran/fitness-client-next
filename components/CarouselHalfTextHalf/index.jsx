@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Container, Row, Col, Image, Carousel } from 'react-bootstrap'
+import styles from './CarouselHalfTextHalf.module.scss'
 
 const CarouselHalfTextHalf = ({ textCopy }) => {
   const [index, setIndex] = useState(0)
@@ -40,8 +41,8 @@ const CarouselHalfTextHalf = ({ textCopy }) => {
           </Carousel>
         </Col>
         <Col className="mt-sm-3" sm={6}>
-          <Container className="p-md-5">
-            <h3 className="pt-5 py-sm-0 px-2">{textCopy}</h3>
+          <Container className="">
+            <h3 className={styles.textCopy}>{textCopy}</h3>
           </Container>
         </Col>
       </Row>

@@ -1,0 +1,16 @@
+.textCopy {
+  padding: 10%;
+}
+
+@media (max-width: 767px) {
+  .textCopy {
+    font-size: large;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .textCopy {
+    margin-top: 30%;
+  }
+}
