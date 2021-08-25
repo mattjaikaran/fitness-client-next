@@ -7,11 +7,21 @@ const InstructorContact = ({ renderContact }) => {
   }
   return (
     <div className="mt-5">
-      <Card className="p-5">
-        <p onClick={renderContact}>Close Btn</p>
-        <div>
-          <h5>Get In Touch</h5>
-        </div>
+      <Card className="px-md-5">
+        <Card.Header style={{
+          backgroundColor: '#fff',
+          borderBottom: 'none'
+        }}>
+          <Row>
+            <Col sm={0}></Col>
+            <Col>
+              <h5>Get In Touch</h5>
+            </Col>
+            <Col>
+              <p className="text-right" onClick={renderContact}>X</p>
+            </Col>
+          </Row>
+        </Card.Header>
         <Row className="text-left">
           <Col md={6}>
             <h5>We are always ready to cooperate.</h5>
