@@ -1,7 +1,7 @@
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { instructorsList } from '@/copy/instructors'
 
-const InstructorImages = ({ id }) => {
+const InstructorImages = () => {
   return (
     <Container className="mt-3 p-md-5">
       <Row>
@@ -13,26 +13,20 @@ const InstructorImages = ({ id }) => {
         </Col> */}
         <Col md={6} className="mb-3">
           <Image
-            src={
-              instructorsList[id - 1].photos[0].imgUrl ||
-              'https://via.placeholder.com/600x400.png'
-            }
+            src={instructorsList[0].photos[0].imgUrl}
             className="img-fluid"
             alt="instrutor image 2"
           />
         </Col>
         <Col md={6} className="mb-3">
           <Image
-            src={
-              instructorsList[id - 1].photos[1].imgUrl ||
-              'https://via.placeholder.com/650x200.png'
-            }
+            src={instructorsList[0].photos[1].imgUrl}
             className="img-fluid mb-3"
             alt="instrutor image 3"
           />
           <Image
             src={
-              instructorsList[id - 1].photos[2].imgUrl ||
+              instructorsList[0].photos[2].imgUrl ||
               'https://via.placeholder.com/650x200.png'
             }
             className="img-fluid"
@@ -41,10 +35,7 @@ const InstructorImages = ({ id }) => {
         </Col>
         <Col md={6} className="mb-3">
           <Image
-            src={
-              instructorsList[id - 1].photos[3].imgUrl ||
-              'https://via.placeholder.com/600x400.png'
-            }
+            src={instructorsList[0].photos[3].imgUrl}
             className="img-fluid"
             alt="instrutor image 5"
           />
@@ -52,7 +43,7 @@ const InstructorImages = ({ id }) => {
         <Col md={6} className="mb-3">
           <Image
             src={
-              instructorsList[id - 1].photos[4].imgUrl ||
+              instructorsList[0].photos[4].imgUrl ||
               'https://via.placeholder.com/600x400.png'
             }
             className="img-fluid"

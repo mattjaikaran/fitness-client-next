@@ -13,7 +13,6 @@ const CarouselHalfTextHalf = ({ textCopy }) => {
       <Row>
         <Col sm={6}>
           <Carousel
-            fade
             controls={false}
             activeIndex={index}
             onSelect={handleSelect}>
