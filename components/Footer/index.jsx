@@ -33,7 +33,7 @@ const Footer = () => {
             <Link href="/contact">Contact Us</Link>
           </p>
           <p>
-            <Link href="#">Investment Relations</Link>
+            <Link href="investment-relations">Investment Relations</Link>
           </p>
           <p>
             <Link href="/privacy">Privacy</Link>
