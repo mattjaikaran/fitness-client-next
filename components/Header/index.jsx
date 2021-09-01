@@ -9,6 +9,7 @@ import {
   FormControl,
   Button 
 } from 'react-bootstrap'
+import { BiSearch } from 'react-icons/bi'
 import { navRoutes } from '@/copy/navRoutes'
 import style from './Header.module.scss'
 
@@ -51,7 +52,9 @@ const Header = () => {
             className="mr-2"
             aria-label="Search"
           />
-          <Button variant="outline-primary">Search</Button>
+          <Button variant="outline-primary">
+            <BiSearch />
+          </Button>
         </Form> */}
       </Container>
     </Navbar>

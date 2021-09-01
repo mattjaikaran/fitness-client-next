@@ -5,6 +5,12 @@ import InstructorContact from './InstructorContact'
 const InstructorBio = () => {
   const [contactFormVisible, setContactFormVisible] = useState(false)
   const renderContact = () => setContactFormVisible(!contactFormVisible)
+  
+  const handleContactSubmit = (e) => {
+    e.preventDefault()
+    console.log('submit')
+    // setContactFormVisible(false)
+  }
 
   return (
     <Container className="text-center p-md-5">
@@ -15,14 +21,17 @@ const InstructorBio = () => {
         reiciendis reprehenderit eum quo velit, blanditiis nihil delectus fugiat
         saepe.
       </p>
-      <Button 
-        variant="outline-secondary" 
+      <Button
+        variant="outline-secondary"
         className="mt-3"
         onClick={renderContact}>
         Contact
       </Button>
       {contactFormVisible && (
-        <InstructorContact renderContact={renderContact} />
+        <InstructorContact
+          renderContact={renderContact}
+          handleContactSubmit={handleContactSubmit}
+        />
       )}
     </Container>
   )
