@@ -23,15 +23,15 @@ const SignIn = () => {
         <Button variant="twitter">Connect With Twitter</Button>
       </ButtonGroup>
       <Form className="mt-3">
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="mb-3" controlId="loginFormEmail">
           <Form.Label>Email</Form.Label>
           <Form.Control type="email" placeholder="Email" />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Group className="mb-3" controlId="loginFormPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
-        <Form.Group controlId="formBasicCheckbox">
+        <Form.Group controlId="loginFormCheckbox">
           <Row>
             <Col>
               <Form.Check type="checkbox" label="Remember Me" />

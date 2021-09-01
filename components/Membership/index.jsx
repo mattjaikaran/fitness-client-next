@@ -4,8 +4,8 @@ const Membership = () => {
   return (
     <Container>
       <p>
-        Method for reserving a "BOX." A box is any space within our facility -
-        small, medium, large and also our event open floor space.
+        Method for reserving a <strong>BOX</strong>. A box is any space within
+        our facility - small, medium, large and also our event open floor space.
       </p>
       <Tabs className="mb-3">
         <Tab eventKey="athlete" title="Athlete">

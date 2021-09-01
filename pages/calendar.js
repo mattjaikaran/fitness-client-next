@@ -16,6 +16,7 @@ const CalendarPage = () => {
         {/* <a
           href="https://app.squarespacescheduling.com/schedule.php?owner=23729247"
           target="_blank"
+          rel="noreferrer"
           class="acuity-embed-button"
           style={{
             background: '#5fb8b9', 

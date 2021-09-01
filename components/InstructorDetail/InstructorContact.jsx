@@ -68,19 +68,22 @@ const InstructorContact = ({
                 <a
                   className="text-muted"
                   href="https://instagram.com/"
-                  target="_blank">
+                  target="_blank"
+                  rel="noreferrer">
                   <IoLogoInstagram />
                 </a>
                 <a
                   className="text-muted mx-3"
                   href="https://facebook.com/"
-                  target="_blank">
+                  target="_blank"
+                  rel="noreferrer">
                   <GrFacebookOption />
                 </a>
                 <a
                   className="text-muted"
                   href="https://tiktok.com/"
-                  target="_blank">
+                  target="_blank"
+                  rel="noreferrer">
                   <IoLogoTiktok />
                 </a>
               </p>
@@ -98,7 +101,7 @@ const InstructorContact = ({
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email" placeholder="test@example.com" />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicCheckbox">
+              <Form.Group className="mb-3" controlId="contactFormMessage">
                 <Form.Label>Message</Form.Label>
                 <Form.Control
                   as="textarea"

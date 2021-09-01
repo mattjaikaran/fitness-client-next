@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Container, Row, Col, Form, Button } from 'react-bootstrap'
+import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap'
 import { IoLogoInstagram, IoLogoTiktok } from 'react-icons/io5'
 import { GrFacebookOption } from 'react-icons/gr'
 
@@ -25,9 +25,7 @@ const CustomerService = () => {
             <br />
             Write to us and we will contact you.
           </h5>
-          <h6>
-            Monday to Friday 10 am to 6:30 pm EST
-          </h6>
+          <h6>Monday to Friday 10 am to 6:30 pm EST</h6>
           <div className="mt-4">
             <p className="mb-1">
               <strong>GENERAL INQUIRY</strong>
@@ -61,19 +59,22 @@ const CustomerService = () => {
               <a
                 className="text-muted"
                 href="https://instagram.com/"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 <IoLogoInstagram />
               </a>
               <a
                 className="text-muted mx-3"
                 href="https://facebook.com/"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 <GrFacebookOption />
               </a>
               <a
                 className="text-muted"
                 href="https://tiktok.com/"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 <IoLogoTiktok />
               </a>
             </p>
@@ -85,18 +86,23 @@ const CustomerService = () => {
           <Form onSubmit={handleContactSubmit}>
             <Form.Group className="mb-3" controlId="contactFormName">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Mary Smith" />
+              <Form.Control type="text" placeholder="Mary Smith" required />
             </Form.Group>
             <Form.Group className="mb-3" controlId="contactFormEmail">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="test@example.com" />
+              <Form.Control
+                type="email"
+                placeholder="test@example.com"
+                required
+              />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+            <Form.Group className="mb-3" controlId="contactFormMessage">
               <Form.Label>Message</Form.Label>
               <Form.Control
                 as="textarea"
                 placeholder="Leave a message"
                 style={{ height: '150px' }}
+                required
               />
             </Form.Group>
             <Button block variant="outline-primary" type="submit">
