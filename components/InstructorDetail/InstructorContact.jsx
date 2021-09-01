@@ -1,8 +1,13 @@
+import { useState } from 'react'
 import { Card, Row, Col, Form, Alert, Button } from 'react-bootstrap'
 import { IoLogoInstagram, IoLogoTiktok } from 'react-icons/io5'
 import { GrFacebookOption } from 'react-icons/gr'
 
-const InstructorContact = ({ renderContact, handleContactSubmit }) => {
+const InstructorContact = ({
+  renderContact,
+  handleContactSubmit,
+  messageSuccess
+}) => {
   return (
     <div className="mt-5">
       <Card className="p-3">
@@ -24,7 +29,7 @@ const InstructorContact = ({ renderContact, handleContactSubmit }) => {
           </Row>
         </Card.Header>
         <Row className="text-left px-3 pb-3">
-          <Col md={6} className="mb-3"> 
+          <Col md={6} className="mb-3">
             <h5>
               We are always ready to cooperate.
               <br />
@@ -104,6 +109,15 @@ const InstructorContact = ({ renderContact, handleContactSubmit }) => {
                 Submit
               </Button>
             </Form>
+            {messageSuccess ? (
+              <Alert className="mt-3" variant="success">
+                Message successfully sent!
+              </Alert>
+            ) : messageSuccess === false ? (
+              <Alert className="mt-3" variant="danger">
+                Something went wrong. Try again.
+              </Alert>
+            ) : null}
           </Col>
         </Row>
       </Card>

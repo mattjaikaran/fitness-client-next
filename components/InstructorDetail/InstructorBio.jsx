@@ -5,11 +5,17 @@ import InstructorContact from './InstructorContact'
 const InstructorBio = () => {
   const [contactFormVisible, setContactFormVisible] = useState(false)
   const renderContact = () => setContactFormVisible(!contactFormVisible)
+  const [messageSuccess, setMessageSuccess] = useState(null)
   
-  const handleContactSubmit = (e) => {
+  const handleContactSubmit = async (e) => {
     e.preventDefault()
     console.log('submit')
-    // setContactFormVisible(false)
+    try {
+      setMessageSuccess(true)
+    } catch (error) {
+      console.log(error)
+      setMessageSuccess(false)
+    }
   }
 
   return (
@@ -29,6 +35,7 @@ const InstructorBio = () => {
       </Button>
       {contactFormVisible && (
         <InstructorContact
+          messageSuccess={messageSuccess}
           renderContact={renderContact}
           handleContactSubmit={handleContactSubmit}
         />

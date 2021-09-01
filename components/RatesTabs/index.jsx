@@ -1,11 +1,15 @@
 import { useState } from 'react'
 import { Container, Tabs, Tab } from 'react-bootstrap'
-import { flatironEtherealSchedule } from '@/copy/studioLocations'
+import {
+  tribecaRootedSchedule,
+  tribecaNuclearSchedule,
+  flatironNaturalSchedule,
+} from '@/copy/studioLocations'
 import RateTable from './RateTable'
 import style from './RatesTabs.module.scss'
 
 const RatesTabs = () => {
-  const [key, setKey] = useState('ethereal')
+  const [key, setKey] = useState('nuclear')
   return (
     <Container>
       <Tabs
@@ -13,11 +17,11 @@ const RatesTabs = () => {
         activeKey={key}
         onSelect={(k) => setKey(k)}
         className={style.ratesTabs}>
-        <Tab className={style.tab} eventKey="ethereal" title="Ethereal Box">
-          <RateTable box={flatironEtherealSchedule} />
+        <Tab className={style.tab} eventKey="nuclear" title="Nuclear Box">
+          <RateTable box={tribecaNuclearSchedule} />
         </Tab>
         <Tab className={style.tab} eventKey="rooted" title="Rooted Box">
-          <RateTable box={flatironEtherealSchedule} />
+          <RateTable box={tribecaRootedSchedule} />
         </Tab>
       </Tabs>
     </Container>
