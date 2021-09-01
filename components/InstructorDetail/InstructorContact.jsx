@@ -87,6 +87,7 @@ const InstructorContact = ({
             </div>
           </Col>
           <Col md={6}>
+            <hr className="visible-xs" />
             <h3 className="visible-xs text-center">Send Josie a Message</h3>
             <Form onSubmit={handleContactSubmit}>
               <Form.Group className="mb-3" controlId="contactFormName">
