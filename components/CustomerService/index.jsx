@@ -4,12 +4,23 @@ import { IoLogoInstagram, IoLogoTiktok } from 'react-icons/io5'
 import { GrFacebookOption } from 'react-icons/gr'
 
 const CustomerService = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
   const [messageSuccess, setMessageSuccess] = useState(null)
-  const handleContactSubmit = async (e) => {
+  const handleCustomerService = async (e) => {
     e.preventDefault()
-    console.log('submit')
+    const obj = {
+      name,
+      email,
+      message
+    }
+    console.log('submit', obj)
     try {
       setMessageSuccess(true)
+      setName('')
+      setEmail('')
+      setMessage('')
     } catch (error) {
       console.log(error)
       setMessageSuccess(false)
@@ -83,26 +94,34 @@ const CustomerService = () => {
         <Col md={6}>
           <hr className="visible-xs" />
           <h3 className="visible-xs text-center">Send us a Message</h3>
-          <Form onSubmit={handleContactSubmit}>
-            <Form.Group className="mb-3" controlId="contactFormName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Mary Smith" required />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="contactFormEmail">
-              <Form.Label>Email</Form.Label>
+          <Form onSubmit={handleCustomerService}>
+            <Form.Group className="mb-3" controlId="contactName">
+              <Form.Label>NAME</Form.Label>
               <Form.Control
-                type="email"
-                placeholder="test@example.com"
-                required
+                type="text"
+                name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="contactFormMessage">
-              <Form.Label>Message</Form.Label>
+            <Form.Group className="mb-3" controlId="contactEmail">
+              <Form.Label>EMAIL</Form.Label>
+              <Form.Control
+                type="email"
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="contactMessage">
+              <Form.Label>MESSAGE</Form.Label>
               <Form.Control
                 as="textarea"
-                placeholder="Leave a message"
-                style={{ height: '150px' }}
-                required
+                rows={5}
+                type="text"
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
             </Form.Group>
             <Button block type="submit" variant="outline-primary">

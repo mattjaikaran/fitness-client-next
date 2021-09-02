@@ -94,7 +94,7 @@ export const instructorsList = [
           'https://res.cloudinary.com/studiostudios/image/upload/v1629685894/Sarah%20Bess%20Hutchinson/matteophotographs---3_ogqfvg.jpg'
       }
     ]
-  }
+  },
   // {
   //   id: 4,
   //   name: 'JJ Watt',

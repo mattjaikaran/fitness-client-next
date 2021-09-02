@@ -1,9 +1,26 @@
-import { Container, Row, Col, Form, Button } from 'react-bootstrap'
+import { useState } from 'react'
+import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap'
 
 const Contact = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [messageSuccess, setMessageSuccess] = useState(null)
   const handleContact = (e) => {
     e.preventDefault()
-    console.log('submit contact')
+    const obj = {
+      name, email, message
+    }
+    console.log('submit', obj)
+    try {
+      setMessageSuccess(true)
+      setName('')
+      setEmail('')
+      setMessage('')
+    } catch (error) {
+      console.log(error)
+      setMessageSuccess(false)
+    }
   }
   return (
     <Container>
@@ -43,20 +60,46 @@ const Contact = () => {
           <Form onSubmit={handleContact}>
             <Form.Group className="mb-3" controlId="contactName">
               <Form.Label>NAME</Form.Label>
-              <Form.Control type="text" />
+              <Form.Control
+                type="text"
+                name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
             </Form.Group>
             <Form.Group className="mb-3" controlId="contactEmail">
               <Form.Label>EMAIL</Form.Label>
-              <Form.Control type="email" />
+              <Form.Control
+                type="email"
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </Form.Group>
             <Form.Group className="mb-3" controlId="contactMessage">
               <Form.Label>MESSAGE</Form.Label>
-              <Form.Control as="textarea" rows={5} />
+              <Form.Control
+                as="textarea"
+                rows={5}
+                type="text"
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
             </Form.Group>
             <Button block type="submit" variant="outline-primary">
               Submit
             </Button>
           </Form>
+          {messageSuccess ? (
+            <Alert className="mt-3" variant="success">
+              Message successfully sent!
+            </Alert>
+          ) : messageSuccess === false ? (
+            <Alert className="mt-3" variant="danger">
+              Something went wrong. Try again.
+            </Alert>
+          ) : null}
         </Col>
       </Row>
     </Container>

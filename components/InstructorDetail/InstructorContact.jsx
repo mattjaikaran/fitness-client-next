@@ -4,8 +4,14 @@ import { IoLogoInstagram, IoLogoTiktok } from 'react-icons/io5'
 import { GrFacebookOption } from 'react-icons/gr'
 
 const InstructorContact = ({
+  name,
+  email,
+  message,
+  setName,
+  setEmail,
+  setMessage,
   renderContact,
-  handleContactSubmit,
+  handleMessageInstructor,
   messageSuccess
 }) => {
   return (
@@ -92,24 +98,37 @@ const InstructorContact = ({
           <Col md={6}>
             <hr className="visible-xs" />
             <h3 className="visible-xs text-center">Send Josie a Message</h3>
-            <Form onSubmit={handleContactSubmit}>
-              <Form.Group className="mb-3" controlId="contactFormName">
-                <Form.Label>Name</Form.Label>
-                <Form.Control type="text" placeholder="Mary Smith" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="contactFormEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="test@example.com" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="contactFormMessage">
-                <Form.Label>Message</Form.Label>
+            <Form onSubmit={handleMessageInstructor}>
+              <Form.Group className="mb-3" controlId="contactName">
+                <Form.Label>NAME</Form.Label>
                 <Form.Control
-                  as="textarea"
-                  placeholder="Leave a message"
-                  style={{ height: '150px' }}
+                  type="text"
+                  name="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </Form.Group>
-              <Button block variant="outline-primary" type="submit">
+              <Form.Group className="mb-3" controlId="contactEmail">
+                <Form.Label>EMAIL</Form.Label>
+                <Form.Control
+                  type="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="contactMessage">
+                <Form.Label>MESSAGE</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={5}
+                  type="text"
+                  name="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+              </Form.Group>
+              <Button block type="submit" variant="outline-primary">
                 Submit
               </Button>
             </Form>

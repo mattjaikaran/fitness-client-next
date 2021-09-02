@@ -107,9 +107,17 @@ h6 {
   height: 50px;
 }
 
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+  .btn {
+    display: block;
+  }
+}
 
 @media (min-width: 768px) {
   .visible-xs {
-    display: none;
+    display: none !important;
   }
 }
