@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap'
 const InstructorCard = ({ instructor }) => {
   const { id, name, classesTaught } = instructor
   return (
-    <Link href={`/instructors/${id}`} passHref>
+    <Link href={`/instructors/${id}`}>
       <Card>
         <Card.Img variant="top" src={instructor.photos[0].imgUrl} />
         <Card.Body>

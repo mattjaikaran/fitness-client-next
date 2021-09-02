@@ -10,48 +10,46 @@ const Footer = () => {
     <Container fluid className={styles.footer}>
       <Row className="text-center mt-5">
         <Col md={4}>
-          <p>
-            <Link href="/methodology">Methodology</Link>
-          </p>
-          <p>
-            <Link href="/commitment">Commitment</Link>
-          </p>
-          <p>
-            <Link href="/curated-classes-and-events">
-              Curated Classes &amp; Events
-            </Link>
-          </p>
-          <p>
-            <Link href="/team">Team</Link>
-          </p>
+          <Link href="/methodology">
+            <p>Methodology</p>
+          </Link>
+          <Link href="/commitment">
+            <p>Commitment</p>
+          </Link>
+          <Link href="/curated-classes-and-events">
+            <p>Curated Classes &amp; Events</p>
+          </Link>
+          <Link href="/team">
+            <p>Team</p>
+          </Link>
         </Col>
         <Col md={4}>
-          <p>
-            <Link href="/residency">Residency</Link>
-          </p>
-          <p>
-            <Link href="/contact">Contact Us</Link>
-          </p>
-          <p>
-            <Link href="investment-relations">Investment Relations</Link>
-          </p>
-          <p>
-            <Link href="/privacy">Privacy</Link>
-          </p>
+          <Link href="/residency">
+            <p>Residency</p>
+          </Link>
+          <Link href="/contact">
+            <p>Contact Us</p>
+          </Link>
+          <Link href="investment-relations">
+            <p>Investment Relations</p>
+          </Link>
+          <Link href="/privacy">
+            <p>Privacy</p>
+          </Link>
         </Col>
         <Col md={4}>
-          <p>
-            <Link href="/locations">Locations</Link>
-          </p>
-          <p>
-            <Link href="/membership">Memberships</Link>
-          </p>
-          <p>
-            <Link href="/about">About Us</Link>
-          </p>
-          <p>
-            <Link href="/customer-service">Customer Service</Link>
-          </p>
+          <Link href="/locations">
+            <p>Locations</p>
+          </Link>
+          <Link href="/membership">
+            <p>Memberships</p>
+          </Link>
+          <Link href="/about">
+            <p>About Us</p>
+          </Link>
+          <Link href="/customer-service">
+            <p>Customer Service</p>
+          </Link>
         </Col>
         <Col md={12} className="my-5">
           <FaFacebookF className={styles.social} />

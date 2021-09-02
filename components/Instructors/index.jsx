@@ -1,4 +1,4 @@
-import { Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import InstructorCard from './InstructorCard'
 
 const Instructors = ({ instructors }) => {
@@ -11,7 +11,12 @@ const Instructors = ({ instructors }) => {
       )
     })
   }
-  return <Row>{renderInstructorCard()}</Row>
+  return (
+    <Container>
+      <h1 className="my-5 text-center">Instructors</h1>
+      <Row>{renderInstructorCard()}</Row>
+    </Container>
+  )
 }
 
 export default Instructors
