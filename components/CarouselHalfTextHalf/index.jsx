@@ -7,14 +7,14 @@ const CarouselHalfTextHalf = ({ textCopy }) => {
       <Col sm={6}>
         <Carousel interval={null} controls={false}>
           <Carousel.Item>
-            <img
+            <Image
               className="d-block w-100"
               src="https://via.placeholder.com/450"
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item>
-            <img
+            <Image
               className="d-block w-100"
               src="https://via.placeholder.com/450"
               alt="Second slide"
