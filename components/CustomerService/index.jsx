@@ -17,7 +17,7 @@ const CustomerService = () => {
   }
   return (
     <Container>
-      <h1 className="my-5 text-center">Contact Us</h1>
+      <h1 className="my-5 text-center">Customer Service</h1>
       <Row className="text-left px-3 pb-3">
         <Col md={6} className="mb-3">
           <h5>
@@ -105,7 +105,7 @@ const CustomerService = () => {
                 required
               />
             </Form.Group>
-            <Button block variant="outline-primary" type="submit">
+            <Button block type="submit">
               Submit
             </Button>
           </Form>

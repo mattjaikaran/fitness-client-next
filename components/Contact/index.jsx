@@ -7,6 +7,7 @@ const Contact = () => {
   }
   return (
     <Container>
+      <h1 className="text-center my-5">Contact Us</h1>
       <Row className="mt-5">
         <Col md={6}>
           <p>
@@ -52,7 +53,7 @@ const Contact = () => {
               <Form.Label>MESSAGE</Form.Label>
               <Form.Control as="textarea" rows={5} />
             </Form.Group>
-            <Button type="submit">Submit</Button>
+            <Button block type="submit">Submit</Button>
           </Form>
         </Col>
       </Row>

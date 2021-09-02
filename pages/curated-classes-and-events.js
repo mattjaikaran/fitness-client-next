@@ -1,9 +1,10 @@
 import Layout from '@/components/Layout'
+import CuratedClassesAndEvents from '@/components/CuratedClassesAndEvents'
 
 const CuratedClassesAndEventsPage = () => {
   return (
     <Layout>
-      <h1>CuratedClassesAndEventsPage</h1>
+      <CuratedClassesAndEvents />
     </Layout>
   )
 }

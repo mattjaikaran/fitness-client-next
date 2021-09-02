@@ -1,9 +1,10 @@
 import Layout from '@/components/Layout'
+import AboutUs from '@/components/AboutUs'
 
 const AboutPage = () => {
   return (
     <Layout>
-      <h1>AboutPage</h1>
+      <AboutUs />
     </Layout>
   )
 }
