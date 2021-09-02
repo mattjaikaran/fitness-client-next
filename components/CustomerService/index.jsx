@@ -105,7 +105,7 @@ const CustomerService = () => {
                 required
               />
             </Form.Group>
-            <Button block type="submit">
+            <Button block type="submit" variant="outline-primary">
               Submit
             </Button>
           </Form>
