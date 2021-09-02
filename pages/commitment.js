@@ -1,9 +1,10 @@
 import Layout from '@/components/Layout'
+import Commitment from '@/components/Commitment'
 
 const CommitmentPage = () => {
   return (
     <Layout>
-      <h1>CommitmentPage</h1>
+      <Commitment />
     </Layout>
   )
 }
