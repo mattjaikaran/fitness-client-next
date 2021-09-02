@@ -1,22 +1,21 @@
 import Layout from '@/components/Layout'
 import Instructors from '@/components/Instructors'
-import axios from 'axios'
+// import axios from 'axios'
 
-const InstructorsPage = ({ data }) => {
-  console.log(data)
+const InstructorsPage = () => {
   return (
     <Layout>
-      <Instructors instructors={data} />
+      <Instructors />
     </Layout>
   )
 }
 
-export async function getServerSideProps() {
-  const response = await axios.get('http://localhost:3000/api/instructors')
-  const data = response.data
-  return {
-    props: { data }
-  }
-}
+// export async function getServerSideProps() {
+//   const response = await axios.get('http://localhost:3000/api/instructors')
+//   const data = response.data
+//   return {
+//     props: { data }
+//   }
+// }
 
 export default InstructorsPage

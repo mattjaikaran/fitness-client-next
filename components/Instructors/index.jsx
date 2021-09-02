@@ -1,9 +1,10 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import InstructorCard from './InstructorCard'
+import { instructorsList } from '@/copy/instructors'
 
-const Instructors = ({ instructors }) => {
+const Instructors = () => {
   const renderInstructorCard = () => {
-    return instructors?.map((instructor) => {
+    return instructorsList.map((instructor) => {
       return (
         <Col key={instructor.id} className="mb-3" md={4} sm={6}>
           <InstructorCard instructor={instructor} />
