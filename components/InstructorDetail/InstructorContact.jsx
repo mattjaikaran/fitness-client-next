@@ -24,7 +24,7 @@ const InstructorContact = ({
           }}>
           <Row>
             <Col sm={0}></Col>
-            <Col>
+            <Col xs={9}>
               <h3>Get In Touch</h3>
             </Col>
             <Col>

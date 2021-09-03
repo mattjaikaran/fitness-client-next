@@ -2,7 +2,7 @@ import { Container, Tabs, Tab, Accordion } from 'react-bootstrap'
 
 const InstructorExperienceTabs = () => {
   return (
-    <Container className="text-center mt-3 p-md-5">
+    <Container className="text-center mt-3 p-md-5 hidden-xs">
       <Tabs
         defaultActiveKey="expertise"
         id="uncontrolled-tab-example"
