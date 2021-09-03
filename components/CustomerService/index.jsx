@@ -29,7 +29,7 @@ const CustomerService = () => {
   return (
     <Container>
       <h1 className="my-5 text-center">Customer Service</h1>
-      <Row className="text-left px-3 pb-3">
+      <Row className="text-start px-3 pb-3">
         <Col md={6} className="mb-3">
           <h5>
             We are always ready to cooperate.
@@ -124,9 +124,11 @@ const CustomerService = () => {
                 onChange={(e) => setMessage(e.target.value)}
               />
             </Form.Group>
-            <Button block type="submit" variant="outline-primary">
-              Submit
-            </Button>
+            <div className="d-grid">
+              <Button type="submit" variant="outline-primary">
+                Submit
+              </Button>
+            </div>
           </Form>
           {messageSuccess ? (
             <Alert className="mt-3" variant="success">

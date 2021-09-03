@@ -11,28 +11,39 @@ const FilterForm = () => {
   }
   return (
     <Form className="pt-5" onSubmit={handleSubmit}>
-      <Form.Row>
-        <Col md={3}>
-          <Form.Control as="select">
-            <option value="where">Where?</option>
-          </Form.Control>
+      <Row>
+        <Col md={3} className="mb-3">
+          <Form.Select aria-label="Floating label select example">
+            <option>What?</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </Form.Select>
         </Col>
-        <Col md={3}>
-          <Form.Control as="select">
-            <option value="style">Style</option>
-          </Form.Control>
+        <Col md={3} className="mb-3">
+          <Form.Select aria-label="Floating label select example">
+            <option>Where?</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </Form.Select>
         </Col>
-        <Col md={3}>
-          <Form.Control as="select">
-            <option value="when">When?</option>
-          </Form.Control>
+        <Col md={3} className="mb-5">
+          <Form.Select aria-label="Floating label select example">
+            <option>When?</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </Form.Select>
         </Col>
         <Col sm={12} md={3}>
-          <Button block variant="outline-secondary" type="submit">
-            Find a Class
-          </Button>
+          <div className="d-grid">
+            <Button variant="outline-secondary" type="submit">
+              Find a Class
+            </Button>
+          </div>
         </Col>
-      </Form.Row>
+      </Row>
     </Form>
   )
 }
@@ -51,7 +62,7 @@ const BoxStylesDetails = ({ id }) => {
               name={boxStyles[routerId - 1].name}
               description={boxStyles[routerId - 1].description}
               btnText={boxStyles[routerId - 1].btnText}
-              btnLink={boxStyles[routerId - 1].btnLink}
+              btnLink="#"
             />
           )}
         </Col>

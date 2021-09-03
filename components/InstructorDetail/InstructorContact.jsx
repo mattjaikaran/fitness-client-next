@@ -28,13 +28,13 @@ const InstructorContact = ({
               <h3>Get In Touch</h3>
             </Col>
             <Col>
-              <p className="text-right" onClick={renderContact}>
+              <p className="text-end" onClick={renderContact}>
                 X
               </p>
             </Col>
           </Row>
         </Card.Header>
-        <Row className="text-left px-3 pb-3">
+        <Row className="text-start px-3 pb-3">
           <Col md={6} className="mb-3">
             <h5>
               We are always ready to cooperate.
@@ -128,7 +128,7 @@ const InstructorContact = ({
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </Form.Group>
-              <div>
+              <div className="d-grid">
                 <Button type="submit" variant="outline-primary">
                   Submit
                 </Button>

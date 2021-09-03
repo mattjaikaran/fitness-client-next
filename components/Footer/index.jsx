@@ -11,44 +11,68 @@ const Footer = () => {
       <Row className="text-center mt-5">
         <Col md={4}>
           <Link href="/methodology" passHref>
-            <p>Methodology</p>
+            <a href="/methodology">
+              <p>Methodology</p>
+            </a>
           </Link>
           <Link href="/commitment" passHref>
-            <p>Commitment</p>
+            <a href="/commitment">
+              <p>Commitment</p>
+            </a>
           </Link>
           <Link href="/curated-classes-and-events" passHref>
-            <p>Curated Classes &amp; Events</p>
+            <a href="/curated-classes-and-events">
+              <p>Curated Classes &amp; Events</p>
+            </a>
           </Link>
           <Link href="/team" passHref>
-            <p>Team</p>
+            <a href="/team">
+              <p>Team</p>
+            </a>
           </Link>
         </Col>
         <Col md={4}>
           <Link href="/residency" passHref>
-            <p>Residency</p>
+            <a href="/residency">
+              <p>Residency</p>
+            </a>
           </Link>
           <Link href="/contact" passHref>
-            <p>Contact Us</p>
+            <a href="/contact">
+              <p>Contact Us</p>
+            </a>
           </Link>
-          <Link href="investment-relations" passHref>
-            <p>Investment Relations</p>
+          <Link href="/investment-relations" passHref>
+            <a href="/investment-relations">
+              <p>Investment Relations</p>
+            </a>
           </Link>
           <Link href="/privacy" passHref>
-            <p>Privacy</p>
+            <a href="/privacy">
+              <p>Privacy</p>
+            </a>
           </Link>
         </Col>
         <Col md={4}>
           <Link href="/locations" passHref>
-            <p>Locations</p>
+            <a href="/locations">
+              <p>Locations</p>
+            </a>
           </Link>
           <Link href="/membership" passHref>
-            <p>Memberships</p>
+            <a href="/membership">
+              <p>Memberships</p>
+            </a>
           </Link>
           <Link href="/about" passHref>
-            <p>About Us</p>
+            <a href="/about">
+              <p>About Us</p>
+            </a>
           </Link>
           <Link href="/customer-service" passHref>
-            <p>Customer Service</p>
+            <a href="/customer-service">
+              <p>Customer Service</p>
+            </a>
           </Link>
         </Col>
         <Col md={12} className="my-5">

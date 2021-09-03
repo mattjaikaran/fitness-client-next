@@ -63,15 +63,16 @@ const Membership = () => {
                     reservation, the talent authorizes the Entity to draw the
                     fee for the Box reservation.`}
                   </p>
-                  <div className="text-center mt-5">
+                  <div className="d-grid text-center mt-5">
+                    <div className="d-block">
+                      <Button
+                        className="hidden-xs"
+                        variant="outline-secondary"
+                        onClick={handleShow}>
+                        Download PDF
+                      </Button>
+                    </div>
                     <Button
-                      className="hidden-xs"
-                      variant="outline-secondary"
-                      onClick={handleShow}>
-                      Download PDF
-                    </Button>
-                    <Button
-                      block
                       className="visible-xs"
                       variant="outline-secondary"
                       onClick={handleShow}>

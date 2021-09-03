@@ -23,9 +23,11 @@ const ChangePassword = () => {
                 <Form.Label>Confirm New Password</Form.Label>
                 <Form.Control type="password" />
               </Form.Group>
-              <Button block variant="outline-primary" type="submit">
-                Reset
-              </Button>
+              <div className="d-grid mt-5">
+                <Button variant="outline-primary" type="submit">
+                  Reset
+                </Button>
+              </div>
             </Form>
 
             <p className="mt-5 text-center">

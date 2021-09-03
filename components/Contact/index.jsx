@@ -87,9 +87,11 @@ const Contact = () => {
                 onChange={(e) => setMessage(e.target.value)}
               />
             </Form.Group>
-            <Button block type="submit" variant="outline-primary">
-              Submit
-            </Button>
+            <div className="d-grid">
+              <Button type="submit" variant="outline-primary">
+                Submit
+              </Button>
+            </div>
           </Form>
           {messageSuccess ? (
             <Alert className="mt-3" variant="success">

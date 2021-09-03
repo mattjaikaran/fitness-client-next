@@ -48,7 +48,6 @@ const InstructorBio = () => {
           </Button>
         </div>
         <Button
-          block="true"
           variant="outline-secondary"
           className="mt-5 visible-xs"
           onClick={renderContact}>

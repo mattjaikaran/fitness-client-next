@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { FaFacebookF, FaTwitter } from 'react-icons/fa'
 import {
+  Container,
   Row,
   Col,
   Form,
@@ -34,74 +35,80 @@ const SignIn = () => {
     }
   }
   return (
-    <>
-      <ButtonGroup className="mr-2 d-flex" aria-label="Facebook Login">
-        <InputGroup.Prepend>
-          <InputGroup.Text className={styles.facebookPrepend}>
-            <FaFacebookF />
-          </InputGroup.Text>
-        </InputGroup.Prepend>
-        <Button variant="facebook">Connect With Facebook</Button>
-      </ButtonGroup>
-      <ButtonGroup className="mt-3 mr-2 d-flex" aria-label="Twitter Login">
-        <InputGroup.Prepend>
-          <InputGroup.Text className={styles.twitterPrepend}>
-            <FaTwitter />
-          </InputGroup.Text>
-        </InputGroup.Prepend>
-        <Button variant="twitter">Connect With Twitter</Button>
-      </ButtonGroup>
-      <Form className="mt-5" onSubmit={handleSignin}>
-        <Form.Group className="mb-3" controlId="signinEmail">
-          <Form.Label>EMAIL</Form.Label>
-          <Form.Control
-            type="text"
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="signinPassword">
-          <Form.Label>PASSWORD</Form.Label>
-          <Form.Control
-            type="password"
-            name="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </Form.Group>
-        <Form.Group controlId="loginFormCheckbox">
-          <Row>
-            <Col>
-              <Form.Check type="checkbox" label="Remember Me" />
-            </Col>
-            <Col className="text-right">
-              <Link href="/forgot-password" className={styles.link}>
-                Forgot Password?
-              </Link>
-            </Col>
-          </Row>
-        </Form.Group>
-        <Button block variant="login" type="submit">
-          Login
-        </Button>
-      </Form>
-      {loginSuccess ? (
-        <Alert className="mt-3" variant="success">
-          Login Success. Redirecting to Dashboard...
-        </Alert>
-      ) : loginSuccess === false ? (
-        <Alert className="mt-3" variant="danger">
-          Something went wrong. Try again.
-        </Alert>
-      ) : null}
-      <p className="mt-5 text-center">
-        No account?{' '}
-        <Link className={styles.link} href="/signup">
-          Sign up
-        </Link>
-      </p>
-    </>
+    <Container>
+      <h1 className="text-center mt-5">Sign In</h1>
+      <Row>
+        <Col sm={0}></Col>
+        <Col md={8} lg={6}>
+          <hr className="my-5" />
+          <ButtonGroup className="mr-2 d-flex" aria-label="Facebook Login">
+            <InputGroup.Text className={styles.facebookPrepend}>
+              <FaFacebookF />
+            </InputGroup.Text>
+            <Button variant="facebook">Connect With Facebook</Button>
+          </ButtonGroup>
+          <ButtonGroup className="mt-3 mr-2 d-flex" aria-label="Twitter Login">
+            <InputGroup.Text className={styles.twitterPrepend}>
+              <FaTwitter />
+            </InputGroup.Text>
+            <Button variant="twitter">Connect With Twitter</Button>
+          </ButtonGroup>
+          <Form className="mt-5" onSubmit={handleSignin}>
+            <Form.Group className="mb-3" controlId="signinEmail">
+              <Form.Label>EMAIL</Form.Label>
+              <Form.Control
+                type="text"
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="signinPassword">
+              <Form.Label>PASSWORD</Form.Label>
+              <Form.Control
+                type="password"
+                name="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group controlId="loginFormCheckbox">
+              <Row>
+                <Col>
+                  <Form.Check type="checkbox" label="Remember Me" />
+                </Col>
+                <Col className="text-end">
+                  <Link href="/forgot-password" className={styles.link}>
+                    {`Forgot Password?`}
+                  </Link>
+                </Col>
+              </Row>
+            </Form.Group>
+            <div className="d-grid mt-5">
+              <Button variant="login" type="submit">
+                Login
+              </Button>
+            </div>
+          </Form>
+          {loginSuccess ? (
+            <Alert className="mt-3" variant="success">
+              {`Login Success. Redirecting to Dashboard...`}
+            </Alert>
+          ) : loginSuccess === false ? (
+            <Alert className="mt-3" variant="danger">
+              Something went wrong. Try again.
+            </Alert>
+          ) : null}
+          <p className="mt-5 text-center">
+            No account?{' '}
+            <Link className={styles.link} href="/signup">
+              Sign up
+            </Link>
+          </p>
+        </Col>
+        <Col sm={0}></Col>
+      </Row>
+    </Container>
   )
 }
 

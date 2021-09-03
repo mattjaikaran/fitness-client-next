@@ -16,9 +16,11 @@ const ForgotPassword = () => {
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
-              <Button block variant="outline-primary" type="submit">
-                Submit
-              </Button>
+              <div className="d-grid mt-5">
+                <Button variant="outline-primary" type="submit">
+                  Submit
+                </Button>
+              </div>
             </Form>
 
             <p className="mt-5 text-center">
