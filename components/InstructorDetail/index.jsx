@@ -1,7 +1,6 @@
 import InstructorHeader from './InstructorHeader'
 import InstructorBio from './InstructorBio'
 import InstructorImages from './InstructorImages'
-import InstructorCarousel from './InstructorCarousel'
 import InstructorExperienceTabs from './InstructorExperienceTabs'
 import InstructorExperienceCollapse from './InstructorExperienceCollapse'
 import InstructorInstagram from './InstructorInstagram'

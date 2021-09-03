@@ -11,7 +11,7 @@ const InstructorHeader = () => {
             <p>
               <small>Yoga Instructor</small>
             </p>
-            <p className="mt-3 p-md-5">
+            <p className="mt-5 p-lg-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               veritatis adipisci molestiae esse quod ratione at laudantium ipsam
               voluptatum culpa magnam libero illum eligendi dolore, aspernatur

@@ -31,12 +31,8 @@ const InstructorExperienceCollapse = () => {
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               <ul>
-                <li>
-                  Certified Instructor from CrossFit
-                </li>
-                <li>
-                  Certified Instructor from Fight Club
-                </li>
+                <li>Certified Instructor from CrossFit</li>
+                <li>Certified Instructor from Fight Club</li>
               </ul>
             </Card.Body>
           </Accordion.Collapse>
@@ -48,12 +44,8 @@ const InstructorExperienceCollapse = () => {
           <Accordion.Collapse eventKey="1">
             <Card.Body>
               <ul>
-                <li>
-                  I graduated with a Bachelor of Science in Exercise Science at NYU
-                </li>
-                <li>
-                  I moved a building with my bare hands
-                </li>
+                <li>Bachelor of Science in Exercise Science at NYU</li>
+                <li>I moved a building with my bare hands</li>
               </ul>
             </Card.Body>
           </Accordion.Collapse>

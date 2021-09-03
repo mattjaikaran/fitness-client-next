@@ -3,7 +3,9 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { 
   Navbar, 
-  Nav, 
+  Nav,
+  Row,
+  Col, 
   Modal, 
   Container,
   Form,
@@ -43,22 +45,38 @@ const Header = () => {
       expand="lg"
       bg="dark"
       variant="dark">
-      <Container>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Brand>
-          <Link href="/">sStudioss</Link>
-        </Navbar.Brand>
+      <Container className="d-flex d-sm-block d-lg-flex">
+        <Row>
+          <Col xs={4} sm={5} className="pt-1">
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          </Col>
+          <Col xs={6} sm={5} className="pt-2 pb-md-2">
+            <Navbar.Brand>
+              <Link href="/">sStudioss</Link>
+            </Navbar.Brand>
+          </Col>
+          <Col xs={2} className="d-lg-none text-end">
+            <Nav.Link>
+              <Button variant="outline-primary" onClick={handleShow}>
+                <BiSearch />
+              </Button>
+            </Nav.Link>
+          </Col>
+        </Row>
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">{renderNavLinks()}</Nav>
           <Nav>
-            <Nav.Link href="/signin">Sign In</Nav.Link>
+            <Nav.Link className="mt-1" href="/signin">
+              Sign In
+            </Nav.Link>
+            <Nav.Link href="#" className="d-none d-sm-none">
+              <Button variant="outline-primary" onClick={handleShow}>
+                <BiSearch />
+              </Button>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Nav.Link>
-          <Button variant="outline-primary" onClick={handleShow}>
-            <BiSearch />
-          </Button>
-        </Nav.Link>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Search</Modal.Title>
