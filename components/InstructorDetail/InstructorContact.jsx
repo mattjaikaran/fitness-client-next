@@ -37,8 +37,8 @@ const InstructorContact = ({
         <Row className="text-start px-3 pb-3">
           <Col md={6} className="mb-3">
             <h5>
-              We are always ready to cooperate.
-              <br />
+              We are always ready to cooperate. 
+              <br className="hidden-xs" />{' '}
               Write to us and we will contact you.
             </h5>
             <div className="mt-4">
@@ -97,7 +97,7 @@ const InstructorContact = ({
           </Col>
           <Col md={6}>
             <hr className="visible-xs" />
-            <h3 className="visible-xs text-center">Send Josie a Message</h3>
+            <h3 className="visible-xs my-5 text-center">Send Josie a Message</h3>
             <Form onSubmit={handleMessageInstructor}>
               <Form.Group className="mb-3" controlId="contactName">
                 <Form.Label>NAME</Form.Label>
