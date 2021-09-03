@@ -1,7 +1,8 @@
 import InstructorHeader from './InstructorHeader'
 import InstructorBio from './InstructorBio'
 import InstructorImages from './InstructorImages'
-import InstructorExperience from './InstructorExperience'
+import InstructorExperienceTabs from './InstructorExperienceTabs'
+// import InstructorExperienceCollapse from './InstructorExperienceCollapse'
 import InstructorInstagram from './InstructorInstagram'
 
 const InstructorDetail = () => {
@@ -10,7 +11,8 @@ const InstructorDetail = () => {
       <InstructorHeader />
       <InstructorBio />
       <InstructorImages />
-      <InstructorExperience />
+      <InstructorExperienceTabs />
+      {/* <InstructorExperienceCollapse /> */}
       <InstructorInstagram />
     </div>
   )

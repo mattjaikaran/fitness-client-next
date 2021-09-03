@@ -4,7 +4,6 @@
 - NextJS
 - React Bootstrap
 - SCSS
-- React Hook Form
 - Next Auth
 - Axios
 

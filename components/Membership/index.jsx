@@ -46,22 +46,22 @@ const Membership = () => {
                   <hr />
                   <h3 className="text-center mt-5">Athlete Contract</h3>
                   <p className="mt-5">
-                    This Agreement (this "Agreement"), dated as of _____________
+                    {`This Agreement (this "Agreement"), dated as of _____________
                     ("Effective Date") is by and between Studio Tribeca located
                     at 80 Warren Street New York, NY 10014 and
                     ____________________________ and __________________
-                    referenced at "Talent."
+                    referenced at "Talent."`}
                   </p>
                   <p className="mt-5">
-                    This agreement is to allow the Talent to use and operate
+                    {`This agreement is to allow the Talent to use and operate
                     their likeness and brand out of our facilities as a
-                    "Provider" member.
+                    "Provider" member.`}
                   </p>
                   <p className="mt-5">
-                    Talent will be enabled to reserve a Box up to 45 days from
+                    {`Talent will be enabled to reserve a Box up to 45 days from
                     date of reservation. At the time of 14 days from
                     reservation, the talent authorizes the Entity to draw the
-                    fee for the Box reservation.
+                    fee for the Box reservation.`}
                   </p>
                   <div className="text-center mt-5">
                     <Button

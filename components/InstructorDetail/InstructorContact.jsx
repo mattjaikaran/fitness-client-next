@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Card, Row, Col, Form, Alert, Button } from 'react-bootstrap'
+import { Container, Card, Row, Col, Form, Alert, Button } from 'react-bootstrap'
 import { IoLogoInstagram, IoLogoTiktok } from 'react-icons/io5'
 import { GrFacebookOption } from 'react-icons/gr'
 
@@ -15,7 +15,7 @@ const InstructorContact = ({
   messageSuccess
 }) => {
   return (
-    <div className="mt-5">
+    <Container fluid className="mt-5">
       <Card className="p-3">
         <Card.Header
           style={{
@@ -128,9 +128,11 @@ const InstructorContact = ({
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </Form.Group>
-              <Button block type="submit" variant="outline-primary">
-                Submit
-              </Button>
+              <div>
+                <Button type="submit" variant="outline-primary">
+                  Submit
+                </Button>
+              </div>
             </Form>
             {messageSuccess ? (
               <Alert className="mt-3" variant="success">
@@ -144,7 +146,7 @@ const InstructorContact = ({
           </Col>
         </Row>
       </Card>
-    </div>
+    </Container>
   )
 }
 

@@ -76,7 +76,7 @@ const SignIn = () => {
               <Form.Check type="checkbox" label="Remember Me" />
             </Col>
             <Col className="text-right">
-              <Link href="#" className={styles.link}>
+              <Link href="/forgot-password" className={styles.link}>
                 Forgot Password?
               </Link>
             </Col>

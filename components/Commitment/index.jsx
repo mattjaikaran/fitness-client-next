@@ -9,7 +9,7 @@ const Commitment = () => {
           <h1 className="mt-5 text-center">Commitment</h1>
 
           <h5 className="mt-5">
-            <strong>"because creativity breeds creativity"</strong>
+            <strong>{`"because creativity breeds creativity"`}</strong>
           </h5>
           <p>
             <small>author unknown</small>

@@ -4,7 +4,6 @@ import TextWithCTA from '@/components/TextWithCTA'
 import CarouselHalfTextHalf from '@/components/CarouselHalfTextHalf'
 import StudioLocations from '@/components/StudioLocations'
 import { homeCopy } from '@/copy/home'
-import style from '../styles/Home.module.scss'
 
 const HomePage = () => {
   return (

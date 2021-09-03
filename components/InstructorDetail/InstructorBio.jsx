@@ -30,27 +30,31 @@ const InstructorBio = () => {
   }
 
   return (
-    <Container className="text-center p-5">
+    <Container className="text-center py-5 p-md-5">
       <h2 className="">Bio</h2>
-      <p className="mt-5 px-md-5">
+      <p className="mt-5 p-3 px-md-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempore,
         vel praesentium modi eveniet optio, in molestias voluptatum sit id
         reiciendis reprehenderit eum quo velit, blanditiis nihil delectus fugiat
         saepe.
       </p>
-      <Button
-        variant="outline-secondary"
-        className="mt-5 hidden-xs"
-        onClick={renderContact}>
-        Contact
-      </Button>
-      <Button
-        block
-        variant="outline-secondary"
-        className="mt-5 visible-xs"
-        onClick={renderContact}>
-        Contact
-      </Button>
+      <div className="d-grid">
+        <div className="d-block">
+          <Button
+            variant="outline-secondary"
+            className="mt-5 hidden-xs"
+            onClick={renderContact}>
+            Contact
+          </Button>
+        </div>
+        <Button
+          block="true"
+          variant="outline-secondary"
+          className="mt-5 visible-xs"
+          onClick={renderContact}>
+          Contact
+        </Button>
+      </div>
       {contactFormVisible && (
         <InstructorContact
           name={name}

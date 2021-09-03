@@ -249,7 +249,6 @@ const RateTable = ({ box }) => {
           </td>
           <td colSpan="8"></td>
         </tr>
-        <td colSpan="10"></td>
       </tbody>
     </Table>
   )
