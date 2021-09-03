@@ -81,7 +81,7 @@ const Membership = () => {
                   <div className="mt-5">
                     <p>
                       Let's continue the conversation and explore this
-                      partnership -
+                      partnership
                     </p>
                     <p className="mt-5">
                       <strong>Matt Marchese</strong>
