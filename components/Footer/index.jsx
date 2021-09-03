@@ -10,44 +10,44 @@ const Footer = () => {
     <Container fluid className={styles.footer}>
       <Row className="text-center mt-5">
         <Col md={4}>
-          <Link href="/methodology">
+          <Link href="/methodology" passHref>
             <p>Methodology</p>
           </Link>
-          <Link href="/commitment">
+          <Link href="/commitment" passHref>
             <p>Commitment</p>
           </Link>
-          <Link href="/curated-classes-and-events">
+          <Link href="/curated-classes-and-events" passHref>
             <p>Curated Classes &amp; Events</p>
           </Link>
-          <Link href="/team">
+          <Link href="/team" passHref>
             <p>Team</p>
           </Link>
         </Col>
         <Col md={4}>
-          <Link href="/residency">
+          <Link href="/residency" passHref>
             <p>Residency</p>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" passHref>
             <p>Contact Us</p>
           </Link>
-          <Link href="investment-relations">
+          <Link href="investment-relations" passHref>
             <p>Investment Relations</p>
           </Link>
-          <Link href="/privacy">
+          <Link href="/privacy" passHref>
             <p>Privacy</p>
           </Link>
         </Col>
         <Col md={4}>
-          <Link href="/locations">
+          <Link href="/locations" passHref>
             <p>Locations</p>
           </Link>
-          <Link href="/membership">
+          <Link href="/membership" passHref>
             <p>Memberships</p>
           </Link>
-          <Link href="/about">
+          <Link href="/about" passHref>
             <p>About Us</p>
           </Link>
-          <Link href="/customer-service">
+          <Link href="/customer-service" passHref>
             <p>Customer Service</p>
           </Link>
         </Col>
