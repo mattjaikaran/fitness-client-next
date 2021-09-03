@@ -5,7 +5,7 @@ import InstructorDetail from '@/components/InstructorDetail'
 
 const InstructorPage = ({ instructorData }) => {
   const router = useRouter()
-  console.log(instructorData)
+  // console.log(instructorData)
   return (
     <Layout>
       <InstructorDetail />

@@ -1,16 +1,13 @@
-import { useState, forwardRef } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { 
   Navbar, 
   Nav, 
-  NavDropdown, 
+  Modal, 
   Container,
-  Row,
-  Col,
   Form,
   FormControl,
-  Dropdown,
   Button 
 } from 'react-bootstrap'
 import { BiSearch } from 'react-icons/bi'
@@ -19,8 +16,15 @@ import style from './Header.module.scss'
 
 const Header = () => {
   const router = useRouter()
+  const [searchValue, setSearchValue] = useState('')
+  const [show, setShow] = useState(false)
+
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)  
   const handleSearchSubmit = e => {
-    console.log('submit');
+    e.preventDefault()
+    console.log('submit', searchValue)
+    setSearchValue('')
   }
   
   const renderNavLinks = () => {
@@ -32,45 +36,6 @@ const Header = () => {
       )
     })
   }
-  const CustomToggle = forwardRef(({ children, onClick }, ref) => (
-    <a
-      href=""
-      ref={ref}
-      onClick={(e) => {
-        e.preventDefault()
-        onClick(e)
-      }}>
-      {children}
-    </a>
-  ))
-  const CustomMenu = forwardRef(
-    ({ children, style, className, 'aria-labelledby': labeledBy }, ref) => {
-      const [value, setValue] = useState('')
-
-      return (
-        <div
-          ref={ref}
-          style={style}
-          className={className}
-          aria-labelledby={labeledBy}>
-          <Form onSubmit={handleSearchSubmit}>
-            <FormControl
-              autoFocus
-              className="mx-3 my-2 w-auto"
-              placeholder="Type to Search"
-              onChange={(e) => setValue(e.target.value)}
-              value={value}
-            />
-            <div className="d-grid">
-              <Button block="true" type="submit" variant="outline-primary">
-                Search
-              </Button>
-            </div>
-          </Form>
-        </div>
-      )
-    }
-  )
   return (
     <Navbar
       className={style.header}
@@ -89,44 +54,39 @@ const Header = () => {
             <Nav.Link href="/signin">Sign In</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Dropdown>
-          <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-            <Button variant="outline-primary">
-              <BiSearch />
-            </Button>
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu as={CustomMenu}>
-            <Dropdown.Item eventKey="1">Red</Dropdown.Item>
-            <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
-            <Dropdown.Item eventKey="3" active>
-              Orange
-            </Dropdown.Item>
-            <Dropdown.Item eventKey="1">Red-Orange</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-
-        {/* <NavDropdown
-          drop="start"
-          title={
-            <Button variant="outline-primary">
-              <BiSearch />
-            </Button>
-          }
-          id="basic-nav-dropdown">
-          <NavDropdown.Item href="#">
-            <Form>
+        <Nav.Link>
+          <Button variant="outline-primary" onClick={handleShow}>
+            <BiSearch />
+          </Button>
+        </Nav.Link>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Search</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Form onSubmit={handleSearchSubmit}>
               <FormControl
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
+                autoFocus
+                placeholder="Type to Search"
+                onChange={(e) => setSearchValue(e.target.value)}
+                value={searchValue}
               />
-              <Button variant="outline-primary">
-                Search
-              </Button>
+              <div className="d-grid mt-3">
+                <Button block="true" type="submit" variant="outline-primary">
+                  Search
+                </Button>
+              </div>
             </Form>
-          </NavDropdown.Item>
-        </NavDropdown> */}
+          </Modal.Body>
+          {/* <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="outline-primary" onClick={handleSearchSubmit}>
+              Search
+            </Button>
+          </Modal.Footer> */}
+        </Modal>
       </Container>
     </Navbar>
   )
