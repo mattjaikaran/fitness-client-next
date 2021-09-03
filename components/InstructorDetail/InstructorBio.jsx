@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Container, Button } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 import InstructorContact from './InstructorContact'
 
 const InstructorBio = () => {
@@ -30,43 +30,45 @@ const InstructorBio = () => {
   }
 
   return (
-    <Container className="text-center py-5 p-md-5">
-      <h2 className="">Bio</h2>
-      <p className="mt-5 p-3 px-md-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempore,
-        vel praesentium modi eveniet optio, in molestias voluptatum sit id
-        reiciendis reprehenderit eum quo velit, blanditiis nihil delectus fugiat
-        saepe.
-      </p>
-      <div className="d-grid">
-        <div className="d-block">
+    <Container className="text-center py-5 p-lg-5">
+      <Row className="justify-content-center">
+        <h2>Bio</h2>
+        <p className="mt-3 px-3 px-md-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+          tempore, vel praesentium modi eveniet optio, in molestias voluptatum
+          sit id reiciendis reprehenderit eum quo velit, blanditiis nihil
+          delectus fugiat saepe.
+        </p>
+        <div className="d-grid">
+          <div className="d-block">
+            <Button
+              variant="outline-secondary"
+              className="mt-3 hidden-xs"
+              onClick={renderContact}>
+              Contact
+            </Button>
+          </div>
           <Button
             variant="outline-secondary"
-            className="mt-5 hidden-xs"
+            className="mt-3 visible-xs"
             onClick={renderContact}>
             Contact
           </Button>
         </div>
-        <Button
-          variant="outline-secondary"
-          className="mt-5 visible-xs"
-          onClick={renderContact}>
-          Contact
-        </Button>
-      </div>
-      {contactFormVisible && (
-        <InstructorContact
-          name={name}
-          email={email}
-          message={message}
-          setName={setName}
-          setEmail={setEmail}
-          setMessage={setMessage}
-          messageSuccess={messageSuccess}
-          renderContact={renderContact}
-          handleMessageInstructor={handleMessageInstructor}
-        />
-      )}
+        {contactFormVisible && (
+          <InstructorContact
+            name={name}
+            email={email}
+            message={message}
+            setName={setName}
+            setEmail={setEmail}
+            setMessage={setMessage}
+            messageSuccess={messageSuccess}
+            renderContact={renderContact}
+            handleMessageInstructor={handleMessageInstructor}
+          />
+        )}
+      </Row>
     </Container>
   )
 }

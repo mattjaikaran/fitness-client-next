@@ -14,7 +14,10 @@ const HomePage = () => {
         btnText={homeCopy.descriptionOne.btnText}
         btnLink={homeCopy.descriptionOne.btnLink}
       />
-      <CarouselHalfTextHalf textCopy={homeCopy.carouselText} />
+      <CarouselHalfTextHalf
+        textCopy={homeCopy.carouselText}
+        images={homeCopy.carouselImages}
+      />
       <TextWithCTA
         text={homeCopy.descriptionTwo.copy}
         btnText={homeCopy.descriptionTwo.btnText}

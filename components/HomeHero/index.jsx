@@ -9,7 +9,7 @@ const FilterForm = () => {
   return (
     <Form className="mt-5 pt-5" onSubmit={handleSubmit}>
       <Row>
-        <Col>
+        <Col md={4} className="mb-3">
           <Form.Group className="mb-3 d-inline" controlId="formBasicEmail">
             <Form.Select
               className="bg-dark"
@@ -21,7 +21,7 @@ const FilterForm = () => {
             </Form.Select>
           </Form.Group>
         </Col>
-        <Col>
+        <Col md={4} className="mb-3">
           <Form.Group className="mb-3 d-inline" controlId="formBasicPassword">
             <Form.Select
               className="bg-dark"
@@ -33,7 +33,7 @@ const FilterForm = () => {
             </Form.Select>
           </Form.Group>
         </Col>
-        <Col>
+        <Col md={4} className="mb-3">
           <Form.Group className="mb-3 d-inline" controlId="formBasicCheckbox">
             <Form.Select
               className="bg-dark"
@@ -52,12 +52,7 @@ const FilterForm = () => {
 
 const HomeHero = () => {
   return (
-    <div
-      className={styles.hero}
-      style={{
-        backgroundImage:
-          'url(https://via.placeholder.com/1200x450.png?text=Studios)'
-      }}>
+    <div className={styles.hero}>
       <Container className={`${styles.heroContent} text-center`}>
         <h1 className={styles.title}></h1>
         <FilterForm className={styles.filterForm} />

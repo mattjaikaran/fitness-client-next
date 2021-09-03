@@ -1,7 +1,7 @@
 import { Container, Row, Col, Image, Carousel } from 'react-bootstrap'
 import styles from './CarouselHalfTextHalf.module.scss'
 
-const CarouselHalfTextHalf = ({ textCopy }) => {
+const CarouselHalfTextHalf = ({ textCopy, images }) => {
   return (
     <Container fluid>
       <Row>
@@ -10,14 +10,14 @@ const CarouselHalfTextHalf = ({ textCopy }) => {
             <Carousel.Item>
               <Image
                 className="d-block w-100"
-                src="https://via.placeholder.com/450"
+                src={images[0]}
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <Image
                 className="d-block w-100"
-                src="https://via.placeholder.com/450"
+                src={images[1]}
                 alt="Second slide"
               />
             </Carousel.Item>

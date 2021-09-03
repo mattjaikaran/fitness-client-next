@@ -63,7 +63,7 @@ const InstructorContact = ({
               </p>
               <p>
                 <span className="text-muted">
-                  145 W Broadway, <br />
+                  145 W Broadway <br />
                   New York, NY 100013
                 </span>
               </p>

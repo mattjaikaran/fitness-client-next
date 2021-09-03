@@ -9,7 +9,7 @@ const LocationHeader = ({ name, description, subDescription }) => {
         <h5>{subDescription}</h5>
       </div>
       <Row>
-        <Col md={6}>
+        <Col md={6} className="mb-5">
           <Card className="bg-dark">
             <h3>Ethereal Box</h3>
             <h4>500 sq ft.</h4>
@@ -22,7 +22,7 @@ const LocationHeader = ({ name, description, subDescription }) => {
               </p>
               <p>Max Athletes - 16</p>
               <div className="mt-auto">
-                <Button variant="outline-primary" href="#">
+                <Button variant="outline-primary" href="/style/1">
                   Book
                 </Button>
               </div>
@@ -42,7 +42,7 @@ const LocationHeader = ({ name, description, subDescription }) => {
               </p>
               <p>Max Athletes - 8</p>
               <div className="mt-auto">
-                <Button variant="outline-primary" href="#">
+                <Button variant="outline-primary" href="/style/1">
                   Book
                 </Button>
               </div>
