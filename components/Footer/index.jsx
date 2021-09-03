@@ -11,66 +11,66 @@ const Footer = () => {
       <Row className="text-center mt-5">
         <Col md={4}>
           <Link href="/methodology" passHref>
-            <a href="/methodology">
+            <a>
               <p>Methodology</p>
             </a>
           </Link>
           <Link href="/commitment" passHref>
-            <a href="/commitment">
+            <a>
               <p>Commitment</p>
             </a>
           </Link>
           <Link href="/curated-classes-and-events" passHref>
-            <a href="/curated-classes-and-events">
+            <a>
               <p>Curated Classes &amp; Events</p>
             </a>
           </Link>
           <Link href="/team" passHref>
-            <a href="/team">
+            <a>
               <p>Team</p>
             </a>
           </Link>
         </Col>
         <Col md={4}>
           <Link href="/residency" passHref>
-            <a href="/residency">
+            <a>
               <p>Residency</p>
             </a>
           </Link>
           <Link href="/contact" passHref>
-            <a href="/contact">
+            <a>
               <p>Contact Us</p>
             </a>
           </Link>
           <Link href="/investment-relations" passHref>
-            <a href="/investment-relations">
+            <a>
               <p>Investment Relations</p>
             </a>
           </Link>
           <Link href="/privacy" passHref>
-            <a href="/privacy">
+            <a>
               <p>Privacy</p>
             </a>
           </Link>
         </Col>
         <Col md={4}>
           <Link href="/locations" passHref>
-            <a href="/locations">
+            <a>
               <p>Locations</p>
             </a>
           </Link>
           <Link href="/membership" passHref>
-            <a href="/membership">
+            <a>
               <p>Memberships</p>
             </a>
           </Link>
           <Link href="/about" passHref>
-            <a href="/about">
+            <a>
               <p>About Us</p>
             </a>
           </Link>
           <Link href="/customer-service" passHref>
-            <a href="/customer-service">
+            <a>
               <p>Customer Service</p>
             </a>
           </Link>
