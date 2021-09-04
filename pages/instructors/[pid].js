@@ -21,13 +21,13 @@ const InstructorPage = ({ instructorData }) => {
 //   }
 // }
 
-export async function getServerSideProps({ params }) {
-  const instructorData = await getInstructorData(params.id)
-  return {
-    props: {
-      instructorData
-    }
-  }
-}
+// export async function getServerSideProps({ params }) {
+//   const instructorData = await getInstructorData(params.id)
+//   return {
+//     props: {
+//       instructorData
+//     }
+//   }
+// }
 
 export default InstructorPage

@@ -32,13 +32,19 @@ const InstructorBio = () => {
   return (
     <Container className="text-center py-5 p-lg-5">
       <Row className="justify-content-center">
-        <h2>Bio</h2>
-        <p className="mt-3 px-3 px-md-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-          tempore, vel praesentium modi eveniet optio, in molestias voluptatum
-          sit id reiciendis reprehenderit eum quo velit, blanditiis nihil
-          delectus fugiat saepe.
-        </p>
+        <Row>
+          <Col sm={0}></Col>
+          <Col md={6}>
+            <h2>Bio</h2>
+            <p className="mt-3 px-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              tempore, vel praesentium modi eveniet optio, in molestias
+              voluptatum sit id reiciendis reprehenderit eum quo velit,
+              blanditiis nihil delectus fugiat saepe.
+            </p>
+          </Col>
+          <Col sm={0}></Col>
+        </Row>
         <div className="d-grid">
           <div className="d-block">
             <Button
