@@ -16,7 +16,7 @@ const InstructorInstagram = ({ imagesArray }) => {
     })
   }
   return (
-    <Container fluid="xs" className="text-center px-0 p-md-5 mt-md-3 my-5">
+    <Container fluid="xl" className="text-center px-0 p-md-5 mt-md-3 my-5">
       <h3>Instagram</h3>
       <h6 className="mt-3 mb-5">
         <a

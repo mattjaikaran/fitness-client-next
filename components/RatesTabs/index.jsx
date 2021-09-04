@@ -11,7 +11,7 @@ import style from './RatesTabs.module.scss'
 const RatesTabs = () => {
   const [key, setKey] = useState('nuclear')
   return (
-    <Container>
+    <Container fluid="sm" className="px-0">
       <Tabs
         id="controlled-tab-example"
         activeKey={key}

@@ -4,7 +4,7 @@ import InstructorCarousel from './InstructorCarousel'
 
 const InstructorImages = ({ imagesArray }) => {
   return (
-    <Container fluid="lg" className="mt-3 p-md-5">
+    <Container fluid="xl" className="mt-3 p-md-5">
       <Row>
         <Col md={6} className="mb-md-3 p-0 px-lg-3">
           <Image

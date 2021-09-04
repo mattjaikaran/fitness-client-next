@@ -58,29 +58,31 @@ const BoxStylesDetails = ({ id }) => {
   const router = useRouter()
   const routerId = parseFloat(router.query.id) 
   return (
-    <Container>
-      <FilterForm />
-      <Row className="text-center mt-5">
-        <Col sm={0}></Col>
-        <Col sm={6} md={4}>
-          {routerId === id && (
-            <Box
-              name={boxStyles[routerId - 1].name}
-              description={boxStyles[routerId - 1].description}
-              btnText={boxStyles[routerId - 1].btnText}
-              btnLink="#"
-            />
-          )}
-        </Col>
-        <Col sm={0}></Col>
-      </Row>
+    <Container fluid="xl">
+      <Container>
+        <FilterForm />
+        <Row className="text-center mt-5">
+          <Col sm={0}></Col>
+          <Col sm={6} md={4} className="px-1">
+            {routerId === id && (
+              <Box
+                name={boxStyles[routerId - 1].name}
+                description={boxStyles[routerId - 1].description}
+                btnText={boxStyles[routerId - 1].btnText}
+                btnLink="#"
+              />
+            )}
+          </Col>
+          <Col sm={0}></Col>
+        </Row>
+      </Container>
       <Image
         fluid
         src="https://images.unsplash.com/photo-1535743686920-55e4145369b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80"
         className="my-5"
         alt="Box featured image"
       />
-      <Tabs defaultActiveKey="gallery" id="box-details-tabs">
+      <Tabs defaultActiveKey="gallery" id="box-details-tabs" className="px-0">
         <Tab eventKey="gallery" title="Gallery">
           <Carousel controls={false} interval={null}>
             <Carousel.Item>

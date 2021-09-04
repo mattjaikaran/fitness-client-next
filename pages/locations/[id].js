@@ -19,9 +19,7 @@ const LocationPage = () => {
         description="An intimate space ofering a bright and comfortable environment to broadcast your brand."
         subDescription="Our energy her is soft, quiet, calming"
       />
-      <Container>
-        <RatesTabs />
-      </Container>
+      <RatesTabs />
     </Layout>
   )
 }
