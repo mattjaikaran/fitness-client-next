@@ -29,7 +29,24 @@ export const instructorsList = [
         imgUrl:
           'https://res.cloudinary.com/studiostudios/image/upload/v1629686578/Rachel%20Ackerley/matteophotographs---3_siw43q.jpg'
       }
-    ]
+    ],
+    contact: {
+      email: 'hello@rachel.com',
+      phone: '2122330507',
+      instagram: 'rachelackerley',
+      facebook: 'rachelackerley',
+      tiktok: 'rachelackerley'
+    },
+    experience: {
+      expertise: [
+        'Certified Cross Fit Instructor',
+        'Certified Fight Club Instructor'
+      ],
+      credentials: [
+        'Bachelor of Science in Exercise Science from NYU',
+        'I move a building with my bare hands'
+      ]
+    }
   },
   {
     id: 2,
@@ -61,7 +78,24 @@ export const instructorsList = [
         imgUrl:
           'https://res.cloudinary.com/studiostudios/image/upload/v1629685619/Dwayne%20Bailey/matteophotographs---4_hbl4ng.jpg'
       }
-    ]
+    ],
+    contact: {
+      email: 'hello@dwayne.com',
+      phone: '9175550198',
+      instagram: 'dwaynebaileyfitness',
+      facebook: 'dwaynebaileyfitness',
+      tiktok: 'dwaynebaileyfitness'
+    },
+    experience: {
+      expertise: [
+        'Certified Personal Trainer at Equinox',
+        'Certified Spin Instructor at SoulCycle'
+      ],
+      credentials: [
+        'Bachelor of Science in Exercise Science from UCLA',
+        'Strongest Man In The World 2018 Runner Up'
+      ]
+    }
   },
   {
     id: 3,
@@ -93,8 +127,25 @@ export const instructorsList = [
         imgUrl:
           'https://res.cloudinary.com/studiostudios/image/upload/v1629685894/Sarah%20Bess%20Hutchinson/matteophotographs---3_ogqfvg.jpg'
       }
-    ]
-  },
+    ],
+    contact: {
+      email: 'hello@sarah.com',
+      phone: '9175550198',
+      instagram: 'sarahbaileyfit',
+      facebook: 'sarahbaileyfit',
+      tiktok: 'sarahbaileyfit'
+    },
+    experience: {
+      expertise: [
+        'Certified Yoga Instructor at Equinox',
+        'Certified KickBoxing from X Fitness'
+      ],
+      credentials: [
+        'Bachelor of Science in Exercise Science from UCLA',
+        'Strongest Man In The World 2018 Runner Up'
+      ]
+    }
+  }
   // {
   //   id: 4,
   //   name: 'JJ Watt',

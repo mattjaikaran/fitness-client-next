@@ -1,53 +1,69 @@
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import { instructorsList } from '@/copy/instructors'
 import InstructorCarousel from './InstructorCarousel'
 
-const InstructorImages = ({ imagesArray }) => {
-  return (
-    <Container fluid="xl" className="mt-3 p-md-5">
-      <Row>
-        <Col md={6} className="mb-md-3 p-0 px-lg-3">
-          <Image
-            fluid
-            src={instructorsList[0].photos[0].imgUrl}
-            alt="instrutor image 2"
-          />
+const InstructorImages = ({ desktopImages, mobileImages }) => {
+  const renderImageGrid = () => {
+    if (desktopImages.length === 4) {
+      return (
+        <Row>
+          <Col md={6} className="mb-md-3 p-0 px-sm-2">
+            <Image
+              fluid
+              src={desktopImages[0].imgUrl}
+              alt="instructor image 1"
+            />
+          </Col>
+          <Col md={6} className="mb-md-3 p-0 px-sm-2">
+            <Image
+              fluid
+              src={desktopImages[1].imgUrl}
+              alt="instructor image 2"
+            />
+          </Col>
+          <Col md={6} className="mb-md-3 p-0 px-sm-2">
+            <Image
+              fluid
+              src={desktopImages[2].imgUrl}
+              alt="instructor image 3"
+            />
+          </Col>
+          <Col md={6} className="mb-md-3 p-0 px-sm-2">
+            <Image
+              fluid
+              src={desktopImages[3].imgUrl}
+              alt="instructor image 4"
+            />
+          </Col>
+        </Row>
+      )
+    }
+    return (
+      <Row className="justify-content-xl-center">
+        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-xl-0 text-center">
+          <Image fluid src={desktopImages[0].imgUrl} alt="instructor image 2" />
         </Col>
-        <Col md={6} className="mb-md-3 p-0 px-md-3">
+        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-xl-0 text-center">
           <Image
             fluid
-            src={instructorsList[0].photos[1].imgUrl}
+            src={desktopImages[1].imgUrl}
             className="mb-md-3"
-            alt="instrutor image 3"
+            alt="instructor image 2"
           />
-          <Image
-            fluid
-            src={
-              instructorsList[0].photos[2].imgUrl ||
-              'https://via.placeholder.com/650x200.png'
-            }
-            alt="instrutor image 4"
-          />
+          <Image fluid src={desktopImages[2].imgUrl} alt="instructor image 3" />
         </Col>
-        <Col md={6} className="mb-md-3 p-0 px-md-3">
-          <Image
-            fluid
-            src={instructorsList[0].photos[3].imgUrl}
-            alt="instrutor image 5"
-          />
+        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-xl-0 text-center">
+          <Image fluid src={desktopImages[3].imgUrl} alt="instructor image 4" />
         </Col>
-        <Col md={6} className="mb-md-3 p-0 px-md-3">
-          <Image
-            fluid
-            src={
-              instructorsList[0].photos[4].imgUrl ||
-              'https://via.placeholder.com/600x400.png'
-            }
-            alt="instrutor image 6"
-          />
+        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-xl-0 text-center">
+          <Image fluid src={desktopImages[4].imgUrl} alt="instructor image 5" />
         </Col>
       </Row>
-      {/* <InstructorCarousel mobile imagesArray={imagesArray} /> */}
+    )
+  }
+  return (
+    <Container fluid="xl" className="mt-3 p-md-5">
+      {renderImageGrid()}
+      <InstructorCarousel mobile mobileImages={mobileImages} />
     </Container>
   )
 }

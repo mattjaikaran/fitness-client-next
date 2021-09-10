@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Container, Card, Row, Col, Form, Alert, Button } from 'react-bootstrap'
 import { IoLogoInstagram, IoLogoTiktok } from 'react-icons/io5'
 import { GrFacebookOption } from 'react-icons/gr'
@@ -23,11 +22,11 @@ const InstructorContact = ({
             borderBottom: 'none'
           }}>
           <Row>
-            <Col sm={0}></Col>
-            <Col xs={9}>
-              <h3>Get In Touch</h3>
+            <Col xs={2} sm={4}></Col>
+            <Col xs={8} sm={6}>
+              <h3 className="mb-3 mb-sm-5">Get In Touch</h3>
             </Col>
-            <Col>
+            <Col xs={2}>
               <p className="text-end" onClick={renderContact}>
                 X
               </p>

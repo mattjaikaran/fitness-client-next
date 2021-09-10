@@ -6,13 +6,13 @@ const InstructorCard = ({ instructor }) => {
   return (
     <Link href={`/instructors/${id}`} passHref>
       <Card>
-        <Card.Img variant="top" src={instructor.photos[0].imgUrl} />
-        <Card.Body>
+        <Card.Img variant="top" src={'https://via.placeholder.com/450x500'} />
+        <Card.Body className="text-center">
           <Card.Title>{name}</Card.Title>
           <Card.Text>
             {classesTaught.length > 1
               ? classesTaught.join(' | ')
-              : classesTaught}
+              : `${classesTaught} Instructor`}
           </Card.Text>
         </Card.Body>
       </Card>

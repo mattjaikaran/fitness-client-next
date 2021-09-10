@@ -5,7 +5,7 @@ import InstructorDetail from '@/components/InstructorDetail'
 
 const InstructorPage = ({ instructorData }) => {
   const router = useRouter()
-  // console.log(instructorData)
+  console.log(instructorData)
   return (
     <Layout>
       <InstructorDetail />
@@ -21,7 +21,7 @@ const InstructorPage = ({ instructorData }) => {
 //   }
 // }
 
-// export async function getServerSideProps({ params }) {
+// export async function getStaticProps({ params }) {
 //   const instructorData = await getInstructorData(params.id)
 //   return {
 //     props: {
