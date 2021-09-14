@@ -47,11 +47,20 @@ const InstructorHeader = () => {
               </p>
               <Button
                 size="lg"
-                variant="outline-primary"
+                variant="outline-primary hidden-xs"
                 className="mt-3"
                 onClick={renderContact}>
                 Contact
               </Button>
+              <div className="d-grid">
+                <Button
+                  size="lg"
+                  variant="outline-primary visible-xs"
+                  className="mt-3"
+                  onClick={renderContact}>
+                  Contact
+                </Button>
+              </div>
             </Col>
             <Col sm={0}></Col>
           </Row>

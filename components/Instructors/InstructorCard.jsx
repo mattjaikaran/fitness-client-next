@@ -8,12 +8,12 @@ const InstructorCard = ({ instructor }) => {
       <Card>
         <Card.Img variant="top" src={'https://via.placeholder.com/450x500'} />
         <Card.Body className="text-center">
-          <Card.Title>{name}</Card.Title>
-          <Card.Text>
+          <h6>{name}</h6>
+          <p>
             {classesTaught.length > 1
               ? classesTaught.join(' | ')
               : `${classesTaught} Instructor`}
-          </Card.Text>
+          </p>
         </Card.Body>
       </Card>
     </Link>
