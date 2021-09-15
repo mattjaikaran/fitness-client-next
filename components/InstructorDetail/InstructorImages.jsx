@@ -6,28 +6,28 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
     if (desktopImages.length === 4) {
       return (
         <Row>
-          <Col md={6} className="mb-md-3 p-0 px-sm-2">
+          <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
               fluid
               src={desktopImages[0].imgUrl}
               alt="instructor image 1"
             />
           </Col>
-          <Col md={6} className="mb-md-3 p-0 px-sm-2">
+          <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
               fluid
               src={desktopImages[1].imgUrl}
               alt="instructor image 2"
             />
           </Col>
-          <Col md={6} className="mb-md-3 p-0 px-sm-2">
+          <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
               fluid
               src={desktopImages[2].imgUrl}
               alt="instructor image 3"
             />
           </Col>
-          <Col md={6} className="mb-md-3 p-0 px-sm-2">
+          <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
               fluid
               src={desktopImages[3].imgUrl}
@@ -39,10 +39,10 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
     }
     return (
       <Row className="justify-content-xl-center">
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-xl-0 text-center">
-          <Image fluid src={desktopImages[0].imgUrl} alt="instructor image 2" />
+        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
+          <Image fluid src={desktopImages[0].imgUrl} alt="instructor image 1" />
         </Col>
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-xl-0 text-center">
+        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
           <Image
             fluid
             src={desktopImages[1].imgUrl}
@@ -51,10 +51,10 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
           />
           <Image fluid src={desktopImages[2].imgUrl} alt="instructor image 3" />
         </Col>
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-xl-0 text-center">
+        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
           <Image fluid src={desktopImages[3].imgUrl} alt="instructor image 4" />
         </Col>
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-xl-0 text-center">
+        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
           <Image fluid src={desktopImages[4].imgUrl} alt="instructor image 5" />
         </Col>
       </Row>

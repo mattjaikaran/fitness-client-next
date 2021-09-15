@@ -2,13 +2,23 @@ import { useState } from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import InstructorContact from './InstructorContact'
 
-const InstructorHeader = () => {
+const InstructorHeader = ({
+  instructorFirstName,
+  instructorFullName,
+  bio,
+  classesTaught,
+  contact
+}) => {
   const [contactFormVisible, setContactFormVisible] = useState(false)
   const renderContact = () => setContactFormVisible(!contactFormVisible)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [messageSuccess, setMessageSuccess] = useState(null)
+  console.log(
+    '🚀 ~ file: InstructorHeader.jsx ~ line 6 ~ InstructorHeader ~ classesTaught',
+    classesTaught
+  )
 
   const handleMessageInstructor = async (e) => {
     e.preventDefault()
@@ -35,16 +45,16 @@ const InstructorHeader = () => {
           <Row>
             <Col sm={0}></Col>
             <Col sm={6}>
-              <h1>Josie Norman</h1>
+              <h1>{instructorFullName}</h1>
               <p>
-                <small>Yoga Instructor</small>
+                <small>
+                  {/* Yoga */}
+                  {classesTaught?.length > 1
+                    ? `${classesTaught?.join(', ')} Instructor`
+                    : `${classesTaught} Instructor`}
+                </small>
               </p>
-              <p className="mt-3 py-3 px-lg-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur veritatis adipisci molestiae esse quod ratione at
-                laudantium ipsam voluptatum culpa magnam libero illum eligendi
-                dolore, aspernatur perferendis
-              </p>
+              <p className="mt-3 py-3 px-lg-5">{bio}</p>
               <Button
                 size="lg"
                 variant="outline-primary hidden-xs"
@@ -77,7 +87,9 @@ const InstructorHeader = () => {
             setMessage={setMessage}
             messageSuccess={messageSuccess}
             renderContact={renderContact}
+            instructorFirstName={instructorFirstName}
             handleMessageInstructor={handleMessageInstructor}
+            contact={contact}
           />
         )}
       </Container>

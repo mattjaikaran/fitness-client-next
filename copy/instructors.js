@@ -1,33 +1,57 @@
 export const instructorsList = [
   {
     id: 1,
-    name: 'Rachel Ackerley',
+    fullName: 'Rachel Ackerley',
+    firstName: 'Rachel',
+    lastName: 'Ackerley',
     classesTaught: ['Yoga'],
-    photos: [
+    bio: 'Rachel is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis adipisci molestiae esse quod ratione at laudantium ipsam voluptatum culpa magnam libero illum eligendi dolore, aspernatur perferendis',
+    mobilePhotos: [
       {
         id: 1,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629686577/Rachel%20Ackerley/matteophotographs---2_tfllpx.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 2,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629686578/Rachel%20Ackerley/matteophotographs---5_ip3vph.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 3,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629686578/Rachel%20Ackerley/matteophotographs---4_uqz6c5.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 4,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629686578/Rachel%20Ackerley/matteophotographs--_iikryv.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 5,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629686578/Rachel%20Ackerley/matteophotographs---3_siw43q.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/500x600.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/500x290.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/500x290.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/500x600.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/500x600.png'
       }
     ],
     contact: {
@@ -50,33 +74,57 @@ export const instructorsList = [
   },
   {
     id: 2,
-    name: 'Dwayne Bailey',
-    classesTaught: ['Yoga', 'Spin'],
-    photos: [
+    fullName: 'Dwayne Bailey',
+    firstName: 'Dwayne',
+    lastName: 'Bailey',
+    classesTaught: ['Kickboxing'],
+    bio: 'Dwayne is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis adipisci molestiae esse quod ratione at laudantium ipsam voluptatum culpa magnam libero illum eligendi dolore, aspernatur perferendis',
+    mobilePhotos: [
       {
         id: 1,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629685618/Dwayne%20Bailey/matteophotographs---6_xehhse.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 2,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629685618/Dwayne%20Bailey/matteophotographs---2_yb21hf.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 3,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629685618/Dwayne%20Bailey/matteophotographs---3_cw6nyd.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 4,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629685618/Dwayne%20Bailey/matteophotographs---5_pybk4a.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 5,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629685619/Dwayne%20Bailey/matteophotographs---4_hbl4ng.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/500x600.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/500x290.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/500x290.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/500x600.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/500x600.png'
       }
     ],
     contact: {
@@ -99,33 +147,53 @@ export const instructorsList = [
   },
   {
     id: 3,
-    name: 'Sarah Bess Hutchinson',
+    fullName: 'Sarah Bess Hutchinson',
+    firstName: 'Sarah',
+    lastName: 'Hutchinson',
     classesTaught: ['Yoga', 'Spin'],
-    photos: [
+    bio: 'Sarah is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis adipisci molestiae esse quod ratione at laudantium ipsam voluptatum culpa magnam libero illum eligendi dolore, aspernatur perferendis',
+    mobilePhotos: [
       {
         id: 1,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629685894/Sarah%20Bess%20Hutchinson/matteophotographs---4_yy4nhp.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 2,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629685894/Sarah%20Bess%20Hutchinson/matteophotographs---5_pwjhqj.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 3,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629685893/Sarah%20Bess%20Hutchinson/matteophotographs---2_re0hvs.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 4,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629685893/Sarah%20Bess%20Hutchinson/matteophotographs---2_re0hvs.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
       },
       {
         id: 5,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1629685894/Sarah%20Bess%20Hutchinson/matteophotographs---3_ogqfvg.jpg'
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/500x600.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/500x600.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/500x600.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/500x600.png'
       }
     ],
     contact: {
@@ -142,7 +210,7 @@ export const instructorsList = [
       ],
       credentials: [
         'Bachelor of Science in Exercise Science from UCLA',
-        'Strongest Man In The World 2018 Runner Up'
+        'CrossFit Olympics'
       ]
     }
   }

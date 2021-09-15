@@ -20,7 +20,7 @@ function ContextAwareToggle({ children, eventKey, callback }) {
   )
 }
 
-const InstructorExperienceCollapse = () => {
+const InstructorExperienceCollapse = ({ experience }) => {
   return (
     <Container fluid className="visible-xs px-0 mt-5">
       <Accordion defaultActiveKey="0">
@@ -31,8 +31,9 @@ const InstructorExperienceCollapse = () => {
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               <ul>
-                <li>Certified Instructor from CrossFit</li>
-                <li>Certified Instructor from Fight Club</li>
+                {experience?.expertise?.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
               </ul>
             </Card.Body>
           </Accordion.Collapse>
@@ -44,8 +45,9 @@ const InstructorExperienceCollapse = () => {
           <Accordion.Collapse eventKey="1">
             <Card.Body>
               <ul>
-                <li>Bachelor of Science in Exercise Science at NYU</li>
-                <li>I moved a building with my bare hands</li>
+                {experience?.credentials?.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
               </ul>
             </Card.Body>
           </Accordion.Collapse>

@@ -1,7 +1,7 @@
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import InstructorCarousel from './InstructorCarousel'
 
-const InstructorInstagram = ({ imagesArray }) => {
+const InstructorInstagram = ({ instagramHandle, imagesArray }) => {
   const renderImageGrid = () => {
     return imagesArray.map(({ id, imgUrl}) => {
       return (
@@ -24,13 +24,11 @@ const InstructorInstagram = ({ imagesArray }) => {
           href="https://instagram.com/"
           target="_blank"
           rel="noreferrer">
-          @josie.norman
+          @{instagramHandle}
         </a>{' '}
         | 93.k Followers
       </h6>
-      <Row className="hidden-xs">
-        {renderImageGrid()}
-      </Row>
+      <Row className="hidden-xs">{renderImageGrid()}</Row>
       <InstructorCarousel mobile imagesArray={imagesArray} />
     </Container>
   )

@@ -9,9 +9,11 @@ const InstructorContact = ({
   setName,
   setEmail,
   setMessage,
+  contact,
   renderContact,
+  messageSuccess,
+  instructorFirstName,
   handleMessageInstructor,
-  messageSuccess
 }) => {
   return (
     <Container fluid className="mt-5">
@@ -36,35 +38,31 @@ const InstructorContact = ({
         <Row className="text-start px-3 pb-3">
           <Col md={6} className="mb-3">
             <h5>
-              We are always ready to cooperate. 
-              <br className="hidden-xs" />{' '}
-              Write to us and we will contact you.
+              We are always ready to cooperate.
+              <br className="hidden-xs" /> Write to us and we will contact you.
             </h5>
             <div className="mt-4">
               <p className="mb-1">
                 <strong>EMAIL</strong>
               </p>
               <p>
-                <a className="text-muted" href="mailto:hello@josienorman.com">
-                  hello@josienorman.com
+                <a className="text-muted" href={`mailto:${contact?.email}`}>
+                  {contact?.email}
                 </a>
               </p>
               <p className="mb-1">
                 <strong>PHONE</strong>
               </p>
               <p>
-                <a className="text-muted" href="tel:2122330507">
-                  (212) 233 0507
+                <a className="text-muted" href={`tel:${contact?.phone}`}>
+                  {contact?.phone}
                 </a>
               </p>
               <p className="mb-1">
-                <strong>ADDRESS</strong>
+                <strong>LOCATION</strong>
               </p>
               <p>
-                <span className="text-muted">
-                  145 W Broadway <br />
-                  New York, NY 100013
-                </span>
+                <span className="text-muted">New York, NY</span>
               </p>
               <p className="mb-1">
                 <strong>SOCIAL</strong>
@@ -72,21 +70,21 @@ const InstructorContact = ({
               <p>
                 <a
                   className="text-muted"
-                  href="https://instagram.com/"
+                  href={`https://instagram.com/${contact?.instagram}`}
                   target="_blank"
                   rel="noreferrer">
                   <IoLogoInstagram />
                 </a>
                 <a
                   className="text-muted mx-3"
-                  href="https://facebook.com/"
+                  href={`https://facebook.com/${contact?.facebook}`}
                   target="_blank"
                   rel="noreferrer">
                   <GrFacebookOption />
                 </a>
                 <a
                   className="text-muted"
-                  href="https://tiktok.com/"
+                  href={`https://tiktok.com/${contact?.tiktok}`}
                   target="_blank"
                   rel="noreferrer">
                   <IoLogoTiktok />
@@ -96,7 +94,9 @@ const InstructorContact = ({
           </Col>
           <Col md={6}>
             <hr className="visible-xs" />
-            <h3 className="visible-xs my-5 text-center">Send Josie a Message</h3>
+            <h3 className="visible-xs my-5 text-center">
+              Send {instructorFirstName} a Message
+            </h3>
             <Form onSubmit={handleMessageInstructor}>
               <Form.Group className="mb-3" controlId="contactName">
                 <Form.Label>NAME</Form.Label>

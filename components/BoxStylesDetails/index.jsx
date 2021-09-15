@@ -1,5 +1,6 @@
+import { useState} from 'react'
 import { useRouter } from 'next/router'
-import { Container, Carousel, Row, Col, Tabs, Tab, Image, Form, Button } from 'react-bootstrap'
+import { Container, Carousel, Row, Col, Tabs, Tab, Image, Card, Form, Button } from 'react-bootstrap'
 import {
   tribecaRootedSchedule,
   tribecaNuclearSchedule,
@@ -54,9 +55,62 @@ const FilterForm = () => {
   )
 }
 
+const BookingForm = () => {
+  const [classTitle, setClassTitle] = useState('')
+  const [classDescription, setClassDescription] = useState('')
+  const handleBookClass = (e) => {
+    const bookingURL =
+      'https://example.acuityscheduling.com/schedule.php?firstName=First&lastName=Last&phone=Phone&email=email@example.com'
+    e.preventDefault()
+    console.log('submit')
+  }
+  return (
+    <Container className="mt-5">
+      <Card>
+        <Row>
+          <Col sm={6} className="mb-3 mb-md-0 p-0">
+            <Image
+              fluid
+              className="d-block w-100"
+              src="https://via.placeholder.com/800x700"
+              alt="First slide"
+            />
+          </Col>
+          <Col sm={6} className="pt-3 px-3 px-md-5">
+            <Form onSubmit={handleBookClass}>
+              <h3>Boxing: Mitt Work</h3>
+              <Form.Group className="mb-3" controlId="contactName">
+                <Form.Label>NAME</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="name"
+                  value={classTitle}
+                  onChange={(e) => setClassTitle(e.target.value)}
+                />
+              </Form.Group>
+              <div className="d-grid">
+                <Button type="submit" variant="outline-primary">
+                  Register
+                </Button>
+              </div>
+            </Form>
+          </Col>
+        </Row>
+      </Card>
+    </Container>
+  )
+}
+
 const BoxStylesDetails = ({ id }) => {
   const router = useRouter()
   const routerId = parseFloat(router.query.id) 
+  const [bookClassVisible, setBookClassVisible] = useState(false)
+  const renderBookClassForm = () => setBookClassVisible(!bookClassVisible)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [messageSuccess, setMessageSuccess] = useState(null)
+  
   return (
     <Container fluid="xl">
       <Container>
@@ -69,12 +123,13 @@ const BoxStylesDetails = ({ id }) => {
                 name={boxStyles[routerId - 1].name}
                 description={boxStyles[routerId - 1].description}
                 btnText={boxStyles[routerId - 1].btnText}
-                btnLink="#"
+                onClick={renderBookClassForm}
               />
             )}
           </Col>
           <Col sm={0}></Col>
         </Row>
+        {bookClassVisible && <BookingForm />}
       </Container>
       <Image
         fluid

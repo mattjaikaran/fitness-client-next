@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import InstructorHeader from './InstructorHeader'
 import InstructorCalendar from './InstructorCalendar'
 import InstructorImages from './InstructorImages'
@@ -57,18 +56,34 @@ const sampleDesktopInstructorImages = [
   },
 ]
 
-const InstructorDetail = () => {
+const InstructorDetail = ({ instructorDetail }) => {
+  console.log('🚀 ~ file: index.jsx ~ line 60 ~ InstructorDetail ~ instructorDetail', instructorDetail)
   return (
     <>
-      <InstructorHeader />
-      <InstructorCalendar />
-      <InstructorImages
-        desktopImages={sampleDesktopInstructorImages}
-        mobileImages={sampleMobileInstructorImages}
+      <InstructorHeader
+        bio={instructorDetail?.bio}
+        contact={instructorDetail?.contact}
+        instructorFullName={instructorDetail?.fullName}
+        instructorFirstName={instructorDetail?.firstName}
+        classesTaught={instructorDetail?.classesTaught}
       />
-      <InstructorExperienceTabs />
-      <InstructorExperienceCollapse />
-      <InstructorInstagram imagesArray={sampleMobileInstructorImages} />
+      {/* <InstructorCalendar /> */}
+      <InstructorImages
+        desktopImages={
+          instructorDetail?.desktopPhotos || sampleDesktopInstructorImages
+        }
+        mobileImages={
+          instructorDetail?.mobilePhotos || sampleMobileInstructorImages
+        }
+      />
+      <InstructorExperienceTabs experience={instructorDetail?.experience} />
+      <InstructorExperienceCollapse experience={instructorDetail?.experience} />
+      <InstructorInstagram
+        instagramHandle={instructorDetail?.contact?.instagram}
+        imagesArray={
+          instructorDetail?.mobilePhotos || sampleMobileInstructorImages
+        }
+      />
     </>
   )
 }
