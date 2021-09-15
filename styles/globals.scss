@@ -46,13 +46,19 @@ h4,
 h5,
 h6 {
   font-family: 'Orpheus W01 Regular', serif;
+  line-height: 2rem;
 }
+
 p {
-  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8rem;
 }
 
 .orpheus {
   font-family: 'Orpheus W01 Regular', serif;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .bg-dark {

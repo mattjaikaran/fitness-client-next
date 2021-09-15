@@ -6,3 +6,11 @@
   text-align: center;
   padding: 2rem;
 }
+
+@media (min-width: 768px) {
+  .textWithCTA {
+    .text {
+      padding: 0 25%;
+    }
+  }
+}

@@ -6,7 +6,7 @@ import {
   flatironNaturalSchedule,
 } from '@/copy/studioLocations'
 import RateTable from './RateTable'
-import style from './RatesTabs.module.scss'
+import styles from './RatesTabs.module.scss'
 
 const RatesTabs = () => {
   const [key, setKey] = useState('nuclear')
@@ -16,11 +16,11 @@ const RatesTabs = () => {
         id="controlled-tab-example"
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className={style.ratesTabs}>
-        <Tab className={style.tab} eventKey="nuclear" title="Nuclear Box">
+        className={styles.ratesTabs}>
+        <Tab className={styles.tab} eventKey="nuclear" title="Nuclear Box">
           <RateTable box={tribecaNuclearSchedule} />
         </Tab>
-        <Tab className={style.tab} eventKey="rooted" title="Rooted Box">
+        <Tab className={styles.tab} eventKey="rooted" title="Rooted Box">
           <RateTable box={tribecaRootedSchedule} />
         </Tab>
       </Tabs>
