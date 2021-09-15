@@ -14,8 +14,11 @@
 
 @media (min-width: 768px) {
   .pageHero {
-    height: 40vh;
+    height: 768px;
     background-size: cover;
     background-position: center;
+    .title {
+      top: 40%;
+    }
   }
 }

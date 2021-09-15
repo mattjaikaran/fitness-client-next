@@ -67,7 +67,7 @@ const InstructorDetail = ({ instructorDetail }) => {
         instructorFirstName={instructorDetail?.firstName}
         classesTaught={instructorDetail?.classesTaught}
       />
-      {/* <InstructorCalendar /> */}
+      <InstructorCalendar />
       <InstructorImages
         desktopImages={
           instructorDetail?.desktopPhotos || sampleDesktopInstructorImages

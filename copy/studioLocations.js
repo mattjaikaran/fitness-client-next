@@ -7,12 +7,42 @@ export const studioLocations = [
       city: 'New York',
       state: 'NY',
       neighborhood: 'Tribeca',
-      zip: '10007',
-      phone: '(212) 233 0507',
+      zip: 10007,
+      phone: '(212) 233 0507'
     },
-    description: 'A two box studio for your community engagement as you wish. One large loft style space and one intimate Record, Stream, Inspire small space.',
+    description:
+      'A two box studio for your community engagement as you wish. One large loft style space and one intimate Record, Stream, Inspire small space.',
     btnText: 'Explore',
     btnLink: '/locations/tribeca',
+    pageDetails: {
+      subtitle:
+        'An intimate space ofering a bright and comfortable environment to broadcast your brand.',
+      subtitle2: 'Our energy her is soft, quiet, calming',
+      boxes: [
+        {
+          id: 1,
+          name: 'Ethereal Box',
+          size: 500,
+          capacity: 16,
+          boxDescription: [
+            'All white flooring, walls, and ceiling.',
+            'REFLECTIVE. ILLUMINARY. VAST.',
+            'This box is for confidence, crisp action and clear direction, spirit.'
+          ]
+        },
+        {
+          id: 2,
+          name: 'Rooted Box',
+          size: 250,
+          capacity: 8,
+          boxDescription: [
+            'Natural Wood floors, white walls, living plants.',
+            'EARTH. NATURE. ELEMENT.',
+            'This box is calm, soft and comfortable, the simplistic, basic tone is grounding.'
+          ]
+        }
+      ]
+    }
   },
   {
     id: 2,
@@ -22,12 +52,13 @@ export const studioLocations = [
       city: 'New York',
       state: 'NY',
       neighborhood: 'Flatiron',
-      zip: '10007',
-      phone: '(212) 233 0507',
+      zip: 10007,
+      phone: '(212) 233 0507'
     },
-    description: 'A four box studio for record and stream, intimate engagements. One large open floor space for events, energizing group classes.',
+    description:
+      'A four box studio for record and stream, intimate engagements. One large open floor space for events, energizing group classes.',
     btnText: 'Explore',
-    btnLink: '/locations/flatiron',
+    btnLink: '/locations/flatiron'
   },
   {
     id: 3,

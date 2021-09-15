@@ -8,6 +8,7 @@ import InstructorDetail from '@/components/InstructorDetail'
 
 const InstructorPage = () => {
   const router = useRouter()
+  console.log('🚀 ~ file: [id].js ~ line 11 ~ InstructorPage ~ router', router)
   const [details, setDetails] = useState({})
   const renderDetails = async () => {
     try {

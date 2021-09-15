@@ -3,6 +3,15 @@
 
 
 * { box-sizing: border-box; }
+@font-face {
+  font-family: 'Orpheus W01 Regular';
+  src: url('../assets/fonts/orpheus-regular/orpheus-regular.woff2') format('woff2'), url('../assets/fonts/orpheus-regular/orpheus-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Orpheus W01 Italic';
+  src: url('../assets/fonts/orpheus-italic/orpheus-italic.woff2') format('woff2'),url('../assets/fonts/orpheus-italic/orpheus-italic.woff') format('woff');
+}
+
 
 html,
 body {
@@ -36,7 +45,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', serif;
+  font-family: 'Orpheus W01 Regular', serif;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.orpheus {
+  font-family: 'Orpheus W01 Regular', serif;
 }
 
 .bg-dark {

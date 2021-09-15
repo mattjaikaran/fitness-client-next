@@ -15,10 +15,6 @@ const InstructorHeader = ({
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [messageSuccess, setMessageSuccess] = useState(null)
-  console.log(
-    '🚀 ~ file: InstructorHeader.jsx ~ line 6 ~ InstructorHeader ~ classesTaught',
-    classesTaught
-  )
 
   const handleMessageInstructor = async (e) => {
     e.preventDefault()
@@ -48,7 +44,6 @@ const InstructorHeader = ({
               <h1>{instructorFullName}</h1>
               <p>
                 <small>
-                  {/* Yoga */}
                   {classesTaught?.length > 1
                     ? `${classesTaught?.join(', ')} Instructor`
                     : `${classesTaught} Instructor`}

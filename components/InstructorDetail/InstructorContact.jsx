@@ -24,8 +24,8 @@ const InstructorContact = ({
             borderBottom: 'none'
           }}>
           <Row>
-            <Col xs={2} sm={4}></Col>
-            <Col xs={8} sm={6}>
+            <Col xs={2} sm={5}></Col>
+            <Col xs={8} sm={5}>
               <h3 className="mb-3 mb-sm-5">Get In Touch</h3>
             </Col>
             <Col xs={2}>

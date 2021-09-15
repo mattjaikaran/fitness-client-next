@@ -1,6 +1,7 @@
 export const instructorsList = [
   {
     id: 1,
+    slug: 'rachel-ackerley',
     fullName: 'Rachel Ackerley',
     firstName: 'Rachel',
     lastName: 'Ackerley',
@@ -56,7 +57,7 @@ export const instructorsList = [
     ],
     contact: {
       email: 'hello@rachel.com',
-      phone: '2122330507',
+      phone: '',
       instagram: 'rachelackerley',
       facebook: 'rachelackerley',
       tiktok: 'rachelackerley'
@@ -74,6 +75,7 @@ export const instructorsList = [
   },
   {
     id: 2,
+    slug: 'dwayne-bailey',
     fullName: 'Dwayne Bailey',
     firstName: 'Dwayne',
     lastName: 'Bailey',
@@ -147,6 +149,7 @@ export const instructorsList = [
   },
   {
     id: 3,
+    slug: 'sarah-bess-hutchinson',
     fullName: 'Sarah Bess Hutchinson',
     firstName: 'Sarah',
     lastName: 'Hutchinson',
