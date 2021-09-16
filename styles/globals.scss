@@ -3,6 +3,17 @@
 
 
 * { box-sizing: border-box; }
+@font-face {
+  font-family: 'Orpheus W01 Regular';
+  src: url('../assets/fonts/orpheus-regular/orpheus-regular.woff2') format('woff2'), url('../assets/fonts/orpheus-regular/orpheus-regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Orpheus W01 Italic';
+  src: url('../assets/fonts/orpheus-italic/orpheus-italic.woff2') format('woff2'),url('../assets/fonts/orpheus-italic/orpheus-italic.woff') format('woff');
+  font-display: swap;
+}
+
 
 html,
 body {
@@ -13,10 +24,9 @@ body {
 
 a {
   color: $text-black;
-  // text-decoration: none !important;
   &:hover {
     color: $text-black;
-    // text-decoration: underline !important;
+    cursor: pointer;
   }
 }
 a.btn {
@@ -36,7 +46,20 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', serif;
+  font-family: 'Orpheus W01 Regular', serif;
+  line-height: 2rem;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+.orpheus {
+  font-family: 'Orpheus W01 Regular', serif;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .bg-dark {

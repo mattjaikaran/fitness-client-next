@@ -14,7 +14,7 @@ import {
 } from 'react-bootstrap'
 import { BiSearch } from 'react-icons/bi'
 import { navRoutes } from '@/copy/navRoutes'
-import style from './Header.module.scss'
+import styles from './Header.module.scss'
 
 const Header = () => {
   const router = useRouter()
@@ -40,7 +40,7 @@ const Header = () => {
   }
   return (
     <Navbar
-      className={style.header}
+      className={styles.header}
       collapseOnSelect
       expand="lg"
       bg="dark"

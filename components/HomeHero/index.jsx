@@ -7,12 +7,12 @@ const FilterForm = () => {
     console.log('submit')
   }
   return (
-    <Form className="mt-5 pt-5" onSubmit={handleSubmit}>
-      <Row>
+    <Form className="mt-3 pt-5" onSubmit={handleSubmit}>
+      <Row className="mb-5">
         <Col md={4} className="mb-3">
           <Form.Group className="mb-3 d-inline" controlId="formBasicEmail">
             <Form.Select
-              className="bg-dark"
+              // className="bg-dark"
               aria-label="Floating label select example">
               <option>Where?</option>
               <option value="1">One</option>
@@ -24,7 +24,7 @@ const FilterForm = () => {
         <Col md={4} className="mb-3">
           <Form.Group className="mb-3 d-inline" controlId="formBasicPassword">
             <Form.Select
-              className="bg-dark"
+              // className="bg-dark"
               aria-label="Floating label select example">
               <option>When?</option>
               <option value="1">One</option>
@@ -36,7 +36,7 @@ const FilterForm = () => {
         <Col md={4} className="mb-3">
           <Form.Group className="mb-3 d-inline" controlId="formBasicCheckbox">
             <Form.Select
-              className="bg-dark"
+              // className="bg-dark"
               aria-label="Floating label select example">
               <option>What?</option>
               <option value="1">One</option>
@@ -52,9 +52,14 @@ const FilterForm = () => {
 
 const HomeHero = () => {
   return (
-    <div className={styles.hero}>
-      <Container className={`${styles.heroContent} text-center`}>
-        <h1 className={styles.title}></h1>
+    <div>
+      <Container fluid className={styles.hero}>
+        <Container className={`${styles.heroContent} text-center`}>
+          <h1 className={styles.title}>SSTUDIOSS</h1>
+        </Container>
+      </Container>
+      <Container>
+        <h5 className="pt-5 text-center">Find a Class</h5>
         <FilterForm className={styles.filterForm} />
       </Container>
     </div>

@@ -1,12 +1,12 @@
-import style from './PageHero.module.scss'
+import styles from './PageHero.module.scss'
 
 const PageHero = ({ title, img }) => {
   return (
     <div 
-      className={style.pageHero}
+      className={styles.pageHero}
       style={{ backgroundImage: `url(${img})` }}
     >
-      <h1 className={style.title}>{title}</h1>
+      <h1 className={styles.title}>{title}</h1>
     </div>
   )
 }

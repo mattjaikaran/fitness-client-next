@@ -22,7 +22,7 @@ const StudioLocations = ({ homePage }) => {
   }
   return (
     <Container className="text-center">
-      {homePage && <h2 className="mt-3">Studios</h2>}
+      {homePage && <h2 className="mt-5">Studios</h2>}
       <Row className="mt-5">{renderStudioDetails()}</Row>
     </Container>
   )

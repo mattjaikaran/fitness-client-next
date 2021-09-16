@@ -1,7 +1,7 @@
 import { instructorsList } from '@/copy/instructors'
 
 export default function handler(req, res) {
-  const { id } = req.query
-  const instructor = instructorsList.filter(instructor => instructor.id === id)
+  const { slug } = req.query
+  const instructor = instructorsList.filter(instructor => instructor.slug == slug)
   res.status(200).json(instructor)
 }

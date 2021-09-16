@@ -56,4 +56,3 @@ export const boxStyles = [
     btnText: 'Book'
   }
 ]
-

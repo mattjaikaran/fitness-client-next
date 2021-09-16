@@ -1,14 +1,14 @@
 import { Card, Button } from 'react-bootstrap'
 import styles from './Box.module.scss'
 
-const Box = ({ name, description, btnText, btnLink }) => {
+const Box = ({ name, description, btnText, btnLink, onClick }) => {
   return (
     <Card border="light" className={styles.box}>
       <h3 className="my-3">{name}</h3>
       <Card.Body className="boxCard d-flex flex-column">
         <p className={styles.boxDescription}>{description}</p>
         <div className="mt-3">
-          <Button variant="outline-secondary" href={btnLink}>
+          <Button variant="outline-secondary" href={btnLink} onClick={onClick ? onClick : null}>
             {btnText}
           </Button>
         </div>
