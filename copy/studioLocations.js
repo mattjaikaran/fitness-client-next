@@ -22,6 +22,7 @@ export const studioLocations = [
       boxes: [
         {
           id: 1,
+          slug: 'ethereal-box',
           name: 'Ethereal Box',
           size: 500,
           capacity: 16,
@@ -33,6 +34,7 @@ export const studioLocations = [
         },
         {
           id: 2,
+          slug: 'rooted-box',
           name: 'Rooted Box',
           size: 250,
           capacity: 8,
@@ -68,6 +70,7 @@ export const studioLocations = [
       boxes: [
         {
           id: 1,
+          slug: 'nuclear-box',
           name: 'Nuclear Box',
           size: 450,
           capacity: 12,
@@ -79,6 +82,7 @@ export const studioLocations = [
         },
         {
           id: 2,
+          slug: 'rooted-box',
           name: 'Rooted Box',
           size: 200,
           capacity: 6,

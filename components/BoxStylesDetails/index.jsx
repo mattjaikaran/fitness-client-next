@@ -1,6 +1,17 @@
-import { useState} from 'react'
-import { useRouter } from 'next/router'
-import { Container, Carousel, Row, Col, Tabs, Tab, Image, Card, Form, Button } from 'react-bootstrap'
+import { useState } from 'react'
+import { 
+  Container, 
+  Carousel, 
+  Row, 
+  Col, 
+  Tabs, 
+  Tab, 
+  Image, 
+  Card, 
+  Form, 
+  Button 
+} from 'react-bootstrap'
+import DateTimePicker from 'react-datetime-picker/dist/entry.nostyle'
 import {
   tribecaRootedSchedule,
   tribecaNuclearSchedule,
@@ -45,7 +56,7 @@ const FilterForm = () => {
         </Col>
         <Col sm={12} md={3}>
           <div className="d-grid">
-            <Button variant="outline-secondary" type="submit">
+            <Button size="lg" variant="outline-secondary" type="submit">
               Find a Class
             </Button>
           </div>
@@ -57,12 +68,18 @@ const FilterForm = () => {
 
 const BookingForm = () => {
   const [classTitle, setClassTitle] = useState('')
+  const [value, onChange] = useState(new Date())
   const [classDescription, setClassDescription] = useState('')
   const handleBookClass = (e) => {
     const bookingURL =
       'https://example.acuityscheduling.com/schedule.php?firstName=First&lastName=Last&phone=Phone&email=email@example.com'
     e.preventDefault()
     console.log('submit')
+    const classBookingDetails = {
+      classTitle,
+      value
+    }
+    console.log(classBookingDetails)
   }
   return (
     <Container className="mt-5">
@@ -80,16 +97,22 @@ const BookingForm = () => {
             <Form onSubmit={handleBookClass}>
               <h3>Boxing: Mitt Work</h3>
               <Form.Group className="mb-3" controlId="contactName">
-                <Form.Label>NAME</Form.Label>
+                <Form.Label>CLASS TITLE</Form.Label>
                 <Form.Control
                   type="text"
-                  name="name"
+                  name="classTitle"
                   value={classTitle}
                   onChange={(e) => setClassTitle(e.target.value)}
                 />
               </Form.Group>
+              <Form.Group className="mb-3" controlId="contactDateTime">
+                <Form.Label>CLASS TIME</Form.Label>
+                <div>
+                  <DateTimePicker onChange={onChange} value={value} />
+                </div>
+              </Form.Group>
               <div className="d-grid">
-                <Button type="submit" variant="outline-primary">
+                <Button size="lg" type="submit" variant="outline-primary">
                   Register
                 </Button>
               </div>
@@ -101,9 +124,7 @@ const BookingForm = () => {
   )
 }
 
-const BoxStylesDetails = ({ id }) => {
-  const router = useRouter()
-  const routerId = parseFloat(router.query.id) 
+const BoxStylesDetails = ({ slug }) => {
   const [bookClassVisible, setBookClassVisible] = useState(false)
   const renderBookClassForm = () => setBookClassVisible(!bookClassVisible)
   const [name, setName] = useState('')
@@ -111,6 +132,56 @@ const BoxStylesDetails = ({ id }) => {
   const [message, setMessage] = useState('')
   const [messageSuccess, setMessageSuccess] = useState(null)
   
+
+  const sliderImages = [
+    {
+      id: 1,
+      imgUrl:
+        'https://images.unsplash.com/photo-1599447421376-611783057464?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80'
+    },
+    {
+      id: 2,
+      imgUrl:
+        'https://images.unsplash.com/photo-1609218316109-9f284664dd49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80'
+    },
+    {
+      id: 3,
+      imgUrl:
+        'https://images.unsplash.com/photo-1551656941-dc4f2593028b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80'
+    }
+  ]
+
+  const renderCarouselImages = (imagesArray) => {
+    return imagesArray?.map(({ id, imgUrl }) => {
+      return (
+        <Carousel.Item key={id}>
+          <Image
+            className="d-block w-100"
+            src={imgUrl}
+            alt={`Carousel slide ${id}`}
+          />
+        </Carousel.Item>
+      )
+    })
+  }
+  
+  const renderBoxes = () => {
+    return boxStyles.map(box => {
+      if (box.slug === slug) {
+        return (
+          <Col xs={12} key={box.id}>
+            <Box
+              name={box.name}
+              slug={box.slug}
+              description={box.description}
+              btnText={box.btnText}
+              onClick={renderBookClassForm}
+            />
+          </Col>
+        )
+      }
+    })
+  }
   return (
     <Container fluid="xl">
       <Container>
@@ -118,14 +189,9 @@ const BoxStylesDetails = ({ id }) => {
         <Row className="text-center mt-5">
           <Col sm={0}></Col>
           <Col sm={6} md={4} className="px-1">
-            {routerId === id && (
-              <Box
-                name={boxStyles[routerId - 1].name}
-                description={boxStyles[routerId - 1].description}
-                btnText={boxStyles[routerId - 1].btnText}
-                onClick={renderBookClassForm}
-              />
-            )}
+            <Row>
+              {renderBoxes()}
+            </Row>
           </Col>
           <Col sm={0}></Col>
         </Row>
@@ -139,28 +205,8 @@ const BoxStylesDetails = ({ id }) => {
       />
       <Tabs defaultActiveKey="gallery" id="box-details-tabs" className="px-0">
         <Tab eventKey="gallery" title="Gallery">
-          <Carousel controls={false} interval={null}>
-            <Carousel.Item>
-              <Image
-                className="d-block w-100"
-                src="https://images.unsplash.com/photo-1599447421376-611783057464?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Image
-                className="d-block w-100"
-                src="https://images.unsplash.com/photo-1609218316109-9f284664dd49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-                alt="Second slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Image
-                className="d-block w-100"
-                src="https://images.unsplash.com/photo-1551656941-dc4f2593028b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-                alt="Third slide"
-              />
-            </Carousel.Item>
+          <Carousel interval={null} controls={false}>
+            {renderCarouselImages(sliderImages)}
           </Carousel>
         </Tab>
         <Tab eventKey="video" title="Video">
@@ -176,7 +222,15 @@ const BoxStylesDetails = ({ id }) => {
           />
         </Tab>
         <Tab eventKey="rates" title="Rates">
-          <RateTable box={tribecaRootedSchedule} />
+          <RateTable
+            box={
+              slug === 'rooted-box'
+                ? tribecaRootedSchedule
+                : slug === 'nuclear-box'
+                ? tribecaNuclearSchedule
+                : flatironNaturalSchedule
+            }
+          />
         </Tab>
       </Tabs>
     </Container>
