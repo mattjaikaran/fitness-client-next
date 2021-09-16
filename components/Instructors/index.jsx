@@ -6,14 +6,14 @@ const Instructors = () => {
   const renderInstructorCard = () => {
     return instructorsList.map((instructor) => {
       return (
-        <Col key={instructor.id} className="mb-3" md={4} sm={6}>
+        <Col key={instructor.id} className="mb-3 px-0 px-sm-2" md={4} sm={6}>
           <InstructorCard instructor={instructor} />
         </Col>
       )
     })
   }
   return (
-    <Container>
+    <Container fluid="xl">
       <h1 className="my-5 text-center">Instructors</h1>
       <Row>{renderInstructorCard()}</Row>
     </Container>

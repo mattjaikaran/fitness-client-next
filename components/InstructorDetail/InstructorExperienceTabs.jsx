@@ -1,6 +1,6 @@
 import { Container, Tabs, Tab, Row, Col } from 'react-bootstrap'
 
-const InstructorExperienceTabs = () => {
+const InstructorExperienceTabs = ({ experience }) => {
   return (
     <Container className="mt-3 p-md-5 d-none d-sm-flex">
       <Col></Col>
@@ -11,16 +11,16 @@ const InstructorExperienceTabs = () => {
           className="mb-3">
           <Tab eventKey="expertise" title="Expertise">
             <ul>
-              <li>Certified Instructor from CrossFit</li>
-              <li>Certified Instructor from Fight Club</li>
+              {experience?.expertise?.map((bullet) => (
+                <li key={bullet}>{bullet}</li>
+              ))}
             </ul>
           </Tab>
           <Tab eventKey="credentials" title="Credentials">
             <ul>
-              <li>
-                Bachelor of Science in Exercise Science at NYU
-              </li>
-              <li>I moved a building with my bare hands</li>
+              {experience?.credentials?.map((bullet) => (
+                <li key={bullet}>{bullet}</li>
+              ))}
             </ul>
           </Tab>
         </Tabs>

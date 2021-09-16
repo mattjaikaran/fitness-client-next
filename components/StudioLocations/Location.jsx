@@ -15,23 +15,26 @@ const Location = ({
 
       {address && description ? (
         <Card.Body className="d-flex flex-column">
-          <p>
+          <p className="orpheus">
             {address.street}
             <br />
             {address.city}, {address.state} {address.zip}
             <br />
             {address.phone}
           </p>
-          <p>{description}</p>
-          <div className="mt-auto">
-            <Button variant="outline-secondary" href={btnLink}>
+          <p className="orpheus">{description}</p>
+          <div className="mt-auto d-grid">
+            <Button
+              size="lg"
+              variant="outline-secondary"
+              href={btnLink}>
               {btnText}
             </Button>
           </div>
         </Card.Body>
       ) : (
         <>
-          <p>{text}</p>
+          <p className="orpheus mt-3">{text}</p>
         </>
       )}
     </Card>
