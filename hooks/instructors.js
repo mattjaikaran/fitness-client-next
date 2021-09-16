@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'http://localhost:3000/api/instructors'
+const API_URL = '/api/instructors'
 
 export async function getAllInstructorIds() {
   try {

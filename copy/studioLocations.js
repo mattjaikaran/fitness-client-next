@@ -1,6 +1,7 @@
 export const studioLocations = [
   {
     id: 1,
+    slug: 'tribeca',
     name: 'Tribeca',
     address: {
       street: '80 Warren St',
@@ -46,6 +47,7 @@ export const studioLocations = [
   },
   {
     id: 2,
+    slug: 'flatiron',
     name: 'Flatiron',
     address: {
       street: '80 Warren St',
@@ -58,7 +60,36 @@ export const studioLocations = [
     description:
       'A four box studio for record and stream, intimate engagements. One large open floor space for events, energizing group classes.',
     btnText: 'Explore',
-    btnLink: '/locations/flatiron'
+    btnLink: '/locations/flatiron',
+    pageDetails: {
+      subtitle:
+        'An intimate space ofering a bright and comfortable environment to broadcast your brand.',
+      subtitle2: 'Our energy her is soft, quiet, calming',
+      boxes: [
+        {
+          id: 1,
+          name: 'Nuclear Box',
+          size: 450,
+          capacity: 12,
+          boxDescription: [
+            'All white flooring, walls, and ceiling.',
+            'REFLECTIVE. ILLUMINARY. VAST.',
+            'This box is for confidence, crisp action and clear direction, spirit.'
+          ]
+        },
+        {
+          id: 2,
+          name: 'Rooted Box',
+          size: 200,
+          capacity: 6,
+          boxDescription: [
+            'Natural Wood floors, white walls, living plants.',
+            'EARTH. NATURE. ELEMENT.',
+            'This box is calm, soft and comfortable, the simplistic, basic tone is grounding.'
+          ]
+        }
+      ]
+    }
   },
   {
     id: 3,

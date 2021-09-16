@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import axios from 'axios'
 import { getAllInstructorIds, getInstructorData } from '@/hooks/instructors'
 import Layout from '@/components/Layout'
 import { Spinner } from 'react-bootstrap'
@@ -8,11 +7,10 @@ import InstructorDetail from '@/components/InstructorDetail'
 
 const InstructorPage = () => {
   const router = useRouter()
-  console.log('🚀 ~ file: [id].js ~ line 11 ~ InstructorPage ~ router', router)
   const [details, setDetails] = useState({})
   const renderDetails = async () => {
     try {
-      const response = await getInstructorData(router.query.id)
+      const response = await getInstructorData(router.query.slug)
       setDetails(response)
     } catch (error) {
       console.log(error)

@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import { Card } from 'react-bootstrap'
 
-const InstructorCard = ({ instructor: { id, slug, fullName, classesTaught } }) => {
+const InstructorCard = ({ instructor: { slug, fullName, classesTaught } }) => {
   return (
     <Link 
-      href={`/instructors/${id}`} 
-      // as={`/instructors/${slug}`} 
+      href={`/instructors/${slug}`}
       passHref>
       <Card border="light">
         <Card.Img variant="top" src={'https://via.placeholder.com/450x500'} />
