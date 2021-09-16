@@ -1,4 +1,5 @@
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import Image from 'next/image'
+import { Container, Row, Col } from 'react-bootstrap'
 import InstructorCarousel from './InstructorCarousel'
 
 const InstructorImages = ({ desktopImages, mobileImages }) => {
@@ -8,28 +9,36 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
         <Row>
           <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
-              fluid
+              width={500}
+              height={600}
+              layout="responsive"
               src={desktopImages[0].imgUrl}
               alt="instructor image 1"
             />
           </Col>
           <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
-              fluid
+              width={500}
+              height={600}
+              layout="responsive"
               src={desktopImages[1].imgUrl}
               alt="instructor image 2"
             />
           </Col>
           <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
-              fluid
+              width={500}
+              height={600}
+              layout="responsive"
               src={desktopImages[2].imgUrl}
               alt="instructor image 3"
             />
           </Col>
           <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
-              fluid
+              width={500}
+              height={600}
+              layout="responsive"
               src={desktopImages[3].imgUrl}
               alt="instructor image 4"
             />
@@ -39,23 +48,57 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
     }
     return (
       <Row className="justify-content-xl-center">
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
-          <Image fluid src={desktopImages[0].imgUrl} alt="instructor image 1" />
-        </Col>
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
+        <Col
+          md={6}
+          className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
           <Image
-            fluid
+            width={500}
+            height={600}
+            layout="responsive"
+            src={desktopImages[0].imgUrl}
+            alt="instructor image 1"
+          />
+        </Col>
+        <Col
+          md={6}
+          className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+          <Image
+            width={500}
+            height={300}
+            layout="responsive"
             src={desktopImages[1].imgUrl}
-            className="mb-md-3"
             alt="instructor image 2"
           />
-          <Image fluid src={desktopImages[2].imgUrl} alt="instructor image 3" />
+          <Image
+            width={500}
+            height={300}
+            layout="responsive"
+            className="mt-md-3"
+            src={desktopImages[2].imgUrl}
+            alt="instructor image 3"
+          />
         </Col>
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
-          <Image fluid src={desktopImages[3].imgUrl} alt="instructor image 4" />
+        <Col
+          md={6}
+          className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+          <Image
+            width={500}
+            height={600}
+            layout="responsive"
+            src={desktopImages[3].imgUrl}
+            alt="instructor image 4"
+          />
         </Col>
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
-          <Image fluid src={desktopImages[4].imgUrl} alt="instructor image 5" />
+        <Col
+          md={6}
+          className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+          <Image
+            width={500}
+            height={600}
+            layout="responsive"
+            src={desktopImages[4].imgUrl}
+            alt="instructor image 5"
+          />
         </Col>
       </Row>
     )

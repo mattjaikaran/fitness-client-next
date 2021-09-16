@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Image from 'next/image'
 import { 
   Container, 
   Carousel, 
@@ -6,7 +7,6 @@ import {
   Col, 
   Tabs, 
   Tab, 
-  Image, 
   Card, 
   Form, 
   Button 
@@ -87,15 +87,16 @@ const BookingForm = () => {
         <Row>
           <Col sm={6} className="mb-3 mb-md-0 p-0">
             <Image
-              fluid
-              className="d-block w-100"
-              src="https://via.placeholder.com/800x700"
+              width={1296}
+              height={729}
+              layout="responsive"
+              src="https://images.unsplash.com/photo-1551656941-dc4f2593028b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
               alt="First slide"
             />
           </Col>
-          <Col sm={6} className="pt-3 px-3 px-md-5">
+          <Col sm={6} className="pt-3 px-3 px-sm-5">
             <Form onSubmit={handleBookClass}>
-              <h3>Boxing: Mitt Work</h3>
+              <h3 className="mt-3">Boxing: Mitt Work</h3>
               <Form.Group className="mb-3" controlId="contactName">
                 <Form.Label>CLASS TITLE</Form.Label>
                 <Form.Control
@@ -156,7 +157,9 @@ const BoxStylesDetails = ({ slug }) => {
       return (
         <Carousel.Item key={id}>
           <Image
-            className="d-block w-100"
+            width={1296}
+            height={729}
+            layout="responsive"
             src={imgUrl}
             alt={`Carousel slide ${id}`}
           />
@@ -183,26 +186,27 @@ const BoxStylesDetails = ({ slug }) => {
     })
   }
   return (
-    <Container fluid="xl">
+    <Container fluid="xl" className="px-0">
       <Container>
         <FilterForm />
         <Row className="text-center mt-5">
           <Col sm={0}></Col>
           <Col sm={6} md={4} className="px-1">
-            <Row>
-              {renderBoxes()}
-            </Row>
+            <Row>{renderBoxes()}</Row>
           </Col>
           <Col sm={0}></Col>
         </Row>
         {bookClassVisible && <BookingForm />}
       </Container>
-      <Image
-        fluid
-        src="https://images.unsplash.com/photo-1535743686920-55e4145369b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80"
-        className="my-5"
-        alt="Box featured image"
-      />
+      <div className="my-5">
+        <Image
+          width={1296}
+          height={729}
+          layout="responsive"
+          src="https://images.unsplash.com/photo-1535743686920-55e4145369b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80"
+          alt="Box featured image"
+        />
+      </div>
       <Tabs defaultActiveKey="gallery" id="box-details-tabs" className="px-0">
         <Tab eventKey="gallery" title="Gallery">
           <Carousel interval={null} controls={false}>
@@ -211,15 +215,21 @@ const BoxStylesDetails = ({ slug }) => {
         </Tab>
         <Tab eventKey="video" title="Video">
           <Image
-            fluid
+            width={1296}
+            height={729}
+            layout="responsive"
             src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2550&q=80"
           />
         </Tab>
         <Tab eventKey="floorPlan" title="Floor Plan">
-          <Image
-            fluid
-            src="https://images.unsplash.com/photo-1552196527-bffef41ef674?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2126&q=80"
-          />
+          <div>
+            <Image
+              width={1296}
+              height={729}
+              layout="responsive"
+              src="https://images.unsplash.com/photo-1552196527-bffef41ef674?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2126&q=80"
+            />
+          </div>
         </Tab>
         <Tab eventKey="rates" title="Rates">
           <RateTable

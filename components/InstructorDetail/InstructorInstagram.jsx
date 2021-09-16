@@ -1,4 +1,5 @@
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import Image from 'next/image'
+import { Container, Row, Col } from 'react-bootstrap'
 import InstructorCarousel from './InstructorCarousel'
 
 const InstructorInstagram = ({ instagramHandle, imagesArray }) => {
@@ -7,7 +8,9 @@ const InstructorInstagram = ({ instagramHandle, imagesArray }) => {
       return (
         <Col key={id} xs={6} md={4} className="mb-3">
           <Image
-            className="img-fluid"
+            width={350}
+            height={350}
+            layout="responsive"
             src={imgUrl}
             alt={`Instructor Instagram Image ${id}`}
           />
@@ -21,12 +24,12 @@ const InstructorInstagram = ({ instagramHandle, imagesArray }) => {
       <h6 className="mt-3 mb-5">
         <a
           className="text-black"
-          href="https://instagram.com/"
+          href={`https://instagram.com/${instagramHandle}`}
           target="_blank"
           rel="noreferrer">
           @{instagramHandle}
         </a>{' '}
-        | 93.k Followers
+        | 93.4k Followers
       </h6>
       <Row className="hidden-xs">{renderImageGrid()}</Row>
       <InstructorCarousel mobile imagesArray={imagesArray} />

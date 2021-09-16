@@ -1,4 +1,5 @@
-import { Container, Carousel, Image } from 'react-bootstrap'
+import Image from 'next/image'
+import { Container, Carousel } from 'react-bootstrap'
 
 const InstructorCarousel = ({ imagesArray, mobile }) => {
   const renderCarouselImages = () => {
@@ -6,7 +7,9 @@ const InstructorCarousel = ({ imagesArray, mobile }) => {
       return (
         <Carousel.Item key={id}>
           <Image
-            className="d-block w-100"
+            width={350}
+            height={350}
+            layout="responsive"
             src={imgUrl}
             alt={`Carousel slide ${id}`}
           />

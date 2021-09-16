@@ -24,7 +24,7 @@ const eventList = [
   {
     id: 1,
     title: 'Yoga',
-    details: 'detail 1',
+    details: 'At Flatiron Location. Rooted Box',
     start: new Date('2021-09-29T07:00:00'),
     end: new Date('2021-09-29T08:00:00'),
     allDay: false,
@@ -33,7 +33,7 @@ const eventList = [
   {
     id: 2,
     title: 'Spin',
-    details: 'detail 1',
+    details: 'At Tribeca Location. Nuclear Box',
     start: new Date('2021-09-29T12:00:00'),
     end: new Date('2021-09-29T13:00:00'),
     allDay: false,
@@ -42,7 +42,7 @@ const eventList = [
   {
     id: 3,
     title: 'Hot Boxing',
-    details: 'detail 1',
+    details: 'At Tribeca Location. Nuclear Box',
     start: new Date('2021-09-29T15:00:00'),
     end: new Date('2021-09-29T16:00:00'),
     allDay: false,
@@ -51,7 +51,7 @@ const eventList = [
   {
     id: 4,
     title: 'Kick Boxing',
-    details: 'detail 1',
+    details: 'At Flatiron Location. Sensei Box',
     start: new Date('2021-09-30T15:00:00'),
     end: new Date('2021-09-30T16:00:00'),
     allDay: false,
@@ -59,24 +59,18 @@ const eventList = [
   }
 ]
 
-
-
 const CalendarDetails = () => {
   const [events, setEvents] = useState(eventList)
   const handleSelect = ({ start, end }) => {
     console.log(start, end)
-    // const title = window.prompt('New Event name')
-    // if (title)
-    //   this.setState({
-    //     events: [
-    //       ...this.state.events,
-    //       {
-    //         start,
-    //         end,
-    //         title
-    //       }
-    //     ]
-    //   })
+    const title = window.prompt('New Event name')
+    const details = {
+      start, end, title
+    }
+    if (title) {
+      setEvents(...events, details)
+    }
+    console.log(details)
   }
   return (
     <Container>

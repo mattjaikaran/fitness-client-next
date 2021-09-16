@@ -1,4 +1,5 @@
-import { Container, Row, Col, Image, Carousel } from 'react-bootstrap'
+import Image from 'next/image'
+import { Container, Row, Col, Carousel } from 'react-bootstrap'
 import styles from './CarouselHalfTextHalf.module.scss'
 
 const CarouselHalfTextHalf = ({ textCopy, images }) => {
@@ -9,14 +10,18 @@ const CarouselHalfTextHalf = ({ textCopy, images }) => {
           <Carousel interval={null} controls={false}>
             <Carousel.Item>
               <Image
-                className="d-block w-100"
+                width={950}
+                height={970}
+                layout="responsive"
                 src={images[0]}
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <Image
-                className="d-block w-100"
+                width={950}
+                height={970}
+                layout="responsive"
                 src={images[1]}
                 alt="Second slide"
               />
