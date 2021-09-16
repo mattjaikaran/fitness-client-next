@@ -42,7 +42,7 @@ const CustomerService = () => {
               <strong>GENERAL INQUIRY</strong>
             </p>
             <p>
-              <a className="text-muted" href="mailto:contact@sstudioss.com">
+              <a className="text-muted orpheus" href="mailto:contact@sstudioss.com">
                 contact@sstudioss.com
               </a>
             </p>
@@ -50,7 +50,7 @@ const CustomerService = () => {
               <strong>PHONE</strong>
             </p>
             <p>
-              <a className="text-muted" href="tel:2122330507">
+              <a className="text-muted orpheus" href="tel:2122330507">
                 (212) 233 0507
               </a>
             </p>
@@ -58,7 +58,7 @@ const CustomerService = () => {
               <strong>ADDRESS</strong>
             </p>
             <p>
-              <span className="text-muted">
+              <span className="text-muted orpheus">
                 145 W Broadway, <br />
                 New York, NY 100013
               </span>
@@ -68,7 +68,7 @@ const CustomerService = () => {
             </p>
             <p>
               <a
-                className="text-muted"
+                className="text-muted orpheus"
                 href="https://instagram.com/"
                 target="_blank"
                 rel="noreferrer">

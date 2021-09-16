@@ -4,7 +4,7 @@ import { teamList } from '@/copy/team'
 const Team = () => {
   console.log(teamList)
   return (
-    <Container>
+    <Container className="orpheus">
       <h1 className="my-5 text-center">Team</h1>
       <Row className="mt-5">
         <Col md={2}></Col>
@@ -12,8 +12,13 @@ const Team = () => {
           {teamList.columnOne.map((instructor) => {
             return (
               <p key={instructor.id}>
-                <strong>{instructor.name}</strong> -
-                {instructor.instagram}
+                <strong>{instructor.name}</strong> -{' '}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={`https://instagram.com/${instructor.instagram}`}>
+                  @{instructor.instagram}
+                </a>
               </p>
             )
           })}
@@ -22,8 +27,13 @@ const Team = () => {
           {teamList.columnTwo.map((instructor) => {
             return (
               <p key={instructor.id}>
-                <strong>{instructor.name}</strong> -
-                {instructor.instagram}
+                <strong>{instructor.name}</strong> -{' '}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={`https://instagram.com/${instructor.instagram}`}>
+                  @{instructor.instagram}
+                </a>
               </p>
             )
           })}

@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap'
 const Methodology = ({ title, p1, p2, p3, p4, p5 }) => {
   return (
-    <Container className="text-center">
+    <Container className="text-center orpheus">
       <Row className="p-5">
         <Col></Col>
         <Col md={6}>

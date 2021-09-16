@@ -3,7 +3,7 @@ import { curatedClassesAndEvents } from '@/copy/curate'
 
 const CuratedClassesAndEvents = () => {
   return (
-    <Container>
+    <Container className="orpheus">
       <Row>
         <Col sm={0}></Col>
         <Col md={6}>

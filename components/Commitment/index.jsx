@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const Commitment = () => {
   return (
-    <Container>
+    <Container className="orpheus">
       <Row>
         <Col sm={0}></Col>
         <Col sm={8}>

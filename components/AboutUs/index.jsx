@@ -3,7 +3,7 @@ import { about } from '@/copy/about'
 
 const AboutUs = () => {
   return (
-    <Container>
+    <Container className="orpheus">
       <Row>
         <Col sm={0}></Col>
         <Col md={6} lg={8}>

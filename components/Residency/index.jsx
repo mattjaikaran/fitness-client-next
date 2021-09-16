@@ -3,7 +3,7 @@ import { residency } from '@/copy/residency'
 
 const Residency = () => {
   return (
-    <Container>
+    <Container className="orpheus">
       <Row>
         <Col sm={0}></Col>
         <Col sm={6}>

@@ -8,7 +8,7 @@ const Box = ({ name, description, btnText, btnLink, onClick }) => {
       <Card.Body className="boxCard d-flex flex-column">
         <p className={styles.boxDescription}>{description}</p>
         <div className="mt-3">
-          <Button variant="outline-secondary" href={btnLink} onClick={onClick ? onClick : null}>
+          <Button size="lg" variant="outline-secondary" href={btnLink} onClick={onClick ? onClick : null}>
             {btnText}
           </Button>
         </div>

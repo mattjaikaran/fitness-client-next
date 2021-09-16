@@ -23,7 +23,7 @@ const Membership = () => {
     })
   }
   return (
-    <Container>
+    <Container className="orpheus">
       <Row>
         <Col sm={0}></Col>
         <Col sm={8}>
@@ -37,8 +37,17 @@ const Membership = () => {
             <Tab eventKey="athlete" title="Athlete">
               <ul>{renderAthleteDetails()}</ul>
               <p className="text-center mt-5">
-                <strong onClick={handleAthleteContract}>Click Here</strong> to
-                review our Athlete contract.
+                {!showAthleteContract ? (
+                  <>
+                    <strong onClick={handleAthleteContract}>Click Here</strong>{' '}
+                    to review our Athlete contract.
+                  </>
+                ) : (
+                  <>
+                    <strong onClick={handleAthleteContract}>Click</strong> to
+                    hide.
+                  </>
+                )}
               </p>
 
               {showAthleteContract && (
@@ -113,8 +122,18 @@ const Membership = () => {
             <Tab eventKey="provider" title="Provider">
               <ul>{renderProviderDetails()}</ul>
               <p className="text-center mt-5">
-                <strong onClick={handleGlossary}>Click Here</strong> to review
-                our Glossary.
+                {/* <strong onClick={handleGlossary}>Click Here</strong> to review
+                our Glossary. */}
+                {!showGlossary ? (
+                  <>
+                    <strong onClick={handleGlossary}>Click Here</strong> to
+                    review our Glossary.
+                  </>
+                ) : (
+                  <>
+                    <strong onClick={handleGlossary}>Click</strong> to hide.
+                  </>
+                )}
               </p>
 
               {showGlossary && <Glossary />}
