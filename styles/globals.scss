@@ -133,6 +133,25 @@ p {
   height: 50px;
 }
 
+//tabs 
+.tab-content {
+  font-family: 'Orpheus W01 Regular', serif !important;
+}
+.nav-tabs .nav-link.active {
+  color: black;
+  border-bottom: 3px solid black !important;
+  border-color: #fff #fff black !important;
+}
+.nav-tabs .nav-link {
+  border-color: #fff #fff #dee2e6 !important;
+  border-bottom: none !important;
+  color: #797979;
+  // font-size: 1.5rem;
+}
+.nav-tabs .nav-link:hover {
+  border-color: #fff #fff #dee2e6 !important;
+}
+
 @media (max-width: 767px) {
   .hidden-xs {
     display: none !important;

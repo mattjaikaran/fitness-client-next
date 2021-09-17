@@ -5,13 +5,15 @@ import Layout from '@/components/Layout'
 import { Spinner } from 'react-bootstrap'
 import InstructorDetail from '@/components/InstructorDetail'
 
-const InstructorPage = () => {
+const InstructorPage = ({ instructorData }) => {
+  console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData', instructorData)
   const router = useRouter()
   const [details, setDetails] = useState({})
   const renderDetails = async () => {
     try {
       const response = await getInstructorData(router.query.slug)
       setDetails(response)
+      
     } catch (error) {
       console.log(error)
     }
@@ -30,17 +32,21 @@ const InstructorPage = () => {
   )
 }
 
-// export async function getStaticPaths({ params }) {
+// export async function getStaticPaths(context) {
 //   const paths = await getAllInstructorIds()
-//   console.log(params);
+//   if (!paths) {
+//     return {
+//       notFound: true
+//     }
+//   }
 //   return {
-//     paths,
+//     paths: paths,
 //     fallback: 'blocking'
 //   }
 // }
 
 // export async function getStaticProps({ params }) {
-//   const instructorData = await getInstructorData(parseFloat(params.id))
+//   const instructorData = await getInstructorData(parseFloat(params.slug))
 //   return {
 //     props: {
 //       instructorData

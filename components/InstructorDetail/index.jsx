@@ -4,7 +4,7 @@ import InstructorImages from './InstructorImages'
 import InstructorExperienceTabs from './InstructorExperienceTabs'
 import InstructorExperienceCollapse from './InstructorExperienceCollapse'
 import InstructorInstagram from './InstructorInstagram'
-import './InstructorDetail.module.scss'
+// import './InstructorDetail.module.scss'
 
 const sampleMobileInstructorImages = [
   {
@@ -57,7 +57,6 @@ const sampleDesktopInstructorImages = [
 ]
 
 const InstructorDetail = ({ instructorDetail }) => {
-  console.log('🚀 ~ file: index.jsx ~ line 60 ~ InstructorDetail ~ instructorDetail', instructorDetail)
   return (
     <>
       <InstructorHeader
@@ -70,10 +69,10 @@ const InstructorDetail = ({ instructorDetail }) => {
       <InstructorCalendar />
       <InstructorImages
         desktopImages={
-          instructorDetail?.desktopPhotos || sampleDesktopInstructorImages
+          instructorDetail.desktopPhotos || sampleDesktopInstructorImages
         }
         mobileImages={
-          instructorDetail?.mobilePhotos || sampleMobileInstructorImages
+          instructorDetail.mobilePhotos || sampleMobileInstructorImages
         }
       />
       <InstructorExperienceTabs experience={instructorDetail?.experience} />
@@ -81,7 +80,7 @@ const InstructorDetail = ({ instructorDetail }) => {
       <InstructorInstagram
         instagramHandle={instructorDetail?.contact?.instagram}
         imagesArray={
-          instructorDetail?.mobilePhotos || sampleMobileInstructorImages
+          instructorDetail.mobilePhotos || sampleMobileInstructorImages
         }
       />
     </>

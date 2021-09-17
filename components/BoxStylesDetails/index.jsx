@@ -186,7 +186,7 @@ const BoxStylesDetails = ({ slug }) => {
     })
   }
   return (
-    <Container fluid="xl" className="px-0">
+    <Container fluid="xl" className="px-0 orpheus">
       <Container>
         <FilterForm />
         <Row className="text-center mt-5">
@@ -219,6 +219,7 @@ const BoxStylesDetails = ({ slug }) => {
             height={729}
             layout="responsive"
             src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2550&q=80"
+            alt="video"
           />
         </Tab>
         <Tab eventKey="floorPlan" title="Floor Plan">
@@ -228,6 +229,7 @@ const BoxStylesDetails = ({ slug }) => {
               height={729}
               layout="responsive"
               src="https://images.unsplash.com/photo-1552196527-bffef41ef674?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2126&q=80"
+              alt="floor plan"
             />
           </div>
         </Tab>

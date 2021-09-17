@@ -1,3 +1,11 @@
 @import 'react-big-calendar/lib/sass/styles';
 
+.instructorTabs {
+  font-family: 'Orpheus W01 Regular', serif;
+  margin-bottom: 1rem;
+  li {
+    width: 50% !important;
+  }
+}
+
 @media (max-width: 767px) {}

@@ -13,7 +13,7 @@ const RatesTabs = () => {
   return (
     <Container fluid="sm" className="px-0">
       <Tabs
-        id="controlled-tab-example"
+        id="rate-tabs"
         activeKey={key}
         onSelect={(k) => setKey(k)}
         className={styles.ratesTabs}>

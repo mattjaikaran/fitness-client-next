@@ -8,12 +8,18 @@ const Box = ({ slug, name, description, btnText, onClick }) => {
     return (
       <Card border="light" className={styles.box}>
         <h3 className="my-3">{name}</h3>
-        <Card.Body className="boxCard d-flex flex-column">
+        <Card.Body className="boxCard">
           <p className={styles.boxDescription}>{description}</p>
-          <div className="mt-3">
+          <Button
+            size="lg"
+            variant="outline-secondary mt-3 hidden-xs"
+            onClick={onClick}>
+            {btnText}
+          </Button>
+          <div className="d-grid mt-3">
             <Button
               size="lg"
-              variant="outline-secondary"
+              variant="outline-secondary visible-xs"
               onClick={onClick}>
               {btnText}
             </Button>
@@ -25,12 +31,18 @@ const Box = ({ slug, name, description, btnText, onClick }) => {
   return (
     <Card border="light" className={styles.box}>
       <h3 className="my-3">{name}</h3>
-      <Card.Body className="boxCard d-flex flex-column">
+      <Card.Body className="boxCard">
         <p className={styles.boxDescription}>{description}</p>
-        <div className="mt-3">
-          <Button 
-            size="lg" 
-            variant="outline-secondary" 
+        <Button
+          size="lg"
+          variant="outline-secondary mt-3 hidden-xs"
+          onClick={() => router.push(`/style/${slug}`)}>
+          {btnText}
+        </Button>
+        <div className="d-grid mt-3">
+          <Button
+            size="lg"
+            variant="outline-secondary visible-xs"
             onClick={() => router.push(`/style/${slug}`)}>
             {btnText}
           </Button>
