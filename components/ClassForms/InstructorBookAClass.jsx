@@ -4,7 +4,7 @@ import DateTimePicker from 'react-datetime-picker/dist/entry.nostyle'
 
 const InstructorBookAClass = () => {
   const [classTitle, setClassTitle] = useState('')
-  const [value, onChange] = useState(new Date())
+  const [value, onChange] = useState()
   const [email, setEmail] = useState('')
   const [location, setLocation] = useState('Tribeca')
   const [phone, setPhone] = useState('')

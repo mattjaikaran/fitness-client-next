@@ -68,7 +68,7 @@ const FilterForm = () => {
 
 const BookingForm = () => {
   const [classTitle, setClassTitle] = useState('')
-  const [value, onChange] = useState(new Date())
+  const [value, onChange] = useState()
   const [classDescription, setClassDescription] = useState('')
   const handleBookClass = (e) => {
     const bookingURL =
