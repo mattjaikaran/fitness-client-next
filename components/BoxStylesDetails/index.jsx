@@ -32,18 +32,17 @@ const FilterForm = () => {
       <Row>
         <Col md={3} className="mb-3">
           <Form.Select aria-label="Floating label select example">
-            <option>What?</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option>Where?</option>
+            <option value="Tribeca">Tribeca</option>
+            <option value="Flatiron">Flatiron</option>
           </Form.Select>
         </Col>
         <Col md={3} className="mb-3">
           <Form.Select aria-label="Floating label select example">
-            <option>Where?</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option>What?</option>
+            <option value="Yoga">Yoga</option>
+            <option value="Spin">Spin</option>
+            <option value="Kickboxing">Kickboxing</option>
           </Form.Select>
         </Col>
         <Col md={3} className="mb-5">

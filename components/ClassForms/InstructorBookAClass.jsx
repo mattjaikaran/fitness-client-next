@@ -8,6 +8,7 @@ const InstructorBookAClass = () => {
   const [email, setEmail] = useState('')
   const [location, setLocation] = useState('Tribeca')
   const [phone, setPhone] = useState('')
+  const [capacity, setCapacity] = useState('')
   const [classDescription, setClassDescription] = useState('')
   const [showDetails, setShowDetails] = useState(false)
   const handleBookClass = (e) => {
@@ -19,6 +20,7 @@ const InstructorBookAClass = () => {
       email,
       location,
       phone,
+      capacity,
       classDescription,
       status: 'pending'
     }
@@ -61,6 +63,14 @@ const InstructorBookAClass = () => {
                   value={value}
                 />
               </div>
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="bookClassCapacity">
+              <Form.Label>CAPACITY</Form.Label>
+              <Form.Control
+                type="text"
+                value={capacity}
+                onChange={(e) => setCapacity(e.target.value)}
+              />
             </Form.Group>
             <Form.Group className="mb-3" controlId="bookClassLocation">
               <Form.Label>EMAIL</Form.Label>
@@ -123,7 +133,10 @@ const InstructorBookAClass = () => {
                   <strong>Class Title</strong> - {classTitle}
                 </p>
                 <p className="mt-3">
-                  <strong>Class Time</strong> - {value.toLocaleString()}
+                  <strong>Class Time</strong> - {value?.toLocaleString()}
+                </p>
+                <p className="mt-3">
+                  <strong>Capacity</strong> - {capacity}
                 </p>
                 <p className="mt-3">
                   <strong>Location</strong> - {location}
