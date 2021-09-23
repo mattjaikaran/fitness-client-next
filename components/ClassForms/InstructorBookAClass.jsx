@@ -25,6 +25,17 @@ const InstructorBookAClass = () => {
     console.log(classBookingDetails)
     setShowDetails(true)
   }
+  const handleConfirm = (e) => {
+    const classBookingDetails = {
+      classTitle,
+      value,
+      email,
+      location,
+      phone,
+      classDescription,
+      status: 'booked'
+    }
+  }
   return (
     <Container>
       <Row>
@@ -104,7 +115,7 @@ const InstructorBookAClass = () => {
           {showDetails && (
             <Card className="orpheus mt-5  p-5">
               <Card.Body>
-                <Card.Title>Class Details</Card.Title>
+                <Card.Title>Confirm Class Details</Card.Title>
                 <p className="mt-3">
                   <strong>Instructor</strong> - <span>Dwayne</span>
                 </p>
@@ -124,7 +135,7 @@ const InstructorBookAClass = () => {
                   <strong>Class Description</strong> - {classDescription}
                 </p>
                 <Button size="lg" variant="outline-primary">
-                  Go somewhere
+                  Confirm
                 </Button>
               </Card.Body>
             </Card>
