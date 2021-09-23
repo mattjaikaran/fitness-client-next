@@ -2,7 +2,19 @@ export const navRoutes = [
   {
     id: 1,
     name: 'Locations',
-    link: '/locations'
+    link: '/locations',
+    submenu: [
+      {
+        id: 1,
+        name: 'Tribeca',
+        link: '/locations/tribeca'
+      },
+      {
+        id: 2,
+        name: 'Flatiron',
+        link: '/locations/flatiron'
+      }
+    ]
   },
   {
     id: 2,
@@ -34,7 +46,19 @@ export const navRoutes = [
   {
     id: 5,
     name: 'Style',
-    link: '/style'
+    link: '/style',
+    submenu: [
+      {
+        id: 1,
+        name: 'Rooted Box',
+        link: '/style/rooted-box'
+      },
+      {
+        id: 2,
+        name: 'Nuclear Box',
+        link: '/style/nuclear-box'
+      }
+    ]
   },
   {
     id: 6,
@@ -45,5 +69,5 @@ export const navRoutes = [
     id: 7,
     name: 'Membership',
     link: '/membership'
-  },
+  }
 ]

@@ -151,6 +151,9 @@ p {
 .nav-tabs .nav-link:hover {
   border-color: #fff #fff #dee2e6 !important;
 }
+.react-datetime-picker__wrapper {
+  border: none;
+}
 
 @media (max-width: 767px) {
   .hidden-xs {

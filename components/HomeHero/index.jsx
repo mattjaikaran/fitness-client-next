@@ -7,7 +7,7 @@ const FilterForm = () => {
     console.log('submit')
   }
   return (
-    <Form className="mt-3 pt-5" onSubmit={handleSubmit}>
+    <Form className="mt-3 pt-5 orpheus" onSubmit={handleSubmit}>
       <Row className="mb-5">
         <Col md={4} className="mb-3">
           <Form.Group className="mb-3 d-inline" controlId="formBasicEmail">
@@ -58,10 +58,12 @@ const HomeHero = () => {
           <h1 className={styles.title}>SSTUDIOSS</h1>
         </Container>
       </Container>
-      <Container>
+      
+      {/* for Phase 2 */}
+      {/* <Container>
         <h5 className="pt-5 text-center">Find a Class</h5>
         <FilterForm className={styles.filterForm} />
-      </Container>
+      </Container> */}
     </div>
   )
 }

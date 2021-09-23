@@ -18,7 +18,7 @@ export const studioLocations = [
     pageDetails: {
       subtitle:
         'An intimate space ofering a bright and comfortable environment to broadcast your brand.',
-      subtitle2: 'Our energy her is soft, quiet, calming',
+      subtitle2: 'Our energy here is soft, quiet, calming',
       boxes: [
         {
           id: 1,
@@ -66,7 +66,7 @@ export const studioLocations = [
     pageDetails: {
       subtitle:
         'An intimate space ofering a bright and comfortable environment to broadcast your brand.',
-      subtitle2: 'Our energy her is soft, quiet, calming',
+      subtitle2: 'Our energy here is soft, quiet, calming',
       boxes: [
         {
           id: 1,

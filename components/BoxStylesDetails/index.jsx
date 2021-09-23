@@ -109,7 +109,7 @@ const BookingForm = () => {
               <Form.Group className="mb-3" controlId="contactDateTime">
                 <Form.Label>CLASS TIME</Form.Label>
                 <div>
-                  <DateTimePicker onChange={onChange} value={value} />
+                  <DateTimePicker className="form-control" onChange={onChange} value={value} />
                 </div>
               </Form.Group>
               <div className="d-grid">

@@ -6,7 +6,7 @@ const Instructors = () => {
   const renderInstructorCard = () => {
     return instructorsList.map((instructor) => {
       return (
-        <Col key={instructor.id} className="mb-3 px-0 px-sm-2" md={4} sm={6}>
+        <Col key={instructor.id} className="mb-3 px-1 px-sm-2" xs={6} md={4} sm={6}>
           <InstructorCard instructor={instructor} />
         </Col>
       )
