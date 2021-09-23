@@ -65,7 +65,7 @@ const CalendarDetails = () => {
     console.log(start, end)
     const title = window.prompt('New Event name')
     const details = {
-      start, end, title
+      start, end, title: title || null
     }
     if (title) {
       setEvents(...events, details)
@@ -84,11 +84,12 @@ const CalendarDetails = () => {
           endAccessor="end"
           onSelectSlot={handleSelect}
           style={{ height: 500 }}
+          // views={['week', 'day', 'agenda']}
         />
         <h3 className="my-5 text-center">Book a Class</h3>
         <iframe
           src="https://app.squarespacescheduling.com/schedule.php?owner=23729247"
-          title="Schedule Appointment"
+          // title="Schedule Appointment"
           width="100%"
           height="800"
           frameBorder="0"
