@@ -1,6 +1,86 @@
 export const instructorsList = [
   {
     id: 1,
+    slug: 'allison-kamien',
+    fullName: 'Allison Kamien',
+    firstName: 'Allison',
+    lastName: 'Kamien',
+    classesTaught: ['Yoga', 'Kickboxing'],
+    bio: `Amanda’s ‘no-secret-sauce, just do the work’ approach to fitness has made her a
+      sought-after group instructor, personal trainer, and program coordinator on the
+      ground floor of the NYC fitness industry. A founding trainer of The Fhitting Room
+      and BFX, she’s branched into the digital fitness world, programming and teaching
+      for Aaptiv, NEOU, and TRX.`,
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1632923369/Allison%20Kamien/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-17_ldnc0v.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+        // imgUrl: ''
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        // imgUrl: 'https://via.placeholder.com/500x600.png',
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632923397/Allison%20Kamien/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-11_bf45l2.jpg'
+      },
+      {
+        id: 2,
+        // imgUrl: 'https://via.placeholder.com/500x290.png',
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632923397/Allison%20Kamien/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-9-DesktopInstGalleryPgVERTICAL540x673-2_bfudrm.jpg'
+      },
+      {
+        id: 3,
+        // imgUrl: 'https://via.placeholder.com/500x290.png',
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632923397/Allison%20Kamien/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-18_tad1fd.jpg'
+      },
+      {
+        id: 4,
+        // imgUrl: 'https://via.placeholder.com/500x600.png',
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632923397/Allison%20Kamien/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-11_ozihta.jpg'
+      }
+    ],
+    contact: {
+      email: 'ambutler2@gmail.com',
+      phone: '',
+      instagram: 'amandabutlernyc',
+      facebook: '',
+      tiktok: '',
+      website: 'amandabutlerfitness.com'
+    },
+    experience: {
+      expertise: [''],
+      credentials: ['']
+    }
+  },
+  {
+    id: 2,
     slug: 'amanda-butler',
     fullName: 'Amanda Butler',
     firstName: 'Amanda',
@@ -43,34 +123,24 @@ export const instructorsList = [
     desktopPhotos: [
       {
         id: 1,
-        // imgUrl: 'https://via.placeholder.com/500x600.png',
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632772301/AmandaButler/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-5614-DesktopInstGalleryPgVERTICAL540x673-2_a2yd5t.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632772341/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-4-DesktopClassDetailsPageVERTICAL555x452-5_mycj9d.jpg'
       },
       {
         id: 2,
-        // imgUrl: 'https://via.placeholder.com/500x290.png',
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632772341/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-2-DesktopClassDetailsPageVERTICAL555x452-4_eu2nw9.jpg'
-      },
-      {
-        id: 3,
-        // imgUrl: 'https://via.placeholder.com/500x290.png',
         imgUrl:
           'https://res.cloudinary.com/studiostudios/image/upload/v1632772340/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-5614-DesktopClassDetailsPageVERTICAL555x452-2_t7ohsi.jpg'
       },
       {
-        id: 4,
-        // imgUrl: 'https://via.placeholder.com/500x600.png',
+        id: 3,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632772341/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-4-DesktopClassDetailsPageVERTICAL555x452-5_mycj9d.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632772341/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-2-DesktopClassDetailsPageVERTICAL555x452-4_eu2nw9.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632772301/AmandaButler/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-6286-DesktopInstGalleryPgVERTICAL540x673-2_nnd4gs.jpg'
       }
-      // {
-      //   id: 5,
-      //   // imgUrl: 'https://via.placeholder.com/500x600.png',
-      //   imgUrl:
-      //     'https://res.cloudinary.com/studiostudios/image/upload/v1632772340/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-5614-DesktopClassDetailsPageVERTICAL555x452-2_t7ohsi.jpg'
-      // }
     ],
     contact: {
       email: 'ambutler2@gmail.com',
@@ -98,7 +168,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 2,
+    id: 3,
     slug: 'andrea-dusel-foil',
     fullName: 'Andrea Dusel Foil',
     firstName: 'Andrea',
@@ -137,22 +207,22 @@ export const instructorsList = [
       {
         id: 1,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632881556/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-6-DesktopClassDetailsPageVERTICAL555x452-2_myl0ts.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632881553/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-2470_m00ddf.jpg'
       },
       {
         id: 2,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632881555/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-22_ueylat.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632886257/Andrea%20Dusel%20Foil/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-2-DesktopInstGalleryPgVERTICAL540x673-6_dvzurp.jpg'
       },
       {
         id: 3,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632881553/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-2470_m00ddf.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632881555/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-22_ueylat.jpg'
       },
       {
         id: 4,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632881552/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-3-DesktopClassDetailsPageVERTICAL555x452-2_z7zhlw.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632881556/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-6-DesktopClassDetailsPageVERTICAL555x452-2_myl0ts.jpg'
       }
     ],
     contact: {
@@ -175,7 +245,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 3,
+    id: 4,
     slug: 'angel-aulet',
     fullName: 'Angel Aulet',
     firstName: 'Angel',
@@ -214,17 +284,17 @@ export const instructorsList = [
       {
         id: 1,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-ClassDetailsHORIZONTAL555x369--4_qox6ki.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-6_fgcwf1.jpg'
       },
       {
         id: 2,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-ClassDetailsHORIZONTAL555x369--3_yw7lav.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-_pfw67o.jpg'
       },
       {
         id: 3,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-ClassDetailsHORIZONTAL555x369-_p2jl7j.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-ClassDetailsHORIZONTAL555x369--3_yw7lav.jpg'
       },
       {
         id: 4,
@@ -234,15 +304,15 @@ export const instructorsList = [
       {
         id: 5,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452--DesktopClassDetailsPageVERTICAL555x452-6_l88gi5.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-7_wicwli.jpg'
       }
     ],
     contact: {
-      email: 'hello@dwayne.com',
+      email: 'hello@angel.com',
       phone: '9175550198',
-      instagram: 'dwaynebaileyfitness',
-      facebook: 'dwaynebaileyfitness',
-      tiktok: 'dwaynebaileyfitness'
+      instagram: 'angelaulet',
+      facebook: '',
+      tiktok: ''
     },
     experience: {
       expertise: [
@@ -256,7 +326,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 4,
+    id: 5,
     slug: 'brittany-watts',
     fullName: 'Brittany Watts',
     firstName: 'Brittany',
@@ -299,17 +369,17 @@ export const instructorsList = [
       {
         id: 1,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632664094/BrittanyWatts/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-4-DesktopInstGalleryPgVERTICAL540x673-2_agefsd.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632664094/BrittanyWatts/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-2-DesktopInstGalleryPgVERTICAL540x673-3_ez8hbr.jpg'
       },
       {
         id: 2,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632664094/BrittanyWatts/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-5076_xoaadr.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632664094/BrittanyWatts/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-4-DesktopInstGalleryPgVERTICAL540x673-2_agefsd.jpg'
       },
       {
         id: 3,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632664094/BrittanyWatts/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-2-DesktopInstGalleryPgVERTICAL540x673-3_ez8hbr.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632664094/BrittanyWatts/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-5076_xoaadr.jpg'
       },
       {
         id: 4,
@@ -336,13 +406,13 @@ export const instructorsList = [
     }
   },
   {
-    id: 5,
+    id: 6,
     slug: 'cam-norsworthy',
     fullName: 'Cam Norsworthy',
     firstName: 'Cam',
     lastName: 'Norsworthy',
     classesTaught: ['Yoga', 'Spin'],
-    bio: 'Sarah is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis adipisci molestiae esse quod ratione at laudantium ipsam voluptatum culpa magnam libero illum eligendi dolore, aspernatur perferendis',
+    bio: '',
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632663893/Cam%20Norsworthy/Desktop-InstGridHeadshot/DesktopHEADSHOT545x468-9_ehgbpf.jpg',
     mobilePhotos: [
@@ -375,22 +445,22 @@ export const instructorsList = [
       {
         id: 1,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632663925/Cam%20Norsworthy/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-45_bblsz4.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632663925/Cam%20Norsworthy/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-52_g6ry5n.jpg'
       },
       {
         id: 2,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632663925/Cam%20Norsworthy/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-39_et3neu.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632663925/Cam%20Norsworthy/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-45_bblsz4.jpg'
       },
       {
         id: 3,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632663925/Cam%20Norsworthy/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-52_g6ry5n.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632663924/Cam%20Norsworthy/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-62_dwyjw3.jpg'
       },
       {
         id: 4,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632663924/Cam%20Norsworthy/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-62_dwyjw3.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632663925/Cam%20Norsworthy/Desktop-InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-39_et3neu.jpg'
       }
     ],
     contact: {
@@ -412,7 +482,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 6,
+    id: 7,
     slug: 'izzy-van-hall',
     fullName: 'Izzy Van Hall',
     firstName: 'Izzy',
@@ -455,17 +525,17 @@ export const instructorsList = [
       {
         id: 1,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632540206/Izzy%20Van%20Hall/InstructorGalleryPage/DESKTOP/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673--DesktopInstGalleryVertical-5_upcat6.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632540206/Izzy%20Van%20Hall/InstructorGalleryPage/DESKTOP/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673--DesktopInstGalleryVertical-3_oea0la.jpg'
       },
       {
         id: 2,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632540206/Izzy%20Van%20Hall/InstructorGalleryPage/DESKTOP/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673--DesktopInstGalleryVertical-3_oea0la.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632540206/Izzy%20Van%20Hall/InstructorGalleryPage/DESKTOP/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673--DesktopInstGalleryVertical-2_jkn1t4.jpg'
       },
       {
         id: 3,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632540206/Izzy%20Van%20Hall/InstructorGalleryPage/DESKTOP/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673--DesktopInstGalleryVertical-2_jkn1t4.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632540206/Izzy%20Van%20Hall/InstructorGalleryPage/DESKTOP/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673--DesktopInstGalleryVertical-5_upcat6.jpg'
       },
       {
         id: 4,
@@ -493,7 +563,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 7,
+    id: 8,
     slug: 'jay-markland',
     fullName: 'Jay Markland',
     firstName: 'Jay',
@@ -577,7 +647,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 8,
+    id: 9,
     slug: 'jermaine-bailey',
     fullName: 'Jermaine Bailey',
     firstName: 'Jermaine',
@@ -661,5 +731,375 @@ export const instructorsList = [
         'ISSA Personal Trainer Cert'
       ]
     }
+  },
+  {
+    id: 9,
+    slug: 'mary-onyango',
+    fullName: 'Mary Onyango',
+    firstName: 'Mary',
+    lastName: 'Onyango',
+    classesTaught: ['Yoga', 'Kickboxing'],
+    bio: ``,
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1632798864/Mary%20Onyango/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468--DesktopHeadshot545x468-2_xfbjtk.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632798888/Mary%20Onyango/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-5_qkefei.jpg'
+      },
+      {
+        id: 2,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632798939/Mary%20Onyango/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452--DesktopClassDetailsPageVERTICAL555x452-4_i6mmef.jpg'
+      },
+      {
+        id: 3,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632798889/Mary%20Onyango/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-2_riu8dw.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632798889/Mary%20Onyango/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-4_nzciyv.jpg'
+      }
+    ],
+    contact: {
+      email: '',
+      phone: '',
+      instagram: '',
+      facebook: '',
+      tiktok: '',
+      website: ''
+    },
+    experience: {
+      expertise: [``],
+      credentials: ['']
+    }
+  },
+  {
+    id: 9,
+    slug: 'michele-jongeneel',
+    fullName: 'Michele Jongeneel',
+    firstName: 'Michele',
+    lastName: 'Jongeneel',
+    classesTaught: ['Yoga', 'Kickboxing'],
+    bio: `
+      Michele received her 700 hour classical Pilates certification with Brooke
+      Siler at RE:AB Pilates in NYC in 2007. Michele is a professional dancer
+      and aerialist in NYC and is currently training in the circus arts. She has
+      performed extensively with the world renowned off-broadway show,
+      Fuerza Bruta.
+      Michele is the founder of Fysiek Freak Pilates and Fitness where she
+      offers her extensive expertise in Pilates, Yoga, and movement through
+      in-person and online private training with purpose to transform and
+      change not only bodies and but lives. 
+    `,
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1632533127/Michele%20Jongeneel/InstructorGridPage%20%28headshot%29/INSTRUCTORIMAGEGRID-DESKTOP-545x468-_aumlc1.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632534150/Michele%20Jongeneel/InstructorGalleryPage/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673-0219_kugzs8.jpg'
+      },
+      {
+        id: 2,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632534150/Michele%20Jongeneel/InstructorGalleryPage/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673-1509_gqdm6i.jpg'
+      },
+      {
+        id: 3,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632534150/Michele%20Jongeneel/InstructorGalleryPage/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673-_ahfnz3.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632534150/Michele%20Jongeneel/InstructorGalleryPage/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673-8791_ikp94d.jpg'
+      }
+    ],
+    contact: {
+      email: 'michijongeneel@hotmail.com ',
+      phone: '',
+      instagram: 'fysiekfreak_pilates',
+      facebook: '',
+      tiktok: '',
+      website: ''
+    },
+    experience: {
+      expertise: [``],
+      credentials: ['']
+    }
+  },
+  {
+    id: 9,
+    slug: 'rachel-ackley',
+    fullName: 'Rachel Ackley',
+    firstName: 'Rachel',
+    lastName: 'Ackley',
+    classesTaught: ['Yoga', 'Kickboxing'],
+    bio: ``,
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1632886466/Rachel%20Ackley/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-28_wblzgg.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632886442/Rachel%20Ackley/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-12_sxc4bi.jpg'
+      },
+      {
+        id: 2,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632886442/Rachel%20Ackley/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-20_ssxaev.jpg'
+      },
+      {
+        id: 3,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632886442/Rachel%20Ackley/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-24_uh1fd3.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632886442/Rachel%20Ackley/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-3-DesktopInstGalleryPgVERTICAL540x673-3_j4arf5.jpg'
+      },
+      {
+        id: 5,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632886444/Rachel%20Ackley/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-17_p8fbfd.jpg'
+      }
+    ],
+    contact: {
+      email: '',
+      phone: '',
+      instagram: '',
+      facebook: '',
+      tiktok: '',
+      website: ''
+    },
+    experience: {
+      expertise: [``],
+      credentials: ['']
+    }
+  },
+  {
+    id: 10,
+    slug: 'victoria-gibbs',
+    fullName: 'Victoria Gibbs',
+    firstName: 'Victoria',
+    lastName: 'Gibbs',
+    classesTaught: ['Yoga', 'Kickboxing'],
+    bio: ``,
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1632853319/Victoria%20Gibbs/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-1_dbz5wg.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632853137/Victoria%20Gibbs/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-7671_a19mo3.jpg'
+      },
+      {
+        id: 2,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632853137/Victoria%20Gibbs/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-1_g9txbp.jpg'
+      },
+      {
+        id: 3,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632853137/Victoria%20Gibbs/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-1-2_fd7ars.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632853137/Victoria%20Gibbs/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-4116_gor5tq.jpg'
+      },
+      {
+        id: 5,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632853137/Victoria%20Gibbs/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-3767_gsu3xv.jpg'
+      }
+    ],
+    contact: {
+      email: '',
+      phone: '',
+      instagram: '',
+      facebook: '',
+      tiktok: '',
+      website: ''
+    },
+    experience: {
+      expertise: [``],
+      credentials: ['']
+    }
   }
+  // {
+  //   id: 10,
+  //   slug: '',
+  //   fullName: 'Mary Onyango',
+  //   firstName: 'Mary',
+  //   lastName: 'Onyango',
+  //   classesTaught: ['Yoga', 'Kickboxing'],
+  //   bio: ``,
+  //   featuredPhoto: '',
+  //   mobilePhotos: [
+  //     {
+  //       id: 1,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 2,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 3,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 4,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 5,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 6,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     }
+  //   ],
+  //   desktopPhotos: [
+  //     {
+  //       id: 1,
+  //       imgUrl: ''
+  //     },
+  //     {
+  //       id: 2,
+  //       imgUrl: ''
+  //     },
+  //     {
+  //       id: 3,
+  //       imgUrl: ''
+  //     },
+  //     {
+  //       id: 4,
+  //       imgUrl: ''
+  //     }
+  //   ],
+  //   contact: {
+  //     email: '',
+  //     phone: '',
+  //     instagram: '',
+  //     facebook: '',
+  //     tiktok: '',
+  //     website: ''
+  //   },
+  //   experience: {
+  //     expertise: [``],
+  //     credentials: ['']
+  //   }
+  // },
 ]

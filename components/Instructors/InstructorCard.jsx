@@ -13,8 +13,8 @@ const InstructorCard = ({ instructor: { slug, fullName, classesTaught, featuredP
           src={featuredPhoto}
           alt="instructor featured image" />
         <Card.Body className="text-center">
-          <h6>{fullName}</h6>
-          <p>
+          <h5>{fullName}</h5>
+          <p className="montserrat">
             <small>
               {classesTaught.length > 1
                 ? classesTaught.join(' | ')

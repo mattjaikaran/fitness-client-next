@@ -29,7 +29,7 @@ const InstructorInstagram = ({ instagramHandle, imagesArray }) => {
           rel="noreferrer">
           @{instagramHandle}
         </a>{' '}
-        | 93.4k Followers
+        {/* | 93.4k Followers */}
       </h6>
       {/* <Row className="hidden-xs">{renderImageGrid()}</Row>
       <InstructorCarousel mobile imagesArray={imagesArray} /> */}
