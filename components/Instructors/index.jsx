@@ -5,6 +5,7 @@ import { instructorsList } from '@/copy/instructors'
 
 const Instructors = () => {
   const [instructors, setInstructors] = useState(instructorsList)
+  console.log('instructors', instructors);
   
   const renderInstructorCard = () => {
     return instructors.map((instructor) => {

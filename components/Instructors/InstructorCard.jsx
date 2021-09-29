@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { Card } from 'react-bootstrap'
 
 const InstructorCard = ({ instructor: { slug, fullName, classesTaught, featuredPhoto } }) => {
-  console.log(featuredPhoto)
   return (
     <Link href={`/instructors/${slug}`} passHref>
       <Card border="light">

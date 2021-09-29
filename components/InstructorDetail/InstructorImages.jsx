@@ -4,7 +4,7 @@ import InstructorCarousel from './InstructorCarousel'
 
 const InstructorImages = ({ desktopImages, mobileImages }) => {
   const renderImageGrid = () => {
-    if (desktopImages.length === 4) {
+    if (desktopImages?.length === 4) {
       return (
         <Row>
           <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
