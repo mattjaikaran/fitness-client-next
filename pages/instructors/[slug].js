@@ -16,6 +16,7 @@ const InstructorPage = ({ instructorData }) => {
       console.log('response', response);
       // console.log('response2', response2);
       setDetails(response)
+      console.log('details', details)
     } catch (error) {
       console.log(error)
     }
@@ -24,7 +25,13 @@ const InstructorPage = ({ instructorData }) => {
 
   return (
     <Layout>
-      <InstructorDetail instructorDetail={details} />
+      {details ? (
+        <InstructorDetail instructorDetail={details} />
+      ) : (
+        <Spinner animation="border" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </Spinner>
+      )}
     </Layout>
   )
 }

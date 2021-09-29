@@ -39,7 +39,7 @@ import InstructorInstagram from './InstructorInstagram'
 const InstructorDetail = ({ instructorDetail }) => {
   // const router = useRouter()
   // const [details, setDetails] = useState(instructorDetail)
-  console.log('instructor desktop photos', instructorDetail);
+  console.log('instructorDetail', instructorDetail)
   return (
     <>
       <InstructorHeader
@@ -51,20 +51,14 @@ const InstructorDetail = ({ instructorDetail }) => {
       />
       {/* <InstructorCalendar /> */}
       <InstructorImages
-        desktopImages={
-          instructorDetail?.desktopPhotos
-        }
-        mobileImages={
-          instructorDetail?.mobilePhotos
-        }
+        desktopPhotos={instructorDetail.desktopPhotos}
+        mobilePhotos={instructorDetail.mobilePhotos}
       />
       <InstructorExperienceTabs experience={instructorDetail?.experience} />
       <InstructorExperienceCollapse experience={instructorDetail?.experience} />
       <InstructorInstagram
         instagramHandle={instructorDetail?.contact?.instagram}
-        imagesArray={
-          instructorDetail?.mobilePhotos
-        }
+        imagesArray={instructorDetail?.mobilePhotos}
       />
     </>
   )

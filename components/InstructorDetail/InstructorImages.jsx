@@ -2,9 +2,13 @@ import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap'
 import InstructorCarousel from './InstructorCarousel'
 
-const InstructorImages = ({ desktopImages, mobileImages }) => {
+const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
+  console.log(
+    '🚀 ~ file: InstructorImages.jsx ~ line 6 ~ InstructorImages ~ desktopPhotos',
+    desktopPhotos
+  )
   const renderImageGrid = () => {
-    if (desktopImages?.length === 4) {
+    if (desktopPhotos.length === 4) {
       return (
         <Row>
           <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
@@ -12,7 +16,7 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopImages[0].imgUrl}
+              src={desktopPhotos[0].imgUrl}
               alt="instructor image 1"
             />
           </Col>
@@ -21,7 +25,7 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopImages[1].imgUrl}
+              src={desktopPhotos[1].imgUrl}
               alt="instructor image 2"
             />
           </Col>
@@ -30,7 +34,7 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopImages[2].imgUrl}
+              src={desktopPhotos[2].imgUrl}
               alt="instructor image 3"
             />
           </Col>
@@ -39,7 +43,7 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopImages[3].imgUrl}
+              src={desktopPhotos[3].imgUrl}
               alt="instructor image 4"
             />
           </Col>
@@ -55,7 +59,7 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
             width={500}
             height={600}
             layout="responsive"
-            src={desktopImages[0].imgUrl}
+            src={desktopPhotos[0].imgUrl}
             alt="instructor image 1"
           />
         </Col>
@@ -66,7 +70,7 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
             width={500}
             height={300}
             layout="responsive"
-            src={desktopImages[1].imgUrl}
+            src={desktopPhotos[1].imgUrl}
             alt="instructor image 2"
           />
           <Image
@@ -74,7 +78,7 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
             height={300}
             layout="responsive"
             className="mt-md-3"
-            src={desktopImages[2].imgUrl}
+            src={desktopPhotos[2].imgUrl}
             alt="instructor image 3"
           />
         </Col>
@@ -85,7 +89,7 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
             width={500}
             height={600}
             layout="responsive"
-            src={desktopImages[3].imgUrl}
+            src={desktopPhotos[3].imgUrl}
             alt="instructor image 4"
           />
         </Col>
@@ -96,7 +100,7 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
             width={500}
             height={600}
             layout="responsive"
-            src={desktopImages[4].imgUrl}
+            src={desktopPhotos[4].imgUrl}
             alt="instructor image 5"
           />
         </Col>
@@ -105,8 +109,8 @@ const InstructorImages = ({ desktopImages, mobileImages }) => {
   }
   return (
     <Container fluid="xl" className="mt-3 p-md-5">
-      {renderImageGrid()}
-      <InstructorCarousel mobile mobileImages={mobileImages} />
+      {desktopPhotos && renderImageGrid()}
+      <InstructorCarousel mobile mobileImages={mobilePhotos} />
     </Container>
   )
 }

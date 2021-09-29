@@ -50,7 +50,8 @@ const InstructorHeader = ({
                 </small>
               </p>
               <p className="orpheus mt-3 py-3 px-lg-5">{bio}</p>
-              <Button
+              {/* commented out for launch */}
+              {/* <Button
                 size="lg"
                 variant="outline-primary hidden-xs"
                 className="mt-3"
@@ -65,7 +66,7 @@ const InstructorHeader = ({
                   onClick={renderContact}>
                   Contact
                 </Button>
-              </div>
+              </div> */}
             </Col>
             <Col sm={0}></Col>
           </Row>
