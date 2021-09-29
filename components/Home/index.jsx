@@ -10,8 +10,8 @@ const Home = () => {
       <HomeHero />
       <TextWithCTA
         text={homeCopy.descriptionOne.copy}
-        btnText={homeCopy.descriptionOne.btnText}
-        btnLink={homeCopy.descriptionOne.btnLink}
+        // btnText={homeCopy.descriptionOne.btnText}
+        // btnLink={homeCopy.descriptionOne.btnLink}
       />
       <CarouselHalfTextHalf
         textCopy={homeCopy.carouselText}

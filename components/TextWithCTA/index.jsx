@@ -6,9 +6,11 @@ const TextWithCTA = ({ text, btnText, btnLink }) => {
     <div className={styles.textWithCTA}>
       <Container className="py-5 p-sm-5">
         <h5 className={`mb-5 ${styles.text}`}>{text}</h5>
-        <Button size="lg" variant="outline-primary" href={btnLink}>
-          {btnText}
-        </Button>
+        {btnText && (
+          <Button size="lg" variant="outline-primary" href={btnLink}>
+            {btnText}
+          </Button>
+        )}
       </Container>
     </div>
   )
