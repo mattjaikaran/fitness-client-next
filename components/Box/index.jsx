@@ -33,20 +33,24 @@ const Box = ({ slug, name, description, btnText, onClick }) => {
       <h3 className="my-3">{name}</h3>
       <Card.Body className="boxCard">
         <p className={styles.boxDescription}>{description}</p>
-        <Button
-          size="lg"
-          variant="outline-secondary mt-3 hidden-xs"
-          onClick={() => router.push(`/style/${slug}`)}>
-          {btnText}
-        </Button>
-        <div className="d-grid mt-3">
-          <Button
-            size="lg"
-            variant="outline-secondary visible-xs"
-            onClick={() => router.push(`/style/${slug}`)}>
-            {btnText}
-          </Button>
-        </div>
+        {btnText && (
+          <>
+            <Button
+              size="lg"
+              variant="outline-secondary mt-3 hidden-xs"
+              onClick={() => router.push(`/style/${slug}`)}>
+              {btnText}
+            </Button>
+            <div className="d-grid mt-3">
+              <Button
+                size="lg"
+                variant="outline-secondary visible-xs"
+                onClick={() => router.push(`/style/${slug}`)}>
+                {btnText}
+              </Button>
+            </div>
+          </>
+        )}
       </Card.Body>
     </Card>
   )

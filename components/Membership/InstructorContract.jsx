@@ -24,7 +24,8 @@ const InstructorContract = ({ handleShow, handleClose, show }) => {
           reservation, the talent authorizes the Entity to draw the
           fee for the Box reservation.`}
       </p>
-      <div className="d-grid text-center mt-5">
+      
+      {/* <div className="d-grid text-center mt-5">
         <div className="d-block">
           <Button
             className="hidden-xs"
@@ -39,7 +40,8 @@ const InstructorContract = ({ handleShow, handleClose, show }) => {
           onClick={handleShow}>
           Download PDF
         </Button>
-      </div>
+      </div> */}
+
       <div className="mt-5">
         <p>{`Let's continue the conversation and explore this partnership`}</p>
         <p className="mt-5">

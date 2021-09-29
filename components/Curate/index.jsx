@@ -15,6 +15,9 @@ const Curate = ({
           <h2 className="mt-4">{title2}</h2>
           <h6 className="mt-5">{paragraphOne}</h6>
           <h6 className="mt-5">{paragraphTwo}</h6>
+          <div className="mt-5">
+            <h6>Curated classes launching January 2022</h6>
+          </div>
         </Col>
         <Col></Col>
       </Row>

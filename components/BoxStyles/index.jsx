@@ -13,7 +13,7 @@ const BoxStyles = () => {
             name={name}
             slug={slug}
             description={description}
-            btnText={btnText}
+            // btnText={btnText}
           />
         </Col>
       )

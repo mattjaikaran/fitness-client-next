@@ -1,16 +1,19 @@
 export const instructorsList = [
   {
     id: 1,
-    slug: 'rachel-ackerley',
-    fullName: 'Rachel Ackerley',
-    firstName: 'Rachel',
-    lastName: 'Ackerley',
-    classesTaught: ['Yoga'],
-    bio: 'Rachel is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis adipisci molestiae esse quod ratione at laudantium ipsam voluptatum culpa magnam libero illum eligendi dolore, aspernatur perferendis',
+    slug: 'amanda-butler',
+    fullName: 'Amanda Butler',
+    firstName: 'Amanda',
+    lastName: 'Butler',
+    classesTaught: ['Yoga', 'Kickboxing'],
+    bio: 'Amanda is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis adipisci molestiae esse quod ratione at laudantium ipsam voluptatum culpa magnam libero illum eligendi dolore, aspernatur perferendis',
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1632799070/AmandaButler/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-5136_oc4in9.jpg',
     mobilePhotos: [
       {
         id: 1,
         imgUrl: 'https://via.placeholder.com/350x350.png'
+        // imgUrl: ''
       },
       {
         id: 2,
@@ -36,31 +39,42 @@ export const instructorsList = [
     desktopPhotos: [
       {
         id: 1,
-        imgUrl: 'https://via.placeholder.com/500x600.png'
+        // imgUrl: 'https://via.placeholder.com/500x600.png',
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632772340/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-5561_jhakxq.jpg'
       },
       {
         id: 2,
-        imgUrl: 'https://via.placeholder.com/500x290.png'
+        // imgUrl: 'https://via.placeholder.com/500x290.png',
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632772341/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-2-DesktopClassDetailsPageVERTICAL555x452-4_eu2nw9.jpg'
       },
       {
         id: 3,
-        imgUrl: 'https://via.placeholder.com/500x290.png'
+        // imgUrl: 'https://via.placeholder.com/500x290.png',
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632772340/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-5614-DesktopClassDetailsPageVERTICAL555x452-2_t7ohsi.jpg'
       },
       {
         id: 4,
-        imgUrl: 'https://via.placeholder.com/500x600.png'
+        // imgUrl: 'https://via.placeholder.com/500x600.png',
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632772341/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-4-DesktopClassDetailsPageVERTICAL555x452-5_mycj9d.jpg'
       },
       {
         id: 5,
-        imgUrl: 'https://via.placeholder.com/500x600.png'
+        // imgUrl: 'https://via.placeholder.com/500x600.png',
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632772340/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-5614-DesktopClassDetailsPageVERTICAL555x452-2_t7ohsi.jpg'
       }
     ],
     contact: {
-      email: 'hello@rachel.com',
+      email: 'ambutler2@gmail.com',
       phone: '',
-      instagram: 'rachelackerley',
-      facebook: 'rachelackerley',
-      tiktok: 'rachelackerley'
+      instagram: 'amandabutlernyc',
+      facebook: '',
+      tiktok: '',
+      website: 'amandabutlerfitness.com'
     },
     experience: {
       expertise: [
@@ -68,8 +82,14 @@ export const instructorsList = [
         'Certified Fight Club Instructor'
       ],
       credentials: [
-        'Bachelor of Science in Exercise Science from NYU',
-        'I move a building with my bare hands'
+        'NASM CPT',
+        'PROnatal (Levels I & II)',
+        'AFAA Perinatal',
+        'AFAA Group Fitness',
+        'KettleBell Concepts',
+        'CPR/AED',
+        'TRX',
+        'Nutritious Life Nutrition Certified'
       ]
     }
   },
@@ -81,6 +101,8 @@ export const instructorsList = [
     lastName: 'Bailey',
     classesTaught: ['Kickboxing'],
     bio: 'Dwayne is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis adipisci molestiae esse quod ratione at laudantium ipsam voluptatum culpa magnam libero illum eligendi dolore, aspernatur perferendis',
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1632799843/Angel%20Aulet/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468--DesktopHeadshot545x468-3_dh46eu.jpg',
     mobilePhotos: [
       {
         id: 1,
@@ -155,6 +177,8 @@ export const instructorsList = [
     lastName: 'Hutchinson',
     classesTaught: ['Yoga', 'Spin'],
     bio: 'Sarah is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis adipisci molestiae esse quod ratione at laudantium ipsam voluptatum culpa magnam libero illum eligendi dolore, aspernatur perferendis',
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1632664075/BrittanyWatts/Desktop-InstGridHeadshot/DesktopHEADSHOT545x468-5_ud0myt.jpg',
     mobilePhotos: [
       {
         id: 1,

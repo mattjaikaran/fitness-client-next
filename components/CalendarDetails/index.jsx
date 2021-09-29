@@ -74,9 +74,9 @@ const CalendarDetails = () => {
   }
   return (
     <Container>
-      <h1 className="p-5 text-center">Calendar</h1>
+      <h1 className="p-5 text-center">Book A Class</h1>
       <div>
-        <Calendar
+        {/* <Calendar
           popup
           localizer={localizer}
           events={events}
@@ -84,9 +84,8 @@ const CalendarDetails = () => {
           endAccessor="end"
           onSelectSlot={handleSelect}
           style={{ height: 500 }}
-          // views={['week', 'day', 'agenda']}
-        />
-        <h3 className="my-5 text-center">Book a Class</h3>
+        /> */}
+        {/* <h3 className="my-5 text-center">Book a Class</h3> */}
         <iframe
           src="https://app.squarespacescheduling.com/schedule.php?owner=23729247"
           // title="Schedule Appointment"

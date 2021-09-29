@@ -1,3 +1,6 @@
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
+import axios from 'axios'
 import InstructorHeader from './InstructorHeader'
 import InstructorCalendar from './InstructorCalendar'
 import InstructorImages from './InstructorImages'
@@ -57,6 +60,8 @@ const sampleDesktopInstructorImages = [
 ]
 
 const InstructorDetail = ({ instructorDetail }) => {
+  const router = useRouter()
+  // const [details, setDetails] = useState(instructorDetail)
   return (
     <>
       <InstructorHeader
@@ -66,13 +71,13 @@ const InstructorDetail = ({ instructorDetail }) => {
         instructorFirstName={instructorDetail?.firstName}
         classesTaught={instructorDetail?.classesTaught}
       />
-      <InstructorCalendar />
+      {/* <InstructorCalendar /> */}
       <InstructorImages
         desktopImages={
-          instructorDetail.desktopPhotos || sampleDesktopInstructorImages
+          instructorDetail?.desktopPhotos || sampleDesktopInstructorImages
         }
         mobileImages={
-          instructorDetail.mobilePhotos || sampleMobileInstructorImages
+          instructorDetail?.mobilePhotos || sampleMobileInstructorImages
         }
       />
       <InstructorExperienceTabs experience={instructorDetail?.experience} />
@@ -80,7 +85,7 @@ const InstructorDetail = ({ instructorDetail }) => {
       <InstructorInstagram
         instagramHandle={instructorDetail?.contact?.instagram}
         imagesArray={
-          instructorDetail.mobilePhotos || sampleMobileInstructorImages
+          instructorDetail?.mobilePhotos || sampleMobileInstructorImages
         }
       />
     </>

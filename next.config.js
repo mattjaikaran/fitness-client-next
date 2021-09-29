@@ -4,7 +4,11 @@ module.exports = withImages()
 module.exports = {
   // reactStrictMode: true,
   images: {
-    domains: ['images.unsplash.com', 'via.placeholder.com']
+    domains: [
+      'images.unsplash.com',
+      'via.placeholder.com',
+      'res.cloudinary.com'
+    ]
   },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     // Important: return the modified config

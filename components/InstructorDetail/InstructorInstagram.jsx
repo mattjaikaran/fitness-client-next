@@ -31,8 +31,8 @@ const InstructorInstagram = ({ instagramHandle, imagesArray }) => {
         </a>{' '}
         | 93.4k Followers
       </h6>
-      <Row className="hidden-xs">{renderImageGrid()}</Row>
-      <InstructorCarousel mobile imagesArray={imagesArray} />
+      {/* <Row className="hidden-xs">{renderImageGrid()}</Row>
+      <InstructorCarousel mobile imagesArray={imagesArray} /> */}
     </Container>
   )
 }

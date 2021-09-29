@@ -2,15 +2,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Card } from 'react-bootstrap'
 
-const InstructorCard = ({ instructor: { slug, fullName, classesTaught } }) => {
+const InstructorCard = ({ instructor: { slug, fullName, classesTaught, featuredPhoto } }) => {
+  console.log(featuredPhoto)
   return (
     <Link href={`/instructors/${slug}`} passHref>
       <Card border="light">
         <Image 
+          layout="responsive"
           width={450}
           height={500}
-          layout="responsive"
-          src={'https://via.placeholder.com/450x500'} 
+          src={featuredPhoto}
           alt="instructor featured image" />
         <Card.Body className="text-center">
           <h6>{fullName}</h6>

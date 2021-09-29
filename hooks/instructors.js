@@ -9,7 +9,7 @@ export async function getAllInstructorIds() {
     return instructors.map(instructor => {
       return {
         params: {
-          id: instructor.id
+          slug: instructor.slug
         }
       }
     })

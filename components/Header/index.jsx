@@ -55,7 +55,11 @@ const Header = () => {
               <Link href="/">sStudioss</Link>
             </Navbar.Brand>
           </Col>
-          <Col xs={2} className="d-lg-none text-end">
+          <Col
+            xs={2}
+            className="d-lg-none text-end"
+            // hidden for launch
+            style={{ visibility: 'hidden' }}>
             <Nav.Link>
               <Button variant="outline-primary" onClick={handleShow}>
                 <BiSearch />
@@ -66,7 +70,9 @@ const Header = () => {
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">{renderNavLinks()}</Nav>
-          <Nav>
+          <Nav 
+            // hidden for launch
+            style={{ visibility: 'hidden' }}>
             <Nav.Link className="mt-1" href="/signin">
               Sign In
             </Nav.Link>
