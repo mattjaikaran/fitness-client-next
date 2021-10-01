@@ -46,49 +46,63 @@ const InstructorContact = ({
                 <strong>EMAIL</strong>
               </p>
               <p>
-                <a className="text-muted" href={`mailto:${contact?.email}`}>
+                <a
+                  className="text-muted orpheus"
+                  href={`mailto:${contact?.email}`}>
                   {contact?.email}
                 </a>
               </p>
-              <p className="mb-1">
-                <strong>PHONE</strong>
-              </p>
-              <p>
-                <a className="text-muted" href={`tel:${contact?.phone}`}>
-                  {contact?.phone}
-                </a>
-              </p>
+              {contact.phone && (
+                <>
+                  <p className="mb-1">
+                    <strong>PHONE</strong>
+                  </p>
+                  <p>
+                    <a
+                      className="text-muted orpheus"
+                      href={`tel:${contact?.phone}`}>
+                      {contact.phone}
+                    </a>
+                  </p>
+                </>
+              )}
               <p className="mb-1">
                 <strong>LOCATION</strong>
               </p>
               <p>
-                <span className="text-muted">New York, NY</span>
+                <span className="text-muted orpheus">New York, NY</span>
               </p>
               <p className="mb-1">
-                <strong>SOCIAL</strong>
+                <strong>SOCIALS</strong>
               </p>
               <p>
-                <a
-                  className="text-muted"
-                  href={`https://instagram.com/${contact?.instagram}`}
-                  target="_blank"
-                  rel="noreferrer">
-                  <IoLogoInstagram />
-                </a>
-                <a
-                  className="text-muted mx-3"
-                  href={`https://facebook.com/${contact?.facebook}`}
-                  target="_blank"
-                  rel="noreferrer">
-                  <GrFacebookOption />
-                </a>
-                <a
-                  className="text-muted"
-                  href={`https://tiktok.com/${contact?.tiktok}`}
-                  target="_blank"
-                  rel="noreferrer">
-                  <IoLogoTiktok />
-                </a>
+                {contact.instagram && (
+                  <a
+                    className="text-muted"
+                    href={`https://instagram.com/${contact.instagram}`}
+                    target="_blank"
+                    rel="noreferrer">
+                    <IoLogoInstagram />
+                  </a>
+                )}
+                {contact.facebook && (
+                  <a
+                    className="text-muted mx-3"
+                    href={`https://facebook.com/${contact.facebook}`}
+                    target="_blank"
+                    rel="noreferrer">
+                    <GrFacebookOption />
+                  </a>
+                )}
+                {contact.tiktok && (
+                  <a
+                    className="text-muted"
+                    href={`https://tiktok.com/${contact.tiktok}`}
+                    target="_blank"
+                    rel="noreferrer">
+                    <IoLogoTiktok />
+                  </a>
+                )}
               </p>
             </div>
           </Col>

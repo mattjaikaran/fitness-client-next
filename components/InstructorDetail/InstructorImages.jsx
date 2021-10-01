@@ -1,69 +1,259 @@
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import Image from 'next/image'
+import { Container, Row, Col } from 'react-bootstrap'
 import InstructorCarousel from './InstructorCarousel'
 
-const InstructorImages = ({ desktopImages, mobileImages }) => {
+const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
+  console.log(
+    '🚀 ~ file: InstructorImages.jsx ~ line 6 ~ InstructorImages ~ desktopPhotos',
+    desktopPhotos
+  )
   const renderImageGrid = () => {
-    if (desktopImages.length === 4) {
+    if (desktopPhotos.length === 4) {
       return (
         <Row>
           <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
-              fluid
-              src={desktopImages[0].imgUrl}
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[0].imgUrl}
               alt="instructor image 1"
             />
           </Col>
           <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
-              fluid
-              src={desktopImages[1].imgUrl}
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[1].imgUrl}
               alt="instructor image 2"
             />
           </Col>
           <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
-              fluid
-              src={desktopImages[2].imgUrl}
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[2].imgUrl}
               alt="instructor image 3"
             />
           </Col>
           <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
             <Image
-              fluid
-              src={desktopImages[3].imgUrl}
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[3].imgUrl}
               alt="instructor image 4"
             />
           </Col>
         </Row>
       )
     }
-    return (
-      <Row className="justify-content-xl-center">
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
-          <Image fluid src={desktopImages[0].imgUrl} alt="instructor image 1" />
-        </Col>
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
-          <Image
-            fluid
-            src={desktopImages[1].imgUrl}
-            className="mb-md-3"
-            alt="instructor image 2"
-          />
-          <Image fluid src={desktopImages[2].imgUrl} alt="instructor image 3" />
-        </Col>
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
-          <Image fluid src={desktopImages[3].imgUrl} alt="instructor image 4" />
-        </Col>
-        <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2 px-xl-0 text-center">
-          <Image fluid src={desktopImages[4].imgUrl} alt="instructor image 5" />
-        </Col>
-      </Row>
-    )
+    if (desktopPhotos.length === 6) {
+      return (
+        <Row>
+          <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[0].imgUrl}
+              alt="instructor image 1"
+            />
+          </Col>
+          <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[1].imgUrl}
+              alt="instructor image 2"
+            />
+          </Col>
+          <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[2].imgUrl}
+              alt="instructor image 3"
+            />
+          </Col>
+          <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[3].imgUrl}
+              alt="instructor image 4"
+            />
+          </Col>
+          <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[4].imgUrl}
+              alt="instructor image 5"
+            />
+          </Col>
+          <Col md={6} className="mb-md-3 p-0 px-sm-2 px-md-2">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[5].imgUrl}
+              alt="instructor image 6"
+            />
+          </Col>
+        </Row>
+      )
+    }
+    // 5 and 7 have different layouts than 4/6
+    if (desktopPhotos.length === 5) {
+      return (
+        <Row className="justify-content-xl-center">
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[0].imgUrl}
+              alt="instructor image 1"
+            />
+          </Col>
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={300}
+              layout="responsive"
+              src={desktopPhotos[1].imgUrl}
+              alt="instructor image 2"
+            />
+            <Image
+              width={500}
+              height={300}
+              layout="responsive"
+              className="mt-md-3"
+              src={desktopPhotos[2].imgUrl}
+              alt="instructor image 3"
+            />
+          </Col>
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[3].imgUrl}
+              alt="instructor image 4"
+            />
+          </Col>
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[4].imgUrl}
+              alt="instructor image 5"
+            />
+          </Col>
+        </Row>
+      )
+    }
+    if (desktopPhotos.length === 7) {
+      return (
+        <Row className="justify-content-xl-center">
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[0].imgUrl}
+              alt="instructor image 1"
+            />
+          </Col>
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={300}
+              layout="responsive"
+              src={desktopPhotos[1].imgUrl}
+              alt="instructor image 2"
+            />
+            <Image
+              width={500}
+              height={300}
+              layout="responsive"
+              className="mt-md-3"
+              src={desktopPhotos[2].imgUrl}
+              alt="instructor image 3"
+            />
+          </Col>
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[3].imgUrl}
+              alt="instructor image 4"
+            />
+          </Col>
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[4].imgUrl}
+              alt="instructor image 5"
+            />
+          </Col>
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[5].imgUrl}
+              alt="instructor image 6"
+            />
+          </Col>
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[6].imgUrl}
+              alt="instructor image 7"
+            />
+          </Col>
+        </Row>
+      )
+    }
   }
   return (
     <Container fluid="xl" className="mt-3 p-md-5">
-      {renderImageGrid()}
-      <InstructorCarousel mobile mobileImages={mobileImages} />
+      {desktopPhotos && renderImageGrid()}
+      <InstructorCarousel mobile mobileImages={mobilePhotos} />
     </Container>
   )
 }

@@ -1,5 +1,8 @@
+@import '../../styles/colors.scss';
 .box {
-  .boxCard {
-    .boxDescription {}
+  background-color: $base-white;
+  .boxDescription {
+    font-family: 'Orpheus W01 Regular', serif;
+    margin-bottom: 0;
   }
 }

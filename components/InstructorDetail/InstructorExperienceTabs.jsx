@@ -1,31 +1,38 @@
-import { Container, Tabs, Tab, Row, Col } from 'react-bootstrap'
+import { Container, Tabs, Tab, Col } from 'react-bootstrap'
+import styles from './InstructorDetail.module.scss'
 
 const InstructorExperienceTabs = ({ experience }) => {
   return (
-    <Container className="mt-3 p-md-5 d-none d-sm-flex">
-      <Col></Col>
-      <Col sm={10} lg={8}>
+    <Container className="mt-3 p-md-5 d-none row d-sm-flex orpheus">
+      <Col xs={0} sm={2}></Col>
+      <Col sm={10}>
         <Tabs
           defaultActiveKey="expertise"
-          id="uncontrolled-tab-example"
-          className="mb-3">
-          <Tab eventKey="expertise" title="Expertise">
+          id="instructor-experience-tabs"
+          className={styles.instructorTabs}>
+          <Tab
+            eventKey="expertise"
+            title="Expertise"
+            className={styles.instructorTab}>
             <ul>
-              {experience?.expertise?.map((bullet) => (
-                <li key={bullet}>{bullet}</li>
+              {experience?.expertise?.map((bullet, i) => (
+                <li key={i}>{bullet}</li>
               ))}
             </ul>
           </Tab>
-          <Tab eventKey="credentials" title="Credentials">
+          <Tab
+            eventKey="credentials"
+            title="Credentials"
+            className={styles.instructorTab}>
             <ul>
-              {experience?.credentials?.map((bullet) => (
-                <li key={bullet}>{bullet}</li>
+              {experience?.credentials?.map((bullet, i) => (
+                <li key={i}>{bullet}</li>
               ))}
             </ul>
           </Tab>
         </Tabs>
       </Col>
-      <Col></Col>
+      <Col xs={0} sm={2}></Col>
     </Container>
   )
 }

@@ -5,7 +5,10 @@ const RateTable = ({ box }) => {
     <Table responsive>
       <thead>
         <tr>
-          <th colSpan="2">Monday to Friday</th>
+          <th colSpan="2">
+            <span className="hidden-xs">Monday to Friday</span>
+            <span className="visible-xs">M - F</span>
+          </th>
           <th>Rates</th>
           <th colSpan="2">Saturday</th>
           <th>Rates</th>

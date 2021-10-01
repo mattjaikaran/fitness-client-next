@@ -24,7 +24,7 @@ import axios from 'axios'
 const API_URL = '/api/locations'
 
 export async function getLocationDetails(slug) {
-  console.log(slug);
+  console.log('slug', slug);
   try {
     const response = await axios.get(`${API_URL}/${slug}`)
     const location = await response.data

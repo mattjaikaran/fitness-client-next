@@ -4,10 +4,10 @@ import BoxStylesDetails from '@/components/BoxStylesDetails'
 
 const BoxStyleDetail = () => {
   const router = useRouter()
-  const id = parseFloat(router.query.id)
+  const { slug } = router.query
   return (
     <Layout>
-      <BoxStylesDetails id={id} />
+      <BoxStylesDetails slug={slug} />
     </Layout>
   )
 }

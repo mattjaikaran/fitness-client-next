@@ -22,7 +22,7 @@ function ContextAwareToggle({ children, eventKey, callback }) {
 
 const InstructorExperienceCollapse = ({ experience }) => {
   return (
-    <Container fluid className="visible-xs px-0 mt-5">
+    <Container fluid className="visible-xs px-0 mt-5 orpheus">
       <Accordion defaultActiveKey="0">
         <Card border="light">
           <Card.Header style={{ backgroundColor: 'white' }}>

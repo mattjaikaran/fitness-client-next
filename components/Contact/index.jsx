@@ -30,31 +30,35 @@ const Contact = () => {
           <p>
             <strong>GENERAL INQUIRY</strong>
             <br />
-            <a className="text-muted" href="mailto:contact@sstudioss.com">
+            <a
+              className="text-muted orpheus"
+              href="mailto:contact@sstudioss.com">
               contact@sstudioss.com
             </a>
           </p>
           <p>
             <strong>CORPORATE CONNECTIONS</strong>
             <br />
-            <a className="text-muted" href="mailto:corporate@sstudioss.com">
+            <a
+              className="text-muted orpheus"
+              href="mailto:corporate@sstudioss.com">
               corporate@sstudioss.com
             </a>
           </p>
           <p>
             <strong>PHONE</strong>
             <br />
-            <a className="text-muted" href="tel:19174769040">
+            <a className="text-muted orpheus" href="tel:19174769040">
               (917) 476 9040
             </a>
           </p>
-          <p>
+          {/* <p>
             <strong>ADDRESS</strong>
             <br />
-            <span className="text-muted">
+            <span className="text-muted orpheus">
               Manhattan Flagship facility Spring 2022
             </span>
-          </p>
+          </p> */}
         </Col>
         <Col md={6}>
           <Form onSubmit={handleContact}>

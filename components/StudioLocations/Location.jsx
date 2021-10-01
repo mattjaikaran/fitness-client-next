@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import { Card, Button } from 'react-bootstrap'
 import styles from './StudioLocations.module.scss'
 
@@ -9,6 +10,7 @@ const Location = ({
   btnLink,
   text
 }) => {
+  const router = useRouter()
   return (
     <Card border="light" className={styles.location}>
       <h3 className="my-3">{name}</h3>
@@ -23,14 +25,15 @@ const Location = ({
             {address.phone}
           </p>
           <p className="orpheus">{description}</p>
-          <div className="mt-auto d-grid">
+          {/* commented out for launch */}
+          {/* <div className="mt-auto d-grid">
             <Button
               size="lg"
               variant="outline-secondary"
-              href={btnLink}>
+              onClick={() => router.push(btnLink)}>
               {btnText}
             </Button>
-          </div>
+          </div> */}
         </Card.Body>
       ) : (
         <>

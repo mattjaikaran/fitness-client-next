@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap'
 import { IoLogoInstagram, IoLogoTiktok } from 'react-icons/io5'
-import { GrFacebookOption } from 'react-icons/gr'
+import { AiOutlineYoutube } from 'react-icons/ai'
 
 const CustomerService = () => {
   const [name, setName] = useState('')
@@ -31,18 +31,14 @@ const CustomerService = () => {
       <h1 className="my-5 text-center">Customer Service</h1>
       <Row className="text-start px-3 pb-3">
         <Col md={6} className="mb-3">
-          <h5>
-            We are always ready to cooperate.
-            <br />
-            Write to us and we will contact you.
-          </h5>
-          <h6>Monday to Friday 10 am to 6:30 pm EST</h6>
           <div className="mt-4">
             <p className="mb-1">
               <strong>GENERAL INQUIRY</strong>
             </p>
             <p>
-              <a className="text-muted" href="mailto:contact@sstudioss.com">
+              <a
+                className="text-muted orpheus"
+                href="mailto:contact@sstudioss.com">
                 contact@sstudioss.com
               </a>
             </p>
@@ -50,45 +46,45 @@ const CustomerService = () => {
               <strong>PHONE</strong>
             </p>
             <p>
-              <a className="text-muted" href="tel:2122330507">
-                (212) 233 0507
+              <a className="text-muted orpheus" href="tel:9174769040">
+                (917) 476 9040
               </a>
             </p>
-            <p className="mb-1">
+            {/* <p className="mb-1">
               <strong>ADDRESS</strong>
             </p>
             <p>
-              <span className="text-muted">
+              <span className="text-muted orpheus">
                 145 W Broadway, <br />
                 New York, NY 100013
               </span>
-            </p>
-            <p className="mb-1">
+            </p> */}
+            {/* <p className="mb-1">
               <strong>SOCIAL</strong>
             </p>
             <p>
               <a
-                className="text-muted"
-                href="https://instagram.com/"
+                className="text-muted orpheus pr-5"
+                href="https://instagram.com/sstudiossnewyork"
                 target="_blank"
                 rel="noreferrer">
                 <IoLogoInstagram />
               </a>
               <a
                 className="text-muted mx-3"
-                href="https://facebook.com/"
+                href="https://youtube.com/sstudiossnewyork"
                 target="_blank"
                 rel="noreferrer">
-                <GrFacebookOption />
+                <AiOutlineYoutube />
               </a>
               <a
                 className="text-muted"
-                href="https://tiktok.com/"
+                href="https://tiktok.com/sstudiossnewyork"
                 target="_blank"
                 rel="noreferrer">
                 <IoLogoTiktok />
               </a>
-            </p>
+            </p> */}
           </div>
         </Col>
         <Col md={6}>
@@ -136,7 +132,8 @@ const CustomerService = () => {
             </Alert>
           ) : messageSuccess === false ? (
             <Alert className="mt-3" variant="danger">
-              Something went wrong. Try again.
+              Something went wrong.{' '}
+              <a href="mailto:contact@sstudioss.com">Email Us</a>
             </Alert>
           ) : null}
         </Col>

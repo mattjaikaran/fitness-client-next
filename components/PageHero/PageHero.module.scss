@@ -3,11 +3,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  .title {
+  // color and bg color temporary until hero images are set
+  background-color: black;
+  color: white;
+  .textWrapper {
     text-align: center;
     position: relative;
-    top: 50%;
+    top: 40%;
   }
 }
 
@@ -17,7 +19,7 @@
     height: 500px;
     background-size: cover;
     background-position: center;
-    .title {
+    .textWrapper {
       top: 40%;
     }
   }

@@ -1,30 +1,15 @@
 import Layout from '@/components/Layout'
-import HomeHero from '@/components/HomeHero'
-import TextWithCTA from '@/components/TextWithCTA'
-import CarouselHalfTextHalf from '@/components/CarouselHalfTextHalf'
-import StudioLocations from '@/components/StudioLocations'
-import { homeCopy } from '@/copy/home'
+import Home from '@/components/Home'
+import LandingPage from '@/components/LandingPage'
 
 const HomePage = () => {
   return (
     <Layout>
-      <HomeHero />
-      <TextWithCTA
-        text={homeCopy.descriptionOne.copy}
-        btnText={homeCopy.descriptionOne.btnText}
-        btnLink={homeCopy.descriptionOne.btnLink}
-      />
-      <CarouselHalfTextHalf
-        textCopy={homeCopy.carouselText}
-        images={homeCopy.carouselImages}
-      />
-      <TextWithCTA
-        text={homeCopy.descriptionTwo.copy}
-        btnText={homeCopy.descriptionTwo.btnText}
-        btnLink={homeCopy.descriptionTwo.btnLink}
-      />
-      <StudioLocations homePage />
+      <Home />
     </Layout>
+    // <div>
+    //   <LandingPage />
+    // </div>
   )
 }
 

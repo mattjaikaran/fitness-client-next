@@ -1,5 +1,10 @@
-.textCopy {
-  padding: 10%;
+@import '../../styles/colors.scss';
+
+.textCol {
+  background-color: $base-white;
+  .textCopy {
+    padding: 10%;
+  }
 }
 
 @media (max-width: 767px) {

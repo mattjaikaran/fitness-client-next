@@ -1,58 +1,72 @@
 export const boxStyles = [
   {
     id: 1,
+    slug: 'rooted-box',
     name: 'Rooted Box',
-    description:
-      'Natural wood floors, white walls, living plants. EARTH. NATURE. ELEMENT. This box is calm, soft and comfortable, the simplistic, basic tone is grounding.',
-    btnLink: '/style/1',
+    descriptionOne: 'Natural wood floors, white walls, living plants.',
+    impactStatement: 'EARTH. NATURE. ELEMENT.',
+    descriptionTwo:
+      'This box is calm, soft and comfortable - this simple, basic tone is grounding.',
     btnText: 'Book'
   },
   {
     id: 2,
+    slug: 'ethereal-box',
     name: 'Ethereal Box',
-    description:
-      'All white flooring, walls and celling. REFLECTIVE. ILLUMINARY. VAST. This box is for confidence, crisp action and clear direction, spirit.',
-    btnLink: '/style/2',
+    descriptionOne: 'Concrete flooring, walls - industrial ceilings.',
+    impactStatement: 'REFLECTIVE. ILLUMINARY. VAST.',
+    descriptionTwo:
+      'This box is for confident | crisp action and direction | spirit',
     btnText: 'Book'
   },
   {
     id: 3,
+    slug: 'nude-box',
     name: 'Nude Box',
-    description:
-      'All Concrete-board floor, warehouse ceiling, concrete walls. RAW. NEUTRAL. WARM. COOL. MINIMAL. This box is calming, soft and easy making for a good frame, both in visual and mindset.',
-    btnLink: '/style/3',
+    descriptionOne: 'Concrete-board floor, warehouse ceiling, concrete walls.',
+    impactStatement: 'RAW. NEUTRAL. WARM. COOL. MINIMAL.',
+    descriptionTwo:
+      'This box is calming, soft and easy-making for a good frame, both in visual and mindset.',
     btnText: 'Book'
   },
   {
     id: 4,
+    slug: 'nuclear-box',
     name: 'Nuclear Box',
-    description:
-      'All black flooring, walls and celling. DEEP. VACANT. LASERLIKE. This box is where one enters their nucleus - the tone is deep, aggressive, quiet.',
-    btnLink: '/style/4',
+    descriptionOne: 'Black flooring, walls and ceiling.',
+    impactStatement: 'DEEP. VACANT. LASERLIKE.',
+    descriptionTwo:
+      'This box is where one enters their nucleus - the tone is deep, aggressive, quiet.',
     btnText: 'Book'
   },
   {
     id: 5,
+    slug: 'sensei-box',
     name: 'Sensei Box',
-    description:
-      'Bright studio with mirrors. PERFECTION. NARCISTIC. VAIN. EGO. This box is the commitment to foundations, core, soul. This studio is for development and inspiration.',
-    btnLink: '/style/5',
+    descriptionOne: 'Bright studio with mirrors.',
+    impactStatement: 'PERFECTION. VAIN. EGO.',
+    descriptionTwo:
+      'This box is the commitment to foundations, core, soul. This Box is to develop | inspire.',
     btnText: 'Book'
   },
   {
     id: 6,
-    name: 'Record White',
-    description:
-      'White walls, light floors. Lighting and record equipment for streaming and recording your content. BRIGHT. SPACIOUS.',
-    btnLink: '/style/6',
+    slug: 'record-white',
+    name: 'Record - White',
+    descriptionOne: 'White walls, light floors.',
+    impactStatement: 'BRIGHT. SPACIOUS.',
+    descriptionTwo:
+      'Lighting and record equipment for streaming and recording your content.',
     btnText: 'Book'
   },
   {
     id: 7,
-    name: 'Record Black',
-    description:
-      'Dark Gray Walls. Dark floor. Lighting and record equipment for streaming and recording your content. SMOKEY. EDGY.',
-    btnLink: '/style/7',
+    slug: 'record-black',
+    name: 'Record - Black',
+    descriptionOne: 'Dark gray walls, dark floor.',
+    impactStatement: 'SMOKEY. EDGY. BOLD.',
+    descriptionTwo:
+      'Lighting and record equipment for streaming and recording your content.',
     btnText: 'Book'
   }
 ]

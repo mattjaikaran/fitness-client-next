@@ -32,7 +32,7 @@ const Header = () => {
   const renderNavLinks = () => {
     return navRoutes.map((navItem) => {
       return (
-        <Nav.Link key={navItem.id} onClick={() => router.push(navItem.link)}>
+        <Nav.Link key={navItem.id} className="montserrat" onClick={() => router.push(navItem.link)}>
           {navItem.name}
         </Nav.Link>
       )
@@ -51,12 +51,16 @@ const Header = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           </Col>
           <Col xs={6} sm={5} className="pt-2 pb-md-2">
-            <Navbar.Brand>
-              <Link href="/">sStudioss</Link>
+            <Navbar.Brand className="montserrat">
+              <Link href="/">SSS</Link>
             </Navbar.Brand>
           </Col>
-          <Col xs={2} className="d-lg-none text-end">
-            <Nav.Link>
+          <Col
+            xs={2}
+            className="d-lg-none text-end"
+            // hidden for launch
+            style={{ visibility: 'hidden' }}>
+            <Nav.Link className="montserrat">
               <Button variant="outline-primary" onClick={handleShow}>
                 <BiSearch />
               </Button>
@@ -66,7 +70,9 @@ const Header = () => {
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">{renderNavLinks()}</Nav>
-          <Nav>
+          <Nav
+            // hidden for launch
+            style={{ visibility: 'hidden' }}>
             <Nav.Link className="mt-1" href="/signin">
               Sign In
             </Nav.Link>

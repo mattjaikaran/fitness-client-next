@@ -12,7 +12,7 @@ const InvestmentRelations = () => {
     })
   }
   return (
-    <Container>
+    <Container className="orpheus">
       <Row>
         <Col sm={0}></Col>
         <Col md={6}>

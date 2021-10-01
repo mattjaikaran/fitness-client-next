@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { Spinner } from 'react-bootstrap'
+import { Container, Spinner } from 'react-bootstrap'
 import Layout from '@/components/Layout'
 import LocationDetails from '@/components/LocationDetails'
 import { getLocationDetails } from '@/hooks/getDetails'
@@ -22,9 +22,11 @@ const LocationPage = () => {
       {details ? (
         <LocationDetails locationDetail={details} />
       ) : (
-        <Spinner animation="border" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </Spinner>
+        <Container className="text-center p-5">
+          <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>
+        </Container>
       )}
     </Layout>
   )
