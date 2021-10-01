@@ -7,8 +7,7 @@ export const homeCopy = {
     btnLink: `/calendar`
   },
   carouselImages: [
-    'https://images.unsplash.com/photo-1613063373939-fad101bf3ecc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1388&q=80',
-    'https://images.unsplash.com/photo-1586019810648-43c6f97767e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1394&q=80'
+    'https://res.cloudinary.com/studiostudios/image/upload/v1633062052/HEROBANNER9.30.21/900px.GRAYBLACK-MOBILE-_s5nf8i.jpg',
   ],
   carouselText: `Sometimes you just need your own space... sometimes you need another... sometimes you rally and sometimes you decompress... you decide. It's your own space`,
   descriptionTwo: {

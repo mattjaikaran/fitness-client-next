@@ -7,8 +7,8 @@ const CarouselHalfTextHalf = ({ textCopy, images }) => {
     <Container fluid>
       <Row>
         <Col className="px-0" sm={6}>
-          <Carousel interval={null} controls={false}>
-            <Carousel.Item>
+          {images.length < 2 ? (
+            <div>
               <Image
                 width={950}
                 height={970}
@@ -16,17 +16,29 @@ const CarouselHalfTextHalf = ({ textCopy, images }) => {
                 src={images[0]}
                 alt="First slide"
               />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Image
-                width={950}
-                height={970}
-                layout="responsive"
-                src={images[1]}
-                alt="Second slide"
-              />
-            </Carousel.Item>
-          </Carousel>
+            </div>
+          ) : (
+            <Carousel interval={null} controls={false}>
+              <Carousel.Item>
+                <Image
+                  width={950}
+                  height={970}
+                  layout="responsive"
+                  src={images[0]}
+                  alt="First slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image
+                  width={950}
+                  height={970}
+                  layout="responsive"
+                  src={images[1]}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+            </Carousel>
+          )}
         </Col>
         <Col className={`mt-sm-3 ${styles.textCol}`} sm={6}>
           <h3 className={styles.textCopy}>{textCopy}</h3>

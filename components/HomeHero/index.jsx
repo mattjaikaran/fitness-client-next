@@ -54,10 +54,7 @@ const HomeHero = () => {
   return (
     <div>
       <Container fluid className={styles.hero}>
-        <Container 
-          className={`${styles.heroContent} text-center`} 
-          // style={{ backgroundImage: `url()`}}
-          >
+        <Container className={`${styles.heroContent} text-center`}>
           <h1 className={styles.title}>SSTUDIOSS</h1>
         </Container>
       </Container>
