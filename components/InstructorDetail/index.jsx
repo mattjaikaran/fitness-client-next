@@ -9,33 +9,6 @@ import InstructorExperienceCollapse from './InstructorExperienceCollapse'
 import InstructorInstagram from './InstructorInstagram'
 // import './InstructorDetail.module.scss'
 
-// const sampleMobileInstructorImages = [
-//   {
-//     id: 1,
-//     imgUrl: 'https://via.placeholder.com/350x350.png'
-//   },
-//   {
-//     id: 2,
-//     imgUrl: 'https://via.placeholder.com/350x350.png'
-//   },
-//   {
-//     id: 3,
-//     imgUrl: 'https://via.placeholder.com/350x350.png'
-//   },
-//   {
-//     id: 4,
-//     imgUrl: 'https://via.placeholder.com/350x350.png'
-//   },
-//   {
-//     id: 5,
-//     imgUrl: 'https://via.placeholder.com/350x350.png'
-//   },
-//   {
-//     id: 6,
-//     imgUrl: 'https://via.placeholder.com/350x350.png'
-//   }
-// ]
-
 const InstructorDetail = ({ instructorDetail }) => {
   // const router = useRouter()
   // const [details, setDetails] = useState(instructorDetail)
@@ -54,8 +27,16 @@ const InstructorDetail = ({ instructorDetail }) => {
         desktopPhotos={instructorDetail.desktopPhotos}
         mobilePhotos={instructorDetail.mobilePhotos}
       />
-      <InstructorExperienceTabs experience={instructorDetail?.experience} />
-      <InstructorExperienceCollapse experience={instructorDetail?.experience} />
+      {instructorDetail.experience?.credentials && (
+          <>
+            <InstructorExperienceTabs
+              experience={instructorDetail.experience}
+            />
+            <InstructorExperienceCollapse
+              experience={instructorDetail.experience}
+            />
+          </>
+        )}
       <InstructorInstagram
         instagramHandle={instructorDetail?.contact?.instagram}
         imagesArray={instructorDetail?.mobilePhotos}

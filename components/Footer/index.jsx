@@ -80,6 +80,9 @@ const Footer = () => {
           <AiOutlineInstagram className={styles.social} />
           <SiTiktok className={styles.social} />
         </Col>
+        <Col md={12} className="my-1">
+          <p>Created by 2038</p>
+        </Col>
       </Row>
     </Container>
   )

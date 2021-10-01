@@ -7,7 +7,7 @@ const StylePage = () => {
     <Layout>
       <PageHero
         title="Box Styles"
-        img="https://via.placeholder.com/1200x450.png?text=Style"
+        subtitle="space designed for your: vibe | mood | energy"
       />
       <BoxStyles />
     </Layout>

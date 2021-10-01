@@ -6,11 +6,10 @@
   // color and bg color temporary until hero images are set
   background-color: black;
   color: white;
-
-  .title {
+  .textWrapper {
     text-align: center;
     position: relative;
-    top: 50%;
+    top: 40%;
   }
 }
 
@@ -20,7 +19,7 @@
     height: 500px;
     background-size: cover;
     background-position: center;
-    .title {
+    .textWrapper {
       top: 40%;
     }
   }

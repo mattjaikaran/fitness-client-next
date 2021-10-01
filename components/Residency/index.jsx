@@ -6,15 +6,14 @@ const Residency = () => {
     <Container className="orpheus">
       <Row>
         <Col sm={0}></Col>
-        <Col sm={6}>
+        <Col md={8} lg={6} xl={8}>
           <h1 className="my-5 text-center">Residency</h1>
           <p>{residency.p1}</p>
           <p>{residency.p2}</p>
           <p>{residency.p3}</p>
           <p>
-            <strong>{residency.p4}</strong>
+            <a href={`mailto: ${residency.p4}`}>{residency.p4}</a>
           </p>
-          <p>{residency.p5}</p>
         </Col>
         <Col sm={0}></Col>
       </Row>

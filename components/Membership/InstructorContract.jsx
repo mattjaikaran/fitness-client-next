@@ -5,10 +5,10 @@ const InstructorContract = ({ handleShow, handleClose, show }) => {
   return (
     <div className="mt-5">
       <hr />
-      <h3 className="text-center mt-5">Athlete Contract</h3>
+      <h3 className="text-center mt-5">Provider Contract</h3>
       <p className="mt-5">
-        {`This Agreement (this "Agreement"), dated as of _____________
-          ("Effective Date") is by and between Studio Tribeca located
+        {`This Agreement ("Agreement"), dated as of _____________
+          ("Effective Date") is by and between Studio Studios, Inc. located
           at 80 Warren Street New York, NY 10014 and
           ____________________________ and __________________
           referenced at "Talent."`}
@@ -21,7 +21,7 @@ const InstructorContract = ({ handleShow, handleClose, show }) => {
       <p className="mt-5">
         {`Talent will be enabled to reserve a Box up to 45 days from
           date of reservation. At the time of 14 days from
-          reservation, the talent authorizes the Entity to draw the
+          reservation, the talent authorizes the Studio Studios, Inc. to draw the
           fee for the Box reservation.`}
       </p>
       
@@ -44,9 +44,6 @@ const InstructorContract = ({ handleShow, handleClose, show }) => {
 
       <div className="mt-5">
         <p>{`Let's continue the conversation and explore this partnership`}</p>
-        <p className="mt-5">
-          <strong>Matt Marchese</strong>
-        </p>
         <p>
           <a href="mailto:contact@sstudioss.com">contact@sstudioss.com</a>
         </p>

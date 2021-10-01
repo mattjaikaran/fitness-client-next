@@ -1,12 +1,15 @@
 import styles from './PageHero.module.scss'
 
-const PageHero = ({ title, img }) => {
+const PageHero = ({ title, subtitle, img }) => {
   return (
-    <div 
+    <div
       className={styles.pageHero}
       // style={{ backgroundImage: `url(${img})` }}
     >
-      <h1 className={styles.title}>{title}</h1>
+      <div className={styles.textWrapper}>
+        <h1 className={styles.title}>{title}</h1>
+        {subtitle && <p className="orpheus mt-5">{subtitle}</p>}
+      </div>
     </div>
   )
 }

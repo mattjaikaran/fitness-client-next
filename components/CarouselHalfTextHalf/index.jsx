@@ -2,7 +2,12 @@ import Image from 'next/image'
 import { Container, Row, Col, Carousel } from 'react-bootstrap'
 import styles from './CarouselHalfTextHalf.module.scss'
 
-const CarouselHalfTextHalf = ({ textCopy, images }) => {
+const CarouselHalfTextHalf = ({
+  carouselText,
+  carouselTextTwo,
+  carouselTextThree,
+  images
+}) => {
   return (
     <Container fluid>
       <Row>
@@ -41,7 +46,11 @@ const CarouselHalfTextHalf = ({ textCopy, images }) => {
           )}
         </Col>
         <Col className={`mt-sm-3 ${styles.textCol}`} sm={6}>
-          <h3 className={styles.textCopy}>{textCopy}</h3>
+          <div className={styles.textCopy}>
+            <h3>{carouselText}</h3>
+            {carouselTextTwo && <h3 className="my-5">{carouselTextTwo}</h3>}
+            {carouselTextThree && <h3>{carouselTextThree}</h3>}
+          </div>
         </Col>
       </Row>
     </Container>
