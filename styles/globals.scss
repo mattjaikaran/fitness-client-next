@@ -75,6 +75,12 @@ p {
   border: none;
 }
 
+.hr-custom {
+  border: 1px solid $base-white;
+  margin: 0 auto;
+  width: 50%;
+}
+
 // Button Global Styles 
 .btn {
   font-family: 'Montserrat', sans-serif !important;

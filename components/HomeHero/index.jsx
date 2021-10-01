@@ -55,10 +55,17 @@ const HomeHero = () => {
     <div>
       <Container fluid className={styles.hero}>
         <Container className={`${styles.heroContent} text-center`}>
-          <h1 className={styles.title}>SSTUDIOSS</h1>
+          <Row>
+            <Col sm={0}></Col>
+            <Col sm={8} lg={6}>
+              <h1 className={styles.title}>SSTUDIOSS</h1>
+              <hr className="hr-custom mt-5" />
+            </Col>
+            <Col sm={0}></Col>
+          </Row>
         </Container>
       </Container>
-      
+
       {/* for Phase 2 */}
       {/* <Container>
         <h5 className="pt-5 text-center">Find a Class</h5>

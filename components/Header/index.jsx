@@ -51,8 +51,8 @@ const Header = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           </Col>
           <Col xs={6} sm={5} className="pt-2 pb-md-2">
-            <Navbar.Brand className="montserrat">
-              <Link href="/">SSS</Link>
+            <Navbar.Brand className="montserrat d-none d-sm-block">
+              <Link href="/">SSSS</Link>
             </Navbar.Brand>
           </Col>
           <Col

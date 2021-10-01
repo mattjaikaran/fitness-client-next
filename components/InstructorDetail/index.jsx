@@ -28,19 +28,19 @@ const InstructorDetail = ({ instructorDetail }) => {
         mobilePhotos={instructorDetail.mobilePhotos}
       />
       {instructorDetail.experience?.credentials && (
-          <>
-            <InstructorExperienceTabs
-              experience={instructorDetail.experience}
-            />
-            <InstructorExperienceCollapse
-              experience={instructorDetail.experience}
-            />
-          </>
-        )}
-      <InstructorInstagram
-        instagramHandle={instructorDetail?.contact?.instagram}
-        imagesArray={instructorDetail?.mobilePhotos}
-      />
+        <>
+          <InstructorExperienceTabs experience={instructorDetail.experience} />
+          <InstructorExperienceCollapse
+            experience={instructorDetail.experience}
+          />
+        </>
+      )}
+      {instructorDetail.contact?.instagram && (
+        <InstructorInstagram
+          instagramHandle={instructorDetail?.contact?.instagram}
+          imagesArray={instructorDetail?.mobilePhotos}
+        />
+      )}
     </>
   )
 }
