@@ -13,7 +13,6 @@ export const instructorsList = [
       {
         id: 1,
         imgUrl: 'https://via.placeholder.com/350x350.png'
-        // imgUrl: ''
       },
       {
         id: 2,
@@ -65,15 +64,12 @@ export const instructorsList = [
     contact: {
       email: '',
       phone: '',
-      instagram: '',
+      instagram: 'ackamien',
       facebook: '',
       tiktok: '',
       website: ''
     },
-    experience: {
-      expertise: [''],
-      credentials: ['']
-    }
+    experience: {}
   },
   {
     id: 2,
@@ -163,83 +159,83 @@ export const instructorsList = [
       ]
     }
   },
-  {
-    id: 3,
-    slug: 'andrea-dusel-foil',
-    fullName: 'Andrea Dusel Foil',
-    firstName: 'Andrea',
-    lastName: 'Foil',
-    classesTaught: ['Kickboxing'],
-    bio: '',
-    featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1632881512/Andrea%20Dusel%20Foil/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-2416_lhrw1o.jpg',
-    mobilePhotos: [
-      {
-        id: 1,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 2,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 3,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 4,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 5,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 6,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      }
-    ],
-    desktopPhotos: [
-      {
-        id: 1,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632881553/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-2470_m00ddf.jpg'
-      },
-      {
-        id: 2,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632886257/Andrea%20Dusel%20Foil/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-2-DesktopInstGalleryPgVERTICAL540x673-6_dvzurp.jpg'
-      },
-      {
-        id: 3,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632881555/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-22_ueylat.jpg'
-      },
-      {
-        id: 4,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632881556/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-6-DesktopClassDetailsPageVERTICAL555x452-2_myl0ts.jpg'
-      }
-    ],
-    contact: {
-      email: 'hello@andrea.com',
-      phone: '',
-      instagram: 'andreafitness',
-      facebook: 'andreafitness',
-      tiktok: 'andreafitness',
-      website: ''
-    },
-    experience: {
-      expertise: [
-        'Certified Personal Trainer at Equinox',
-        'Certified Spin Instructor at SoulCycle'
-      ],
-      credentials: [
-        'Bachelor of Science in Exercise Science from UCLA',
-        'Strongest Woman In The World 2018 Runner Up'
-      ]
-    }
-  },
+  // {
+  //   id: 3,
+  //   slug: 'andrea-dusel-foil',
+  //   fullName: 'Andrea Dusel Foil',
+  //   firstName: 'Andrea',
+  //   lastName: 'Foil',
+  //   classesTaught: ['Kickboxing'],
+  //   bio: '',
+  //   featuredPhoto:
+  //     'https://res.cloudinary.com/studiostudios/image/upload/v1632881512/Andrea%20Dusel%20Foil/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-2416_lhrw1o.jpg',
+  //   mobilePhotos: [
+  //     {
+  //       id: 1,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 2,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 3,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 4,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 5,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 6,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     }
+  //   ],
+  //   desktopPhotos: [
+  //     {
+  //       id: 1,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632881553/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-2470_m00ddf.jpg'
+  //     },
+  //     {
+  //       id: 2,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632886257/Andrea%20Dusel%20Foil/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-2-DesktopInstGalleryPgVERTICAL540x673-6_dvzurp.jpg'
+  //     },
+  //     {
+  //       id: 3,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632881555/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-22_ueylat.jpg'
+  //     },
+  //     {
+  //       id: 4,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632881556/Andrea%20Dusel%20Foil/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-6-DesktopClassDetailsPageVERTICAL555x452-2_myl0ts.jpg'
+  //     }
+  //   ],
+  //   contact: {
+  //     email: 'hello@andrea.com',
+  //     phone: '',
+  //     instagram: 'andreafitness',
+  //     facebook: 'andreafitness',
+  //     tiktok: 'andreafitness',
+  //     website: ''
+  //   },
+  //   experience: {
+  //     expertise: [
+  //       'Certified Personal Trainer at Equinox',
+  //       'Certified Spin Instructor at SoulCycle'
+  //     ],
+  //     credentials: [
+  //       'Bachelor of Science in Exercise Science from UCLA',
+  //       'Strongest Woman In The World 2018 Runner Up'
+  //     ]
+  //   }
+  // },
   {
     id: 4,
     slug: 'angel-aulet',
@@ -304,9 +300,9 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: 'hello@angel.com',
-      phone: '9175550198',
-      instagram: 'angelaulet',
+      email: '',
+      phone: '',
+      instagram: 'gamechangerfitness',
       facebook: '',
       tiktok: ''
     },
@@ -538,15 +534,76 @@ export const instructorsList = [
     contact: {
       email: '',
       phone: '',
+      instagram: 'flowforwardyoga',
+      facebook: '',
+      tiktok: '',
+      website: ''
+    },
+    experience: {}
+  },
+  {
+    id: 13,
+    slug: 'dominique-warren',
+    fullName: 'Dominique Warren',
+    firstName: 'Dominique',
+    lastName: 'Warren',
+    classesTaught: ['Yoga'],
+    bio: ``,
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633106042/HEADSHOTS.10.1.21/10.1.21._Greyscale12__Headshots14_zchtie.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl: ''
+      },
+      {
+        id: 2,
+        imgUrl: ''
+      },
+      {
+        id: 3,
+        imgUrl: ''
+      },
+      {
+        id: 4,
+        imgUrl: ''
+      }
+    ],
+    contact: {
+      email: '',
+      phone: '',
       instagram: '',
       facebook: '',
       tiktok: '',
       website: ''
     },
-    experience: {
-      expertise: [``],
-      credentials: ['']
-    }
+    experience: {}
   },
   {
     id: 8,
@@ -561,7 +618,7 @@ export const instructorsList = [
       practitioners to deepen the mind/body connection through these dynamic, challenging
       and highly unique sequencing of asana.`,
     featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1632540015/Izzy%20Van%20Hall/InstructorImageGrid%20%28Headshot%29/INSTRUCTORIMAGEGRID-DESKTOP-545x468--DesktopInstGridPg545x468-2_aeflri.jpg',
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633107802/HEADSHOTS.10.1.21/10.1.21.Greyscale12__Headshots23_tpsyjo.jpg',
     mobilePhotos: [
       {
         id: 1,
@@ -875,15 +932,12 @@ export const instructorsList = [
     contact: {
       email: '',
       phone: '',
-      instagram: '',
+      instagram: 'juan_yogi',
       facebook: '',
       tiktok: '',
       website: ''
     },
-    experience: {
-      expertise: [``],
-      credentials: ['']
-    }
+    experience: {}
   },
   {
     id: 12,
@@ -946,96 +1000,12 @@ export const instructorsList = [
     contact: {
       email: '',
       phone: '',
-      instagram: '',
+      instagram: 'nycfit',
       facebook: '',
       tiktok: '',
       website: ''
     },
-    experience: {
-      expertise: [``],
-      credentials: ['']
-    }
-  },
-  {
-    id: 13,
-    slug: 'michele-jongeneel',
-    fullName: 'Michele Jongeneel',
-    firstName: 'Michele',
-    lastName: 'Jongeneel',
-    classesTaught: ['Yoga', 'Kickboxing'],
-    bio: `
-      Michele received her 700 hour classical Pilates certification with Brooke
-      Siler at RE:AB Pilates in NYC in 2007. Michele is a professional dancer
-      and aerialist in NYC and is currently training in the circus arts. She has
-      performed extensively with the world renowned off-broadway show,
-      Fuerza Bruta.
-      Michele is the founder of Fysiek Freak Pilates and Fitness where she
-      offers her extensive expertise in Pilates, Yoga, and movement through
-      in-person and online private training with purpose to transform and
-      change not only bodies and but lives. 
-    `,
-    featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1632533127/Michele%20Jongeneel/InstructorGridPage%20%28headshot%29/INSTRUCTORIMAGEGRID-DESKTOP-545x468-_aumlc1.jpg',
-    mobilePhotos: [
-      {
-        id: 1,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 2,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 3,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 4,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 5,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 6,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      }
-    ],
-    desktopPhotos: [
-      {
-        id: 1,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632534150/Michele%20Jongeneel/InstructorGalleryPage/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673-0219_kugzs8.jpg'
-      },
-      {
-        id: 2,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632534150/Michele%20Jongeneel/InstructorGalleryPage/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673-1509_gqdm6i.jpg'
-      },
-      {
-        id: 3,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632534150/Michele%20Jongeneel/InstructorGalleryPage/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673-_ahfnz3.jpg'
-      },
-      {
-        id: 4,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632534150/Michele%20Jongeneel/InstructorGalleryPage/INSTRUCTORGALLERYIMAGES-DESKTOP-540x673-8791_ikp94d.jpg'
-      }
-    ],
-    contact: {
-      email: 'michijongeneel@hotmail.com ',
-      phone: '',
-      instagram: 'fysiekfreak_pilates',
-      facebook: '',
-      tiktok: '',
-      website: ''
-    },
-    experience: {
-      expertise: [``],
-      credentials: ['']
-    }
+    experience: {}
   },
   {
     id: 14,
@@ -1103,15 +1073,12 @@ export const instructorsList = [
     contact: {
       email: '',
       phone: '',
-      instagram: '',
+      instagram: 'rachelackley',
       facebook: '',
       tiktok: '',
       website: ''
     },
-    experience: {
-      expertise: [``],
-      credentials: ['']
-    }
+    experience: {}
   },
   {
     id: 15,
@@ -1184,15 +1151,12 @@ export const instructorsList = [
     contact: {
       email: '',
       phone: '',
-      instagram: '',
+      instagram: 'sarahbesshutch',
       facebook: '',
       tiktok: '',
       website: ''
     },
-    experience: {
-      expertise: [``],
-      credentials: ['']
-    }
+    experience: {}
   },
   {
     id: 16,
@@ -1260,15 +1224,12 @@ export const instructorsList = [
     contact: {
       email: '',
       phone: '',
-      instagram: '',
+      instagram: 'whatgibbs',
       facebook: '',
       tiktok: '',
       website: ''
     },
-    experience: {
-      expertise: [``],
-      credentials: ['']
-    }
+    experience: {}
   }
   // {
   //   id: 10,
