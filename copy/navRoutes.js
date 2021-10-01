@@ -45,25 +45,25 @@ export const navRoutes = [
   // },
   {
     id: 5,
-    name: 'Style',
-    link: '/style',
-    submenu: [
-      {
-        id: 1,
-        name: 'Rooted Box',
-        link: '/style/rooted-box'
-      },
-      {
-        id: 2,
-        name: 'Nuclear Box',
-        link: '/style/nuclear-box'
-      }
-    ]
+    name: 'Styles',
+    link: '/styles',
+    // submenu: [
+    //   {
+    //     id: 1,
+    //     name: 'Rooted Box',
+    //     link: '/style/rooted-box'
+    //   },
+    //   {
+    //     id: 2,
+    //     name: 'Nuclear Box',
+    //     link: '/style/nuclear-box'
+    //   }
+    // ]
   },
   {
     id: 6,
-    name: 'Curate',
-    link: '/curate'
+    name: 'Curated',
+    link: '/curated'
   },
   {
     id: 7,

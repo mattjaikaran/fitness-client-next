@@ -1,4 +1,7 @@
+@import '../../styles/colors.scss';
+
 .location {
+  background-color: $base-white;
   height: 350px;
   margin-bottom: 2rem;
 }

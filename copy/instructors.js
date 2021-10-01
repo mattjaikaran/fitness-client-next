@@ -6,11 +6,7 @@ export const instructorsList = [
     firstName: 'Allison',
     lastName: 'Kamien',
     classesTaught: ['Yoga', 'Kickboxing'],
-    bio: `Amanda’s ‘no-secret-sauce, just do the work’ approach to fitness has made her a
-      sought-after group instructor, personal trainer, and program coordinator on the
-      ground floor of the NYC fitness industry. A founding trainer of The Fhitting Room
-      and BFX, she’s branched into the digital fitness world, programming and teaching
-      for Aaptiv, NEOU, and TRX.`,
+    bio: ``,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632923369/Allison%20Kamien/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-17_ldnc0v.jpg',
     mobilePhotos: [
@@ -67,12 +63,12 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: 'ambutler2@gmail.com',
+      email: '',
       phone: '',
-      instagram: 'amandabutlernyc',
+      instagram: '',
       facebook: '',
       tiktok: '',
-      website: 'amandabutlerfitness.com'
+      website: ''
     },
     experience: {
       expertise: [''],
@@ -139,7 +135,7 @@ export const instructorsList = [
       {
         id: 4,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632772301/AmandaButler/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-6286-DesktopInstGalleryPgVERTICAL540x673-2_nnd4gs.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632772340/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-6286-DesktopClassDetailsPageVERTICAL555x452-2_ks2kr1.jpg'
       }
     ],
     contact: {
@@ -174,7 +170,7 @@ export const instructorsList = [
     firstName: 'Andrea',
     lastName: 'Foil',
     classesTaught: ['Kickboxing'],
-    bio: 'Andrea is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis adipisci molestiae esse quod ratione at laudantium ipsam voluptatum culpa magnam libero illum eligendi dolore, aspernatur perferendis',
+    bio: '',
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632881512/Andrea%20Dusel%20Foil/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-2416_lhrw1o.jpg',
     mobilePhotos: [
@@ -251,7 +247,7 @@ export const instructorsList = [
     firstName: 'Angel',
     lastName: 'Aulet',
     classesTaught: ['Kickboxing'],
-    bio: 'Angel is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis adipisci molestiae esse quod ratione at laudantium ipsam voluptatum culpa magnam libero illum eligendi dolore, aspernatur perferendis',
+    bio: '',
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632799843/Angel%20Aulet/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468--DesktopHeadshot545x468-3_dh46eu.jpg',
     mobilePhotos: [
@@ -483,6 +479,77 @@ export const instructorsList = [
   },
   {
     id: 7,
+    slug: 'damien-alexander',
+    fullName: 'Damien Alexander',
+    firstName: 'Damien',
+    lastName: 'Alexander',
+    classesTaught: ['Yoga', 'Kickboxing'],
+    bio: ``,
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1632931422/Damien%20Alexander/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-4853_tbkocv.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632931453/Damien%20Alexander/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-5043_y36odc.jpg'
+      },
+      {
+        id: 2,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632931453/Damien%20Alexander/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-5281_qjllzg.jpg'
+      },
+      {
+        id: 3,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632931452/Damien%20Alexander/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-5450_ij50yw.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632931453/Damien%20Alexander/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-5318_drouts.jpg'
+      }
+    ],
+    contact: {
+      email: '',
+      phone: '',
+      instagram: '',
+      facebook: '',
+      tiktok: '',
+      website: ''
+    },
+    experience: {
+      expertise: [``],
+      credentials: ['']
+    }
+  },
+  {
+    id: 8,
     slug: 'izzy-van-hall',
     fullName: 'Izzy Van Hall',
     firstName: 'Izzy',
@@ -563,7 +630,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 8,
+    id: 9,
     slug: 'jay-markland',
     fullName: 'Jay Markland',
     firstName: 'Jay',
@@ -575,7 +642,7 @@ export const instructorsList = [
       skills and technique. He’s the owner of Be Humble Movement LLC, as seen on
       ESPN, Triller, DAZN on demand at NEOU, Fithouse and countless magazines
       including MensHealth and Mens Fitness. He’s been an industry professional for
-      over 10+ years. `,
+      over 10+ years.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632769569/Jay%20Markland/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-3081_hxieew.jpg',
     mobilePhotos: [
@@ -647,7 +714,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 9,
+    id: 10,
     slug: 'jermaine-bailey',
     fullName: 'Jermaine Bailey',
     firstName: 'Jermaine',
@@ -733,7 +800,93 @@ export const instructorsList = [
     }
   },
   {
-    id: 9,
+    id: 11,
+    slug: 'juan-gamboa',
+    fullName: 'Juan Gamboa',
+    firstName: 'Juan',
+    lastName: 'Gamboa',
+    classesTaught: ['Yoga', 'Kickboxing'],
+    bio: ``,
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1632974273/Juan%20Gamboa/DSKTP-Headshot/DesktopHEADSHOT545x468-51_sp7unv.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632974300/Juan%20Gamboa/DSKTP-GalleryPage/DSKTP-Gallery.Vertical.545x468-11_zotydz.jpg'
+      },
+      {
+        id: 2,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632974300/Juan%20Gamboa/DSKTP-GalleryPage/DSKTP-Gallery.Horizontal.1350px-69_unqwkr.jpg'
+      },
+      {
+        id: 3,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632974300/Juan%20Gamboa/DSKTP-GalleryPage/DSKTP-Gallery.Horizontal.1350px-91-DSKTP-Gallery.Horizontal.1350px-2_bp65jz.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632974301/Juan%20Gamboa/DSKTP-GalleryPage/DSKTP-Gallery.Vertical.545x468-29_zbtovj.jpg'
+      },
+      {
+        id: 5,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632974440/Juan%20Gamboa/DSKTP-GalleryPage/DSKTP-Gallery.Vertical.545x468-59_unjktr.jpg'
+      },
+      {
+        id: 6,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632974301/Juan%20Gamboa/DSKTP-GalleryPage/DSKTP-Gallery.Vertical.545x468-15_o70xiy.jpg'
+      },
+      {
+        id: 7,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632974440/Juan%20Gamboa/DSKTP-GalleryPage/DSKTP-Gallery.Vertical.545x468-67_vfnipn.jpg'
+      }
+    ],
+    contact: {
+      email: '',
+      phone: '',
+      instagram: '',
+      facebook: '',
+      tiktok: '',
+      website: ''
+    },
+    experience: {
+      expertise: [``],
+      credentials: ['']
+    }
+  },
+  {
+    id: 12,
     slug: 'mary-onyango',
     fullName: 'Mary Onyango',
     firstName: 'Mary',
@@ -804,7 +957,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 9,
+    id: 13,
     slug: 'michele-jongeneel',
     fullName: 'Michele Jongeneel',
     firstName: 'Michele',
@@ -885,7 +1038,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 9,
+    id: 14,
     slug: 'rachel-ackley',
     fullName: 'Rachel Ackley',
     firstName: 'Rachel',
@@ -961,7 +1114,88 @@ export const instructorsList = [
     }
   },
   {
-    id: 10,
+    id: 15,
+    slug: 'sarah-bess-hutchison',
+    fullName: 'Sarah Bess Hutchison',
+    firstName: 'Sarah',
+    lastName: 'Bess Hutchison',
+    classesTaught: ['Yoga', 'Hot Boxing'],
+    bio: ``,
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633030261/Sarah%20Bess-Hutchison/DSKTP%20-%20Headshot/DesktopHEADSHOT545x468-8-DSKTP-Headshot1200px-2_nbhjjw.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633030470/Sarah%20Bess-Hutchison/DSKTP%20-%20InstGalleryPage/DSKTP-ClassDetails.Vertical.1200px-6-DSKTP-Vertical.ClassDetails1200px-2_izssi9.jpg'
+      },
+      {
+        id: 2,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633030470/Sarah%20Bess-Hutchison/DSKTP%20-%20InstGalleryPage/DSKTP-ClassDetails.Vertical.1200px-16_j8pagg.jpg'
+      },
+      {
+        id: 3,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633030470/Sarah%20Bess-Hutchison/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-4-DSKTP-Gallery.Vertical.1200px-2_drf8pk.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633031577/Sarah%20Bess-Hutchison/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-4-DSKTP-Gallery.Vertical.1200px-3_ngn4us.jpg'
+      },
+      {
+        id: 5,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633030471/Sarah%20Bess-Hutchison/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-20_zlrq8c.jpg'
+      },
+      {
+        id: 6,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633031577/Sarah%20Bess-Hutchison/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-6-DSKTP-Gallery.Vertical.1200px-2_lfoe3g.jpg'
+      }
+    ],
+    contact: {
+      email: '',
+      phone: '',
+      instagram: '',
+      facebook: '',
+      tiktok: '',
+      website: ''
+    },
+    experience: {
+      expertise: [``],
+      credentials: ['']
+    }
+  },
+  {
+    id: 16,
     slug: 'victoria-gibbs',
     fullName: 'Victoria Gibbs',
     firstName: 'Victoria',

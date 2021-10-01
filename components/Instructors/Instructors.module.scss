@@ -1,0 +1,28 @@
+@import '../../styles/colors.scss';
+
+.instructorImg {
+  filter: brightness(92%);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  &:hover {
+    filter: inherit;
+  }
+  .instructorInfo {
+    text-align: center;
+    background-color: $base-white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    visibility: hidden;
+    &:hover {
+      visibility: visible;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .instructorImg {
+    height: 200px;
+  }
+}

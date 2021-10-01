@@ -43,6 +43,9 @@ const InstructorPage = ({ instructorData }) => {
           <Spinner animation="border" role="status">
             <span className="visually-hidden">Loading...</span>
           </Spinner>
+          {setTimeout(() => {
+            router.push('/instructors')
+          }, 2000)}
         </Container>
       )}
     </Layout>

@@ -28,7 +28,7 @@ const CarouselHalfTextHalf = ({ textCopy, images }) => {
             </Carousel.Item>
           </Carousel>
         </Col>
-        <Col className="mt-sm-3" sm={6}>
+        <Col className={`mt-sm-3 ${styles.textCol}`} sm={6}>
           <h3 className={styles.textCopy}>{textCopy}</h3>
         </Col>
       </Row>
