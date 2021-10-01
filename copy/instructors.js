@@ -116,22 +116,22 @@ export const instructorsList = [
       {
         id: 1,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632772341/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-4-DesktopClassDetailsPageVERTICAL555x452-5_mycj9d.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633130486/AmandaButler/DSKTP%20-%20InstClassDetails/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-4-DesktopInstGalleryPgVERTICAL540x673-5_k7bhwa.jpg'
       },
       {
         id: 2,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632772340/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-5614-DesktopClassDetailsPageVERTICAL555x452-2_t7ohsi.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633130485/AmandaButler/DSKTP%20-%20InstClassDetails/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-5614-DesktopInstGalleryPgVERTICAL540x673-2_ohcaft.jpg'
       },
       {
         id: 3,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632772341/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-2-DesktopClassDetailsPageVERTICAL555x452-4_eu2nw9.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633130485/AmandaButler/DSKTP%20-%20InstClassDetails/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-2-DesktopInstGalleryPgVERTICAL540x673-5_gxrvmt.jpg'
       },
       {
         id: 4,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632772340/AmandaButler/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452-6286-DesktopClassDetailsPageVERTICAL555x452-2_ks2kr1.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633130486/AmandaButler/DSKTP%20-%20InstClassDetails/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-6286-DesktopInstGalleryPgVERTICAL540x673-2_dl5tui.jpg'
       }
     ],
     contact: {
@@ -236,87 +236,87 @@ export const instructorsList = [
   //     ]
   //   }
   // },
-  {
-    id: 4,
-    slug: 'angel-aulet',
-    fullName: 'Angel Aulet',
-    firstName: 'Angel',
-    lastName: 'Aulet',
-    classesTaught: ['Kickboxing'],
-    bio: '',
-    featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1632799843/Angel%20Aulet/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468--DesktopHeadshot545x468-3_dh46eu.jpg',
-    mobilePhotos: [
-      {
-        id: 1,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 2,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 3,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 4,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 5,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 6,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      }
-    ],
-    desktopPhotos: [
-      {
-        id: 1,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-6_fgcwf1.jpg'
-      },
-      {
-        id: 2,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-_pfw67o.jpg'
-      },
-      {
-        id: 3,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-ClassDetailsHORIZONTAL555x369--3_yw7lav.jpg'
-      },
-      {
-        id: 4,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452--DesktopClassDetailsPageVERTICAL555x452-7_g5bmf2.jpg'
-      },
-      {
-        id: 5,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-7_wicwli.jpg'
-      }
-    ],
-    contact: {
-      email: '',
-      phone: '',
-      instagram: 'gamechangerfitness',
-      facebook: '',
-      tiktok: ''
-    },
-    experience: {
-      expertise: [
-        'Certified Personal Trainer at Equinox',
-        'Certified Spin Instructor at SoulCycle'
-      ],
-      credentials: [
-        'Bachelor of Science in Exercise Science from UCLA',
-        'Strongest Man In The World 2018 Runner Up'
-      ]
-    }
-  },
+  // {
+  //   id: 4,
+  //   slug: 'angel-aulet',
+  //   fullName: 'Angel Aulet',
+  //   firstName: 'Angel',
+  //   lastName: 'Aulet',
+  //   classesTaught: ['Kickboxing'],
+  //   bio: '',
+  //   featuredPhoto:
+  //     'https://res.cloudinary.com/studiostudios/image/upload/v1632799843/Angel%20Aulet/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468--DesktopHeadshot545x468-3_dh46eu.jpg',
+  //   mobilePhotos: [
+  //     {
+  //       id: 1,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 2,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 3,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 4,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 5,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 6,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     }
+  //   ],
+  //   desktopPhotos: [
+  //     {
+  //       id: 1,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-6_fgcwf1.jpg'
+  //     },
+  //     {
+  //       id: 2,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-_pfw67o.jpg'
+  //     },
+  //     {
+  //       id: 3,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-ClassDetailsHORIZONTAL555x369--3_yw7lav.jpg'
+  //     },
+  //     {
+  //       id: 4,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452--DesktopClassDetailsPageVERTICAL555x452-7_g5bmf2.jpg'
+  //     },
+  //     {
+  //       id: 5,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-7_wicwli.jpg'
+  //     }
+  //   ],
+  //   contact: {
+  //     email: '',
+  //     phone: '',
+  //     instagram: 'gamechangerfitness',
+  //     facebook: '',
+  //     tiktok: ''
+  //   },
+  //   experience: {
+  //     expertise: [
+  //       'Certified Personal Trainer at Equinox',
+  //       'Certified Spin Instructor at SoulCycle'
+  //     ],
+  //     credentials: [
+  //       'Bachelor of Science in Exercise Science from UCLA',
+  //       'Strongest Man In The World 2018 Runner Up'
+  //     ]
+  //   }
+  // },
   {
     id: 5,
     slug: 'brittany-watts',
@@ -456,11 +456,11 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: 'hello@sarah.com',
-      phone: '9175550198',
-      instagram: 'sarahbaileyfit',
-      facebook: 'sarahbaileyfit',
-      tiktok: 'sarahbaileyfit'
+      email: '',
+      phone: '',
+      instagram: 'camnorsworthy',
+      facebook: '',
+      tiktok: ''
     },
     experience: {
       expertise: [
@@ -580,19 +580,33 @@ export const instructorsList = [
     desktopPhotos: [
       {
         id: 1,
-        imgUrl: ''
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633100656/Dominique%20Warren/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-79_ogxxsh.jpg'
       },
       {
         id: 2,
-        imgUrl: ''
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633100652/Dominique%20Warren/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-93_ol1hsi.jpg'
       },
       {
         id: 3,
-        imgUrl: ''
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633100654/Dominique%20Warren/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-44_ys0rhl.jpg'
       },
       {
         id: 4,
-        imgUrl: ''
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633100655/Dominique%20Warren/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-4553_luypoh.jpg'
+      },
+      {
+        id: 5,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633100660/Dominique%20Warren/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-4378_uk13ka.jpg'
+      },
+      {
+        id: 6,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633100660/Dominique%20Warren/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-4346_pibzto.jpg'
       }
     ],
     contact: {

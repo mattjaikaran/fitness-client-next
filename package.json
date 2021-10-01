@@ -13,6 +13,7 @@
     "axios": "^0.21.1",
     "bootstrap": "5.1.0",
     "date-fns": "^2.23.0",
+    "emailjs": "^3.6.0",
     "next": "11.0.1",
     "next-images": "^1.8.1",
     "react": "17.0.2",
