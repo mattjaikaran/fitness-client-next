@@ -17,7 +17,7 @@ const InstructorPage = ({ instructorData }) => {
     }
     console.log(details);
   }
-  useEffect(() => renderDetails(), [details])
+  useEffect(() => renderDetails(), [])
   // const router = useRouter()
   // const [details, setDetails] = useState({})
   // const renderDetails = async () => {
