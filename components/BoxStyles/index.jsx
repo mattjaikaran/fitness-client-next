@@ -6,13 +6,15 @@ import styles from './BoxStyles.module.scss'
 const BoxStyles = () => {
   const renderBoxDetails = () => {
     return boxStyles.map((box) => {
-      const { id, name, slug, description, btnText } = box
+      const { id, name, slug, descriptionOne, impactStatement, descriptionTwo, btnText } = box
       return (
         <Col key={id} lg={12} className={styles.boxCol}>
           <Box
             name={name}
             slug={slug}
-            description={description}
+            descriptionOne={descriptionOne}
+            impactStatement={impactStatement}
+            descriptionTwo={descriptionTwo}
             // btnText={btnText}
           />
         </Col>

@@ -62,8 +62,8 @@ export const navRoutes = [
   },
   {
     id: 6,
-    name: 'Curated',
-    link: '/curated'
+    name: 'Curate',
+    link: '/curate'
   },
   {
     id: 7,

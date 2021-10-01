@@ -5,24 +5,26 @@ const Commitment = () => {
     <Container className="orpheus">
       <Row>
         <Col sm={0}></Col>
-        <Col sm={8}>
+        <Col sm={8} lg={6}>
           <h1 className="mt-5 text-center">Commitment</h1>
 
           <h5 className="mt-5">
-            <strong>{`"because creativity breeds creativity"`}</strong>
+            <q>
+              <strong>{`because creativity breeds creativity`}</strong>
+            </q>
           </h5>
           <p>
-            <small>author unknown</small>
+            <small>- author unknown</small>
           </p>
 
           <div className="mt-5">
             <p>
               Because connection is a basic human need. <br />
-              We are a brand that connects synergies of your choosing.
+              We are the brand that connects energies of your choosing.
             </p>
             <p className="mt-5">
               We simply would like to highlight, support and strengthen the
-              relationship between the very best in creation, mnotivation and
+              relationship between the very best in creation, motivation and
               the community of athletes across the nation.
             </p>
             <p className="mt-5">

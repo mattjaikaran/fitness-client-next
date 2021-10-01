@@ -52,13 +52,13 @@ const Contact = () => {
               (917) 476 9040
             </a>
           </p>
-          <p>
+          {/* <p>
             <strong>ADDRESS</strong>
             <br />
             <span className="text-muted orpheus">
               Manhattan Flagship facility Spring 2022
             </span>
-          </p>
+          </p> */}
         </Col>
         <Col md={6}>
           <Form onSubmit={handleContact}>

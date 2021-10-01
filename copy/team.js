@@ -17,8 +17,8 @@ export const teamList = {
     },
     {
       id: 4,
-      name: 'Kristen Kuihara',
-      instagram: 'kkholidayy'
+      name: 'Cat Medina Bruton',
+      instagram: 'catmedinaa'
     },
     {
       id: 5,
@@ -59,8 +59,8 @@ export const teamList = {
     },
     {
       id: 12,
-      name: 'Cat Medina Bruton',
-      instagram: 'catmedinaa'
+      name: 'Andrew Salmon',
+      instagram: 'asalmon9'
     },
     {
       id: 13,

@@ -9,8 +9,12 @@ const AboutUs = () => {
         <Col md={6} lg={8}>
           <h1 className="my-5 text-center">About Us</h1>
           <p className="mt-4">{about.p1}</p>
-          <p className="mt-4">{about.p2}</p>
-          <p className="mt-4">{about.p3}</p>
+          <p className="mt-4">
+            {about.p2}
+            <br />
+            {about.p3}
+          </p>
+          <p className="mt-4">{about.p4}</p>
         </Col>
         <Col sm={0}></Col>
       </Row>

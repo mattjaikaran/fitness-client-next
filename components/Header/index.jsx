@@ -52,7 +52,7 @@ const Header = () => {
           </Col>
           <Col xs={6} sm={5} className="pt-2 pb-md-2">
             <Navbar.Brand className="montserrat">
-              <Link href="/">sStudioss</Link>
+              <Link href="/">SSS</Link>
             </Navbar.Brand>
           </Col>
           <Col
