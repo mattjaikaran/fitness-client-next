@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { send } from 'emailjs-com'
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap'
 import { IoLogoInstagram, IoLogoTiktok } from 'react-icons/io5'
 import { AiOutlineYoutube } from 'react-icons/ai'
@@ -10,13 +11,20 @@ const CustomerService = () => {
   const [messageSuccess, setMessageSuccess] = useState(null)
   const handleCustomerService = async (e) => {
     e.preventDefault()
-    const obj = {
-      name,
-      email,
-      message
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: 'SSTUDIOSS CUSTOMER SERVICE',
+      message: message
     }
-    console.log('submit', obj)
+    console.log('submit', templateParams)
     try {
+      send(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+      )
       setMessageSuccess(true)
       setName('')
       setEmail('')
