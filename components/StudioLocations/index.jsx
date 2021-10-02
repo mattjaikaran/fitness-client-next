@@ -5,16 +5,16 @@ import { studioLocations } from '@/copy/studioLocations'
 const StudioLocations = ({ homePage }) => {
   const renderStudioDetails = () => {
     return studioLocations.map((studio) => {
-      const { id, name, address, description, btnText, btnLink, text } = studio
+      const { id, name, address, launchDate, description, btnText, btnLink } = studio
       return (
         <Col key={id} lg={4}>
           <Location
             name={name}
             address={address}
+            launchDate={launchDate}
             description={description}
             btnText={btnText}
             btnLink={btnLink}
-            text={text}
           />
         </Col>
       )

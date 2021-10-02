@@ -5,7 +5,7 @@ export const instructorsList = [
     fullName: 'Allison Kamien',
     firstName: 'Allison',
     lastName: 'Kamien',
-    classesTaught: ['Yoga', 'Kickboxing'],
+    classesTaught: [],
     bio: ``,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632923369/Allison%20Kamien/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-17_ldnc0v.jpg',
@@ -77,7 +77,7 @@ export const instructorsList = [
     fullName: 'Amanda Butler',
     firstName: 'Amanda',
     lastName: 'Butler',
-    classesTaught: ['Yoga', 'Kickboxing'],
+    classesTaught: [],
     bio: `Amanda’s ‘no-secret-sauce, just do the work’ approach to fitness has made her a
       sought-after group instructor, personal trainer, and program coordinator on the
       ground floor of the NYC fitness industry. A founding trainer of The Fhitting Room
@@ -323,7 +323,7 @@ export const instructorsList = [
     fullName: 'Brittany Watts',
     firstName: 'Brittany',
     lastName: 'Watts',
-    classesTaught: ['Kickboxing'],
+    classesTaught: [],
     bio: `Brittany Watts is a NASM certified Personal trainer, Precision Nutrition Coach
       and Wilhelmina Fitness model. A student of ballet, tap, jazz, modern and African
       dance; Brittany is the creator of WattsElite which is her brand for fitness and her
@@ -403,7 +403,7 @@ export const instructorsList = [
     fullName: 'Cam Norsworthy',
     firstName: 'Cam',
     lastName: 'Norsworthy',
-    classesTaught: ['Yoga', 'Spin'],
+    classesTaught: [],
     bio: '',
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632663893/Cam%20Norsworthy/Desktop-InstGridHeadshot/DesktopHEADSHOT545x468-9_ehgbpf.jpg',
@@ -479,7 +479,7 @@ export const instructorsList = [
     fullName: 'Damien Alexander',
     firstName: 'Damien',
     lastName: 'Alexander',
-    classesTaught: ['Yoga', 'Kickboxing'],
+    classesTaught: [],
     bio: ``,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632931422/Damien%20Alexander/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-4853_tbkocv.jpg',
@@ -547,7 +547,7 @@ export const instructorsList = [
     fullName: 'Dominique Warren',
     firstName: 'Dominique',
     lastName: 'Warren',
-    classesTaught: ['Yoga'],
+    classesTaught: [],
     bio: ``,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633106042/HEADSHOTS.10.1.21/10.1.21._Greyscale12__Headshots14_zchtie.jpg',
@@ -625,7 +625,7 @@ export const instructorsList = [
     fullName: 'Izzy Van Hall',
     firstName: 'Izzy',
     lastName: 'Van Hall',
-    classesTaught: ['Yoga', 'Spin'],
+    classesTaught: [],
     bio: `Izzy VanHall teaches a strong Vinyasa practice with an artistic spin and strategic set of
       counter poses to lull you into rest. With a focus on anatomical alignment and functional
       movement, her practices enable students to gain control and grace. Izzy encourages
@@ -706,7 +706,7 @@ export const instructorsList = [
     fullName: 'Jay Markland',
     firstName: 'Jay',
     lastName: 'Markland',
-    classesTaught: ['Yoga', 'Spin'],
+    classesTaught: [],
     bio: `Jason “Jay Mark” Markland is a Professional MMA fighter and Kickboxer. He
       fought for Bellator MMA and Glory Kickboxing. He’s a two time champion in two
       different Army divisions. He specializes in strength, conditioning, Mix Martial Arts
@@ -790,7 +790,7 @@ export const instructorsList = [
     fullName: 'Jermaine Bailey',
     firstName: 'Jermaine',
     lastName: 'Bailey',
-    classesTaught: ['Yoga', 'Spin'],
+    classesTaught: [],
     bio: `A former Bodybuilding and Martial Arts fighter, Jermaine has been teaching his
       brand of fitness for the past 20 plus years in gyms all over NYC. He's been
       featured on shows such as Fo 5 Good Day NY, WB 11 Morning news and BET
@@ -876,7 +876,7 @@ export const instructorsList = [
     fullName: 'Juan Gamboa',
     firstName: 'Juan',
     lastName: 'Gamboa',
-    classesTaught: ['Yoga', 'Kickboxing'],
+    classesTaught: [],
     bio: ``,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632974273/Juan%20Gamboa/DSKTP-Headshot/DesktopHEADSHOT545x468-51_sp7unv.jpg',
@@ -959,7 +959,7 @@ export const instructorsList = [
     fullName: 'Mary Onyango',
     firstName: 'Mary',
     lastName: 'Onyango',
-    classesTaught: ['Yoga', 'Kickboxing'],
+    classesTaught: [],
     bio: ``,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632798864/Mary%20Onyango/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468--DesktopHeadshot545x468-2_xfbjtk.jpg',
@@ -1027,7 +1027,7 @@ export const instructorsList = [
     fullName: 'Rachel Ackley',
     firstName: 'Rachel',
     lastName: 'Ackley',
-    classesTaught: ['Yoga', 'Kickboxing'],
+    classesTaught: [],
     bio: ``,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632886466/Rachel%20Ackley/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-28_wblzgg.jpg',
@@ -1100,7 +1100,7 @@ export const instructorsList = [
     fullName: 'Sarah Bess Hutchison',
     firstName: 'Sarah',
     lastName: 'Bess Hutchison',
-    classesTaught: ['Yoga', 'Hot Boxing'],
+    classesTaught: [],
     bio: ``,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633030261/Sarah%20Bess-Hutchison/DSKTP%20-%20Headshot/DesktopHEADSHOT545x468-8-DSKTP-Headshot1200px-2_nbhjjw.jpg',
@@ -1178,7 +1178,7 @@ export const instructorsList = [
     fullName: 'Victoria Gibbs',
     firstName: 'Victoria',
     lastName: 'Gibbs',
-    classesTaught: ['Yoga', 'Kickboxing'],
+    classesTaught: [],
     bio: ``,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632853319/Victoria%20Gibbs/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-1_dbz5wg.jpg',
@@ -1251,7 +1251,7 @@ export const instructorsList = [
   //   fullName: 'Mary Onyango',
   //   firstName: 'Mary',
   //   lastName: 'Onyango',
-  //   classesTaught: ['Yoga', 'Kickboxing'],
+  //   classesTaught: [],
   //   bio: ``,
   //   featuredPhoto: '',
   //   mobilePhotos: [

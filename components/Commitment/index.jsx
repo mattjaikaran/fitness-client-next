@@ -19,20 +19,22 @@ const Commitment = () => {
 
           <div className="mt-5">
             <p>
-              Because connection is a basic human need. <br />
-              We are the brand that connects energies of your choosing.
+              Because connection is a basic human need.
+            </p>
+
+            <p className="mt-5">
+              We are committed to this methodology of PAY-PER-USE fitness.
             </p>
             <p className="mt-5">
               We simply would like to highlight, support and strengthen the
-              relationship between the very best in creation, motivation and
-              the community of athletes across the nation.
+              relationship between the very best in creation, motivation and the
+              community of athletes across the nation.
             </p>
             <p className="mt-5">
-              We are committed to this methodology of pay-per-use fitness. We
-              believe consumers and creators will prosper in a relationship and
-              performance they construct. We believe there is a nation of
+              We believe consumers and creators will prosper in a relationship
+              and performance they construct. We believe there is a nation of
               fitness professionals out there who want to inspire, educated and
-              motivate on their own wavelenth. We are the platform of space for
+              motivate on their own wavelength. We are the platform of space for
               that relationship to exist and develop.
             </p>
           </div>
