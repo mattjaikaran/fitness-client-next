@@ -2,7 +2,6 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { teamList } from '@/copy/team'
 
 const Team = () => {
-  console.log(teamList)
   return (
     <Container className="orpheus">
       <h1 className="my-5 text-center">Team</h1>
