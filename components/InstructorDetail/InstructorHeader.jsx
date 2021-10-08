@@ -49,6 +49,7 @@ const InstructorHeader = ({
                     : `${classesTaught} Instructor`}
                 </small>
               </p>
+              <hr className="hr-custom" />
               <p className="orpheus mt-3 py-3 px-lg-5">{bio}</p>
               {/* commented out for launch */}
               {/* <Button

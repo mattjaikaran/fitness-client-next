@@ -10,6 +10,7 @@ const Home = () => {
       <HomeHero />
       <TextWithCTA
         text={homeCopy.descriptionOne.copy}
+        text2={homeCopy.descriptionOne.copy2}
         impact={homeCopy.descriptionOne.impact}
         // btnText={homeCopy.descriptionOne.btnText}
         // btnLink={homeCopy.descriptionOne.btnLink}

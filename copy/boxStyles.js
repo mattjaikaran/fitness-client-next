@@ -10,6 +10,16 @@ export const boxStyles = [
     btnText: 'Book'
   },
   {
+    id: 8,
+    slug: 'train-day-box',
+    name: 'Train Day Box',
+    descriptionOne: 'Rubber flooring, low light, industrial ceilings, smoky dark tones',
+    impactStatement: 'RUGGED. RAW. AUTHENTIC. COMPETE.',
+    descriptionTwo:
+      'This box is dim, uncomfortable, grimy - we work out for real in this space.',
+    btnText: 'Book'
+  },
+  {
     id: 2,
     slug: 'ethereal-box',
     name: 'Ethereal Box',
@@ -34,7 +44,7 @@ export const boxStyles = [
     slug: 'nuclear-box',
     name: 'Nuclear Box',
     descriptionOne: 'Black flooring, walls and ceiling.',
-    impactStatement: 'DEEP. VACANT. LASERLIKE.',
+    impactStatement: 'DEEP. VACANT. SINGULAR.',
     descriptionTwo:
       'This box is where one enters their nucleus - the tone is deep, aggressive, quiet.',
     btnText: 'Book'
@@ -46,7 +56,7 @@ export const boxStyles = [
     descriptionOne: 'Bright studio with mirrors.',
     impactStatement: 'PERFECTION. VAIN. EGO.',
     descriptionTwo:
-      'This box is the commitment to foundations, core, soul. This Box is to develop | inspire.',
+      'This box is the for fundamentals | core | soul. This is where development, commitment and creativity happen.',
     btnText: 'Book'
   },
   {

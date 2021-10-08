@@ -1,14 +1,17 @@
 import { Container, Button } from 'react-bootstrap'
 import styles from './TextWithCTA.module.scss'
 
-const TextWithCTA = ({ text, impact, btnText, btnLink }) => {
+const TextWithCTA = ({ text, text2, impact, btnText, btnLink }) => {
   return (
     <div className={styles.textWithCTA}>
       <Container className="py-5 p-sm-5">
-        <h4 className={`${!impact ? 'mb-5' : 'mb-3'} ${styles.text}`}>{text}</h4>
-        {impact && <h4 className="mb-5">{impact}</h4>}
+        <h4 className={`${styles.text}`}>
+          {text}
+        </h4>
+        {text2 && <h4 className="mt-5">{text2}</h4>}
+        {impact && <h4 className="mt-3">{impact}</h4>}
         {btnText && (
-          <Button size="lg" variant="outline-primary" href={btnLink}>
+          <Button size="lg" variant="outline-primary mt-5" href={btnLink}>
             {btnText}
           </Button>
         )}
