@@ -98,9 +98,8 @@ const CalendarDetails = () => {
         {/* Glofox */}
         <iframe
           src="https://app.glofox.com/portal/#/branch/61531d776084c400ba383d95/classes-week-view"
-          frameborder="0"
           width="100%"
-          height="1200"></iframe>
+          height="1200" />
       </div>
     </Container>
   )
