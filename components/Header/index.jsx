@@ -46,10 +46,11 @@ const Header = () => {
       variant="light">
       <Container className="d-block d-lg-flex">
         <Row>
-          <Col xs={4} className="pt-1">
+          <Col xs={2} sm={3} md={5} className="pt-1">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           </Col>
-          <Col xs={4} className="pt-2 pb-md-2 pr-sm-3 mr-0 text-center">
+          <Col xs={2} sm={1} className="d-md-none" />
+          <Col xs={4} sm={2} className="pt-2 pb-md-2 text-center">
             <Navbar.Brand className="montserrat">
               <span style={{ visibility: 'hidden' }}>S</span>
               <Link href="/">SSSS</Link>

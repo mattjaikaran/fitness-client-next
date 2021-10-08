@@ -98,7 +98,6 @@ const InstructorPage = ({ data, preview }) => {
 
   return (
     <Layout>
-      {page.fullName && <p>{page.fullName}</p>}
       {preview && <Link href="/api/exit-preview">Preview Mode Activated!</Link>}
       {data ? (
         <InstructorDetail instructorDetail={data} />
