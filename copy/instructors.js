@@ -681,84 +681,84 @@ export const instructorsList = [
     },
     experience: {}
   },
-  {
-    id: 17,
-    slug: 'helen-phelan',
-    fullName: 'Helen Phelan',
-    firstName: 'Helen',
-    lastName: 'Phelan',
-    classesTaught: [],
-    bio: ``,
-    featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1633624405/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-29_zgude7.jpg',
-    mobilePhotos: [
-      {
-        id: 1,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 2,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 3,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 4,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 5,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 6,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      }
-    ],
-    desktopPhotos: [
-      {
-        id: 1,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633624409/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-26_kwospd.jpg'
-      },
-      {
-        id: 2,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633624406/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-27_doi5o4.jpg'
-      },
-      {
-        id: 3,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633624405/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-28_dlklxx.jpg'
-      },
-      {
-        id: 4,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633624408/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-24_nqjlte.jpg'
-      },
-      {
-        id: 5,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633624407/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-25_q3xq0g.jpg'
-      },
-      {
-        id: 6,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633624405/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-29_zgude7.jpg'
-      }
-    ],
-    contact: {
-      email: '',
-      phone: '',
-      instagram: 'helenvphelan',
-      facebook: '',
-      tiktok: '',
-      website: ''
-    },
-    experience: {}
-  },
+  // {
+  //   id: 17,
+  //   slug: 'helen-phelan',
+  //   fullName: 'Helen Phelan',
+  //   firstName: 'Helen',
+  //   lastName: 'Phelan',
+  //   classesTaught: [],
+  //   bio: ``,
+  //   featuredPhoto:
+  //     'https://res.cloudinary.com/studiostudios/image/upload/v1633624405/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-29_zgude7.jpg',
+  //   mobilePhotos: [
+  //     {
+  //       id: 1,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 2,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 3,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 4,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 5,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     },
+  //     {
+  //       id: 6,
+  //       imgUrl: 'https://via.placeholder.com/350x350.png'
+  //     }
+  //   ],
+  //   desktopPhotos: [
+  //     {
+  //       id: 1,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624409/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-26_kwospd.jpg'
+  //     },
+  //     {
+  //       id: 2,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624406/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-27_doi5o4.jpg'
+  //     },
+  //     {
+  //       id: 3,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624405/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-28_dlklxx.jpg'
+  //     },
+  //     {
+  //       id: 4,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624408/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-24_nqjlte.jpg'
+  //     },
+  //     {
+  //       id: 5,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624407/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-25_q3xq0g.jpg'
+  //     },
+  //     {
+  //       id: 6,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624405/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-29_zgude7.jpg'
+  //     }
+  //   ],
+  //   contact: {
+  //     email: '',
+  //     phone: '',
+  //     instagram: 'helenvphelan',
+  //     facebook: '',
+  //     tiktok: '',
+  //     website: ''
+  //   },
+  //   experience: {}
+  // },
   {
     id: 8,
     slug: 'izzy-van-hall',
@@ -1023,84 +1023,6 @@ export const instructorsList = [
     }
   },
   {
-    id: 19,
-    slug: 'katya-bryleva',
-    fullName: 'Katya Bryleva',
-    firstName: 'Katya',
-    lastName: 'Bryleva',
-    classesTaught: [],
-    bio: ``,
-    featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1633526776/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstHeadshot/HeadshotsGREYSCALE12_fromlightroom_indesign-21-5_yi2dq6.jpg',
-    mobilePhotos: [
-      {
-        id: 1,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 2,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 3,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 4,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 5,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      },
-      {
-        id: 6,
-        imgUrl: 'https://via.placeholder.com/350x350.png'
-      }
-    ],
-    desktopPhotos: [
-      {
-        id: 1,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633528198/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-1-DSKTP-Gallery.Vertical.1200px-2_lcptot.jpg'
-      },
-      {
-        id: 2,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633528198/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-10-DSKTP-Gallery.Vertical.1200px-3_vlspqb.jpg'
-      },
-      {
-        id: 3,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633528198/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-2-DSKTP-Gallery.Vertical.1200px-10_jvjdur.jpg'
-      },
-      {
-        id: 4,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633528198/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-19-DSKTP-Gallery.Vertical.1200px-5_ewat6t.jpg'
-      },
-      {
-        id: 5,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633528198/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-24-DSKTP-Gallery.Vertical.1200px-2_nxonnn.jpg'
-      },
-      {
-        id: 6,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633528196/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-27-DSKTP-Gallery.Vertical.1200px-3_jrbkfz.jpg'
-      }
-    ],
-    contact: {
-      email: '',
-      phone: '',
-      instagram: 'katya_bryleva',
-      facebook: '',
-      tiktok: '',
-      website: ''
-    },
-    experience: {}
-  },
-  {
     id: 10,
     slug: 'jermaine-bailey',
     fullName: 'Jermaine Bailey',
@@ -1263,6 +1185,84 @@ export const instructorsList = [
       email: '',
       phone: '',
       instagram: 'juan_yogi',
+      facebook: '',
+      tiktok: '',
+      website: ''
+    },
+    experience: {}
+  },
+  {
+    id: 19,
+    slug: 'katya-bryleva',
+    fullName: 'Katya Bryleva',
+    firstName: 'Katya',
+    lastName: 'Bryleva',
+    classesTaught: [],
+    bio: ``,
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633526776/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstHeadshot/HeadshotsGREYSCALE12_fromlightroom_indesign-21-5_yi2dq6.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633528198/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-1-DSKTP-Gallery.Vertical.1200px-2_lcptot.jpg'
+      },
+      {
+        id: 2,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633528198/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-10-DSKTP-Gallery.Vertical.1200px-3_vlspqb.jpg'
+      },
+      {
+        id: 3,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633528198/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-2-DSKTP-Gallery.Vertical.1200px-10_jvjdur.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633528198/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-19-DSKTP-Gallery.Vertical.1200px-5_ewat6t.jpg'
+      },
+      {
+        id: 5,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633528198/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-24-DSKTP-Gallery.Vertical.1200px-2_nxonnn.jpg'
+      },
+      {
+        id: 6,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633528196/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-27-DSKTP-Gallery.Vertical.1200px-3_jrbkfz.jpg'
+      }
+    ],
+    contact: {
+      email: '',
+      phone: '',
+      instagram: 'katya_bryleva',
       facebook: '',
       tiktok: '',
       website: ''

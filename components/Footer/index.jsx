@@ -20,9 +20,9 @@ const Footer = () => {
               <p>Commitment</p>
             </a>
           </Link>
-          <Link href="/curated-classes-and-events" passHref>
+          <Link href="/instructors" passHref>
             <a>
-              <p>Curated Classes &amp; Events</p>
+              <p>Instructors</p>
             </a>
           </Link>
           <Link href="/team" passHref>
@@ -42,23 +42,18 @@ const Footer = () => {
               <p>Contact Us</p>
             </a>
           </Link>
+          <Link href="/curated-classes-and-events" passHref>
+            <a>
+              <p>Curated Classes &amp; Events</p>
+            </a>
+          </Link>
           <Link href="/investment-relations" passHref>
             <a>
               <p>Investment Relations</p>
             </a>
           </Link>
-          <Link href="/privacy" passHref>
-            <a>
-              <p>Privacy</p>
-            </a>
-          </Link>
         </Col>
         <Col md={4}>
-          <Link href="/locations" passHref>
-            <a>
-              <p>Locations</p>
-            </a>
-          </Link>
           <Link href="/membership" passHref>
             <a>
               <p>Memberships</p>
@@ -67,6 +62,11 @@ const Footer = () => {
           <Link href="/about" passHref>
             <a>
               <p>About Us</p>
+            </a>
+          </Link>
+          <Link href="/privacy" passHref>
+            <a>
+              <p>Privacy</p>
             </a>
           </Link>
           <Link href="/customer-service" passHref>

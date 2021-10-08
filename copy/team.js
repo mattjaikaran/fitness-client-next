@@ -30,28 +30,28 @@ export const teamList = {
       name: 'Aaron Marchese',
       instagram: 'hamptonyards'
     },
-    // {
-    //   id: 7,
-    //   name: 'Majesta Thorndike',
-    //   instagram: 'majestayogiandpup'
-    // }
   ],
   columnTwo: [
+    {
+      id: 7,
+      name: 'Majesta Thorndike',
+      instagram: 'majestayogiandpup'
+    },
     {
       id: 8,
       name: 'Juan Gamboa',
       instagram: 'juan.yogi'
     },
-    {
-      id: 9,
-      name: 'Kat Thomas',
-      instagram: 'bumpcoffee'
-    },
-    {
-      id: 10,
-      name: 'Darryl Whiting',
-      instagram: 'thefakedarrylwhiting'
-    },
+    // {
+    //   id: 9,
+    //   name: 'Kat Thomas',
+    //   instagram: 'bumpcoffee'
+    // },
+    // {
+    //   id: 10,
+    //   name: 'Darryl Whiting',
+    //   instagram: 'thefakedarrylwhiting'
+    // },
     {
       id: 11,
       name: `D'Juan Woods`,
