@@ -1,5 +1,6 @@
 {
   "turboConsoleLog.quote": "'",
   "prettier.jsxSingleQuote": false,
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "git.ignoreLimitWarning": true
 }

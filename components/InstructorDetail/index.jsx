@@ -17,15 +17,15 @@ const InstructorDetail = ({ instructorDetail }) => {
   return  (
     <>
       <InstructorHeader
-        bio={instructorDetail?.bio}
-        contact={instructorDetail?.contact}
-        instructorFullName={instructorDetail?.fullName}
-        instructorFirstName={instructorDetail?.firstName}
-        classesTaught={instructorDetail?.classesTaught}
+        bio={instructorDetail?.page?.bio}
+        contact={instructorDetail?.page?.contact}
+        instructorFullName={instructorDetail?.page?.fullName}
+        instructorFirstName={instructorDetail?.page?.firstName}
+        classesTaught={instructorDetail?.page?.classesTaught}
       />
       <InstructorImages
-        desktopPhotos={instructorDetail.desktopPhotos}
-        mobilePhotos={instructorDetail.mobilePhotos}
+        desktopPhotos={instructorDetail?.page?.desktopPhotos}
+        mobilePhotos={instructorDetail?.page?.mobilePhotos}
       />
       {instructorDetail.experience?.credentials && (
         <>
@@ -35,8 +35,8 @@ const InstructorDetail = ({ instructorDetail }) => {
       )}
       {instructorDetail.contact?.instagram && (
         <InstructorInstagram
-          instagramHandle={instructorDetail?.contact?.instagram}
-          imagesArray={instructorDetail?.mobilePhotos}
+          instagramHandle={instructorDetail?.page?.contact?.instagram}
+          imagesArray={instructorDetail?.page?.mobilePhotos}
         />
       )}
     </>
