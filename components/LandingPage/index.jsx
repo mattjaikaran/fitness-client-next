@@ -6,7 +6,7 @@ import homeHero from '../../assets/img/home-hero.jpeg'
 const LandingPage = () => {
   return (
     <div>
-      <Image src={homeHero} />
+      <Image src={homeHero} alt="home hero" />
       <Container className="orpheus text-center p-5">
         <h1>SSTUDIOSS</h1>
         <h6>Coming Soon</h6>

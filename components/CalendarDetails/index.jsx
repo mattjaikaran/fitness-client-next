@@ -86,13 +86,20 @@ const CalendarDetails = () => {
           style={{ height: 500 }}
         /> */}
         {/* <h3 className="my-5 text-center">Book a Class</h3> */}
-        <iframe
+
+        {/* squarespace */}
+        {/* <iframe
           src="https://app.squarespacescheduling.com/schedule.php?owner=23729247"
           // title="Schedule Appointment"
           width="100%"
           height="800"
           frameBorder="0"
-        />
+        /> */}
+        {/* Glofox */}
+        <iframe
+          src="https://app.glofox.com/portal/#/branch/61531d776084c400ba383d95/classes-week-view"
+          width="100%"
+          height="1200" />
       </div>
     </Container>
   )

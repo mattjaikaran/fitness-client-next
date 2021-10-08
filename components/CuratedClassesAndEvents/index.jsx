@@ -24,7 +24,7 @@ const CuratedClassesAndEvents = () => {
           {/* <p className="mt-0">{curatedClassesAndEvents.p4}</p>
           <p className="mt-0">{curatedClassesAndEvents.p5}</p>
           <p className="mt-0">{curatedClassesAndEvents.p6}</p> */}
-          <Link href="/curate">
+          <Link href="/curate" passHref>
             <p className="mt-5">{curatedClassesAndEvents.p7}</p>
           </Link>
         </Col>

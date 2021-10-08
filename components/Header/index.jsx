@@ -45,17 +45,18 @@ const Header = () => {
       expand="lg"
       bg="dark"
       variant="dark">
-      <Container className="d-flex d-sm-block d-lg-flex">
+      <Container className="d-block d-lg-flex">
         <Row>
-          <Col xs={4} sm={5} className="pt-1">
+          <Col xs={3} sm={4} md={5} className="pt-1">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           </Col>
-          <Col xs={6} sm={5} className="pt-2 pb-md-2">
-            <Navbar.Brand className="montserrat d-none d-sm-block">
+          <Col xs={2} sm={1} className="d-md-none" />
+          <Col xs={4} sm={4} className="pt-2 pb-md-2">
+            <Navbar.Brand className="montserrat">
               <Link href="/">SSSS</Link>
             </Navbar.Brand>
           </Col>
-          <Col
+          {/* <Col
             xs={2}
             className="d-lg-none text-end"
             // hidden for launch
@@ -65,7 +66,7 @@ const Header = () => {
                 <BiSearch />
               </Button>
             </Nav.Link>
-          </Col>
+          </Col> */}
         </Row>
 
         <Navbar.Collapse id="responsive-navbar-nav">

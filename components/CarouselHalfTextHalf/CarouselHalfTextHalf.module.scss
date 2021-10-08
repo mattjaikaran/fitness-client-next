@@ -14,8 +14,20 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .textCopy {
-    margin-top: 30%;
+    margin-top: 2%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .textCopy {
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .textCopy {
+    margin-top: 15%;
   }
 }

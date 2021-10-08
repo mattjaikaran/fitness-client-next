@@ -100,6 +100,7 @@ export const studioLocations = [
     id: 1,
     slug: 'upper-east-side',
     name: 'New York - Upper East Side',
+    launchDate: 'October 2021',
     address: {
       street: '1440 3rd Ave',
       city: 'New York',
@@ -115,6 +116,7 @@ export const studioLocations = [
     id: 2,
     slug: 'boston-back-bay',
     name: 'Boston - Back Bay',
+    launchDate: 'November 2021',
     address: {
       street: '175 Newbury St',
       city: 'Boston',
@@ -129,7 +131,7 @@ export const studioLocations = [
   {
     id: 3,
     name: 'New York - Tribeca',
-    text: 'Coming Winter 2022'
+    launchDate: 'Coming Winter 2022'
   }
   // {
   //   id: 4,

@@ -15,11 +15,11 @@ export const teamList = {
       name: 'Ron Cooper',
       instagram: 'ronaldcooperjr'
     },
-    {
-      id: 4,
-      name: 'Cat Medina Bruton',
-      instagram: 'catmedinaa'
-    },
+    // {
+    //   id: 4,
+    //   name: 'Cat Medina Bruton',
+    //   instagram: 'catmedinaa'
+    // },
     {
       id: 5,
       name: 'Tonya Duggar',
@@ -30,11 +30,11 @@ export const teamList = {
       name: 'Aaron Marchese',
       instagram: 'hamptonyards'
     },
-    {
-      id: 7,
-      name: 'Majesta Thorndike',
-      instagram: 'majestayogiandpup'
-    }
+    // {
+    //   id: 7,
+    //   name: 'Majesta Thorndike',
+    //   instagram: 'majestayogiandpup'
+    // }
   ],
   columnTwo: [
     {
@@ -62,15 +62,15 @@ export const teamList = {
       name: 'Andrew Salmon',
       instagram: 'asalmon9'
     },
-    {
-      id: 13,
-      name: 'Christina Kelly',
-      instagram: 'christina_kels'
-    },
-    {
-      id: 14,
-      name: 'ClairePrince',
-      instagram: 'iamthebatman'
-    }
+    // {
+    //   id: 13,
+    //   name: 'Christina Kelly',
+    //   instagram: 'christina_kels'
+    // },
+    // {
+    //   id: 14,
+    //   name: 'ClairePrince',
+    //   instagram: 'iamthebatman'
+    // }
   ]
 }

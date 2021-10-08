@@ -3,10 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap'
 import InstructorCarousel from './InstructorCarousel'
 
 const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
-  console.log(
-    '🚀 ~ file: InstructorImages.jsx ~ line 6 ~ InstructorImages ~ desktopPhotos',
-    desktopPhotos
-  )
   const renderImageGrid = () => {
     if (desktopPhotos.length === 4) {
       return (
@@ -250,6 +246,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
       )
     }
   }
+  
   return (
     <Container fluid="xl" className="mt-3 p-md-5">
       {desktopPhotos && renderImageGrid()}

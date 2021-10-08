@@ -5,8 +5,8 @@ This is a front end application built with React and NextJS for a fitness studio
 ## Technologies
 
 - NextJS v11 w/ SSG and SSR
-- [React Bootstrap](https://react-bootstrap.github.io/)/Bootstrap 5
-- SCSS
+- [React Bootstrap](https://react-bootstrap.github.io)/[Bootstrap 5](https://getbootstrap.com)
+- [SCSS](https://sass-lang.com)
 - Axios
 - Next Auth
 - [Rematch](https://rematchjs.org) global state
