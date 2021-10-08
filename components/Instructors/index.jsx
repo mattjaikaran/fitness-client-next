@@ -4,21 +4,22 @@ import InstructorCard from './InstructorCard'
 import CustomSpinner from '@/components/CustomSpinner' 
 import { instructorsList } from '@/copy/instructors'
 
-const Instructors = ({ data }) => {
-  const [instructors, setInstructors] = useState(data)
-  useEffect(() => !instructors && setInstructors(instructorsList), [])
-
+const Instructors = ({ instructorsList }) => {
+  const [instructors, setInstructors] = useState(instructorsList)
+  
   const renderInstructorCard = () => {
-    return instructors.map((instructor) => (
-      <Col
-        key={instructor.slug}
-        className="px-1 px-sm-2"
-        xs={6}
-        md={4}
-        sm={6}>
-        <InstructorCard instructor={instructor} />
-      </Col>
-    ))
+    return instructorsList.map((instructor) => {
+      return (
+        <Col
+          key={instructor._id}
+          className="mb-3 px-1 px-sm-2"
+          xs={6}
+          md={4}
+          sm={6}>
+          <InstructorCard instructor={instructor} />
+        </Col>
+      )
+    })
   }
   
   return (

@@ -1,13 +1,8 @@
-import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { getAllInstructorIds, getInstructorData } from '@/hooks/instructors'
-
 import { groq } from 'next-sanity'
-import axios from 'axios'
-
-import { usePreviewSubscription } from '@/lib/sanity'
-import { getClient } from '@/lib/sanity.server'
+import { usePreviewSubscription } from '../../lib/sanity'
+import { getClient } from '../../lib/sanity.server'
 
 import Layout from '@/components/Layout'
 import InstructorDetail from '@/components/InstructorDetail'
@@ -82,12 +77,7 @@ export async function getStaticProps({params, preview = false}) {
  */
 
 const InstructorPage = ({ data, preview }) => {
-  console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ data', data)
-  console.log(
-    '🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ preview',
-    preview
-  )
-
+  const router = useRouter()
   const { data: previewData } = usePreviewSubscription(data?.query, {
     params: data?.queryParams ?? {},
     initialData: data?.page,

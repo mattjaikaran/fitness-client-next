@@ -3,32 +3,16 @@ import Image from 'next/image'
 import { Card } from 'react-bootstrap'
 import styles from './Instructors.module.scss'
 
-const InstructorCard = ({ instructor: { slug, fullName, classesTaught, featuredPhoto } }) => {
+const InstructorCard = ({ instructor }) => {
   return (
     <Link href={`/instructors/${encodeURIComponent(slug)}`} passHref>
-      {/* <div
-        className={styles.instructorImg}
-        style={{
-          backgroundImage: `url(${featuredPhoto})`,
-        }}>
-        <div className={styles.instructorInfo}>
-          <h5>{fullName}</h5>
-          <p className="montserrat">
-            <small>
-              {classesTaught.length > 1
-                ? classesTaught.join(' | ')
-                : classesTaught}
-            </small>
-          </p>
-        </div>
-      </div> */}
       <Card border="light">
         <Image
           layout="responsive"
           className={styles.instructorImg}
           width={450}
           height={500}
-          src={featuredPhoto}
+          src={instructor.featuredPhoto}
           alt="instructor featured image"
         />
         <Card.Body
@@ -38,13 +22,6 @@ const InstructorCard = ({ instructor: { slug, fullName, classesTaught, featuredP
           ) : (
             <h6>{fullName}</h6>
           )}
-          {/* <p className="montserrat">
-            <small>
-              {classesTaught.length > 1
-                ? classesTaught.join(' | ')
-                : classesTaught}
-            </small>
-          </p> */}
         </Card.Body>
       </Card>
     </Link>

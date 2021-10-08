@@ -25,15 +25,17 @@ const InstructorDetail = ({ instructorDetail }) => {
       />
       <InstructorImages
         desktopPhotos={instructorDetail?.page?.desktopPhotos}
-        mobilePhotos={instructorDetail?.page?.mobilePhotos}
+        // mobilePhotos={instructorDetail?.page?.mobilePhotos}
       />
-      {instructorDetail.experience?.credentials && (
+      {instructorDetail.page.instructorExperience?.instructorCredentials.length && (
         <>
-          <InstructorExperienceTabs experience={instructorDetail.experience} />
-          <InstructorExperienceCollapse experience={instructorDetail.experience} />
+          <InstructorExperienceTabs experience={instructorDetail.page.instructorExperience} />
+          <InstructorExperienceCollapse
+            experience={instructorDetail.page.instructorExperience}
+          />
         </>
       )}
-      {instructorDetail.contact?.instagram && (
+      {instructorDetail.page.contact?.instagram && (
         <InstructorInstagram
           instagramHandle={instructorDetail?.page?.contact?.instagram}
           imagesArray={instructorDetail?.page?.mobilePhotos}

@@ -9,8 +9,14 @@ import residency from './residency'
 import upcomingLocations from './upcomingLocations'
 import investorRelations from './investorRelations'
 import teamMember from './teamMember'
+import classesTaught from './classesTaught'
 import team from './team'
 import instructor from './instructor'
+import instructorExperience from './instructorExperience'
+import instructorCredentials from './instructorCredentials'
+import instructorExpertise from './instructorExpertise'
+import desktopPhotos from './desktopPhotos'
+import instructorContact from './instructorContact'
 
 export default createSchema({
   name: 'default',
@@ -23,8 +29,14 @@ export default createSchema({
     residency,
     upcomingLocations,
     investorRelations,
-    team, 
-    teamMember,
-    instructor
-  ]),
+    instructor,
+    instructorContact,
+    instructorExperience,
+    instructorCredentials,
+    instructorExpertise,
+    classesTaught,
+    desktopPhotos,
+    team,
+    teamMember
+  ])
 })

@@ -12,7 +12,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[0].imgUrl}
+              src={desktopPhotos[0]}
               alt="instructor image 1"
             />
           </Col>
@@ -21,7 +21,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[1].imgUrl}
+              src={desktopPhotos[1]}
               alt="instructor image 2"
             />
           </Col>
@@ -30,7 +30,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[2].imgUrl}
+              src={desktopPhotos[2]}
               alt="instructor image 3"
             />
           </Col>
@@ -39,7 +39,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[3].imgUrl}
+              src={desktopPhotos[3]}
               alt="instructor image 4"
             />
           </Col>
@@ -54,7 +54,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[0].imgUrl}
+              src={desktopPhotos[0]}
               alt="instructor image 1"
             />
           </Col>
@@ -63,7 +63,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[1].imgUrl}
+              src={desktopPhotos[1]}
               alt="instructor image 2"
             />
           </Col>
@@ -72,7 +72,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[2].imgUrl}
+              src={desktopPhotos[2]}
               alt="instructor image 3"
             />
           </Col>
@@ -81,7 +81,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[3].imgUrl}
+              src={desktopPhotos[3]}
               alt="instructor image 4"
             />
           </Col>
@@ -90,7 +90,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[4].imgUrl}
+              src={desktopPhotos[4]}
               alt="instructor image 5"
             />
           </Col>
@@ -99,7 +99,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[5].imgUrl}
+              src={desktopPhotos[5]}
               alt="instructor image 6"
             />
           </Col>
@@ -153,7 +153,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[0].imgUrl}
+              src={desktopPhotos[0]}
               alt="instructor image 1"
             />
           </Col>
@@ -164,7 +164,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={300}
               layout="responsive"
-              src={desktopPhotos[1].imgUrl}
+              src={desktopPhotos[1]}
               alt="instructor image 2"
             />
             <Image
@@ -172,7 +172,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               height={300}
               layout="responsive"
               className="mt-md-3"
-              src={desktopPhotos[2].imgUrl}
+              src={desktopPhotos[2]}
               alt="instructor image 3"
             />
           </Col>
@@ -183,7 +183,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[3].imgUrl}
+              src={desktopPhotos[3]}
               alt="instructor image 4"
             />
           </Col>
@@ -194,7 +194,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[4].imgUrl}
+              src={desktopPhotos[4]}
               alt="instructor image 5"
             />
           </Col>
@@ -211,7 +211,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[0].imgUrl}
+              src={desktopPhotos[0]}
               alt="instructor image 1"
             />
           </Col>
@@ -222,7 +222,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={300}
               layout="responsive"
-              src={desktopPhotos[1].imgUrl}
+              src={desktopPhotos[1]}
               alt="instructor image 2"
             />
             <Image
@@ -230,7 +230,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               height={300}
               layout="responsive"
               className="mt-md-3"
-              src={desktopPhotos[2].imgUrl}
+              src={desktopPhotos[2]}
               alt="instructor image 3"
             />
           </Col>
@@ -241,7 +241,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[3].imgUrl}
+              src={desktopPhotos[3]}
               alt="instructor image 4"
             />
           </Col>
@@ -252,7 +252,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[4].imgUrl}
+              src={desktopPhotos[4]}
               alt="instructor image 5"
             />
           </Col>
@@ -263,7 +263,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[5].imgUrl}
+              src={desktopPhotos[5]}
               alt="instructor image 6"
             />
           </Col>
@@ -274,7 +274,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
               width={500}
               height={600}
               layout="responsive"
-              src={desktopPhotos[6].imgUrl}
+              src={desktopPhotos[6]}
               alt="instructor image 7"
             />
           </Col>

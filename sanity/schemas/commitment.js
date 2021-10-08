@@ -10,5 +10,6 @@ export default {
     { name: 'paragraphTwo', type: 'text' },
     { name: 'paragraphThree', type: 'text' },
     { name: 'paragraphFour', type: 'text' },
+    { name: 'paragraphFive', type: 'text' },
   ]
 }

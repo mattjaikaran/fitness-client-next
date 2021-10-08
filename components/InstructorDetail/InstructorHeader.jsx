@@ -35,40 +35,29 @@ const InstructorHeader = ({
     }
   }
   return (
-    instructorFullName ? (
-      <div>
-        <Container fluid className="text-center bg-off-white p-5">
-          <Container>
-            <Row>
-              <Col sm={0}></Col>
-              <Col sm={8} lg={6}>
-                <h1>{instructorFullName}</h1>
-                {/* <p className="mt-3 mt-md-4">
-                  <small>
-                    {classesTaught?.length > 1
-                      ? `${classesTaught?.join(', ')} Instructor`
-                      : `${classesTaught} Instructor`}
-                  </small>
-                </p> */}
-                <hr className="hr-custom" />
-                <p className="orpheus mt-3 py-3 px-lg-5">{bio}</p>
-                {/* commented out for launch */}
-                <Button
-                  size="lg"
-                  variant="outline-primary hidden-xs"
-                  className="mt-3"
-                  onClick={renderContact}>
-                  Contact
-                </Button>
-                <div className="d-grid">
-                  <Button
-                    size="lg"
-                    variant="outline-primary visible-xs"
-                    className="mt-3"
-                    onClick={renderContact}>
-                    Contact
-                  </Button>
-                </div>
+    <div>
+      <Container fluid className="text-center bg-dark p-5">
+        <Container>
+          <Row>
+            <Col sm={0}></Col>
+            <Col sm={6}>
+              <h1>{instructorFullName}</h1>
+              <p className="mt-3">
+                <small>
+                  {classesTaught?.length > 1
+                    ? `${classesTaught?.join(', ')} Instructor`
+                    : `${classesTaught ? classesTaught : ''} Instructor`}
+                </small>
+              </p>
+              <hr className="hr-custom" />
+              <p className="orpheus mt-3 py-3 px-lg-5">{bio}</p>
+              <Button
+                size="lg"
+                variant="outline-primary hidden-xs"
+                className="mt-3"
+                onClick={renderContact}>
+                Contact
+              </Button>
               </Col>
               <Col sm={0}></Col>
             </Row>

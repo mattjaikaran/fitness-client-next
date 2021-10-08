@@ -15,7 +15,7 @@ const InstructorExperienceTabs = ({ experience }) => {
             title="Expertise"
             className={styles.instructorTab}>
             <ul>
-              {experience?.expertise?.map((bullet, i) => (
+              {experience?.instructorExpertise?.map((bullet, i) => (
                 <li key={i}>{bullet}</li>
               ))}
             </ul>
@@ -25,7 +25,7 @@ const InstructorExperienceTabs = ({ experience }) => {
             title="Credentials"
             className={styles.instructorTab}>
             <ul>
-              {experience?.credentials?.map((bullet, i) => (
+              {experience?.instructorCredentials?.map((bullet, i) => (
                 <li key={i}>{bullet}</li>
               ))}
             </ul>
