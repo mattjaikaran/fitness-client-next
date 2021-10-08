@@ -5,7 +5,6 @@ import { instructorsList } from '@/copy/instructors'
 
 const Instructors = () => {
   const [instructors, setInstructors] = useState(instructorsList)
-  console.log('instructors', instructors);
   
   const renderInstructorCard = () => {
     return instructors.map((instructor) => {
@@ -21,6 +20,7 @@ const Instructors = () => {
       )
     })
   }
+  
   return (
     <Container fluid="xl">
       <h1 className="my-5 text-center">Instructors</h1>
