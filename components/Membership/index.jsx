@@ -3,6 +3,7 @@ import { Container, Row, Col, Tabs, Tab, Modal, Button } from 'react-bootstrap'
 import Glossary from './Glossary'
 import InstructorContract from './InstructorContract'
 import { membership } from '@/copy/membership'
+import styles from './Membership.module.scss'
 
 const Membership = () => {
   const [showInstructorContract, setShowInstructorContract] = useState(false)
@@ -38,7 +39,9 @@ const Membership = () => {
             <Tab eventKey="athlete" title="Athlete">
               <ul>{renderAthleteDetails()}</ul>
             </Tab>
-            <Tab eventKey="provider" title="Provider">
+            <Tab
+              eventKey="provider"
+              title="Provider">
               <ul>{renderProviderDetails()}</ul>
               <p className="text-center mt-5">
                 {!showInstructorContract ? (

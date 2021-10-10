@@ -14,7 +14,7 @@ export const investmentRelations = {
     },
     {
       id: 3,
-      city: 'Manhattan Tribeca',
+      city: 'Manhattan Flatiron',
       launchDate: 'Spring 2022'
     },
     {

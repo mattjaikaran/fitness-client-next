@@ -110,7 +110,7 @@ export const studioLocations = [
       // phone: '(212) 233 0507'
     },
     description:
-      'A two box studio for your community engagement as you wish. One large box studio and one small, intimate box studio. One Record, Stream, Inspire small studio.'
+      'A two box studio for your community engagement as you would like. One large box studio and one small, intimate box studio. One Record & Stream private studio.'
   },
   {
     id: 2,
@@ -126,7 +126,7 @@ export const studioLocations = [
       // phone: '(212) 233 0507'
     },
     description:
-      'A two box studio for your community engagement as you wish. One large box studio and one small, intimate box studio. One Record, Stream, Inspire small studio.'
+      'A space for intimate, small group interactions; community events in fitness and wellness. An open floorplan with large windows allowing in natural light. One community studio.'
   },
   {
     id: 3,
