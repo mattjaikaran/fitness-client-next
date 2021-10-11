@@ -36,7 +36,6 @@ const Membership = () => {
             floor space.
           </p>
           <Tabs
-            className="mb-3"
             id="membership-tabs"
             className={styles.membershipTabs}>
             <Tab eventKey="athlete" title="Athlete">

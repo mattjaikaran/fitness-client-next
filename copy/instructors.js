@@ -75,7 +75,10 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: [''],
+      credentials: ['Boxing', 'Kickboxing', 'HIIT', 'Circuit Train']
+    }
   },
   {
     id: 2,
@@ -91,7 +94,6 @@ export const instructorsList = [
       {
         id: 1,
         imgUrl: 'https://via.placeholder.com/350x350.png'
-        // imgUrl: ''
       },
       {
         id: 2,
@@ -253,7 +255,7 @@ export const instructorsList = [
       website: ''
     },
     experience: {
-      expertise: [],
+      expertise: ['Dance', 'Barre', 'Pilates', 'Aerial Yoga'],
       credentials: [
         'Comprehensive Pilates Certified',
         '200hr Ashtanga Yoga Certified',
@@ -516,14 +518,8 @@ export const instructorsList = [
       tiktok: ''
     },
     experience: {
-      expertise: [
-        'Certified Yoga Instructor at Equinox',
-        'Certified KickBoxing from X Fitness'
-      ],
-      credentials: [
-        'Bachelor of Science in Exercise Science from UCLA',
-        'CrossFit Olympics'
-      ]
+      expertise: ['Pilates', 'Barre'],
+      credentials: ['Elevate Barre Certified']
     }
   },
   {
@@ -602,7 +598,10 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: ['Yoga', 'Breathework', 'Sound Bath'],
+      credentials: ['']
+    }
   },
   {
     id: 13,
@@ -675,13 +674,13 @@ export const instructorsList = [
     contact: {
       email: '',
       phone: '',
-      instagram: '',
+      instagram: 'poundforpound_fit',
       facebook: '',
       tiktok: '',
       website: ''
     },
     experience: {
-      experience: [],
+      experience: ['Strength Train', 'Circuit Training', 'Kettlebells'],
       credentials: [
         'B.S. Exercise Science SUNY Brockport',
         'ACSM Certified',
@@ -765,7 +764,14 @@ export const instructorsList = [
   //     tiktok: '',
   //     website: ''
   //   },
-  //   experience: {}
+  //   experience: {
+  //   expertise: [
+  //       'none'
+  //     ],
+  //     credentials: [
+  //       'Pilates',
+  //     ],
+  // }
   // },
   {
     id: 8,
@@ -844,7 +850,9 @@ export const instructorsList = [
     },
     experience: {
       expertise: [
-        `A 14yr teacher and 18+ yr student, she has become a bit of a yoga conosur.`
+        `A 14yr teacher and 18+ yr student, she has become a bit of a yoga conosur.`,
+        'Yoga',
+        'Breathework'
       ],
       credentials: [
         `Licensed massage therapist specializing in Shiatsu, Thai, Lomi Lomi, Reflexology.`
@@ -922,16 +930,15 @@ export const instructorsList = [
     contact: {
       email: '',
       phone: '',
-      instagram: '',
+      instagram: 'yogi_generis',
       facebook: '',
       tiktok: '',
       website: ''
     },
     experience: {
-      expertise: [
-        'Master of Science, Exercise Science/Physiology, BS, Biology- East Stroudsburg University'
-      ],
+      expertise: ['Yoga', 'Boxing', 'Functional Mobility'],
       credentials: [
+        'Master of Science, Exercise Science/Physiology, BS, Biology- East Stroudsburg University',
         'ISSA Personal Training/Nutrition Certified',
         'RYT 200 - Yoga Alliance',
         'AHA- CPR/First Aid',
@@ -1026,9 +1033,7 @@ export const instructorsList = [
       website: 'https://www.Behumblemovement.com'
     },
     experience: {
-      expertise: [
-        `Jason “Jay Mark” Markland is a Professional MMA fighter and Kickboxer. He fought for Bellator MMA and Glory Kickboxing. He’s a two time champion in two different Army divisions. He specializes in strength, conditioning, Mix Martial Arts skills and technique. He’s the owner of Be Humble Movement LLC, as seen on ESPN, Triller, DAZN on demand at NEOU, Fithouse and countless magazines including MensHealth and Mens Fitness. He’s been an industry professional for over 10+ years.`
-      ],
+      expertise: ['Boxing', 'HIIT', 'Circuit Training'],
       credentials: [``]
     }
   },
@@ -1108,7 +1113,7 @@ export const instructorsList = [
       website: ''
     },
     experience: {
-      expertise: [``],
+      expertise: ['Boxing', 'Kick Boxing'],
       credentials: [
         `USA Boxing certified`,
         'Sifu (Master trainer) of Traditional Wing Chun Kung Fu',
@@ -1205,13 +1210,13 @@ export const instructorsList = [
       website: ''
     },
     experience: {
-      expertise: [
+      credentials: [
         '200 hr Meditation Certified',
         '200 hr Yoga Certified',
         '100hr Restorative Yoga Certified',
         '75hr Kula Yoga Project Certified'
       ],
-      credentials: ['']
+      expertise: ['Kick Boxing']
     }
   },
   {
@@ -1296,8 +1301,11 @@ export const instructorsList = [
       website: ''
     },
     experience: {
-      expertise: [],
-      credentials: []
+      expertise: ['Dance'],
+      credentials: [
+        'Professional Dancer & Model',
+        'Integrative Nutrition Health Coach'
+      ]
     }
   },
   {
@@ -1381,7 +1389,15 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: ['Boxing', 'HIIT', 'Circuit Train', 'Spin'],
+      credentials: [
+        'Model with Ford, MGM, One. Select',
+        'NASM certified personal trainer',
+        'AFAA certified group fitness trainer',
+        'G.E.A.R. certified cycling trainer'
+      ]
+    }
   },
   {
     id: 21,
@@ -1454,12 +1470,15 @@ export const instructorsList = [
     contact: {
       email: '',
       phone: '',
-      instagram: '',
+      instagram: 'marianeflow',
       facebook: '',
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: ['Yoga', 'Massage', 'Wellness'],
+      credentials: ['']
+    }
   },
   {
     id: 12,
@@ -1537,7 +1556,10 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: ['HIIT', 'Boxing', 'Circuit Train', 'Afro Cuban Dance'],
+      credentials: []
+    }
   },
   {
     id: 22,
@@ -1628,7 +1650,15 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: ['Pilates'],
+      credentials: [
+        '700 hour certified Pilates Teacher by Brooke Siler',
+        '800 hour certified Jivamukti Yoga Teacher',
+        'BFA Dance Performance Cal State Long Beach',
+        'Post-natal Pilates certified from East River Pilates'
+      ]
+    }
   },
   {
     id: 23,
@@ -1710,7 +1740,15 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: ['Dance Cardio'],
+      credentials: [
+        'Level III Personal Trainer',
+        'Level I Nutrition Coach',
+        'Core Fusion Barre Certified - Exhale Mind Body Spa',
+        'Pilates Instructor Certified - Wundabar Pilates NYC'
+      ]
+    }
   },
   {
     id: 14,
@@ -1719,7 +1757,18 @@ export const instructorsList = [
     firstName: 'Rachel',
     lastName: 'Ackley',
     classesTaught: [],
-    bio: ``,
+    bio: `Rachel is an uplifting yoga and breathwork teacher who inspires students to
+      find their own unique light and beauty. She first started practicing yoga in
+      2010 in the Bahamas and then grew to love the practice after the death of a 
+      loved one. This is where she deepened her connection to spirituality and self-
+      love. Rachel is inspired by the physical, mental and emotional benefits of the
+      practice and truly believes that you can heal your life through awareness,
+      movement and breath.
+      Determined to help empower, transform and heal others through yoga and
+      breathwork, she has been teaching since 2014 and leads breathwork, cacao
+      and sound healing events. As a teacher, her hopes are to bring awareness to
+      the subconscious and provide students with the tools they need to initiate the
+      healing process.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632886466/Rachel%20Ackley/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-28_wblzgg.jpg',
     mobilePhotos: [
@@ -1783,7 +1832,18 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: ['Yoga', 'Soundbath', 'Breathework', 'Healing'],
+      credentials: [
+        'Cacao Leadership Training, Costa Rica – 2020',
+        'Breathwork Level 1-4, David Elliot – 2018',
+        'Reiki Level 1-2 Certification, Maha Rose Healing Center – 2017',
+        'Advanced Yoga Training, Three Physio Yoga Method, Kula Yoga – 2017',
+        'Health Coach Certification, INN – 2018',
+        '300 – hour Yoga Teacher Training, Funky OM – 2016',
+        '200 – hour Yoga Teacher Training, Life Power Yoga – 2014'
+      ]
+    }
   },
   {
     id: 15,
@@ -1864,7 +1924,13 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: ['Yoga', 'Breathework'],
+      credentials: [
+        '500hr Yoga Alliance,',
+        'YTTP & Science of Self - 100hr Traditional Hot Apprenticeship'
+      ]
+    }
   },
   {
     id: 16,
@@ -1950,7 +2016,10 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: ['Yoga'],
+      credentials: ['300Hr Yoga Certified']
+    }
   }
   // {
   //   id: 10,
