@@ -1439,7 +1439,7 @@ export const instructorsList = [
       {
         id: 1,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633531042/OCTOBER.6.2021/Mariane%20Ribeiro/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-2-DSKTP-Gallery.Vertical.1200px-11_rarz7g.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633715571/OCTOBER.10.8.21/Mariane%20Ribeiro/DSKTP-Gallery.Vertical.545x468-3-3_htddvt.jpg'
       },
       {
         id: 2,
@@ -1464,7 +1464,7 @@ export const instructorsList = [
       {
         id: 6,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633531042/OCTOBER.6.2021/Mariane%20Ribeiro/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-5_qpnrje.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633715571/OCTOBER.10.8.21/Mariane%20Ribeiro/DSKTP-Gallery.Vertical.545x468-9367_a5r0mh.jpg'
       }
     ],
     contact: {
