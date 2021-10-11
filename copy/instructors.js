@@ -405,7 +405,7 @@ export const instructorsList = [
       {
         id: 5,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1633063644/BrittanyWatts/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468-2-DSKTP-Gallery.Vertical.1200px-3_uil2cy.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633907407/OCTOBER.10.8.21/Brittany%20Watts/DSKTP-Gallery.Vertical.545x468-5076_ukdaxs.jpg'
       },
       {
         id: 6,

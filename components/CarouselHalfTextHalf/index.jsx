@@ -23,7 +23,7 @@ const CarouselHalfTextHalf = ({
               />
             </div>
           ) : (
-            <Carousel interval={5000} controls={false}>
+            <Carousel interval={3000} controls={false}>
               {images.map((image) => (
                 <Carousel.Item key={image}>
                   <Image
