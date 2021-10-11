@@ -248,7 +248,7 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
   }
   
   return (
-    <Container fluid="xl" className="mt-3 p-md-5">
+    <Container fluid="xl" className="mt-md-3 p-md-5">
       {desktopPhotos && renderImageGrid()}
       <InstructorCarousel mobile mobileImages={mobilePhotos} />
     </Container>

@@ -43,8 +43,8 @@ const Header = () => {
       className={styles.header}
       collapseOnSelect
       expand="lg"
-      bg="dark"
-      variant="dark">
+      // bg="light"
+      variant="light">
       <Container className="d-block d-lg-flex">
         <Row>
           <Col xs={3} sm={4} md={5} className="pt-1">

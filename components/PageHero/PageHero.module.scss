@@ -1,11 +1,12 @@
 .pageHero {
-  height: 40vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // height: 200px;
+  margin-top: 2rem;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
   // color and bg color temporary until hero images are set
-  background-color: black;
-  color: white;
+  // background-color: black;
+  // color: white;
   .textWrapper {
     text-align: center;
     position: relative;
@@ -16,11 +17,11 @@
 
 @media (min-width: 768px) {
   .pageHero {
-    height: 500px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     .textWrapper {
-      top: 40%;
+      top: 30%;
     }
   }
 }

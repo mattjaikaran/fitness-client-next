@@ -35,13 +35,14 @@ const Membership = () => {
             within our facility - small, medium, large and also our event open
             floor space.
           </p>
-          <Tabs className="mb-3" id="membershipTabs">
+          <Tabs
+            className="mb-3"
+            id="membership-tabs"
+            className={styles.membershipTabs}>
             <Tab eventKey="athlete" title="Athlete">
               <ul>{renderAthleteDetails()}</ul>
             </Tab>
-            <Tab
-              eventKey="provider"
-              title="Provider">
+            <Tab eventKey="provider" title="Provider">
               <ul>{renderProviderDetails()}</ul>
               <p className="text-center mt-5">
                 {!showInstructorContract ? (

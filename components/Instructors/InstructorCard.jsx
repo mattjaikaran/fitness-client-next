@@ -31,8 +31,13 @@ const InstructorCard = ({ instructor: { slug, fullName, classesTaught, featuredP
           src={featuredPhoto}
           alt="instructor featured image"
         />
-        <Card.Body className="text-center bg-off-white">
-          <h5>{fullName}</h5>
+        <Card.Body
+          className={`${styles.cardBodyStyle} text-center bg-off-white`}>
+          {fullName.length > 20 ? (
+            <p className={styles.longName}>{fullName}</p>
+          ) : (
+            <h6>{fullName}</h6>
+          )}
           <p className="montserrat">
             <small>
               {classesTaught.length > 1

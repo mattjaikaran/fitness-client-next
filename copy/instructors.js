@@ -6,7 +6,7 @@ export const instructorsList = [
     firstName: 'Allison',
     lastName: 'Kamien',
     classesTaught: [],
-    bio: ``,
+    bio: `A personal trainer, HIIT, kickboxing and certified rowing Instructor; as well as nutrition coach. Allison believes fitness is one of the keystones to achieving a happier, healthier and a more confident life. She leads in a manner for everyone to safely and successfully achieve gains and successes in their workout, at whatever level and intensity is needed.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632923369/Allison%20Kamien/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-17_ldnc0v.jpg',
     mobilePhotos: [
@@ -84,11 +84,7 @@ export const instructorsList = [
     firstName: 'Amanda',
     lastName: 'Butler',
     classesTaught: [],
-    bio: `Amanda’s ‘no-secret-sauce, just do the work’ approach to fitness has made her a
-      sought-after group instructor, personal trainer, and program coordinator on the
-      ground floor of the NYC fitness industry. A founding trainer of The Fhitting Room
-      and BFX, she’s branched into the digital fitness world, programming and teaching
-      for Aaptiv, NEOU, and TRX.`,
+    bio: `Amanda’s ‘no-secret-sauce, just do the work’ approach to fitness has made her a sought-after group instructor, personal trainer, and program coordinator on the ground floor of the NYC fitness industry. A founding trainer of The Fhitting Room and BFX, she’s branched into the digital fitness world, programming and teaching for Aaptiv, NEOU, and TRX.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632799070/AmandaButler/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-5136_oc4in9.jpg',
     mobilePhotos: [
@@ -187,7 +183,7 @@ export const instructorsList = [
     firstName: 'Andrea',
     lastName: 'Foil',
     classesTaught: [],
-    bio: '',
+    bio: `Andrea is a professional dancer, performer based in NYC, who has traveled internationally to perform with Ballet Mink and Dzul Dance. A professional fitness instructor since 2011, Andrea believes we are all stronger than we give ourselves credit for and promises class will always be fun. Her classes are form focused with a strong emphasis on core strength.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632881512/Andrea%20Dusel%20Foil/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-2416_lhrw1o.jpg',
     mobilePhotos: [
@@ -256,7 +252,15 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: [],
+      credentials: [
+        'Comprehensive Pilates Certified',
+        '200hr Ashtanga Yoga Certified',
+        'Lagree Fitness Levels I, II',
+        'NASM CPT, NASM CNC'
+      ]
+    }
   },
   // {
   //   id: 4,
@@ -346,11 +350,7 @@ export const instructorsList = [
     firstName: 'Brittany',
     lastName: 'Watts',
     classesTaught: [],
-    bio: `Brittany Watts is a NASM certified Personal trainer, Precision Nutrition Coach
-      and Wilhelmina Fitness model. A student of ballet, tap, jazz, modern and African
-      dance; Brittany is the creator of WattsElite which is her brand for fitness and her
-      bead bracelets jewelry line. Brittany focuses on building functional strength and
-      aesthetics, she is known as the booty builder.`,
+    bio: `A personal trainer, Precision Nutrition Coach and Wilhelmina fitness model. Brittany was introduced to the importance of physical activity early in life as a dancer. She studied ballet, tap, jazz, modern and African dance. Brittany is the creator of WattsElite which is her brand for fitness and her bead bracelets jewelry line. Brittany focuses on building functional strength and aesthetics, she is known as the booty builder.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632664075/BrittanyWatts/Desktop-InstGridHeadshot/DesktopHEADSHOT545x468-5_ud0myt.jpg',
     mobilePhotos: [
@@ -428,8 +428,9 @@ export const instructorsList = [
         'Graduate of NYU with a B.S. in Finance and a minor in French'
       ],
       credentials: [
+        'NASM Personal Trainer',
         'Pre/Post Natal',
-        'MMA conditioning',
+        'MMA conditioning and Vitality',
         'Vitality, Performance, Reconditioning (ViPR)'
       ]
     }
@@ -441,7 +442,7 @@ export const instructorsList = [
     firstName: 'Cam',
     lastName: 'Norsworthy',
     classesTaught: [],
-    bio: '',
+    bio: `An Atlanta native living in Brooklyn, NY, Cameron provides a comfortable and vibrant energy. She teaches all bodies to move with meaning, commitment. In her classes you will focus on form, breath, and of course: core! She teaches Equinox Pilates Mat, TRX Basics, Elevate Barre Certification, [solidcore] Pilates`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632663893/Cam%20Norsworthy/Desktop-InstGridHeadshot/DesktopHEADSHOT545x468-9_ehgbpf.jpg',
     mobilePhotos: [
@@ -532,7 +533,7 @@ export const instructorsList = [
     firstName: 'Damien',
     lastName: 'Alexander',
     classesTaught: [],
-    bio: ``,
+    bio: `A mind, body, and spirit experience is where Damien leads from. He is as much passionate about music as he is yoga; and it’s the meld of the two that make his sessions impactful Damien says - I’ll turn on a tune. You’ll roll out a mat. The breath will flow into movement, and the experience will take form from there.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632931422/Damien%20Alexander/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-4853_tbkocv.jpg',
     mobilePhotos: [
@@ -610,7 +611,7 @@ export const instructorsList = [
     firstName: 'Dominique',
     lastName: 'Warren',
     classesTaught: [],
-    bio: ``,
+    bio: `A competitive power lifter and body builder, Dominique has been a personal trainer for 7+ years. Dominique is an athlete that can lead you through power and balance movement.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633106042/HEADSHOTS.10.1.21/10.1.21._Greyscale12__Headshots14_zchtie.jpg',
     mobilePhotos: [
@@ -679,7 +680,14 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      experience: [],
+      credentials: [
+        'B.S. Exercise Science SUNY Brockport',
+        'ACSM Certified',
+        'Precision Nutrition Certified'
+      ]
+    }
   },
   // {
   //   id: 17,
@@ -766,11 +774,7 @@ export const instructorsList = [
     firstName: 'Izzy',
     lastName: 'Van Hall',
     classesTaught: [],
-    bio: `Izzy VanHall teaches a strong Vinyasa practice with an artistic spin and strategic set of
-      counter poses to lull you into rest. With a focus on anatomical alignment and functional
-      movement, her practices enable students to gain control and grace. Izzy encourages
-      practitioners to deepen the mind/body connection through these dynamic, challenging
-      and highly unique sequencing of asana.`,
+    bio: `A yoga teacher of 14+ years, Izzy brings a strong vinyasa practice with a artisitic spin and strategic set of counter poses to lull you into rest. Her focus is anatomical alignment and functional movement, her practices enable students to gain control and grace. Izzy has studied Iangar, Kula, Yoga Nidra, Katonah, and was one of the first 30 AcroYoga.org teachers to travel the world.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633107802/HEADSHOTS.10.1.21/10.1.21.Greyscale12__Headshots23_tpsyjo.jpg',
     mobilePhotos: [
@@ -843,21 +847,18 @@ export const instructorsList = [
         `A 14yr teacher and 18+ yr student, she has become a bit of a yoga conosur.`
       ],
       credentials: [
-        `Izzy has
-        studied everything from traditional Ashtanga (root of all vinyasa/power practices),
-        Iangar, Kula, Yoga Nidra, Katonah, etc, she has studied with Shiva Rea, Anna Forrest,
-        Skyler Grant, and was one of the first 30 AcroYoga.org teachers to travel the world.`
+        `Licensed massage therapist specializing in Shiatsu, Thai, Lomi Lomi, Reflexology.`
       ]
     }
   },
   {
     id: 18,
-    slug: 'jasmine-johnson',
-    fullName: 'Jasmine Johnson',
+    slug: 'jasmine-jackson',
+    fullName: 'Jasmine Jackson',
     firstName: 'Jasmine',
-    lastName: 'Johnson',
+    lastName: 'Jackson',
     classesTaught: [],
-    bio: ``,
+    bio: `An exercise physiologist, yoga instructor, athlete and mindset shifter. Jasmine’s hidden secret is assisting you through transformative shifts in your personal health and wellness! Mindfulness being the heart of her coaching, Jasmine has dedicated the past 8 years to advocating coaching and educating in the wellness space. Her programs very in HIIT base, core & sculpt, boxing fundamentals, and Yinyasa yoga (Vinyasa & Yin yoga fusion). I motivate, encourage and inspire a healthy balance inside and out.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633538001/OCTOBER.6.2021/JasmineJohson/DSKTP%20-%20Headshot/HeadshotsGREYSCALE12_fromlightroom_indesign-3-Headshots.Grey12_.1350pxDSKTP-3_e9nn16.jpg',
     mobilePhotos: [
@@ -926,7 +927,17 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: [
+        'Master of Science, Exercise Science/Physiology, BS, Biology- East Stroudsburg University'
+      ],
+      credentials: [
+        'ISSA Personal Training/Nutrition Certified',
+        'RYT 200 - Yoga Alliance',
+        'AHA- CPR/First Aid',
+        'NJISSA- High school Track & Field Coach'
+      ]
+    }
   },
   {
     id: 9,
@@ -935,13 +946,12 @@ export const instructorsList = [
     firstName: 'Jay',
     lastName: 'Markland',
     classesTaught: [],
-    bio: `Jason “Jay Mark” Markland is a Professional MMA fighter and Kickboxer. He
-      fought for Bellator MMA and Glory Kickboxing. He’s a two time champion in two
-      different Army divisions. He specializes in strength, conditioning, Mix Martial Arts
-      skills and technique. He’s the owner of Be Humble Movement LLC, as seen on
-      ESPN, Triller, DAZN on demand at NEOU, Fithouse and countless magazines
-      including MensHealth and Mens Fitness. He’s been an industry professional for
-      over 10+ years.`,
+    bio: `A professional MMA fighter and Kickboxer, Jay has fought for Bellator MMA and Glory
+      Kickboxing. He’s a two time champion in two different Army divisions. Jay specializes in
+      strength, conditioning, mix martial arts skills and techniques. The owner of Be Humble
+      Movement LLC, as seen on ESPN, Triller, DAZN on demand at NEOU, and publications
+      including MensHealth and Mens Fitness. Jay brings 15 years of fitness instructor experience to
+      his athlete, functional and fighter programs for you to experience.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632769569/Jay%20Markland/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-3081_hxieew.jpg',
     mobilePhotos: [
@@ -1029,11 +1039,11 @@ export const instructorsList = [
     firstName: 'Jermaine',
     lastName: 'Bailey',
     classesTaught: [],
-    bio: `A former Bodybuilding and Martial Arts fighter, Jermaine has been teaching his
-      brand of fitness for the past 20 plus years in gyms all over NYC. He's been
-      featured on shows such as Fo 5 Good Day NY, WB 11 Morning news and BET
-      Black Enterprise to name a few. He brings high energy to his Kickboxing/ Boxing
-      classs, that will leave you feeling like you can take on the world when done.`,
+    bio: `A former bodybuilder and martial arts fighter, Jermaine has been teaching his brand of fitness
+      for the past 20 plus years in gyms all over NYC. He's been featured on shows such as Fox 5
+      Good Day NY, WB 11 Morning news, BET Black Enterprise and other programs. He brings high
+      energy to his Kickboxing/ Boxing class; leaving you feeling like you can take on the world when
+      done.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632707004/Jermaine%20Bailey/Desktop-InstGridHeadshot/DesktopHEADSHOT545x468-4_hxlh0h.jpg',
     mobilePhotos: [
@@ -1115,7 +1125,12 @@ export const instructorsList = [
     firstName: 'Juan',
     lastName: 'Gamboa',
     classesTaught: [],
-    bio: ``,
+    bio: `Juan has been teaching yoga in NYC since 2009 and hosts retreats all over
+      the world, previously Dubai, Sri Lanka, Costa Rica, Goa and many other
+      coastal communities. During the pandemic Juan launched P.A.R.C. (Practice
+      And Recover) - a weekly session in various parks across Manhattan, which
+      have been going strong for 17 straight months and counting. Juan’s practice
+      is an authentic, comfortable community gathering - flow.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632974273/Juan%20Gamboa/DSKTP-Headshot/DesktopHEADSHOT545x468-51_sp7unv.jpg',
     mobilePhotos: [
@@ -1189,7 +1204,15 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: [
+        '200 hr Meditation Certified',
+        '200 hr Yoga Certified',
+        '100hr Restorative Yoga Certified',
+        '75hr Kula Yoga Project Certified'
+      ],
+      credentials: ['']
+    }
   },
   {
     id: 19,
@@ -1198,7 +1221,12 @@ export const instructorsList = [
     firstName: 'Katya',
     lastName: 'Bryleva',
     classesTaught: [],
-    bio: ``,
+    bio: `Katya is an experienced educator in the field of movement, dance and healthy living.
+      She has been training in dance since the young age and has been in the field of fitness for
+      over 10 years. Currently Katya works as an independent fitness trainer, professional
+      dancer and a fitness model. Her goal as a trainer is to share the joy of movement with
+      people through a fun, challenging and safe workout . Her class combines the elements of
+      dance cardio, Pilates and functional training and set to the beat of music .`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633526776/OCTOBER.6.2021/Katya%20Bryleva/DSKTP%20-%20InstHeadshot/HeadshotsGREYSCALE12_fromlightroom_indesign-21-5_yi2dq6.jpg',
     mobilePhotos: [
@@ -1267,7 +1295,10 @@ export const instructorsList = [
       tiktok: '',
       website: ''
     },
-    experience: {}
+    experience: {
+      expertise: [],
+      credentials: []
+    }
   },
   {
     id: 20,
@@ -1276,7 +1307,12 @@ export const instructorsList = [
     firstName: 'Luna',
     lastName: 'Castilho',
     classesTaught: [],
-    bio: ``,
+    bio: `A global model and ambassador from Brazil, Luna’s purpose is to empower,
+      and help one live life at their fullest. SHe She has a feel good, look good
+      philosophy that she brings to her community and sessions. Her workouts are
+      for improving strength and performance as well as mobility. Most
+      importantly, her workouts are created with the goal of helping you feel more
+      confident and motivated to take over the world!`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633526345/OCTOBER.6.2021/Luna%20Castilho/DSKTP%20-%20InstHeadshot/HeadshotsGREYSCALE12_fromlightroom_indesign-2_eaamtw.jpg',
     mobilePhotos: [
@@ -1510,7 +1546,15 @@ export const instructorsList = [
     firstName: 'Michele',
     lastName: 'Jongeneel',
     classesTaught: [],
-    bio: ``,
+    bio: `Michele has been teaching Pilates throughout the NYC area for 14 years. She received her 700
+      hour classical Pilates certification with Brooke Siler at RE:AB Pilates in NYC in 2007. She
+      received her initial classical instruction form advanced instructor, Mejo Wiggins in Greenwhich,
+      CT. Michele is a professional dancer and aerialist in NYC and is currently training in the circus
+      arts. She has performed extensively with the world renowned off-broadway show, Fuerza
+      Bruta.
+      Michele is the founder of Fysiek Freak Pilates and Fitness where she offers her extensive
+      expertise in Pilates, Yoga, and movement through in-person and online private training with
+      purpose to transform and change not only bodies and but lives.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633534628/OCTOBER.6.2021/Michele%20Jongeneel/DSKTP%20-%20InstHeadshot/HeadshotsGREYSCALE12_fromlightroom_indesign-21-4_rqfkpt.jpg',
     mobilePhotos: [
@@ -1593,7 +1637,11 @@ export const instructorsList = [
     firstName: 'Olivia',
     lastName: 'Bowman Jackson',
     classesTaught: [],
-    bio: ``,
+    bio: `A certified personal trainer, professional dancer and creator of OLIVIA FITT. Olivia trains virtually
+      and in real life, her private and small group dance, cardio fit, pilates and fusion programs. She
+      previously taught at Exhale Mind Body Spa, Google and Tracy Anderson Method in NYC, and
+      at, Marelybone Physiotherapy & Sports Medicine and Universal Music Group in London. She is
+      also currently teaching at Wundabar Pilates in NYC.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633581259/OCTOBER.6.2021/OliviaBowmanJackson/DSKTP%20-%20Heashot/HeadshotsGREYSCALE12_fromlightroom_indesign--Headshots.Grey12_.1350pxDSKTP-4_vwyyf3.jpg',
     mobilePhotos: [
@@ -1744,7 +1792,10 @@ export const instructorsList = [
     firstName: 'Sarah',
     lastName: 'Bess Hutchison',
     classesTaught: [],
-    bio: ``,
+    bio: `Sarah Bess Hutchison began her yoga journey in 2005 and has been teaching in NYC since
+      2014. Her classes are powerful, playful and heartfelt. Having taught well over 3,000 classes,
+      her expertise offers grounded support as she guides both beginners and seasoned
+      practitioners through challenging moments and uplifting sessions`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633030261/Sarah%20Bess-Hutchison/DSKTP%20-%20Headshot/DesktopHEADSHOT545x468-8-DSKTP-Headshot1200px-2_nbhjjw.jpg',
     mobilePhotos: [
@@ -1822,7 +1873,10 @@ export const instructorsList = [
     firstName: 'Victoria',
     lastName: 'Gibbs',
     classesTaught: [],
-    bio: ``,
+    bio: `Victoria began practicing yoga nine years ago and from the first time that she stepped onto her
+      mat, her passion was evident. Now, while both a yoga model and influencer, Victoria is a six-
+      time competitive yoga athlete, four-time New York Regional Champion, and in 2018 qualified to
+      compete at the International Yoga Sport Federation as a representative of the US.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1632853319/Victoria%20Gibbs/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-1_dbz5wg.jpg',
     mobilePhotos: [

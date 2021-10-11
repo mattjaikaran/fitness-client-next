@@ -36,11 +36,11 @@ const InstructorHeader = ({
   }
   return (
     <div>
-      <Container fluid className="text-center bg-dark p-5">
+      <Container fluid className="text-center bg-off-white p-5">
         <Container>
           <Row>
             <Col sm={0}></Col>
-            <Col sm={6}>
+            <Col sm={8} lg={6}>
               <h1>{instructorFullName}</h1>
               <p className="mt-3">
                 <small>
@@ -73,7 +73,7 @@ const InstructorHeader = ({
           </Row>
         </Container>
       </Container>
-      <Container className="my-5">
+      <Container className="my-0 my-md-5">
         {contactFormVisible && (
           <InstructorContact
             name={name}
@@ -89,6 +89,7 @@ const InstructorHeader = ({
             contact={contact}
           />
         )}
+        <hr className="hr-custom-dark mb-5" />
       </Container>
     </div>
   )

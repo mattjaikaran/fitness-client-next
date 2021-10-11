@@ -59,7 +59,7 @@ const HomeHero = () => {
             <Col sm={0}></Col>
             <Col sm={8} lg={6}>
               <h1 className={styles.title}>SSTUDIOSS</h1>
-              <hr className="hr-custom mt-5" />
+              <hr className="hr-custom-dark mt-5" />
             </Col>
             <Col sm={0}></Col>
           </Row>
