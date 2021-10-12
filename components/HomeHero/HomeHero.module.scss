@@ -3,19 +3,20 @@
 .hero {
   background-color: $base-white;
   color: $base-black;
-  height: 300px;
+  // height: 250px;
   margin-bottom: -1px;
   .heroContent {
-    padding-top: 40%;
+    padding-top: 30%;
     .title {
       opacity: 0.6;
+      font-size: 3rem;
     }
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .hero {
-    height: 300px;
+    // height: 300px;
     .heroContent {
       padding-top: 20%;
     }
@@ -24,9 +25,7 @@
 
 @media (min-width: 992px) {
   .hero {
-    height: 300px;
-    // when hero image gets added
-    // height: 400px;
+    // height: 300px;
     .heroContent {
       padding-top: 10%;
     }

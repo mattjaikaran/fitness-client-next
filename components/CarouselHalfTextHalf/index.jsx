@@ -9,8 +9,8 @@ const CarouselHalfTextHalf = ({
   images
 }) => {
   return (
-    <Container fluid>
-      <Row>
+    <Container fluid="xl">
+      <Row style={{ border: '1px solid black' }}>
         <Col className="px-0" lg={6}>
           {images.length < 2 ? (
             <div>

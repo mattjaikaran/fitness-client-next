@@ -43,15 +43,13 @@ const Header = () => {
       className={styles.header}
       collapseOnSelect
       expand="lg"
-      // bg="light"
       variant="light">
       <Container className="d-block d-lg-flex">
         <Row>
-          <Col xs={3} sm={4} md={5} className="pt-1">
+          <Col xs={4} className="pt-1">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           </Col>
-          <Col xs={2} sm={1} className="d-md-none" />
-          <Col xs={4} sm={4} className="pt-2 pb-md-2">
+          <Col xs={4} className="pt-2 pb-md-2 text-center">
             <Navbar.Brand className="montserrat">
               <Link href="/">SSSS</Link>
             </Navbar.Brand>
@@ -70,7 +68,7 @@ const Header = () => {
         </Row>
 
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto">{renderNavLinks()}</Nav>
+          <Nav className="mx-auto mt-3 mt-md-0">{renderNavLinks()}</Nav>
           <Nav
             // hidden for launch
             style={{ visibility: 'hidden' }}>
@@ -84,7 +82,7 @@ const Header = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Modal show={show} onHide={handleClose}>
+        {/* <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Search</Modal.Title>
           </Modal.Header>
@@ -103,15 +101,15 @@ const Header = () => {
               </div>
             </Form>
           </Modal.Body>
-          {/* <Modal.Footer>
+          <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
             <Button variant="outline-primary" onClick={handleSearchSubmit}>
               Search
             </Button>
-          </Modal.Footer> */}
-        </Modal>
+          </Modal.Footer>
+        </Modal> */}
       </Container>
     </Navbar>
   )

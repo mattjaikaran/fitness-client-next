@@ -31,7 +31,7 @@ const Membership = () => {
         <Col sm={8}>
           <h1 className="my-5 text-center">Membership</h1>
           <p>
-            Method for reserving a <strong>BOX</strong>. A box is any space
+            Method for reserving a <strong>BOX:</strong> A box is any space
             within our facility - small, medium, large and also our event open
             floor space.
           </p>

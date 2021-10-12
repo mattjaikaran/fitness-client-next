@@ -3,15 +3,15 @@ import { Container, Row, Col } from 'react-bootstrap'
 import InstructorCard from './InstructorCard'
 import { instructorsList } from '@/copy/instructors'
 
-const Instructors = () => {
-  const [instructors, setInstructors] = useState(instructorsList)
+const Instructors = ({ data }) => {
+  const [instructors, setInstructors] = useState(data || instructorsList)
   
   const renderInstructorCard = () => {
     return instructors.map((instructor) => {
       return (
         <Col
           key={instructor.id}
-          className="mb-3 px-1 px-sm-2"
+          className="px-1 px-sm-2"
           xs={6}
           md={4}
           sm={6}>

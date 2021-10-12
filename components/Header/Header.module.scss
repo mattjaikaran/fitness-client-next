@@ -1,6 +1,7 @@
 @import '@/styles/colors.scss';
 
 .header {
+  border-bottom: 1px solid #414141;
   a {
     color: $text-black;
     text-decoration: none !important;

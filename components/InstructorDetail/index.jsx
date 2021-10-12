@@ -7,6 +7,7 @@ import InstructorImages from './InstructorImages'
 import InstructorExperienceTabs from './InstructorExperienceTabs'
 import InstructorExperienceCollapse from './InstructorExperienceCollapse'
 import InstructorInstagram from './InstructorInstagram'
+import CustomSpinner from '@/components/CustomSpinner'
 // import './InstructorDetail.module.scss'
 
 const InstructorDetail = ({ instructorDetail }) => {
@@ -14,15 +15,15 @@ const InstructorDetail = ({ instructorDetail }) => {
   // const [details, setDetails] = useState(instructorDetail)
   console.log('instructorDetail', instructorDetail)
   return (
-    <>
-      <InstructorHeader
-        bio={instructorDetail?.bio}
-        contact={instructorDetail?.contact}
-        instructorFullName={instructorDetail?.fullName}
-        instructorFirstName={instructorDetail?.firstName}
-        classesTaught={instructorDetail?.classesTaught}
-      />
-      {/* <InstructorCalendar /> */}
+    instructorDetail ? (
+      <>
+        <InstructorHeader
+          bio={instructorDetail?.bio}
+          contact={instructorDetail?.contact}
+          instructorFullName={instructorDetail?.fullName}
+          instructorFirstName={instructorDetail?.firstName}
+          classesTaught={instructorDetail?.classesTaught}
+        />
       <InstructorImages
         desktopPhotos={instructorDetail.desktopPhotos}
         mobilePhotos={instructorDetail.mobilePhotos}
@@ -41,7 +42,10 @@ const InstructorDetail = ({ instructorDetail }) => {
           imagesArray={instructorDetail?.mobilePhotos}
         />
       )}
-    </>
+      </>
+    ) : (
+      <CustomSpinner />
+    )
   )
 }
 

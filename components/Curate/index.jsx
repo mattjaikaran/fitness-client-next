@@ -16,11 +16,13 @@ const Curate = ({
           <h2 className="text-center">{title}</h2>
           <h2 className="mt-4 text-center">{title2}</h2>
           <h6 className="mt-5">{paragraphOne}</h6>
-          <h6 className="mt-5">{paragraphTwo}</h6>
-          <h6 className="my-0">{paragraphThree}</h6>
-          <h6 className="my-0">{paragraphFour}</h6>
-          <div className="mt-5">
-            <h6>Curated classes launching January 2022</h6>
+          <div className="text-center">
+            <h6 className="mt-5">{paragraphTwo}</h6>
+            <h6 className="my-0">{paragraphThree}</h6>
+            <h6 className="my-0">{paragraphFour}</h6>
+            <div className="mt-5">
+              <h6>Curated classes launching January 2022</h6>
+            </div>
           </div>
         </Col>
         <Col></Col>

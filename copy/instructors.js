@@ -8,7 +8,7 @@ export const instructorsList = [
     classesTaught: [],
     bio: `A personal trainer, HIIT, kickboxing and certified rowing Instructor; as well as nutrition coach. Allison believes fitness is one of the keystones to achieving a happier, healthier and a more confident life. She leads in a manner for everyone to safely and successfully achieve gains and successes in their workout, at whatever level and intensity is needed.`,
     featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1632923369/Allison%20Kamien/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-17_ldnc0v.jpg',
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633054588/Allison%20Kamien/DSKTP%20-%20Headshot/DesktopHEADSHOT545x468-17_qfqt9q.jpg',
     mobilePhotos: [
       {
         id: 1,
@@ -76,8 +76,12 @@ export const instructorsList = [
       website: ''
     },
     experience: {
-      expertise: [''],
-      credentials: ['Boxing', 'Kickboxing', 'HIIT', 'Circuit Train']
+      credentials: [
+        'ISSA personal trainer',
+        'ISSA nutritionist',
+        'Concept2 rowing instructor certified'
+      ],
+      expertise: ['Boxing', 'Kickboxing', 'HIIT', 'Circuit Train']
     }
   },
   {
@@ -247,12 +251,12 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'aduselfoil@gmail.com',
       phone: '',
       instagram: 'aduselfoil',
       facebook: '',
       tiktok: '',
-      website: ''
+      website: 'https://aduselfoilfitness.com'
     },
     experience: {
       expertise: ['Dance', 'Barre', 'Pilates', 'Aerial Yoga'],
@@ -264,87 +268,89 @@ export const instructorsList = [
       ]
     }
   },
-  // {
-  //   id: 4,
-  //   slug: 'angel-aulet',
-  //   fullName: 'Angel Aulet',
-  //   firstName: 'Angel',
-  //   lastName: 'Aulet',
-  //   classesTaught: ['Kickboxing'],
-  //   bio: '',
-  //   featuredPhoto:
-  //     'https://res.cloudinary.com/studiostudios/image/upload/v1632799843/Angel%20Aulet/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468--DesktopHeadshot545x468-3_dh46eu.jpg',
-  //   mobilePhotos: [
-  //     {
-  //       id: 1,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     },
-  //     {
-  //       id: 2,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     },
-  //     {
-  //       id: 3,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     },
-  //     {
-  //       id: 4,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     },
-  //     {
-  //       id: 5,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     },
-  //     {
-  //       id: 6,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     }
-  //   ],
-  //   desktopPhotos: [
-  //     {
-  //       id: 1,
-  //       imgUrl:
-  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-6_fgcwf1.jpg'
-  //     },
-  //     {
-  //       id: 2,
-  //       imgUrl:
-  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-_pfw67o.jpg'
-  //     },
-  //     {
-  //       id: 3,
-  //       imgUrl:
-  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-ClassDetailsHORIZONTAL555x369--3_yw7lav.jpg'
-  //     },
-  //     {
-  //       id: 4,
-  //       imgUrl:
-  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452--DesktopClassDetailsPageVERTICAL555x452-7_g5bmf2.jpg'
-  //     },
-  //     {
-  //       id: 5,
-  //       imgUrl:
-  //         'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-7_wicwli.jpg'
-  //     }
-  //   ],
-  //   contact: {
-  //     email: '',
-  //     phone: '',
-  //     instagram: 'gamechangerfitness',
-  //     facebook: '',
-  //     tiktok: ''
-  //   },
-  //   experience: {
-  //     expertise: [
-  //       'Certified Personal Trainer at Equinox',
-  //       'Certified Spin Instructor at SoulCycle'
-  //     ],
-  //     credentials: [
-  //       'Bachelor of Science in Exercise Science from UCLA',
-  //       'Strongest Man In The World 2018 Runner Up'
-  //     ]
-  //   }
-  // },
+  {
+    id: 4,
+    slug: 'angel-aulet',
+    fullName: 'Angel Aulet',
+    firstName: 'Angel',
+    lastName: 'Aulet',
+    classesTaught: ['Kickboxing'],
+    bio: 'Angel is certified with the National Academy of Sports Medicine and the International Sports Sciences Association. Trainer to some of the most respected personalities in the network news and media world. Angel is a former professional dancer, Swimmer and Lifeguard and he is a undefeated natural athletic champion with the international physique league.',
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633980847/OCTOBER.10.8.21/Angel%20Aulet/DesktopHEADSHOT545x468-7102-DSKTP-Headshot1200px-2_wpqhj3.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-6_fgcwf1.jpg'
+      },
+      {
+        id: 2,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-_pfw67o.jpg'
+      },
+      {
+        id: 3,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-ClassDetailsHORIZONTAL555x369--3_yw7lav.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452--DesktopClassDetailsPageVERTICAL555x452-7_g5bmf2.jpg'
+      },
+      {
+        id: 5,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-7_wicwli.jpg'
+      }
+      // {
+      //   id: 6,
+      //   imgUrl: ''
+      // },
+      // {
+      //   id: 7,
+      //   imgUrl: ''
+      // }
+    ],
+    contact: {
+      email: 'angel.livestrong@gmail.com',
+      phone: '',
+      instagram: 'gamechangerfitness',
+      facebook: '',
+      tiktok: ''
+    },
+    experience: {
+      expertise: ['Boxing', 'Mixed Martial Arts', 'Strength & Agility'],
+      credentials: ['ISSA certified', 'NASM certified', 'ECA certified']
+    }
+  },
   {
     id: 5,
     slug: 'brittany-watts',
@@ -423,7 +429,8 @@ export const instructorsList = [
       phone: '',
       instagram: 'wattselite',
       facebook: '',
-      tiktok: ''
+      tiktok: '',
+      website: ''
     },
     experience: {
       expertise: [
@@ -511,11 +518,12 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'cam@camnorsworthy.com',
       phone: '',
       instagram: 'camnorsworthy',
       facebook: '',
-      tiktok: ''
+      tiktok: '',
+      website: 'https://camnorsworthy.com'
     },
     experience: {
       expertise: ['Pilates', 'Barre'],
@@ -591,7 +599,7 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'flowforwardyoga@gmail.com',
       phone: '',
       instagram: 'flowforwardyoga',
       facebook: '',
@@ -672,7 +680,7 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'dom.warr22@gmail.com',
       phone: '',
       instagram: 'poundforpound_fit',
       facebook: '',
@@ -688,91 +696,101 @@ export const instructorsList = [
       ]
     }
   },
-  // {
-  //   id: 17,
-  //   slug: 'helen-phelan',
-  //   fullName: 'Helen Phelan',
-  //   firstName: 'Helen',
-  //   lastName: 'Phelan',
-  //   classesTaught: [],
-  //   bio: ``,
-  //   featuredPhoto:
-  //     'https://res.cloudinary.com/studiostudios/image/upload/v1633624405/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-29_zgude7.jpg',
-  //   mobilePhotos: [
-  //     {
-  //       id: 1,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     },
-  //     {
-  //       id: 2,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     },
-  //     {
-  //       id: 3,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     },
-  //     {
-  //       id: 4,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     },
-  //     {
-  //       id: 5,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     },
-  //     {
-  //       id: 6,
-  //       imgUrl: 'https://via.placeholder.com/350x350.png'
-  //     }
-  //   ],
-  //   desktopPhotos: [
-  //     {
-  //       id: 1,
-  //       imgUrl:
-  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624409/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-26_kwospd.jpg'
-  //     },
-  //     {
-  //       id: 2,
-  //       imgUrl:
-  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624406/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-27_doi5o4.jpg'
-  //     },
-  //     {
-  //       id: 3,
-  //       imgUrl:
-  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624405/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-28_dlklxx.jpg'
-  //     },
-  //     {
-  //       id: 4,
-  //       imgUrl:
-  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624408/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-24_nqjlte.jpg'
-  //     },
-  //     {
-  //       id: 5,
-  //       imgUrl:
-  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624407/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-25_q3xq0g.jpg'
-  //     },
-  //     {
-  //       id: 6,
-  //       imgUrl:
-  //         'https://res.cloudinary.com/studiostudios/image/upload/v1633624405/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-29_zgude7.jpg'
-  //     }
-  //   ],
-  //   contact: {
-  //     email: '',
-  //     phone: '',
-  //     instagram: 'helenvphelan',
-  //     facebook: '',
-  //     tiktok: '',
-  //     website: ''
-  //   },
-  //   experience: {
-  //   expertise: [
-  //       'none'
-  //     ],
-  //     credentials: [
-  //       'Pilates',
-  //     ],
-  // }
-  // },
+  {
+    id: 17,
+    slug: 'helen-phelan',
+    fullName: 'Helen Phelan',
+    firstName: 'Helen',
+    lastName: 'Phelan',
+    classesTaught: [],
+    bio: ``,
+    featuredPhoto:
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633986163/OCTOBER.10.8.21/Helen%20Phelan/HeadshotsGREYSCALE12_fromlightroom_indesign--Headshots.Grey12_.1350pxDSKTP-9_w9omfs.jpg',
+    mobilePhotos: [
+      {
+        id: 1,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 2,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 3,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 4,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 5,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      },
+      {
+        id: 6,
+        imgUrl: 'https://via.placeholder.com/350x350.png'
+      }
+    ],
+    desktopPhotos: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633624409/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-26_kwospd.jpg'
+      },
+      {
+        id: 2,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633624406/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-27_doi5o4.jpg'
+      },
+      {
+        id: 3,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633624405/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-28_dlklxx.jpg'
+      },
+      {
+        id: 4,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633624408/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-24_nqjlte.jpg'
+      },
+      {
+        id: 5,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633624407/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-25_q3xq0g.jpg'
+      },
+      {
+        id: 6,
+        imgUrl:
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633624405/OCTOBER.6.2021/Helen%20Phelan/DSKTP%20-%20InstClassDetailsPage/DSKTP-ClassDetails.Vertical.1200px--DSKTP-Vertical.ClassDetails1200px-29_zgude7.jpg'
+      }
+    ],
+    contact: {
+      email: 'hi@helenphelanstudio.com',
+      phone: '',
+      instagram: 'helenvphelan',
+      facebook: '',
+      tiktok: '',
+      website: 'https://helenphelanstudio.com'
+    },
+    experience: {
+      expertise: [
+        'Pilates',
+        'Core Exercise Solutions/Dr. Sarah Duvall: Penatal + Postpartum Corrective Exercise',
+        'Specialist',
+        'Kinected/Mt. Sinai Hospital: Functional Anatomy for Movement and Injuries',
+        'Prenatal/Postpartum Pilates + Diastasis Correction | Pilates for the Elderly; Protocols for',
+        'Osteoporosis | Pilates for Scoliosis',
+        'The Lab Pilates: Contemporary Comprehensive Mat + Apparatus'
+      ],
+      credentials: [
+        'Integrative health coach certified',
+        'Reiki 1 - 2 mentorship certified',
+        'TRX certified',
+        'Elon University: BFA Dance Performance + Choreography | BA Psychology | Independent',
+        'Study Focus on Classical Pilates | Somatic Theory TA | Classical Pilates Mat 1-3'
+      ]
+    }
+  },
   {
     id: 8,
     slug: 'izzy-van-hall',
@@ -846,16 +864,24 @@ export const instructorsList = [
       phone: '',
       instagram: 'izzyvanhall',
       facebook: '',
-      tiktok: ''
+      tiktok: '',
+      website: 'https://izzyvanhall.com'
     },
     experience: {
       expertise: [
-        `A 14yr teacher and 18+ yr student, she has become a bit of a yoga conosur.`,
         'Yoga',
-        'Breathework'
+        'Budokon',
+        'Breathework',
+        'AcroYoga',
+        'Massage therapist'
       ],
       credentials: [
-        `Licensed massage therapist specializing in Shiatsu, Thai, Lomi Lomi, Reflexology.`
+        '200hr RYT Gopi',
+        '300hr radiant yoga',
+        '200hr Thai massage certified',
+        '35hr katonah certified',
+        'Level II acroyoga.org',
+        'Budokon certified'
       ]
     }
   },
@@ -928,7 +954,7 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'jaj4248@gmail.com',
       phone: '',
       instagram: 'yogi_generis',
       facebook: '',
@@ -1026,7 +1052,7 @@ export const instructorsList = [
     ],
     contact: {
       email: 'trainchampfit@gmail.com',
-      phone: '',
+      phone: '646.427.1056',
       instagram: 'jmarkland_',
       facebook: '',
       tiktok: '',
@@ -1106,7 +1132,7 @@ export const instructorsList = [
     ],
     contact: {
       email: 'Rightonfilm@hotmail.com',
-      phone: '',
+      phone: '347-403-1806',
       instagram: 'jkickbox',
       facebook: '',
       tiktok: '',
@@ -1202,7 +1228,7 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'juanyoga@gmail.com',
       phone: '',
       instagram: 'juan_yogi',
       facebook: '',
@@ -1293,15 +1319,16 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
-      phone: '',
+      email: 'katya.bryleva@gmail.com',
+      phone: '201.895.9769',
       instagram: 'katya_bryleva',
-      facebook: '',
-      tiktok: '',
-      website: ''
+      facebook: 'https://www.facebook.com/katya_bryleva-113898017052015',
+      tiktok: 'katya _bryleva',
+      website:
+        'https://www.thetalenthack.com/me/963cddba-6107-4a26-8171-5dc2dfc5b512'
     },
     experience: {
-      expertise: ['Dance'],
+      expertise: ['Dance', 'Pilates'],
       credentials: [
         'Professional Dancer & Model',
         'Integrative Nutrition Health Coach'
@@ -1382,12 +1409,12 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'infolunacastilho@gmail.com',
       phone: '',
       instagram: 'lunacastilho',
       facebook: '',
       tiktok: '',
-      website: ''
+      website: 'http://lunacastilhoapp.com/'
     },
     experience: {
       expertise: ['Boxing', 'HIIT', 'Circuit Train', 'Spin'],
@@ -1468,7 +1495,7 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'marianessr1@gmail.com',
       phone: '',
       instagram: 'marianeflow',
       facebook: '',
@@ -1476,8 +1503,13 @@ export const instructorsList = [
       website: ''
     },
     experience: {
-      expertise: ['Yoga', 'Massage', 'Wellness'],
-      credentials: ['']
+      expertise: ['Massage', 'Yoga', 'Wellness', 'Ayurvedic Coach'],
+      credentials: [
+        'NASM person trainer certified',
+        '200 hr Yoga certified',
+        'Reiki Master',
+        'Lymphatic detox massage certified'
+      ]
     }
   },
   {
@@ -1549,7 +1581,7 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'nycfitnessisme@gmail.com',
       phone: '',
       instagram: 'nycfit',
       facebook: '',
@@ -1643,12 +1675,12 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'michijongeneel@hotmail.com',
       phone: '',
       instagram: 'michijongeneel',
       facebook: '',
       tiktok: '',
-      website: ''
+      website: 'https://www.fysiekfreakpilates.com/'
     },
     experience: {
       expertise: ['Pilates'],
@@ -1733,15 +1765,15 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'getoliviafitt@gmail.com',
       phone: '',
       instagram: 'oliviabowmanjackson',
       facebook: '',
       tiktok: '',
-      website: ''
+      website: 'https://www.oliviafitt.com'
     },
     experience: {
-      expertise: ['Dance Cardio'],
+      expertise: ['Personal Train', 'Dance Cardio', 'Pilates'],
       credentials: [
         'Level III Personal Trainer',
         'Level I Nutrition Coach',
@@ -1813,35 +1845,34 @@ export const instructorsList = [
         imgUrl:
           'https://res.cloudinary.com/studiostudios/image/upload/v1632886442/Rachel%20Ackley/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-24_uh1fd3.jpg'
       },
-      {
-        id: 4,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632886442/Rachel%20Ackley/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-3-DesktopInstGalleryPgVERTICAL540x673-3_j4arf5.jpg'
-      },
-      {
-        id: 5,
-        imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632886444/Rachel%20Ackley/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-17_p8fbfd.jpg'
-      }
+      // {
+      //   id: 4,
+      //   imgUrl:
+      //     'https://res.cloudinary.com/studiostudios/image/upload/v1632886442/Rachel%20Ackley/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-3-DesktopInstGalleryPgVERTICAL540x673-3_j4arf5.jpg'
+      // },
+      // {
+      //   id: 5,
+      //   imgUrl:
+      //     'https://res.cloudinary.com/studiostudios/image/upload/v1632886444/Rachel%20Ackley/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673-17_p8fbfd.jpg'
+      // }
     ],
     contact: {
-      email: '',
+      email: 'rachel@rachelackleyyoga.com',
       phone: '',
       instagram: 'rachelackley',
       facebook: '',
       tiktok: '',
-      website: ''
+      website: 'https://www.rachelackleyyoga.com'
     },
     experience: {
       expertise: ['Yoga', 'Soundbath', 'Breathework', 'Healing'],
       credentials: [
-        'Cacao Leadership Training, Costa Rica – 2020',
-        'Breathwork Level 1-4, David Elliot – 2018',
-        'Reiki Level 1-2 Certification, Maha Rose Healing Center – 2017',
-        'Advanced Yoga Training, Three Physio Yoga Method, Kula Yoga – 2017',
-        'Health Coach Certification, INN – 2018',
-        '300 – hour Yoga Teacher Training, Funky OM – 2016',
-        '200 – hour Yoga Teacher Training, Life Power Yoga – 2014'
+        '300hr Yoga certified',
+        '200hr Yoga certified. Cacao leadership training - Costa Rica',
+        'Breathework Level 1-4 certified',
+        'Reiki Level 1- 2 certified',
+        'Advanced yoga training - Three Physio | Yoga Method | Kula Yoga',
+        'Health coach certified'
       ]
     }
   },
@@ -1917,7 +1948,7 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'sarahhutchison3@gmail.com',
       phone: '',
       instagram: 'sarahbesshutch',
       facebook: '',
@@ -1927,8 +1958,8 @@ export const instructorsList = [
     experience: {
       expertise: ['Yoga', 'Breathework'],
       credentials: [
-        '500hr Yoga Alliance,',
-        'YTTP & Science of Self - 100hr Traditional Hot Apprenticeship'
+        '500hr certified',
+        '100hr Traditional Hot Apprenticeship - YTTP & Science of Self'
       ]
     }
   },
@@ -2009,7 +2040,7 @@ export const instructorsList = [
       }
     ],
     contact: {
-      email: '',
+      email: 'kvictoriagibbs@gmail.com',
       phone: '',
       instagram: 'whatgibbs',
       facebook: '',

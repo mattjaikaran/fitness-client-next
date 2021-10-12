@@ -38,13 +38,13 @@ const InstructorCard = ({ instructor: { slug, fullName, classesTaught, featuredP
           ) : (
             <h6>{fullName}</h6>
           )}
-          <p className="montserrat">
+          {/* <p className="montserrat">
             <small>
               {classesTaught.length > 1
                 ? classesTaught.join(' | ')
                 : classesTaught}
             </small>
-          </p>
+          </p> */}
         </Card.Body>
       </Card>
     </Link>
