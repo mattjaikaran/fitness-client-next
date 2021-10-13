@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import axios from 'axios'
-import { getInstructorData } from '@/hooks/instructors'
+import { getAllInstructorIds, getInstructorData } from '@/hooks/instructors'
 import Layout from '@/components/Layout'
 import InstructorDetail from '@/components/InstructorDetail'
 import CustomSpinner from '@/components/CustomSpinner'
@@ -14,12 +14,16 @@ const InstructorPage = ({ instructorData }) => {
 console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData', instructorData)
   const router = useRouter()
   const [details, setDetails] = useState({})
+  const refreshData = () => {
+    router.replace(router.asPath)
+  }
   const renderDetails = async () => {
     try {
       const response = await getInstructorData(router.query.slug)
       setDetails(response)
     } catch (error) {
       console.log(error)
+      refreshData()
     }
     console.log('details', details);
   }
@@ -27,8 +31,8 @@ console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData',
 
   return (
     <Layout>
-      {details ? (
-        <InstructorDetail instructorDetail={details} />
+      {instructorData ? (
+        <InstructorDetail instructorDetail={instructorData || details} />
       ) : (
         <>
           <CustomSpinner />
@@ -39,17 +43,41 @@ console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData',
   )
 }
 
-export async function getServerSideProps({ req, res }) {
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=59'
-  )
-  const response = await axios.get(`${url}/api/instructors/${req.slug}`)
-  const data = response.data
+export async function getStaticPaths(ctx) {
+  const instructors = await getAllInstructorIds()
   return {
-    props: { data }
+    paths: instructors || [],
+    fallback: false 
+    // fallback can be  true if you want to show a fallback version of page 
+    // and serve JSON for unknown articles
   }
 }
+
+
+export async function getStaticProps(ctx) {
+  try {
+    const instructorData = await getInstructorData(ctx.params.slug)
+    return {
+        props: { instructorData },
+    };
+  } catch (error) {
+    return {
+      props: null
+    }
+  }
+}
+
+// export async function getServerSideProps({ req, res }) {
+//   res.setHeader(
+//     'Cache-Control',
+//     'public, s-maxage=10, stale-while-revalidate=59'
+//   )
+//   const response = await axios.get(`${url}/api/instructors/${req.slug}`)
+//   const instructorData = response.data
+//   return {
+//     props: { instructorData }
+//   }
+// }
 
 
 export default InstructorPage

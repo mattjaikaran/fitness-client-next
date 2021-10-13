@@ -5,7 +5,7 @@ import styles from './Instructors.module.scss'
 
 const InstructorCard = ({ instructor: { slug, fullName, classesTaught, featuredPhoto } }) => {
   return (
-    <Link href={`/instructors/${slug}`} passHref>
+    <Link href={`/instructors/${encodeURIComponent(slug)}`} passHref>
       {/* <div
         className={styles.instructorImg}
         style={{
