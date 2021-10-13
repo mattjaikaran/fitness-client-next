@@ -6,9 +6,8 @@ import InstructorDetail from '@/components/InstructorDetail'
 import CustomSpinner from '@/components/CustomSpinner'
 
 const InstructorPage = ({ instructorData }) => {
-console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData', instructorData)
   const router = useRouter()
-  const [details, setDetails] = useState({})
+  const [details, setDetails] = useState(instructorData || {})
   const renderDetails = async () => {
     try {
       const response = await getInstructorData(router.query.slug)
