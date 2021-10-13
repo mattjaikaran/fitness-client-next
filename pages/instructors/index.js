@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Layout from '@/components/Layout'
 import Instructors from '@/components/Instructors'
 import axios from 'axios'
-import instructorsList from '@/copy/instructors'
+import { instructorsList } from '@/copy/instructors'
 
 const url = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://sstudioss.com'
 const InstructorsPage = ({ data }) => {
