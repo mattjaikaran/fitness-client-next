@@ -106,7 +106,43 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
         </Row>
       )
     }
-    // 5 and 7 have different layouts than 4/6
+    // 3 5 and 7 have different layouts than 4/6
+    if (desktopPhotos.length === 3) {
+      return (
+        <Row className="justify-content-xl-center">
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={600}
+              layout="responsive"
+              src={desktopPhotos[0].imgUrl}
+              alt="instructor image 1"
+            />
+          </Col>
+          <Col
+            md={6}
+            className="mb-md-3 px-0 px-sm-2 px-md-2 px-xl-2 text-center">
+            <Image
+              width={500}
+              height={300}
+              layout="responsive"
+              src={desktopPhotos[1].imgUrl}
+              alt="instructor image 2"
+            />
+            <Image
+              width={500}
+              height={300}
+              layout="responsive"
+              className="mt-md-3"
+              src={desktopPhotos[2].imgUrl}
+              alt="instructor image 3"
+            />
+          </Col>
+        </Row>
+      )
+    }
     if (desktopPhotos.length === 5) {
       return (
         <Row className="justify-content-xl-center">
@@ -248,9 +284,9 @@ const InstructorImages = ({ desktopPhotos, mobilePhotos }) => {
   }
   
   return (
-    <Container fluid="xl" className="mt-3 p-md-5">
+    <Container fluid="xl" className="mt-md-3 p-md-5">
       {desktopPhotos && renderImageGrid()}
-      <InstructorCarousel mobile mobileImages={mobilePhotos} />
+      {/* <InstructorCarousel mobile mobileImages={mobilePhotos} /> */}
     </Container>
   )
 }

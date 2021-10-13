@@ -23,6 +23,7 @@ const Home = () => {
       />
       <TextWithCTA
         text={homeCopy.descriptionTwo.copy}
+        text2={homeCopy.descriptionTwo.copy2}
         btnText={homeCopy.descriptionTwo.btnText}
         btnLink={homeCopy.descriptionTwo.btnLink}
       />

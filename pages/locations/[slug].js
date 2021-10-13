@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { Container, Spinner } from 'react-bootstrap'
 import Layout from '@/components/Layout'
 import LocationDetails from '@/components/LocationDetails'
+import CustomSpinner from '@/components/CustomSpinner'
 import { getLocationDetails } from '@/hooks/getDetails'
 
 const LocationPage = () => {
@@ -21,13 +21,7 @@ const LocationPage = () => {
     <Layout>
       {details ? (
         <LocationDetails locationDetail={details} />
-      ) : (
-        <Container className="text-center p-5">
-          <Spinner animation="border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>
-        </Container>
-      )}
+      ) : <CustomSpinner />}
     </Layout>
   )
 }

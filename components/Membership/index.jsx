@@ -31,17 +31,17 @@ const Membership = () => {
         <Col sm={8}>
           <h1 className="my-5 text-center">Membership</h1>
           <p>
-            Method for reserving a <strong>BOX</strong>. A box is any space
+            Method for reserving a <strong>BOX:</strong> A box is any space
             within our facility - small, medium, large and also our event open
             floor space.
           </p>
-          <Tabs className="mb-3" id="membershipTabs">
+          <Tabs
+            id="membership-tabs"
+            className={styles.membershipTabs}>
             <Tab eventKey="athlete" title="Athlete">
               <ul>{renderAthleteDetails()}</ul>
             </Tab>
-            <Tab
-              eventKey="provider"
-              title="Provider">
+            <Tab eventKey="provider" title="Provider">
               <ul>{renderProviderDetails()}</ul>
               <p className="text-center mt-5">
                 {!showInstructorContract ? (
