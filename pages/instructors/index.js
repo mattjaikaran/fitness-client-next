@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Layout from '@/components/Layout'
 import Instructors from '@/components/Instructors'
 import axios from 'axios'
@@ -5,6 +6,15 @@ import axios from 'axios'
 const url = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://sstudioss.com'
 const InstructorsPage = ({ data }) => {
   console.log('🚀 ~ file: index.js ~ line 6 ~ InstructorsPage ~ data', data)
+  const renderDetails = async () => {
+    try {
+      const response = await axios.get(`${url}/api/instructors`)
+      console.log(response)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  useEffect(() => !data && renderDetails(), [])
   return (
     <Layout>
       <Instructors data={data} />
