@@ -6,7 +6,7 @@ const url =
     : 'https://sstudioss.com'
 const API_URL = `${url}/api/instructors`
 const headers = {
-  "Access-Control-Allow-Methods": "PUT, POST, PATCH, DELETE, GET"
+  "Access-Control-Allow-Methods": "GET"
 }
 
 export async function getAllInstructorIds() {

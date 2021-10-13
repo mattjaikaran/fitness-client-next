@@ -12,40 +12,36 @@ import CustomSpinner from '@/components/CustomSpinner'
 
 const InstructorDetail = ({ instructorDetail }) => {
   // const router = useRouter()
-  // const [details, setDetails] = useState(instructorDetail)
+  const [details, setDetails] = useState(instructorDetail)
   console.log('instructorDetail', instructorDetail)
-  return (
-    instructorDetail ? (
-      <>
-        <InstructorHeader
-          bio={instructorDetail?.bio}
-          contact={instructorDetail?.contact}
-          instructorFullName={instructorDetail?.fullName}
-          instructorFirstName={instructorDetail?.firstName}
-          classesTaught={instructorDetail?.classesTaught}
-        />
-      <InstructorImages
-        desktopPhotos={instructorDetail.desktopPhotos}
-        mobilePhotos={instructorDetail.mobilePhotos}
+  return details ? (
+    <>
+      <InstructorHeader
+        bio={details?.bio}
+        contact={details?.contact}
+        instructorFullName={details?.fullName}
+        instructorFirstName={details?.firstName}
+        classesTaught={details?.classesTaught}
       />
-      {instructorDetail.experience?.credentials && (
+      <InstructorImages
+        desktopPhotos={details.desktopPhotos}
+        mobilePhotos={details.mobilePhotos}
+      />
+      {details.experience?.credentials && (
         <>
-          <InstructorExperienceTabs experience={instructorDetail.experience} />
-          <InstructorExperienceCollapse
-            experience={instructorDetail.experience}
-          />
+          <InstructorExperienceTabs experience={details.experience} />
+          <InstructorExperienceCollapse experience={details.experience} />
         </>
       )}
-      {instructorDetail.contact?.instagram && (
+      {details.contact?.instagram && (
         <InstructorInstagram
-          instagramHandle={instructorDetail?.contact?.instagram}
-          imagesArray={instructorDetail?.mobilePhotos}
+          instagramHandle={details?.contact?.instagram}
+          imagesArray={details?.mobilePhotos}
         />
       )}
-      </>
-    ) : (
-      <CustomSpinner />
-    )
+    </>
+  ) : (
+    <CustomSpinner />
   )
 }
 
