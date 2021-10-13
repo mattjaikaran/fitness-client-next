@@ -4,7 +4,8 @@ import InstructorCard from './InstructorCard'
 import { instructorsList } from '@/copy/instructors'
 
 const Instructors = ({ data }) => {
-  const [instructors, setInstructors] = useState(data || instructorsList)
+  const [instructors, setInstructors] = useState(data)
+  if (!instructors) return setInstructors(instructorsList)
   
   const renderInstructorCard = () => {
     return instructors.map((instructor) => {

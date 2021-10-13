@@ -274,7 +274,7 @@ export const instructorsList = [
     fullName: 'Angel Aulet',
     firstName: 'Angel',
     lastName: 'Aulet',
-    classesTaught: [''],
+    classesTaught: [],
     bio: 'Angel is certified with the National Academy of Sports Medicine and the International Sports Sciences Association. Trainer to some of the most respected personalities in the network news and media world. Angel is a former professional dancer, Swimmer and Lifeguard and he is a undefeated natural athletic champion with the international physique league.',
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633980847/OCTOBER.10.8.21/Angel%20Aulet/DesktopHEADSHOT545x468-7102-DSKTP-Headshot1200px-2_wpqhj3.jpg',
