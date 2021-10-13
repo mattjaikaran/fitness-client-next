@@ -1433,7 +1433,7 @@ export const instructorsList = [
     firstName: 'Mariane',
     lastName: 'Ribeiro',
     classesTaught: [],
-    bio: ``,
+    bio: `Mariane is a model, personal trainer, yoga instructor and holistic health coach. Since 2016 she has been helping others develop a healthy body, and mindset by combining Yoga, Meditation and Western Holistic methods. Through all her studies she created her own method with techniques that will connect the soul, mind and body.`,
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633531447/OCTOBER.6.2021/Mariane%20Ribeiro/DSKTP%20-%20InstHeadshot/DesktopHEADSHOT545x468--DSKTP-Headshot1200px-8_oxqxxh.jpg',
     mobilePhotos: [
@@ -1844,7 +1844,7 @@ export const instructorsList = [
         id: 3,
         imgUrl:
           'https://res.cloudinary.com/studiostudios/image/upload/v1632886442/Rachel%20Ackley/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-24_uh1fd3.jpg'
-      },
+      }
       // {
       //   id: 4,
       //   imgUrl:

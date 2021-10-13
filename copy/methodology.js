@@ -1,6 +1,6 @@
 export const methodology = {
   title: 'Methodology',
-  p1: `We are Record: Create Consumer studios.`,
+  p1: `We are Record: Create Consume studios.`,
   p2: `This is the PAY-PER-USE method of fitness & wellness facilities. Our space is available to anyone for rent by the hour | day | week.`,
   p3: `Rent a space “BOX” within any of our facilities ... use the space... repurpose the space.`,
   p4: `Our facilities are equipped to safely, and properly participate in any fitness & wellness action. The equipment is included in the pay-per-use rent of a Box.`,
