@@ -12,37 +12,35 @@ import CustomSpinner from '@/components/CustomSpinner'
 
 const InstructorDetail = ({ instructorDetail }) => {
   // const router = useRouter()
-  const [details, setDetails] = useState(instructorDetail)
+  // const [details, setDetails] = useState(instructorDetail)
   console.log('instructorDetail', instructorDetail)
-  return details ? (
+  return  (
     <>
       <InstructorHeader
-        bio={details?.bio}
-        contact={details?.contact}
-        instructorFullName={details?.fullName}
-        instructorFirstName={details?.firstName}
-        classesTaught={details?.classesTaught}
+        bio={instructorDetail?.bio}
+        contact={instructorDetail?.contact}
+        instructorFullName={instructorDetail?.fullName}
+        instructorFirstName={instructorDetail?.firstName}
+        classesTaught={instructorDetail?.classesTaught}
       />
       <InstructorImages
-        desktopPhotos={details.desktopPhotos}
-        mobilePhotos={details.mobilePhotos}
+        desktopPhotos={instructorDetail.desktopPhotos}
+        mobilePhotos={instructorDetail.mobilePhotos}
       />
-      {details.experience?.credentials && (
+      {instructorDetail.experience?.credentials && (
         <>
-          <InstructorExperienceTabs experience={details.experience} />
-          <InstructorExperienceCollapse experience={details.experience} />
+          <InstructorExperienceTabs experience={instructorDetail.experience} />
+          <InstructorExperienceCollapse experience={instructorDetail.experience} />
         </>
       )}
-      {details.contact?.instagram && (
+      {instructorDetail.contact?.instagram && (
         <InstructorInstagram
-          instagramHandle={details?.contact?.instagram}
-          imagesArray={details?.mobilePhotos}
+          instagramHandle={instructorDetail?.contact?.instagram}
+          imagesArray={instructorDetail?.mobilePhotos}
         />
       )}
     </>
-  ) : (
-    <CustomSpinner />
-  )
+  ) 
 }
 
 export default InstructorDetail
