@@ -274,7 +274,7 @@ export const instructorsList = [
     fullName: 'Angel Aulet',
     firstName: 'Angel',
     lastName: 'Aulet',
-    classesTaught: ['Kickboxing'],
+    classesTaught: [''],
     bio: 'Angel is certified with the National Academy of Sports Medicine and the International Sports Sciences Association. Trainer to some of the most respected personalities in the network news and media world. Angel is a former professional dancer, Swimmer and Lifeguard and he is a undefeated natural athletic champion with the international physique league.',
     featuredPhoto:
       'https://res.cloudinary.com/studiostudios/image/upload/v1633980847/OCTOBER.10.8.21/Angel%20Aulet/DesktopHEADSHOT545x468-7102-DSKTP-Headshot1200px-2_wpqhj3.jpg',
@@ -308,27 +308,27 @@ export const instructorsList = [
       {
         id: 1,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-6_fgcwf1.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633062835/Angel%20Aulet/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468--DSKTP-Gallery.Vertical.1200px-3_z8wfuh.jpg'
       },
       {
         id: 2,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERY-Horizontal540x323-_pfw67o.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633062835/Angel%20Aulet/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Horizontal.1350px-_w19as3.jpg'
       },
       {
         id: 3,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-ClassDetailsHORIZONTAL555x369--3_yw7lav.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633062835/Angel%20Aulet/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Horizontal.1350px--2_kcmjy9.jpg'
       },
       {
         id: 4,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799824/Angel%20Aulet/Desktop%20-%20InstClassDetailsPage/Desktop-classdetailspageVERTICAL555x452--DesktopClassDetailsPageVERTICAL555x452-7_g5bmf2.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633062834/Angel%20Aulet/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468--DSKTP-Gallery.Vertical.1200px-5_vk2qux.jpg'
       },
       {
         id: 5,
         imgUrl:
-          'https://res.cloudinary.com/studiostudios/image/upload/v1632799860/Angel%20Aulet/Desktop%20-%20InstGalleryPage/INSTRUCTORGALLERYIMAGE-VERITCALDESKTOP-540x673--DesktopInstGalleryPgVERTICAL540x673-7_wicwli.jpg'
+          'https://res.cloudinary.com/studiostudios/image/upload/v1633062835/Angel%20Aulet/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468--DSKTP-Gallery.Vertical.1200px-4_fjxuak.jpg'
       }
       // {
       //   id: 6,
