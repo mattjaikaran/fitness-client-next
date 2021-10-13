@@ -1,12 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import InstructorCard from './InstructorCard'
+import CustomSpinner from '@/components/CustomSpinner' 
 import { instructorsList } from '@/copy/instructors'
 
 const Instructors = ({ data }) => {
   const [instructors, setInstructors] = useState(data)
-  if (!instructors) return setInstructors(instructorsList)
-  
+  useEffect(() => !instructors && setInstructors(instructorsList), [])
+
   const renderInstructorCard = () => {
     return instructors.map((instructor) => {
       console.log(
@@ -29,7 +30,7 @@ const Instructors = ({ data }) => {
   return (
     <Container fluid="xl">
       <h1 className="my-5 text-center">Instructors</h1>
-      <Row>{renderInstructorCard()}</Row>
+      <Row>{instructors ? renderInstructorCard() : <CustomSpinner />}</Row>
     </Container>
   )
 }
