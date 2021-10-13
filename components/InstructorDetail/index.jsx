@@ -14,16 +14,15 @@ const InstructorDetail = ({ instructorDetail }) => {
   // const router = useRouter()
   // const [details, setDetails] = useState(instructorDetail)
   console.log('instructorDetail', instructorDetail)
-  return (
-    instructorDetail ? (
-      <>
-        <InstructorHeader
-          bio={instructorDetail?.bio}
-          contact={instructorDetail?.contact}
-          instructorFullName={instructorDetail?.fullName}
-          instructorFirstName={instructorDetail?.firstName}
-          classesTaught={instructorDetail?.classesTaught}
-        />
+  return  (
+    <>
+      <InstructorHeader
+        bio={instructorDetail?.bio}
+        contact={instructorDetail?.contact}
+        instructorFullName={instructorDetail?.fullName}
+        instructorFirstName={instructorDetail?.firstName}
+        classesTaught={instructorDetail?.classesTaught}
+      />
       <InstructorImages
         desktopPhotos={instructorDetail.desktopPhotos}
         mobilePhotos={instructorDetail.mobilePhotos}
@@ -31,9 +30,7 @@ const InstructorDetail = ({ instructorDetail }) => {
       {instructorDetail.experience?.credentials && (
         <>
           <InstructorExperienceTabs experience={instructorDetail.experience} />
-          <InstructorExperienceCollapse
-            experience={instructorDetail.experience}
-          />
+          <InstructorExperienceCollapse experience={instructorDetail.experience} />
         </>
       )}
       {instructorDetail.contact?.instagram && (
@@ -42,11 +39,8 @@ const InstructorDetail = ({ instructorDetail }) => {
           imagesArray={instructorDetail?.mobilePhotos}
         />
       )}
-      </>
-    ) : (
-      <CustomSpinner />
-    )
-  )
+    </>
+  ) 
 }
 
 export default InstructorDetail

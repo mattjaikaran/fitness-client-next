@@ -1,37 +1,31 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import axios from 'axios'
 import { getAllInstructorIds, getInstructorData } from '@/hooks/instructors'
 import Layout from '@/components/Layout'
 import InstructorDetail from '@/components/InstructorDetail'
 import CustomSpinner from '@/components/CustomSpinner'
 
-const url =
-  process.env.NODE_ENV === 'development'
-    ? 'http://localhost:3000'
-    : 'https://sstudioss.com'
 const InstructorPage = ({ instructorData }) => {
   const router = useRouter()
-  const [details, setDetails] = useState({})
-  const refreshData = () => {
-    router.replace(router.asPath)
-  }
+  const [details, setDetails] = useState(instructorData || {})
   const renderDetails = async () => {
     try {
       const response = await getInstructorData(router.query.slug)
+      // const response2 = await getAllInstructorIds()
+      // console.log('response', response);
+      // console.log('response2', response2.map(({ params: slug}) => slug));
       setDetails(response)
     } catch (error) {
       console.log(error)
-      refreshData()
     }
-    console.log('details', details);
+    console.log(details);
   }
-  useEffect(() => !instructorData && renderDetails(), [])
+  useEffect(() => renderDetails(), [])
 
   return (
     <Layout>
-      {instructorData ? (
-        <InstructorDetail instructorDetail={instructorData || details} />
+      {details ? (
+        <InstructorDetail instructorDetail={details} />
       ) : (
         <>
           <CustomSpinner />
@@ -42,41 +36,27 @@ const InstructorPage = ({ instructorData }) => {
   )
 }
 
-export async function getStaticPaths(ctx) {
-  const instructors = await getAllInstructorIds()
-  return {
-    paths: instructors || [],
-    fallback: false 
-    // fallback can be  true if you want to show a fallback version of page 
-    // and serve JSON for unknown articles
-  }
-}
-
-
-export async function getStaticProps(ctx) {
-  try {
-    const instructorData = await getInstructorData(ctx.params.slug)
-    return {
-        props: { instructorData },
-    };
-  } catch (error) {
-    return {
-      props: null
-    }
-  }
-}
-
-// export async function getServerSideProps({ req, res }) {
-//   res.setHeader(
-//     'Cache-Control',
-//     'public, s-maxage=10, stale-while-revalidate=59'
-//   )
-//   const response = await axios.get(`${url}/api/instructors/${req.slug}`)
-//   const instructorData = response.data
+// export async function getStaticPaths() {
+//   const allInstructors = await getAllInstructorIds()
+//   const paths = await allInstructors?.map((instructor) => `/instructors/${instructor.params.slug}`)
+//   if (!allInstructors) {
+//     return {
+//       notFound: true
+//     }
+//   }
 //   return {
-//     props: { instructorData }
+//     paths: paths || [],
+//     fallback: true
 //   }
 // }
 
+// export async function getStaticProps({ params }) {
+//   const instructorData = await getInstructorData(params.slug)
+//   return {
+//     props: {
+//       instructorData
+//     }
+//   }
+// }
 
 export default InstructorPage
