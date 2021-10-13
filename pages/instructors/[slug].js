@@ -1,10 +1,15 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { getAllInstructorIds, getInstructorData } from '@/hooks/instructors'
+import axios from 'axios'
+import { getInstructorData } from '@/hooks/instructors'
 import Layout from '@/components/Layout'
 import InstructorDetail from '@/components/InstructorDetail'
 import CustomSpinner from '@/components/CustomSpinner'
 
+const url =
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:3000'
+    : 'https://sstudioss.com'
 const InstructorPage = ({ instructorData }) => {
 console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData', instructorData)
   const router = useRouter()
@@ -12,16 +17,13 @@ console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData',
   const renderDetails = async () => {
     try {
       const response = await getInstructorData(router.query.slug)
-      // const response2 = await getAllInstructorIds()
-      // console.log('response', response);
-      // console.log('response2', response2.map(({ params: slug}) => slug));
       setDetails(response)
     } catch (error) {
       console.log(error)
     }
-    console.log(details);
+    console.log('details', details);
   }
-  useEffect(() => renderDetails(), [])
+  useEffect(() => !instructorData && renderDetails(), [])
 
   return (
     <Layout>
@@ -37,27 +39,17 @@ console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData',
   )
 }
 
-// export async function getStaticPaths() {
-//   const allInstructors = await getAllInstructorIds()
-//   const paths = await allInstructors?.map((instructor) => `/instructors/${instructor.params.slug}`)
-//   if (!allInstructors) {
-//     return {
-//       notFound: true
-//     }
-//   }
-//   return {
-//     paths: paths || [],
-//     fallback: true
-//   }
-// }
+export async function getServerSideProps({ req, res }) {
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  )
+  const response = await axios.get(`${url}/api/instructors/${req.slug}`)
+  const data = response.data
+  return {
+    props: { data }
+  }
+}
 
-// export async function getStaticProps({ params }) {
-//   const instructorData = await getInstructorData(params.slug)
-//   return {
-//     props: {
-//       instructorData
-//     }
-//   }
-// }
 
 export default InstructorPage
