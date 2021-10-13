@@ -6,6 +6,7 @@ import { instructorsList } from '@/copy/instructors'
 
 const url = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://sstudioss.com'
 const InstructorsPage = ({ data }) => {
+  console.log('🚀 ~ file: index.js ~ line 6 ~ InstructorsPage ~ data', data)
   const [details, setDetails] = useState(data || instructorsList)
   const renderDetails = async () => {
     try {
@@ -24,16 +25,16 @@ const InstructorsPage = ({ data }) => {
   )
 }
 
-export async function getServerSideProps({ req, res }) {
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=59'
-  )
-  const response = await axios.get(`${url}/api/instructors`)
-  const data = response.data
-  return {
-    props: { slug: data }
-  }
-}
+// export async function getServerSideProps({ req, res }) {
+//   res.setHeader(
+//     'Cache-Control',
+//     'public, s-maxage=10, stale-while-revalidate=59'
+//   )
+//   const response = await axios.get(`${url}/api/instructors`)
+//   const data = response.data
+//   return {
+//     props: { slug: data }
+//   }
+// }
 
 export default InstructorsPage
