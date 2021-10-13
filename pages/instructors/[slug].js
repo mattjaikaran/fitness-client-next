@@ -6,10 +6,10 @@ import Layout from '@/components/Layout'
 import InstructorDetail from '@/components/InstructorDetail'
 import CustomSpinner from '@/components/CustomSpinner'
 
-const url =
-  process.env.NODE_ENV === 'development'
-    ? 'http://localhost:3000'
-    : 'https://sstudioss.com'
+// const url =
+//   process.env.NODE_ENV === 'development'
+//     ? 'http://localhost:3000'
+//     : 'https://sstudioss.com'
 const InstructorPage = ({ instructorData }) => {
 console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData', instructorData)
   const router = useRouter()
@@ -45,11 +45,6 @@ console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData',
 
 export async function getStaticPaths(ctx) {
   const instructors = await getAllInstructorIds()
-  // const paths = instructors.map((instructor) => ({
-  //   params: { slug: instructor.slug }
-  // }))
-
-  // if (!paths) return {}
   return {
     paths: instructors || [],
     fallback: false 
