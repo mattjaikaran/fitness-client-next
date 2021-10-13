@@ -11,19 +11,14 @@ import CustomSpinner from '@/components/CustomSpinner'
 //     ? 'http://localhost:3000'
 //     : 'https://sstudioss.com'
 const InstructorPage = ({ instructorData }) => {
-console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData', instructorData)
   const router = useRouter()
   const [details, setDetails] = useState({})
-  const refreshData = () => {
-    router.replace(router.asPath)
-  }
   const renderDetails = async () => {
     try {
       const response = await getInstructorData(router.query.slug)
       setDetails(response)
     } catch (error) {
       console.log(error)
-      refreshData()
     }
     console.log('details', details);
   }
@@ -36,7 +31,6 @@ console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData',
       ) : (
         <>
           <CustomSpinner />
-          {router.push('/instructors')}
         </>
       )}
     </Layout>
