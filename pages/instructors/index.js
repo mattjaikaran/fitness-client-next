@@ -10,6 +10,7 @@ const InstructorsPage = ({ data }) => {
   const renderDetails = async () => {
     try {
       const response = await axios.get(`${url}/api/instructors`)
+      console.log('response.data', response.data)
       setDetails(response.data)
     } catch (error) {
       console.log(error)

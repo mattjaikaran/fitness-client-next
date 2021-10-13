@@ -11,6 +11,7 @@ const url =
     ? 'http://localhost:3000'
     : 'https://sstudioss.com'
 const InstructorPage = ({ instructorData }) => {
+console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData', instructorData)
   const router = useRouter()
   const [details, setDetails] = useState({})
   const refreshData = () => {
@@ -44,6 +45,11 @@ const InstructorPage = ({ instructorData }) => {
 
 export async function getStaticPaths(ctx) {
   const instructors = await getAllInstructorIds()
+  // const paths = instructors.map((instructor) => ({
+  //   params: { slug: instructor.slug }
+  // }))
+
+  // if (!paths) return {}
   return {
     paths: instructors || [],
     fallback: false 
