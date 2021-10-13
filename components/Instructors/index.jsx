@@ -8,9 +8,13 @@ const Instructors = ({ data }) => {
   
   const renderInstructorCard = () => {
     return instructors.map((instructor) => {
+      console.log(
+        '🚀 ~ file: index.jsx ~ line 22 ~ returninstructors.map ~ instructor',
+        instructor
+      )
       return (
         <Col
-          key={instructor.id}
+          key={instructor.slug}
           className="px-1 px-sm-2"
           xs={6}
           md={4}

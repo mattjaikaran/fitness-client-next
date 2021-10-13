@@ -612,7 +612,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 13,
+    id: 8,
     slug: 'dominique-warren',
     fullName: 'Dominique Warren',
     firstName: 'Dominique',
@@ -697,7 +697,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 17,
+    id: 9,
     slug: 'helen-phelan',
     fullName: 'Helen Phelan',
     firstName: 'Helen',
@@ -792,7 +792,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 8,
+    id: 10,
     slug: 'izzy-van-hall',
     fullName: 'Izzy Van Hall',
     firstName: 'Izzy',
@@ -886,7 +886,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 18,
+    id: 11,
     slug: 'jasmine-jackson',
     fullName: 'Jasmine Jackson',
     firstName: 'Jasmine',
@@ -973,7 +973,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 9,
+    id: 12,
     slug: 'jay-markland',
     fullName: 'Jay Markland',
     firstName: 'Jay',
@@ -1064,7 +1064,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 10,
+    id: 13,
     slug: 'jermaine-bailey',
     fullName: 'Jermaine Bailey',
     firstName: 'Jermaine',
@@ -1150,7 +1150,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 11,
+    id: 14,
     slug: 'juan-gamboa',
     fullName: 'Juan Gamboa',
     firstName: 'Juan',
@@ -1246,7 +1246,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 19,
+    id: 15,
     slug: 'katya-bryleva',
     fullName: 'Katya Bryleva',
     firstName: 'Katya',
@@ -1336,7 +1336,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 20,
+    id: 16,
     slug: 'luna-castilho',
     fullName: 'Luna Castilho',
     firstName: 'Luna',
@@ -1427,7 +1427,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 21,
+    id: 17,
     slug: 'mariane-ribeiro',
     fullName: 'Mariane Ribeiro',
     firstName: 'Mariane',
@@ -1513,7 +1513,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 12,
+    id: 18,
     slug: 'mary-onyango',
     fullName: 'Mary Onyango',
     firstName: 'Mary',
@@ -1594,7 +1594,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 22,
+    id: 19,
     slug: 'michele-jongeneel',
     fullName: 'Michele Jongeneel',
     firstName: 'Michele',
@@ -1693,7 +1693,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 23,
+    id: 20,
     slug: 'olivia-bowman-jackson',
     fullName: 'Olivia Bowman Jackson',
     firstName: 'Olivia',
@@ -1783,7 +1783,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 14,
+    id: 21,
     slug: 'rachel-ackley',
     fullName: 'Rachel Ackley',
     firstName: 'Rachel',
@@ -1877,7 +1877,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 15,
+    id: 22,
     slug: 'sarah-bess-hutchison',
     fullName: 'Sarah Bess Hutchison',
     firstName: 'Sarah',
@@ -1964,7 +1964,7 @@ export const instructorsList = [
     }
   },
   {
-    id: 16,
+    id: 23,
     slug: 'victoria-gibbs',
     fullName: 'Victoria Gibbs',
     firstName: 'Victoria',
@@ -2053,7 +2053,7 @@ export const instructorsList = [
     }
   }
   // {
-  //   id: 10,
+  //   id: 24,
   //   slug: '',
   //   fullName: 'Mary Onyango',
   //   firstName: 'Mary',
