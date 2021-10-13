@@ -4,7 +4,7 @@ import styles from './TextWithCTA.module.scss'
 const TextWithCTA = ({ text, text2, impact, btnText, btnLink }) => {
   return (
     <div className={styles.textWithCTA}>
-      <Container className="py-5 p-sm-5">
+      <Container className="py-md-5 p-sm-5">
         <h4 className={`${styles.text}`}>
           {text}
         </h4>

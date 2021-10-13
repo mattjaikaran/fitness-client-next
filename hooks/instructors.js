@@ -1,6 +1,10 @@
 import axios from 'axios'
 
-const API_URL = '/api/instructors'
+const url =
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:3000'
+    : 'https://sstudioss.com'
+const API_URL = `${url}/api/instructors`
 
 export async function getAllInstructorIds() {
   try {

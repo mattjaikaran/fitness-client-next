@@ -17,12 +17,8 @@ const InstructorContact = ({
 }) => {
   return (
     <Container fluid className="mt-5">
-      <Card className="p-3">
-        <Card.Header
-          style={{
-            backgroundColor: '#fff',
-            borderBottom: 'none'
-          }}>
+      <Card className="p-3 bg-off-white mb-5">
+        <Card.Header className="bg-off-white" style={{ borderBottom: 'none' }}>
           <Row>
             <Col xs={2} sm={5}></Col>
             <Col xs={8} sm={5}>
@@ -42,16 +38,36 @@ const InstructorContact = ({
               <br className="hidden-xs" /> Write to us and we will contact you.
             </h5>
             <div className="mt-4">
-              <p className="mb-1">
-                <strong>EMAIL</strong>
-              </p>
-              <p>
-                <a
-                  className="text-muted orpheus"
-                  href={`mailto:${contact?.email}`}>
-                  {contact?.email}
-                </a>
-              </p>
+              {contact.email && (
+                <>
+                  <p className="mb-1">
+                    <strong>EMAIL</strong>
+                  </p>
+                  <p>
+                    <a
+                      className="text-muted orpheus"
+                      href={`mailto:${contact?.email}`}>
+                      {contact?.email}
+                    </a>
+                  </p>
+                </>
+              )}
+              {contact.website && (
+                <>
+                  <p className="mb-1">
+                    <strong>WEBSITE</strong>
+                  </p>
+                  <p>
+                    <a
+                      className="text-muted orpheus"
+                      href={contact.website}
+                      target="_blank"
+                      rel="noreferrer">
+                      {contact?.website}
+                    </a>
+                  </p>
+                </>
+              )}
               {contact.phone && (
                 <>
                   <p className="mb-1">
@@ -118,6 +134,7 @@ const InstructorContact = ({
                   type="text"
                   name="name"
                   value={name}
+                  className="bg-off-white"
                   onChange={(e) => setName(e.target.value)}
                 />
               </Form.Group>
@@ -127,6 +144,7 @@ const InstructorContact = ({
                   type="email"
                   name="email"
                   value={email}
+                  className="bg-off-white"
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </Form.Group>
@@ -138,6 +156,7 @@ const InstructorContact = ({
                   type="text"
                   name="message"
                   value={message}
+                  className="bg-off-white"
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </Form.Group>

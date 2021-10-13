@@ -8,7 +8,7 @@ const BoxStyles = () => {
     return boxStyles.map((box) => {
       const { id, name, slug, descriptionOne, impactStatement, descriptionTwo, btnText } = box
       return (
-        <Col key={id} lg={12} className={styles.boxCol}>
+        <Col key={id} sm={12} md={6} lg={4} className={styles.boxCol}>
           <Box
             name={name}
             slug={slug}

@@ -1,5 +1,11 @@
 @import '../../styles/colors.scss';
 
+.cardBodyStyle {
+  .longName {
+    font-family: 'Orpheus W01 Regular', serif;
+    font-size: 14px;
+  }
+}
 .instructorImg {
   filter: brightness(80%);
   background-position: center;

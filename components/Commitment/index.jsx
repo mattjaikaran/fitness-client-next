@@ -18,26 +18,21 @@ const Commitment = () => {
           </p>
 
           <div className="mt-5">
-            <p>Because connection is a basic human need.</p>
-
-            <p className="mt-5">
-              {`Because PAY-PER-USE fitness & wellness studios will strengthen the
-              relationship between providers and consumers everywhere.`}
-            </p>
-            <p className="mt-5">
-              We believe both will prosper and advance in a relationship and
-              environment they construct.
-            </p>
-            <p className="mt-5">
-              We know the nation of fitness professionals who want to inspire,
-              educate and motivate on their own wavelength. We are the platform
-              of space for that relationship to exist and develop.
+            <p>
+              Because connection is a basic human need. Because we believe both
+              consumer and creator will prosper and advance in a relationship
+              and environment they construct. We are the platform of space for
+              this relationship to exist and develop.
             </p>
             <p className="mt-5">
               {`We would like to provide you the consumer your own space for
               privacy, and flexibility in determining how you consume fitness &
-              wellness. We would like to provide you the instructor the facility
-              to operate your own brand and persona from.`}
+              wellness - help in your health. We would like to provide you the
+              instructor the facility to operate your own brand and persona from
+              - help in your wealth.`}
+            </p>
+            <p className="mt-5">
+              Our commitment is to you.
             </p>
           </div>
         </Col>

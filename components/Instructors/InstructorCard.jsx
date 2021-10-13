@@ -5,7 +5,7 @@ import styles from './Instructors.module.scss'
 
 const InstructorCard = ({ instructor: { slug, fullName, classesTaught, featuredPhoto } }) => {
   return (
-    <Link href={`/instructors/${slug}`} passHref>
+    <Link href={`/instructors/${encodeURIComponent(slug)}`} passHref>
       {/* <div
         className={styles.instructorImg}
         style={{
@@ -31,15 +31,20 @@ const InstructorCard = ({ instructor: { slug, fullName, classesTaught, featuredP
           src={featuredPhoto}
           alt="instructor featured image"
         />
-        <Card.Body className="text-center bg-off-white">
-          <h5>{fullName}</h5>
-          <p className="montserrat">
+        <Card.Body
+          className={`${styles.cardBodyStyle} text-center bg-off-white`}>
+          {fullName.length > 20 ? (
+            <p className={styles.longName}>{fullName}</p>
+          ) : (
+            <h6>{fullName}</h6>
+          )}
+          {/* <p className="montserrat">
             <small>
               {classesTaught.length > 1
                 ? classesTaught.join(' | ')
                 : classesTaught}
             </small>
-          </p>
+          </p> */}
         </Card.Body>
       </Card>
     </Link>

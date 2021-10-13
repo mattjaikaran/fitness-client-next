@@ -1,6 +1,6 @@
 export const investmentRelations = {
   p1: 'We are excited about bringing this pay-per-use method of consume & create fitness to any health & wellness community across the Nation',
-  p2: 'Our current path to expansion is:',
+  p2: 'Our current path for creating is:',
   locations: [
     {
       id: 1,

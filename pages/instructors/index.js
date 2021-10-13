@@ -1,21 +1,38 @@
+import { useState, useEffect } from 'react'
 import Layout from '@/components/Layout'
 import Instructors from '@/components/Instructors'
-// import axios from 'axios'
+import axios from 'axios'
+import { instructorsList } from '@/copy/instructors'
 
-const InstructorsPage = () => {
+const url = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://sstudioss.com'
+const InstructorsPage = ({ data }) => {
+  const [details, setDetails] = useState(data || instructorsList)
+  const renderDetails = async () => {
+    try {
+      const response = await axios.get(`${url}/api/instructors`)
+      setDetails(response.data)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  useEffect(() => !data && renderDetails(), [])
   return (
     <Layout>
-      <Instructors />
+      <Instructors data={details} />
     </Layout>
   )
 }
 
-// export async function getServerSideProps() {
-//   const response = await axios.get('http://localhost:3000/api/instructors')
-//   const data = response.data
-//   return {
-//     props: { data }
-//   }
-// }
+export async function getServerSideProps({ req, res }) {
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  )
+  const response = await axios.get(`${url}/api/instructors`)
+  const data = response.data
+  return {
+    props: { slug: data }
+  }
+}
 
 export default InstructorsPage

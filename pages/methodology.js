@@ -12,6 +12,7 @@ const MethodologyPage = () => {
         p3={methodology.p3}
         p4={methodology.p4}
         p5={methodology.p5}
+        p6={methodology.p6}
       />
     </Layout>
   )

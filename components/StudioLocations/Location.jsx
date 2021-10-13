@@ -13,9 +13,9 @@ const Location = ({
   const router = useRouter()
   return (
     <Card border="light" className={styles.location}>
-      <h3 className="my-3">{name}</h3>
+      <h4 className="mt-3">{name}</h4>
 
-      <Card.Body className="d-flex flex-column">
+      <Card.Body className="d-flex mt-md-3 flex-column">
         <p className="orpheus">{launchDate}</p>
         {/* {address && (
           <p className="orpheus">
