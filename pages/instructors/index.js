@@ -22,7 +22,11 @@ const InstructorsPage = ({ data }) => {
   )
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps({ req, res }) {
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  )
   const response = await axios.get(`${url}/api/instructors`)
   const data = response.data
   return {

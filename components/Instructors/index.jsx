@@ -9,22 +9,16 @@ const Instructors = ({ data }) => {
   useEffect(() => !instructors && setInstructors(instructorsList), [])
 
   const renderInstructorCard = () => {
-    return instructors.map((instructor) => {
-      console.log(
-        '🚀 ~ file: index.jsx ~ line 22 ~ returninstructors.map ~ instructor',
-        instructor
-      )
-      return (
-        <Col
-          key={instructor.slug}
-          className="px-1 px-sm-2"
-          xs={6}
-          md={4}
-          sm={6}>
-          <InstructorCard instructor={instructor} />
-        </Col>
-      )
-    })
+    return instructors.map((instructor) => (
+      <Col
+        key={instructor.slug}
+        className="px-1 px-sm-2"
+        xs={6}
+        md={4}
+        sm={6}>
+        <InstructorCard instructor={instructor} />
+      </Col>
+    ))
   }
   
   return (

@@ -330,25 +330,30 @@ export const instructorsList = [
         imgUrl:
           'https://res.cloudinary.com/studiostudios/image/upload/v1633062835/Angel%20Aulet/DSKTP%20-%20InstGalleryPage/DSKTP-Gallery.Vertical.545x468--DSKTP-Gallery.Vertical.1200px-4_fjxuak.jpg'
       }
-      // {
-      //   id: 6,
-      //   imgUrl: ''
-      // },
-      // {
-      //   id: 7,
-      //   imgUrl: ''
-      // }
     ],
     contact: {
       email: 'angel.livestrong@gmail.com',
       phone: '',
       instagram: 'gamechangerfitness',
       facebook: '',
-      tiktok: ''
+      tiktok: '',
+      website: ''
     },
     experience: {
-      expertise: ['Boxing', 'Mixed Martial Arts', 'Strength & Agility'],
-      credentials: ['ISSA certified', 'NASM certified', 'ECA certified']
+      expertise: [
+        'Certified Cross Fit Instructor',
+        'Certified Fight Club Instructor'
+      ],
+      credentials: [
+        'NASM CPT',
+        'PROnatal (Levels I & II)',
+        'AFAA Perinatal',
+        'AFAA Group Fitness',
+        'KettleBell Concepts',
+        'CPR/AED',
+        'TRX',
+        'Nutritious Life Nutrition Certified'
+      ]
     }
   },
   {
@@ -705,7 +710,7 @@ export const instructorsList = [
     classesTaught: [],
     bio: ``,
     featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1633986163/OCTOBER.10.8.21/Helen%20Phelan/HeadshotsGREYSCALE12_fromlightroom_indesign--Headshots.Grey12_.1350pxDSKTP-9_w9omfs.jpg',
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633980948/OCTOBER.6.2021/Helen%20Phelan/HeadshotsGREYSCALE12_fromlightroom_indesign--Headshots.Grey12_.1350pxDSKTP-5_f4lpfv.jpg',
     mobilePhotos: [
       {
         id: 1,
