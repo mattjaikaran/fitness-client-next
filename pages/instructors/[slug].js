@@ -11,7 +11,6 @@ const url =
     ? 'http://localhost:3000'
     : 'https://sstudioss.com'
 const InstructorPage = ({ instructorData }) => {
-console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData', instructorData)
   const router = useRouter()
   const [details, setDetails] = useState({})
   const refreshData = () => {
