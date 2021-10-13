@@ -3,7 +3,7 @@ import axios from 'axios'
 const url =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
-    : 'https://sstudioss.com'
+    : window.location.href
 const API_URL = `${url}/api/instructors`
 
 export async function getAllInstructorIds() {
