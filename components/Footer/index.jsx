@@ -54,7 +54,7 @@ const Footer = () => {
           </Link>
         </Col>
         <Col md={4}>
-          <Link href="/membership" passHref>
+          <Link href="/memberships" passHref>
             <a>
               <p>Memberships</p>
             </a>

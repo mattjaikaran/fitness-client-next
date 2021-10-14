@@ -3,8 +3,8 @@
 export const homeCopy = {
   descriptionOne: {
     copy: `A collection of facilities offered to you by a team of creators, and consumers...because energy matters ... connection matters ... and the ability to create and consume on your terms is real.`,
-    copy2: `We are the brand for Pay-Per-Use fitness & wellness facilities.`,
-    impact: 'When, How, Where and With Whom You Want.',
+    // copy2: `We are the brand for Pay-Per-Use fitness & wellness facilities.`,
+    // impact: 'When, How, Where and With Whom You Want.',
     btnText: `Explore Classes`,
     btnLink: `/calendar`
   },

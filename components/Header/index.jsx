@@ -49,8 +49,9 @@ const Header = () => {
           <Col xs={4} className="pt-1">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           </Col>
-          <Col xs={4} className="pt-2 pb-md-2 text-center">
+          <Col xs={4} className="pt-2 pb-md-2 pr-sm-3 mr-0 text-center">
             <Navbar.Brand className="montserrat">
+              <span style={{ visibility: 'hidden' }}>S</span>
               <Link href="/">SSSS</Link>
             </Navbar.Brand>
           </Col>

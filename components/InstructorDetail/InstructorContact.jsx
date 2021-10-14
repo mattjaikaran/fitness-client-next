@@ -33,11 +33,7 @@ const InstructorContact = ({
         </Card.Header>
         <Row className="text-start px-3 pb-3">
           <Col md={6} className="mb-3">
-            <h5>
-              We are always ready to cooperate.
-              <br className="hidden-xs" /> Write to us and we will contact you.
-            </h5>
-            <div className="mt-4">
+            <div>
               {contact.email && (
                 <>
                   <p className="mb-1">
