@@ -9,7 +9,7 @@ const InstructorContract = ({ handleShow, handleClose, show }) => {
       <p className="mt-5">
         {`This Agreement ("Agreement"), dated as of _____________
           ("Effective Date") is by and between Studio Studios, Inc. located
-          at 80 Warren Street New York, NY 10014 and
+          at 302A W12th St New York NY 10014 and
           ____________________________ and __________________
           referenced at "Talent."`}
       </p>
@@ -24,7 +24,7 @@ const InstructorContract = ({ handleShow, handleClose, show }) => {
           reservation, the talent authorizes the Studio Studios, Inc. to draw the
           fee for the Box reservation.`}
       </p>
-      
+
       {/* <div className="d-grid text-center mt-5">
         <div className="d-block">
           <Button
