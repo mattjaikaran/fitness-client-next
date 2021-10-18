@@ -1,6 +1,6 @@
 # Fitness Client
 
-This is a front end application built with React and NextJS for a fitness studio. Data will be pulling from a NodeJS API built with NestJS and a Postgres DB.
+This is a front end application built with React and NextJS for a fitness studio.
 
 ## Technologies
 
@@ -8,10 +8,7 @@ This is a front end application built with React and NextJS for a fitness studio
 - [React Bootstrap](https://react-bootstrap.github.io)/[Bootstrap 5](https://getbootstrap.com)
 - [SCSS](https://sass-lang.com)
 - Axios
-- Next Auth
-- [Rematch](https://rematchjs.org) global state
 - [React Big Calendar](https://github.com/jquense/react-big-calendar) 
-- [Acuity Scheduling](https://developers.acuityscheduling.com) 
 
 ## Getting Started  
 
