@@ -25,15 +25,15 @@ const InstructorsPage = ({ instructorData }) => {
   )
 }
 
-export async function getServerSideProps({ req, res }) {
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=59'
-  )
-  const response = await axios.get(`${url}/api/instructors`)
-  const data = response.data
+export async function getStaticProps({ params, preview = false }) {
+  const instructor = await getClient(preview).fetch(query)
+
   return {
-    props: { slug: data }
+    props: {
+      instructorData: instructor,
+      preview
+    },
+    revalidate: 10
   }
 }
 

@@ -25,11 +25,11 @@ const InstructorExperienceCollapse = ({ experience }) => {
     <Container fluid className="visible-xs px-0 mt-5 orpheus white-bg">
       <Accordion defaultActiveKey="0">
         <Card border="light">
-          <Card.Header>
+          <Card.Header className="bg-off-white">
             <ContextAwareToggle eventKey="0">Expertise</ContextAwareToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
-            <Card.Body className="white-bg">
+            <Card.Body className="bg-off-white">
               <ul>
                 {experience?.instructorExpertise?.map((bullet) => (
                   <li key={bullet}>{bullet}</li>
@@ -39,11 +39,11 @@ const InstructorExperienceCollapse = ({ experience }) => {
           </Accordion.Collapse>
         </Card>
         <Card border="light">
-          <Card.Header>
+          <Card.Header className="bg-off-white">
             <ContextAwareToggle eventKey="1">Credentials</ContextAwareToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="1">
-            <Card.Body className="white-bg">
+            <Card.Body className="bg-off-white">
               <ul>
                 {experience?.instructorCredentials?.map((bullet) => (
                   <li key={bullet}>{bullet}</li>

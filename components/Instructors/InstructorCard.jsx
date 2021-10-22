@@ -5,7 +5,7 @@ import styles from './Instructors.module.scss'
 
 const InstructorCard = ({ instructor }) => {
   return (
-    <Link href={`/instructors/${encodeURIComponent(slug)}`} passHref>
+    <Link href={`/instructors/${instructor.slug.current}`} passHref>
       <Card border="light">
         <Image
           layout="responsive"
@@ -15,13 +15,8 @@ const InstructorCard = ({ instructor }) => {
           src={instructor.featuredPhoto}
           alt="instructor featured image"
         />
-        <Card.Body
-          className={`${styles.cardBodyStyle} text-center bg-off-white`}>
-          {fullName.length > 20 ? (
-            <p className={styles.longName}>{fullName}</p>
-          ) : (
-            <h6>{fullName}</h6>
-          )}
+        <Card.Body className="text-center bg-off-white">
+          <h5>{instructor.fullName}</h5>
         </Card.Body>
       </Card>
     </Link>
