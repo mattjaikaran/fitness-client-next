@@ -15,7 +15,7 @@ const BoxStyles = () => {
             descriptionOne={descriptionOne}
             impactStatement={impactStatement}
             descriptionTwo={descriptionTwo}
-            // btnText={btnText}
+            btnText={btnText}
           />
         </Col>
       )

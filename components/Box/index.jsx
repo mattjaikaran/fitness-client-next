@@ -5,6 +5,7 @@ import styles from './Box.module.scss'
 const Box = ({
   slug,
   name,
+  description,
   descriptionOne,
   impactStatement,
   descriptionTwo,
@@ -48,14 +49,14 @@ const Box = ({
             <Button
               size="lg"
               variant="outline-secondary mt-3 hidden-xs"
-              onClick={() => router.push(`/style/${slug}`)}>
+              onClick={() => router.push(`/styles/${slug}`)}>
               {btnText}
             </Button>
             <div className="d-grid mt-3">
               <Button
                 size="lg"
                 variant="outline-secondary visible-xs"
-                onClick={() => router.push(`/style/${slug}`)}>
+                onClick={() => router.push(`/styles/${slug}`)}>
                 {btnText}
               </Button>
             </div>
