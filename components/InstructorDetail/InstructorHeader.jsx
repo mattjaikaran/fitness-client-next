@@ -42,14 +42,14 @@ const InstructorHeader = ({
             <Col sm={0}></Col>
             <Col sm={6}>
               <h1>{instructorFullName}</h1>
-              <p className="mt-3">
+              {/* <p className="mt-3">
                 <small>
                   {classesTaught?.length > 1
                     ? `${classesTaught?.join(', ')} Instructor`
                     : `${classesTaught} Instructor`}
                 </small>
-              </p>
-              <hr className="hr-custom" />
+              </p> */}
+              <hr className="hr-custom mt-5" />
               <p className="orpheus mt-3 py-3 px-lg-5">{bio}</p>
               <Button
                 size="lg"

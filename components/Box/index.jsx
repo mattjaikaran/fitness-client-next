@@ -1,5 +1,5 @@
-import { useRouter } from 'next/router'
-import { Card, Button } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
+import CustomButton from '@/components/CustomButton'
 import styles from './Box.module.scss'
 
 const Box = ({
@@ -12,31 +12,20 @@ const Box = ({
   btnText,
   onClick
 }) => {
-  const router = useRouter()
-  if (onClick) {
-    return (
-      <Card border="light" className={styles.box}>
-        <h3 className="my-3">{name}</h3>
-        <Card.Body className="boxCard">
-          <p className={styles.boxDescription}>{description}</p>
-          <Button
-            size="lg"
-            variant="outline-secondary mt-3 hidden-xs"
-            onClick={onClick}>
-            {btnText}
-          </Button>
-          <div className="d-grid mt-3">
-            <Button
-              size="lg"
-              variant="outline-secondary visible-xs"
-              onClick={onClick}>
-              {btnText}
-            </Button>
-          </div>
-        </Card.Body>
-      </Card>
-    )
-  }
+  console.log('descriptionOne', descriptionOne);
+  // if (onClick) {
+  //   return (
+  //     <Card border="light" className={styles.box}>
+  //       <h3 className="my-3">{name}</h3>
+  //       <Card.Body className="boxCard">
+  //         <p className={styles.boxDescription}>{descriptionOne}</p>
+  //         <p className="my-0">{impactStatement}</p>
+  //         <p>{descriptionTwo}</p>
+  //         <CustomButton btnText={btnText} onClick={onClick} />
+  //       </Card.Body>
+  //     </Card>
+  //   )
+  // }
   return (
     <Card border="light" className={styles.box}>
       <h3 className="my-3">{name}</h3>
@@ -44,24 +33,7 @@ const Box = ({
         <p className={styles.boxDescription}>{descriptionOne}</p>
         <p className="my-0">{impactStatement}</p>
         <p>{descriptionTwo}</p>
-        {btnText && (
-          <>
-            <Button
-              size="lg"
-              variant="outline-secondary mt-3 hidden-xs"
-              onClick={() => router.push(`/styles/${slug}`)}>
-              {btnText}
-            </Button>
-            <div className="d-grid mt-3">
-              <Button
-                size="lg"
-                variant="outline-secondary visible-xs"
-                onClick={() => router.push(`/styles/${slug}`)}>
-                {btnText}
-              </Button>
-            </div>
-          </>
-        )}
+        {btnText && <CustomButton btnText={btnText} onClick={onClick} btnLink={`/styles/${slug}`} />}
       </Card.Body>
     </Card>
   )

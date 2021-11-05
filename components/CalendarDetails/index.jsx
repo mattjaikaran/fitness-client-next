@@ -25,8 +25,8 @@ const eventList = [
     id: 1,
     title: 'Yoga',
     details: 'At Flatiron Location. Rooted Box',
-    start: new Date('2021-09-29T07:00:00'),
-    end: new Date('2021-09-29T08:00:00'),
+    start: new Date('2021-12-29T07:00:00'),
+    end: new Date('2021-12-29T08:00:00'),
     allDay: false,
     resource: 'any'
   },
@@ -34,8 +34,8 @@ const eventList = [
     id: 2,
     title: 'Spin',
     details: 'At Tribeca Location. Nuclear Box',
-    start: new Date('2021-09-29T12:00:00'),
-    end: new Date('2021-09-29T13:00:00'),
+    start: new Date('2021-12-29T12:00:00'),
+    end: new Date('2021-12-29T13:00:00'),
     allDay: false,
     resource: 'any'
   },
@@ -43,8 +43,8 @@ const eventList = [
     id: 3,
     title: 'Hot Boxing',
     details: 'At Tribeca Location. Nuclear Box',
-    start: new Date('2021-09-29T15:00:00'),
-    end: new Date('2021-09-29T16:00:00'),
+    start: new Date('2021-12-29T15:00:00'),
+    end: new Date('2021-12-29T16:00:00'),
     allDay: false,
     resource: 'any'
   },
@@ -52,8 +52,8 @@ const eventList = [
     id: 4,
     title: 'Kick Boxing',
     details: 'At Flatiron Location. Sensei Box',
-    start: new Date('2021-09-30T15:00:00'),
-    end: new Date('2021-09-30T16:00:00'),
+    start: new Date('2021-12-30T15:00:00'),
+    end: new Date('2021-12-30T16:00:00'),
     allDay: false,
     resource: 'any'
   }
@@ -76,7 +76,7 @@ const CalendarDetails = () => {
     <Container>
       <h1 className="p-5 text-center">Book A Class</h1>
       <div>
-        {/* <Calendar
+        <Calendar
           popup
           localizer={localizer}
           events={events}
@@ -84,8 +84,7 @@ const CalendarDetails = () => {
           endAccessor="end"
           onSelectSlot={handleSelect}
           style={{ height: 500 }}
-        /> */}
-        {/* <h3 className="my-5 text-center">Book a Class</h3> */}
+        />
 
         {/* squarespace */}
         {/* <iframe
@@ -95,11 +94,6 @@ const CalendarDetails = () => {
           height="800"
           frameBorder="0"
         /> */}
-        {/* Glofox */}
-        <iframe
-          src="https://app.glofox.com/portal/#/branch/61531d776084c400ba383d95/classes-week-view"
-          width="100%"
-          height="1200" />
       </div>
     </Container>
   )

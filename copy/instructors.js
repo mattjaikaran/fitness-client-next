@@ -8,7 +8,7 @@ export const instructorsList = [
     classesTaught: [],
     bio: ``,
     featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1632923369/Allison%20Kamien/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-17_ldnc0v.jpg',
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633054588/Allison%20Kamien/DSKTP%20-%20Headshot/DesktopHEADSHOT545x468-17_qfqt9q.jpg',
     mobilePhotos: [
       {
         id: 1,
@@ -90,7 +90,7 @@ export const instructorsList = [
       and BFX, she’s branched into the digital fitness world, programming and teaching
       for Aaptiv, NEOU, and TRX.`,
     featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1632799070/AmandaButler/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-5136_oc4in9.jpg',
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633581901/AmandaButler/DSKTP%20-%20Headshot/DesktopHEADSHOT545x468-21_demc1g.jpg',
     mobilePhotos: [
       {
         id: 1,
@@ -189,7 +189,7 @@ export const instructorsList = [
     classesTaught: [],
     bio: '',
     featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1632881512/Andrea%20Dusel%20Foil/Desktop%20-%20InstGridHeadshot/DesktopHEADSHOT545x468-2416_lhrw1o.jpg',
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633585221/Andrea%20Dusel%20Foil/DSKTP%20-%20InstHeadshot/HeadshotsGREYSCALE12_fromlightroom_indesign-21-9_fzrxss.jpg',
     mobilePhotos: [
       {
         id: 1,
@@ -352,7 +352,7 @@ export const instructorsList = [
       bead bracelets jewelry line. Brittany focuses on building functional strength and
       aesthetics, she is known as the booty builder.`,
     featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1632664075/BrittanyWatts/Desktop-InstGridHeadshot/DesktopHEADSHOT545x468-5_ud0myt.jpg',
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633063583/BrittanyWatts/DSKTP%20-%20InstHeadshot/DesktopHEADSHOT545x468-5_dt423e.jpg',
     mobilePhotos: [
       {
         id: 1,
@@ -443,7 +443,7 @@ export const instructorsList = [
     classesTaught: [],
     bio: '',
     featuredPhoto:
-      'https://res.cloudinary.com/studiostudios/image/upload/v1632663893/Cam%20Norsworthy/Desktop-InstGridHeadshot/DesktopHEADSHOT545x468-9_ehgbpf.jpg',
+      'https://res.cloudinary.com/studiostudios/image/upload/v1633066259/Cam%20Norsworthy/DSKTP%20-%20InstHeadshot/DesktopHEADSHOT545x468-9_dsiapt.jpg',
     mobilePhotos: [
       {
         id: 1,

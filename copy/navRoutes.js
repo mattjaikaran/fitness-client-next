@@ -21,11 +21,11 @@ export const navRoutes = [
     name: 'Instructors',
     link: '/instructors'
   },
-  // {
-  //   id: 3,
-  //   name: 'Calendar',
-  //   link: '/calendar'
-  // },
+  {
+    id: 3,
+    name: 'Calendar',
+    link: '/calendar'
+  },
   // {
   //   id: 4,
   //   name: 'Actions',

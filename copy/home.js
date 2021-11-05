@@ -15,7 +15,7 @@ export const homeCopy = {
   carouselTextTwo: `Sometimes you rally and sometimes you decompress...`,
   carouselTextThree: `At times you create and at times you consume...You decide!`,
   descriptionTwo: {
-    copy: `We recognize the preference to consume different styles, methods, and wavelengths in fitness & wellness activity. We know the many radiant, and inspirational instructors across the nation providing these opportunities. Our facilities are the space for these relationships to excel, grow, and connect in the real! - as a community and on their own terms!`,
+    copy: `We recognize the preference to consume different styles, methods, and wavelengths in fitness & wellness activity. Our facilities are the space for these relationships to excel, grow, and connect in the real! - as a community and on their own terms!`,
     btnText: `Explore Instructors`,
     btnLink: `/instructors`
   }

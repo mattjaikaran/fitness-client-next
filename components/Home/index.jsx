@@ -12,8 +12,8 @@ const Home = () => {
         text={homeCopy.descriptionOne.copy}
         text2={homeCopy.descriptionOne.copy2}
         impact={homeCopy.descriptionOne.impact}
-        // btnText={homeCopy.descriptionOne.btnText}
-        // btnLink={homeCopy.descriptionOne.btnLink}
+        btnText={homeCopy.descriptionOne.btnText}
+        btnLink={homeCopy.descriptionOne.btnLink}
       />
       <CarouselHalfTextHalf
         carouselText={homeCopy.carouselText}

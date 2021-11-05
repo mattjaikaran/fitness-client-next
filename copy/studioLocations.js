@@ -1,10 +1,51 @@
 export const studioLocations = [
+  {
+    id: 1,
+    slug: 'upper-east-side',
+    name: 'New York - Upper East Side',
+    launchDate: 'October 2021',
+    address: {
+      street: '1440 3rd Ave',
+      city: 'New York',
+      state: 'NY',
+      neighborhood: 'Flatiron',
+      zip: '10028'
+      // phone: '(212) 233 0507'
+    },
+    btnText: 'Explore',
+    btnLink: '/locations/upper-east-side',
+    description:
+      'A two box studio for your community engagement as you would like. One large box studio and one small, intimate box studio. One Record & Stream private studio.'
+  },
+  {
+    id: 2,
+    slug: 'boston-back-bay',
+    name: 'Boston - Back Bay',
+    launchDate: 'November 2021',
+    btnText: 'Explore',
+    btnLink: '/locations/boston-back-bay',
+    address: {
+      street: '175 Newbury St',
+      city: 'Boston',
+      state: 'MA',
+      neighborhood: 'Back Bay',
+      zip: '02116'
+      // phone: '(212) 233 0507'
+    },
+    description:
+      'A space for intimate, small group interactions; community events in fitness and wellness. An open floorplan with large windows allowing in natural light. One community studio.'
+  },
   // {
-  //   id: 1,
+  //   id: 3,
+  //   name: 'New York - Tribeca',
+  //   launchDate: 'Coming Winter 2022'
+  // },
+  // {
+  //   id: 3,
   //   slug: 'tribeca',
   //   name: 'Tribeca',
   //   address: {
-  //     street: '',
+  //     street: '123 Broadway',
   //     city: 'New York',
   //     state: 'NY',
   //     neighborhood: 'Tribeca',
@@ -13,7 +54,7 @@ export const studioLocations = [
   //   },
   //   description: '',
   //   text: 'Coming Winter 2022',
-  //     // 'A two box studio for your community engagement as you wish. One large loft style space and one intimate Record, Stream, Inspire small space.',
+  //   // 'A two box studio for your community engagement as you wish. One large loft style space and one intimate Record, Stream, Inspire small space.',
   //   btnText: 'Explore',
   //   btnLink: '/locations/tribeca',
   //   pageDetails: {
@@ -48,96 +89,54 @@ export const studioLocations = [
   //     ]
   //   }
   // },
-  // {
-  //   id: 1,
-  //   slug: 'flatiron',
-  //   name: 'Flatiron',
-  //   address: {
-  //     street: '80 Warren St',
-  //     city: 'New York',
-  //     state: 'NY',
-  //     neighborhood: 'Flatiron',
-  //     zip: 10007,
-  //     phone: '(212) 233 0507'
-  //   },
-  //   description:
-  //     'A four box studio for record and stream, intimate engagements. One large open floor space for events, energizing group classes.',
-  //   btnText: 'Explore',
-  //   btnLink: '/locations/flatiron',
-  //   pageDetails: {
-  //     subtitle:
-  //       'An intimate space ofering a bright and comfortable environment to broadcast your brand.',
-  //     subtitle2: 'Our energy here is soft, quiet, calming',
-  //     boxes: [
-  //       {
-  //         id: 1,
-  //         slug: 'nuclear-box',
-  //         name: 'Nuclear Box',
-  //         size: 450,
-  //         capacity: 12,
-  //         boxDescription: [
-  //           'All white flooring, walls, and ceiling.',
-  //           'REFLECTIVE. ILLUMINARY. VAST.',
-  //           'This box is for confidence, crisp action and clear direction, spirit.'
-  //         ]
-  //       },
-  //       {
-  //         id: 2,
-  //         slug: 'rooted-box',
-  //         name: 'Rooted Box',
-  //         size: 200,
-  //         capacity: 6,
-  //         boxDescription: [
-  //           'Natural Wood floors, white walls, living plants.',
-  //           'EARTH. NATURE. ELEMENT.',
-  //           'This box is calm, soft and comfortable, the simplistic, basic tone is grounding.'
-  //         ]
-  //       }
-  //     ]
-  //   }
-  // },
   {
-    id: 1,
-    slug: 'upper-east-side',
-    name: 'New York - Upper East Side',
-    launchDate: 'October 2021',
+    id: 4,
+    slug: 'flatiron',
+    name: 'Flatiron',
     address: {
-      street: '1440 3rd Ave',
+      street: '80 Warren St',
       city: 'New York',
       state: 'NY',
       neighborhood: 'Flatiron',
-      zip: '10028'
-      // phone: '(212) 233 0507'
+      zip: 10007,
+      phone: '(212) 233 0507'
     },
     description:
-      'A two box studio for your community engagement as you would like. One large box studio and one small, intimate box studio. One Record & Stream private studio.'
-  },
-  {
-    id: 2,
-    slug: 'boston-back-bay',
-    name: 'Boston - Back Bay',
-    launchDate: 'November 2021',
-    address: {
-      street: '175 Newbury St',
-      city: 'Boston',
-      state: 'MA',
-      neighborhood: 'Back Bay',
-      zip: '02116'
-      // phone: '(212) 233 0507'
-    },
-    description:
-      'A space for intimate, small group interactions; community events in fitness and wellness. An open floorplan with large windows allowing in natural light. One community studio.'
-  },
-  {
-    id: 3,
-    name: 'New York - Tribeca',
-    launchDate: 'Coming Winter 2022'
+      'A four box studio for record and stream, intimate engagements. One large open floor space for events, energizing group classes.',
+    btnText: 'Explore',
+    btnLink: '/locations/flatiron',
+    pageDetails: {
+      subtitle:
+        'An intimate space ofering a bright and comfortable environment to broadcast your brand.',
+      subtitle2: 'Our energy here is soft, quiet, calming',
+      boxes: [
+        {
+          id: 1,
+          slug: 'nuclear-box',
+          name: 'Nuclear Box',
+          size: 450,
+          capacity: 12,
+          boxDescription: [
+            'All white flooring, walls, and ceiling.',
+            'REFLECTIVE. ILLUMINARY. VAST.',
+            'This box is for confidence, crisp action and clear direction, spirit.'
+          ]
+        },
+        {
+          id: 2,
+          slug: 'rooted-box',
+          name: 'Rooted Box',
+          size: 200,
+          capacity: 6,
+          boxDescription: [
+            'Natural Wood floors, white walls, living plants.',
+            'EARTH. NATURE. ELEMENT.',
+            'This box is calm, soft and comfortable, the simplistic, basic tone is grounding.'
+          ]
+        }
+      ]
+    }
   }
-  // {
-  //   id: 4,
-  //   name: 'West Village',
-  //   text: 'November 2021'
-  // },
 ]
 
 export const flatironNaturalSchedule = {

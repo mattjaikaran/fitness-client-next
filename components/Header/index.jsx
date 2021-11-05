@@ -56,17 +56,15 @@ const Header = () => {
               <Link href="/">SSSS</Link>
             </Navbar.Brand>
           </Col>
-          {/* <Col
+          <Col
             xs={2}
-            className="d-lg-none text-end"
-            // hidden for launch
-            style={{ visibility: 'hidden' }}>
+            className="d-lg-none text-end">
             <Nav.Link className="montserrat">
               <Button variant="outline-primary" onClick={handleShow}>
                 <BiSearch />
               </Button>
             </Nav.Link>
-          </Col> */}
+          </Col>
         </Row>
 
         <Navbar.Collapse id="responsive-navbar-nav">
