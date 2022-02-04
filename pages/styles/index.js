@@ -1,16 +1,16 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import PageHero from '@/components/PageHero'
 import BoxStyles from '@/components/BoxStyles'
 
 const StylePage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <PageHero
         title="Box Styles"
         subtitle="space designed for your: vibe | mood | energy"
       />
       <BoxStyles />
-    </Layout>
+    </MainLayout>
   )
 }
 

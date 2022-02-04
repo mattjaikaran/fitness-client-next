@@ -1,11 +1,11 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import Commitment from '@/components/Commitment'
 
 const CommitmentPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <Commitment />
-    </Layout>
+    </MainLayout>
   )
 }
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { getAllInstructorIds, getInstructorData } from '@/hooks/instructors'
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import { Container, Spinner } from 'react-bootstrap'
 import InstructorDetail from '@/components/InstructorDetail'
 
@@ -36,7 +36,7 @@ console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData',
   // useEffect(() => renderDetails(), [])
 
   return (
-    <Layout>
+    <MainLayout>
       {details ? (
         <InstructorDetail instructorDetail={details} />
       ) : (
@@ -49,7 +49,7 @@ console.log('🚀 ~ file: [slug].js ~ line 9 ~ InstructorPage ~ instructorData',
           }, 2000)}
         </Container>
       )}
-    </Layout>
+    </MainLayout>
   )
 }
 

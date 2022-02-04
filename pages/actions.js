@@ -1,11 +1,11 @@
 import { Button } from 'react-bootstrap'
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 
 const ActionsPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <h1>ActionsPage</h1>
-    </Layout>
+    </MainLayout>
   )
 }
 

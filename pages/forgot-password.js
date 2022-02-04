@@ -1,11 +1,11 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import ForgotPassword from '@/components/ForgotPassword'
 
 const ForgotPasswordPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <ForgotPassword />
-    </Layout>
+    </MainLayout>
   )
 }
 

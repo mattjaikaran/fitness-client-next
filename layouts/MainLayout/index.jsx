@@ -1,7 +1,7 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-const Layout = ({ children }) => {
+const MainLayout = ({ children }) => {
   return (
     <div>
       <Header />
@@ -11,4 +11,4 @@ const Layout = ({ children }) => {
   )
 }
 
-export default Layout
+export default MainLayout

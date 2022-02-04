@@ -1,10 +1,10 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import Methodology from '@/components/Methodology'
 import { methodology } from '@/copy/methodology'
 
 const MethodologyPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <Methodology
         title={methodology.title}
         p1={methodology.p1}
@@ -13,7 +13,7 @@ const MethodologyPage = () => {
         p4={methodology.p4}
         p5={methodology.p5}
       />
-    </Layout>
+    </MainLayout>
   )
 }
 

@@ -1,11 +1,11 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import Residency from '@/components/Residency'
 
 const ResidencyPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <Residency />
-    </Layout>
+    </MainLayout>
   )
 }
 

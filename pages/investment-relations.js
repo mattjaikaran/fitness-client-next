@@ -1,11 +1,11 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import InvestmentRelations from '@/components/InvestmentRelations'
 
 const InvestmentRelationsPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <InvestmentRelations />
-    </Layout>
+    </MainLayout>
   )
 }
 

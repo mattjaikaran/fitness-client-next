@@ -1,11 +1,11 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import CalendarDetails from '@/components/CalendarDetails'
 
 const CalendarPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <CalendarDetails />
-    </Layout>
+    </MainLayout>
   )
 }
 

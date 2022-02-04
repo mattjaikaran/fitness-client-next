@@ -1,11 +1,11 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import Membership from '@/components/Membership'
 
 const MembershipPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <Membership />
-    </Layout>
+    </MainLayout>
   )
 }
 

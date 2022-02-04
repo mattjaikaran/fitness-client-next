@@ -1,10 +1,10 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import Curate from '@/components/Curate'
 import { curate } from '@/copy/curate'
 
 const CuratePage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <Curate 
         title={curate.title}
         title2={curate.title2}
@@ -13,7 +13,7 @@ const CuratePage = () => {
         paragraphThree={curate.paragraphThree} 
         paragraphFour={curate.paragraphFour} 
       />
-    </Layout>
+    </MainLayout>
   )
 }
 

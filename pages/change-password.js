@@ -1,11 +1,11 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import ChangePassword from '@/components/ChangePassword'
 
 const ChangePasswordPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <ChangePassword />
-    </Layout>
+    </MainLayout>
   )
 }
 

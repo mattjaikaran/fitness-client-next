@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { Container, Spinner } from 'react-bootstrap'
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import LocationDetails from '@/components/LocationDetails'
 import { getLocationDetails } from '@/hooks/getDetails'
 
@@ -18,7 +18,7 @@ const LocationPage = () => {
   }
   useEffect(() => renderDetails(), [])
   return (
-    <Layout>
+    <MainLayout>
       {details ? (
         <LocationDetails locationDetail={details} />
       ) : (
@@ -28,7 +28,7 @@ const LocationPage = () => {
           </Spinner>
         </Container>
       )}
-    </Layout>
+    </MainLayout>
   )
 }
 
