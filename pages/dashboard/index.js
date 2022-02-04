@@ -1,11 +1,13 @@
 import DashboardLayout from '@/layouts/DashboardLayout'
+import FitnessClasses from '@/components/dashboard/FitnessClasses'
 import { Container } from 'react-bootstrap'
 
 const DashboardPage = () => {
   return (
     <DashboardLayout>
       <Container>
-        <p>Dashboard Page</p>
+        <h3>Dashboard</h3>
+        <FitnessClasses />
       </Container>
     </DashboardLayout>
   )

@@ -46,7 +46,7 @@ export const navRoutes = [
   {
     id: 5,
     name: 'Styles',
-    link: '/styles',
+    link: '/styles'
     // submenu: [
     //   {
     //     id: 1,
@@ -69,5 +69,29 @@ export const navRoutes = [
     id: 7,
     name: 'Membership',
     link: '/membership'
+  },
+  {
+    id: 8,
+    name: 'Dashboard',
+    link: '/dashboard'
+  }
+]
+
+
+export const dashboardRoutes = [
+  {
+    id: 1,
+    name: 'Dashboard',
+    link: '/dashboard'
+  },
+  {
+    id: 2,
+    name: 'Classes',
+    link: '/classes'
+  },
+  {
+    id: 3,
+    name: 'Settings',
+    link: '/settings'
   }
 ]

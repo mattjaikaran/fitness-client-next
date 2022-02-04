@@ -14,7 +14,7 @@ const ForgotPassword = () => {
             <Form>
               <Form.Group className="mb-3" controlId="forgotPasswordEmail">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control type="email" placeholder="text@example.com" />
               </Form.Group>
               <div className="d-grid mt-5">
                 <Button variant="outline-primary" type="submit">

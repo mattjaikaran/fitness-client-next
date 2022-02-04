@@ -168,6 +168,12 @@ p {
   border: none;
 }
 
+// toggle switch color
+.form-check-input:checked {
+  background-color: $base-black !important;
+  border-color: $base-black !important;
+}
+
 @media (max-width: 767px) {
   .hidden-xs {
     display: none !important;

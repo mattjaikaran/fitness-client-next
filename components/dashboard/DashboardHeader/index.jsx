@@ -1,19 +1,27 @@
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { useRouter } from 'next/router'
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
+import { renderNavLinks } from '@/hooks/utils'
+import { dashboardRoutes } from '@/copy/navRoutes'
 
 const DashboardHeader = () => {
+  const router = useRouter()
   return (
-    <>
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Dashboard</Navbar.Brand>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand onClick={() => router.push('/dashboard')}>
+          Fitness Dashboard
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Classes</Nav.Link>
-            <Nav.Link href="#pricing">Instructors</Nav.Link>
+            {renderNavLinks(dashboardRoutes, router)}
           </Nav>
-        </Container>
-      </Navbar>
-    </>
+          <Nav>
+            <Nav.Link href="#deets">Log Out</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   )
 }
 
