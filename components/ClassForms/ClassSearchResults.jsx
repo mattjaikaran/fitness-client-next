@@ -1,42 +1,14 @@
-import { Card, ListGroup, Accordion } from 'react-bootstrap'
-
-const sampleResults = [
-  {
-    id: 1,
-    title: 'Yoga',
-    date: '06/22/2022',
-    time: '12:00PM',
-    instructor: 'Jesse Smith',
-    location: 'Tribeca',
-    room: 'Nuclear Box',
-    capacity: 12,
-    studentsBooked: 2,
-    equipmentProvided: ['Yoga Mats', 'Towels'],
-    equipmentRequired: null
-  },
-  {
-    id: 2,
-    title: 'Spin',
-    date: '06/22/2022',
-    time: '11:00AM',
-    instructor: 'Amanda Butler',
-    location: 'Tribeca',
-    room: 'Ethereal Box',
-    capacity: 10,
-    studentsBooked: 9,
-    equipmentProvided: ['Bicycle'],
-    equipmentRequired: ['Thing 1', 'Thing 2']
-  }
-]
-
-const renderEquipment = (list) => list.map((e) => <li key={e}>{e}</li>)
+import { Card, Accordion } from 'react-bootstrap'
+import { renderListItems } from '@/hooks/utils'
+import { sampleClasses } from '@/copy/sampleClasses'
 
 const ClassSearchResults = () => {
   const renderResults = () => {
-    return sampleResults.map((result, i) => {
+    return sampleClasses.map((result, i) => {
       const {
         id,
         title,
+        description,
         date,
         time,
         instructor,
@@ -53,6 +25,7 @@ const ClassSearchResults = () => {
             {title} - {date} {time}
           </Accordion.Header>
           <Accordion.Body>
+            <p>{description}</p>
             <ul>
               <li>
                 Capacity: {' '}
@@ -65,12 +38,12 @@ const ClassSearchResults = () => {
               <li>Instructor: {instructor}</li>
               <li>
                 Equipment Provided:
-                <ul>{renderEquipment(equipmentProvided)} </ul>
+                <ul>{renderListItems(equipmentProvided)} </ul>
               </li>
               {equipmentRequired && (
                 <li>
                   Equipment Provided:
-                  <ul>{renderEquipment(equipmentRequired)} </ul>
+                  <ul>{renderListItems(equipmentRequired)}</ul>
                 </li>
               )}
             </ul>
@@ -83,7 +56,6 @@ const ClassSearchResults = () => {
     <Card border="light">
       <Card.Body className="orpheus">
         <Card.Title className="text-center">Search Results</Card.Title>
-        {/* <ListGroup>{renderResults()}</ListGroup> */}
         <Accordion>{renderResults()}</Accordion>
       </Card.Body>
     </Card>

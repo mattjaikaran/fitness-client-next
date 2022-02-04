@@ -11,3 +11,6 @@ export const renderNavLinks = (routes, router) =>
       </Nav.Link>
     )
   })
+
+  export const renderListItems = (list) => 
+    list.map((listItem) => <li key={listItem}>{listItem}</li>)

@@ -2,18 +2,34 @@ import { useState } from 'react'
 import { Container, Card, Row, Col, Form, Button } from 'react-bootstrap'
 import DateTimePicker from 'react-datetime-picker/dist/entry.nostyle'
 
-const InstructorBookAClass = () => {
+const EditClass = ({ fitnessClass }) => {
+  const {
+    id,
+    title,
+    description,
+    date,
+    time,
+    instructor,
+    location,
+    room,
+    capacity,
+    price,
+    studentsBooked,
+    equipmentProvided,
+    equipmentRequired
+  } = fitnessClass
+
   // steps for multistep form with confirmation
   const [step, setStep] = useState(1)
   // class form data
-  const [classTitle, setClassTitle] = useState('')
+  const [classTitle, setClassTitle] = useState(title)
   const [value, onChange] = useState()
   const [email, setEmail] = useState('')
-  const [location, setLocation] = useState('Tribeca')
+  const [classLocation, setClassLocation] = useState(location)
   const [phone, setPhone] = useState('')
-  const [capacity, setCapacity] = useState('')
-  const [price, setPrice] = useState('')
-  const [classDescription, setClassDescription] = useState('')
+  const [classCapacity, setClassCapacity] = useState(capacity)
+  const [classPrice, setClassPrice] = useState(price)
+  const [classDescription, setClassDescription] = useState(description)
   const [showDetails, setShowDetails] = useState(false)
 
   // for step 2 - booking the class + details
@@ -24,10 +40,10 @@ const InstructorBookAClass = () => {
       classTitle,
       value,
       email,
-      location,
+      classLocation,
       phone,
-      capacity,
-      price,
+      classCapacity,
+      classPrice,
       classDescription,
       status: 'pending'
     }
@@ -41,10 +57,10 @@ const InstructorBookAClass = () => {
       classTitle,
       value,
       email,
-      location,
+      classLocation,
       phone,
-      capacity,
-      price,
+      classCapacity,
+      classPrice,
       classDescription,
       status: 'booked'
     }
@@ -54,9 +70,9 @@ const InstructorBookAClass = () => {
       <Row>
         <Col sm={0}></Col>
         <Col md={8} lg={6}>
-          <h3 className="mt-5 text-center">Book a Class</h3>
+          <h3 className="mt-5 text-center">Edit Class</h3>
           <Form onSubmit={handleBookClass} className="orpheus">
-            <Form.Group className="mb-3" controlId="bookClassTitle">
+            <Form.Group className="mb-3" controlId="editClassTitle">
               <Form.Label>CLASS NAME</Form.Label>
               <Form.Control
                 type="text"
@@ -65,17 +81,17 @@ const InstructorBookAClass = () => {
                 onChange={(e) => setClassTitle(e.target.value)}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="bookClassLocation">
+            <Form.Group className="mb-3" controlId="editClassLocation">
               <Form.Label>LOCATION</Form.Label>
               <Form.Select
                 aria-label="Location Select"
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}>
+                value={classLocation}
+                onChange={(e) => setClassLocation(e.target.value)}>
                 <option value="Tribeca">Tribeca</option>
                 <option value="Flatiron">Flatiron</option>
               </Form.Select>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="bookClassEmail">
+            <Form.Group className="mb-3" controlId="editClassEmail">
               <Form.Label>CLASS TIME</Form.Label>
               <div>
                 <DateTimePicker
@@ -85,23 +101,23 @@ const InstructorBookAClass = () => {
                 />
               </div>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="bookClassCapacity">
+            <Form.Group className="mb-3" controlId="editClassCapacity">
               <Form.Label>CAPACITY</Form.Label>
               <Form.Control
                 type="text"
-                value={capacity}
+                value={classCapacity}
                 onChange={(e) => setCapacity(e.target.value)}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="bookClassPrice">
+            <Form.Group className="mb-3" controlId="editClassPrice">
               <Form.Label>PRICE</Form.Label>
               <Form.Control
                 type="text"
-                value={price}
-                onChange={(e) => setPrice(e.target.value)}
+                value={classPrice}
+                onChange={(e) => setClassPrice(e.target.value)}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="bookClassEmail">
+            <Form.Group className="mb-3" controlId="editClassEmail">
               <Form.Label>EMAIL</Form.Label>
               <Form.Control
                 type="email"
@@ -110,7 +126,7 @@ const InstructorBookAClass = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="bookClassPhone">
+            <Form.Group className="mb-3" controlId="editClassPhone">
               <Form.Label>PHONE</Form.Label>
               <Form.Control
                 type="number"
@@ -119,7 +135,7 @@ const InstructorBookAClass = () => {
                 onChange={(e) => setPhone(e.target.value)}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="bookClassDescription">
+            <Form.Group className="mb-3" controlId="editClassDescription">
               <Form.Label>CLASS DESCRIPTION</Form.Label>
               <Form.Control
                 as="textarea"
@@ -128,7 +144,7 @@ const InstructorBookAClass = () => {
                 onChange={(e) => setClassDescription(e.target.value)}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="bookClassDescription">
+            <Form.Group className="mb-3" controlId="editClassDescription">
               <Form.Label>EQUIPMENT</Form.Label>
               <Form.Check type="switch" id="custom-switch" label="Equipment" />
             </Form.Group>
@@ -159,19 +175,19 @@ const InstructorBookAClass = () => {
                   <strong>Class Time</strong> - {value?.toLocaleString()}
                 </p>
                 <p className="mt-3">
-                  <strong>Capacity</strong> - {capacity}
+                  <strong>Capacity</strong> - {classCapacity}
                 </p>
                 <p className="mt-3">
-                  <strong>Location</strong> - {location}
+                  <strong>Price</strong> - {classPrice}
+                </p>
+                <p className="mt-3">
+                  <strong>Location</strong> - {classLocation}
                 </p>
                 <p className="mt-3">
                   <strong>Phone Number</strong> - {phone}
                 </p>
                 <p className="mt-3">
                   <strong>Class Description</strong> - {classDescription}
-                </p>
-                <p className="mt-3">
-                  <strong>Price</strong> - {price}
                 </p>
                 <Button size="lg" variant="outline-primary">
                   Confirm
@@ -186,4 +202,4 @@ const InstructorBookAClass = () => {
   )
 }
 
-export default InstructorBookAClass
+export default EditClass

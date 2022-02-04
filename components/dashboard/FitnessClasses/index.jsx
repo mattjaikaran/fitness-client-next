@@ -1,18 +1,26 @@
-import { Container, Row, Col } from 'react-bootstrap'
+import { Row, Col, Card } from 'react-bootstrap'
 import ClassTable from './ClassTable'
 import FilterClasses from './FilterClasses'
+import { sampleClasses } from '@/copy/sampleClasses'
 
 const FitnessClasses = () => {
   return (
-    <Container>
-      <h3>All Classes</h3>
+    <>
+      <h6>All Classes</h6>
       <Row className="mb-3">
         <Col md={6}>
           <FilterClasses />
         </Col>
+        <Col md={6}>
+          <p>Add New Class</p>
+        </Col>
       </Row>
-      <ClassTable />
-    </Container>
+      <Card>
+        <Card.Body>
+          <ClassTable fitnessClasses={sampleClasses} />
+        </Card.Body>
+      </Card>
+    </>
   )
 }
 
