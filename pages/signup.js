@@ -1,5 +1,5 @@
 import MainLayout from '@/layouts/MainLayout'
-import SignUp from '@/components/SignUp'
+import SignUp from '@/components/auth/SignUp'
 
 const SignupPage = () => {
   return (

@@ -1,5 +1,5 @@
 import MainLayout from '@/layouts/MainLayout'
-import ForgotPassword from '@/components/ForgotPassword'
+import ForgotPassword from '@/components/auth/ForgotPassword'
 
 const ForgotPasswordPage = () => {
   return (

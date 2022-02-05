@@ -25,8 +25,8 @@ const eventList = [
     id: 1,
     title: 'Yoga',
     details: 'At Flatiron Location. Rooted Box',
-    start: new Date('2021-12-29T07:00:00'),
-    end: new Date('2021-12-29T08:00:00'),
+    start: new Date('2022022-07-12-12-29T07:00:00'),
+    end: new Date('2022-07-12-29T08:00:00'),
     allDay: false,
     resource: 'any'
   },
@@ -34,8 +34,8 @@ const eventList = [
     id: 2,
     title: 'Spin',
     details: 'At Tribeca Location. Nuclear Box',
-    start: new Date('2021-12-29T12:00:00'),
-    end: new Date('2021-12-29T13:00:00'),
+    start: new Date('2022-07-20-29T12:00:00'),
+    end: new Date('2022-07-20-29T13:00:00'),
     allDay: false,
     resource: 'any'
   },
@@ -43,8 +43,8 @@ const eventList = [
     id: 3,
     title: 'Hot Boxing',
     details: 'At Tribeca Location. Nuclear Box',
-    start: new Date('2021-12-29T15:00:00'),
-    end: new Date('2021-12-29T16:00:00'),
+    start: new Date('2022-07-15-29T15:00:00'),
+    end: new Date('2022-07-15-29T16:00:00'),
     allDay: false,
     resource: 'any'
   },
@@ -52,8 +52,8 @@ const eventList = [
     id: 4,
     title: 'Kick Boxing',
     details: 'At Flatiron Location. Sensei Box',
-    start: new Date('2021-12-30T15:00:00'),
-    end: new Date('2021-12-30T16:00:00'),
+    start: new Date('2022-07-12-30T15:00:00'),
+    end: new Date('2022-07-12-30T16:00:00'),
     allDay: false,
     resource: 'any'
   }
@@ -85,15 +85,6 @@ const CalendarDetails = () => {
           onSelectSlot={handleSelect}
           style={{ height: 500 }}
         />
-
-        {/* squarespace */}
-        {/* <iframe
-          src="https://app.squarespacescheduling.com/schedule.php?owner=23729247"
-          // title="Schedule Appointment"
-          width="100%"
-          height="800"
-          frameBorder="0"
-        /> */}
       </div>
     </Container>
   )

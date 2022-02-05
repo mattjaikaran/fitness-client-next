@@ -1,4 +1,4 @@
-import { Table, Dropdown, Button } from 'react-bootstrap'
+import { Table, Dropdown, Card } from 'react-bootstrap'
 
 const ClassTable = ({ fitnessClasses }) => {
   const renderFitnessClasses = () =>
@@ -50,23 +50,46 @@ const ClassTable = ({ fitnessClasses }) => {
       )
     })
   return (
-    <Table bordered responsive>
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Location</th>
-          <th>Room</th>
-          <th>Title</th>
-          <th>Instructor</th>
-          <th>Status</th>
-          <th>Capacity</th>
-          <th>Price</th>
-          <th>Income</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>{renderFitnessClasses()}</tbody>
-    </Table>
+    <div>
+      <Table bordered className="hidden-xs">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Room</th>
+            <th>Title</th>
+            <th>Instructor</th>
+            <th>Status</th>
+            <th>Capacity</th>
+            <th>Price</th>
+            <th>Income</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>{renderFitnessClasses()}</tbody>
+      </Table>
+      <Card className="visible-xs">
+        <Card.Body>
+          <Table bordered responsive>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Room</th>
+                <th>Title</th>
+                <th>Instructor</th>
+                <th>Status</th>
+                <th>Capacity</th>
+                <th>Price</th>
+                <th>Income</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>{renderFitnessClasses()}</tbody>
+          </Table>
+        </Card.Body>
+      </Card>
+    </div>
   )
 }
 

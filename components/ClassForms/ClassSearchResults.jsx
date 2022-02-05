@@ -1,4 +1,4 @@
-import { Card, Accordion } from 'react-bootstrap'
+import { Card, Accordion, Button } from 'react-bootstrap'
 import { renderListItems } from '@/hooks/utils'
 import { sampleClasses } from '@/copy/sampleClasses'
 
@@ -28,14 +28,15 @@ const ClassSearchResults = () => {
             <p>{description}</p>
             <ul>
               <li>
-                Capacity: {' '}
-                <span
-                  style={{ color: capacity - studentsBooked < 3 && 'red' }}>
+                Capacity:{' '}
+                <span style={{ color: capacity - studentsBooked < 3 && 'red' }}>
                   {studentsBooked} / {capacity}
                 </span>
               </li>
               {/* Can link to instructor page */}
               <li>Instructor: {instructor}</li>
+              <li>Location: {location}</li>
+              <li>Room: {room}</li>
               <li>
                 Equipment Provided:
                 <ul>{renderListItems(equipmentProvided)} </ul>
@@ -47,6 +48,11 @@ const ClassSearchResults = () => {
                 </li>
               )}
             </ul>
+            <div className="d-grid">
+              <Button variant="outline-primary">
+                Book Class
+              </Button>
+            </div>
           </Accordion.Body>
         </Accordion.Item>
       )

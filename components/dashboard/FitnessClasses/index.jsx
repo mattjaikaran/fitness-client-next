@@ -15,11 +15,7 @@ const FitnessClasses = () => {
           <p>Add New Class</p>
         </Col>
       </Row>
-      <Card>
-        <Card.Body>
-          <ClassTable fitnessClasses={sampleClasses} />
-        </Card.Body>
-      </Card>
+      <ClassTable fitnessClasses={sampleClasses} />
     </>
   )
 }
