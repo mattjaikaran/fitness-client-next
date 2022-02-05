@@ -1,11 +1,11 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import Contact from '@/components/Contact'
 
 const ContactPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <Contact />
-    </Layout>
+    </MainLayout>
   )
 }
 

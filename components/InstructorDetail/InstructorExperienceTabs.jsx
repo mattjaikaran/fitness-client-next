@@ -1,4 +1,7 @@
-import { Container, Tabs, Tab, Col } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Col'
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
 import styles from './InstructorDetail.module.scss'
 
 const InstructorExperienceTabs = ({ experience }) => {

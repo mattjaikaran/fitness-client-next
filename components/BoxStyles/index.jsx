@@ -1,4 +1,6 @@
-import { Container, Row, Col } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import { boxStyles } from '@/copy/boxStyles'
 import Box from '@/components/Box'
 import styles from './BoxStyles.module.scss'

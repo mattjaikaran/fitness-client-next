@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
-import { Card, Button } from 'react-bootstrap'
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 import styles from './StudioLocations.module.scss'
 
 const Location = ({

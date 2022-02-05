@@ -1,5 +1,7 @@
 import Link from 'next/link'
-import { Container, Row, Col } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import { FaFacebookF } from 'react-icons/fa'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { SiTiktok } from 'react-icons/si'
@@ -79,9 +81,6 @@ const Footer = () => {
           <FaFacebookF className={styles.social} />
           <AiOutlineInstagram className={styles.social} />
           <SiTiktok className={styles.social} />
-        </Col>
-        <Col md={12} className="my-1">
-          <p>Created by 2038, LLC</p>
         </Col>
       </Row>
     </Container>

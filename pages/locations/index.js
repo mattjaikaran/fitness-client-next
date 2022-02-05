@@ -1,16 +1,16 @@
 import { Container } from 'react-bootstrap'
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import PageHero from '@/components/PageHero'
 import StudioLocations from '@/components/StudioLocations'
 
 const LocationsPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <PageHero title="Studio Locations" />
       <Container>
         <StudioLocations />
       </Container>
-    </Layout>
+    </MainLayout>
   )
 }
 

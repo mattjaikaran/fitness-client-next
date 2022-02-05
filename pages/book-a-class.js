@@ -1,14 +1,15 @@
-import Layout from '@/components/Layout'
-import ClassForms from '@/components/ClassForms'
+import MainLayout from '@/layouts/MainLayout'
 import InstructorBookAClass from '@/components/ClassForms/InstructorBookAClass'
 import StudentJoinAClass from '@/components/ClassForms/StudentJoinAClass'
+import SearchForClass from '@/components/ClassForms/SearchForClass'
 
 const BookAClassPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <InstructorBookAClass />
       <StudentJoinAClass />
-    </Layout>
+      <SearchForClass />
+    </MainLayout>
   )
 }
 

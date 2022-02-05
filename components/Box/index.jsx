@@ -1,4 +1,4 @@
-import { Card } from 'react-bootstrap'
+import Card from 'react-bootstrap/Card'
 import CustomButton from '@/components/CustomButton'
 import styles from './Box.module.scss'
 

@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Form from 'react-bootstrap/Form'
+import Alert from 'react-bootstrap/Alert'
+import Button from 'react-bootstrap/Button'
 import styles from './SignUp.module.scss'
 
 const SignUp = () => {

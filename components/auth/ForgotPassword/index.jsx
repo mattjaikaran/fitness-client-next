@@ -1,6 +1,9 @@
 import Link from 'next/link'
-import { Container, Row, Col, Form, Button } from 'react-bootstrap'
-
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 const ForgotPassword = () => {
   return (
@@ -14,7 +17,7 @@ const ForgotPassword = () => {
             <Form>
               <Form.Group className="mb-3" controlId="forgotPasswordEmail">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control type="email" placeholder="text@example.com" />
               </Form.Group>
               <div className="d-grid mt-5">
                 <Button variant="outline-primary" type="submit">

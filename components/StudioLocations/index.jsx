@@ -1,11 +1,14 @@
-import { Container, Row, Col } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Location from './Location'
 import { studioLocations } from '@/copy/studioLocations'
 
 const StudioLocations = ({ homePage }) => {
   const renderStudioDetails = () => {
     return studioLocations.map((studio) => {
-      const { id, name, address, launchDate, description, btnText, btnLink } = studio
+      const { id, name, address, launchDate, description, btnText, btnLink } =
+        studio
       return (
         <Col key={id} lg={4}>
           <Location

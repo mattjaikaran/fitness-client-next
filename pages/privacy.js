@@ -1,14 +1,14 @@
-import { Container } from 'react-bootstrap'
-import Layout from '@/components/Layout'
+import Container from 'react-bootstrap/Container'
+import MainLayout from '@/layouts/MainLayout'
 
 const PrivacyPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <Container className="text-center orpheus">
         <h1 className="p-5">Privacy Policy</h1>
         <p>Coming soon</p>
       </Container>
-    </Layout>
+    </MainLayout>
   )
 }
 

@@ -1,11 +1,11 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import CuratedClassesAndEvents from '@/components/CuratedClassesAndEvents'
 
 const CuratedClassesAndEventsPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <CuratedClassesAndEvents />
-    </Layout>
+    </MainLayout>
   )
 }
 

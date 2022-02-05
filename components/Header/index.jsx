@@ -1,17 +1,18 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { 
-  Navbar, 
-  Nav,
-  Row,
-  Col, 
-  Modal, 
-  Container,
-  Form,
-  FormControl,
-  Button 
-} from 'react-bootstrap'
+
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Form from 'react-bootstrap/Form'
+import FormControl from 'react-bootstrap/FormControl'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
+
 import { BiSearch } from 'react-icons/bi'
 import { navRoutes } from '@/copy/navRoutes'
 import styles from './Header.module.scss'
@@ -69,9 +70,7 @@ const Header = () => {
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">{renderNavLinks()}</Nav>
-          <Nav
-            // hidden for launch
-            style={{ visibility: 'hidden' }}>
+          <Nav>
             <Nav.Link className="mt-1" href="/signin">
               Sign In
             </Nav.Link>
@@ -95,7 +94,7 @@ const Header = () => {
                 value={searchValue}
               />
               <div className="d-grid mt-3">
-                <Button block="true" type="submit" variant="outline-primary">
+                <Button size="lg" block="true" type="submit" variant="outline-primary">
                   Search
                 </Button>
               </div>

@@ -1,12 +1,12 @@
-import Layout from '@/components/Layout'
+import MainLayout from '@/layouts/MainLayout'
 import Instructors from '@/components/Instructors'
 // import axios from 'axios'
 
 const InstructorsPage = () => {
   return (
-    <Layout>
+    <MainLayout>
       <Instructors />
-    </Layout>
+    </MainLayout>
   )
 }
 
