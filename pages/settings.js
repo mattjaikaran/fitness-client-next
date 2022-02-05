@@ -1,5 +1,5 @@
 import DashboardLayout from '@/layouts/DashboardLayout'
-import { Container } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
 
 const DashboardPage = () => {
   return (

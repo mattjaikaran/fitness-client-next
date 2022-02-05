@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import { Container, Tabs, Tab } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
 import {
   tribecaRootedSchedule,
   tribecaNuclearSchedule,

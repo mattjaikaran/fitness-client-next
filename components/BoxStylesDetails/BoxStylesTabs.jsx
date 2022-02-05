@@ -1,5 +1,7 @@
 import Image from 'next/image'
-import { Tab, Tabs, Carousel } from 'react-bootstrap'
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
+import Carousel from 'react-bootstrap/Carousel'
 import {
   tribecaRootedSchedule,
   tribecaNuclearSchedule,

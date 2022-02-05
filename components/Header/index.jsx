@@ -1,18 +1,18 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { 
-  Navbar, 
-  Nav,
-  NavDropdown,
-  Row,
-  Col, 
-  Modal, 
-  Container,
-  Form,
-  FormControl,
-  Button 
-} from 'react-bootstrap'
+
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Form from 'react-bootstrap/Form'
+import FormControl from 'react-bootstrap/FormControl'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
+
 import { BiSearch } from 'react-icons/bi'
 import { navRoutes } from '@/copy/navRoutes'
 import styles from './Header.module.scss'

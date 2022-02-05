@@ -1,5 +1,7 @@
 import { useRouter } from 'next/router'
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 import { renderNavLinks } from '@/hooks/utils'
 import { dashboardRoutes } from '@/copy/navRoutes'
 

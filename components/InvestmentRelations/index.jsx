@@ -1,8 +1,10 @@
-import { Container, Row, Col } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import { investmentRelations } from '@/copy/investmentRelations'
 const InvestmentRelations = () => {
   const renderReleaseSchedule = () => {
-    return investmentRelations.locations.map(location => {
+    return investmentRelations.locations.map((location) => {
       const { id, city, launchDate } = location
       return (
         <p key={id}>

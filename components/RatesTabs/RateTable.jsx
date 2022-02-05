@@ -1,4 +1,4 @@
-import { Table } from 'react-bootstrap'
+import Table from 'react-bootstrap/Table'
 
 const RateTable = ({ box }) => {
   return (

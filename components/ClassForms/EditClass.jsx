@@ -1,5 +1,10 @@
 import { useState } from 'react'
-import { Container, Card, Row, Col, Form, Button } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Form from 'react-bootstrap/Form'
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 import DateTimePicker from 'react-datetime-picker/dist/entry.nostyle'
 
 const EditClass = ({ fitnessClass }) => {

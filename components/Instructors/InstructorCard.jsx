@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Card } from 'react-bootstrap'
+import Card from 'react-bootstrap/Card'
 import styles from './Instructors.module.scss'
 
 const InstructorCard = ({ instructor: { slug, fullName, classesTaught, featuredPhoto } }) => {

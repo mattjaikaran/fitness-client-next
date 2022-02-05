@@ -1,4 +1,6 @@
-import { Table, Dropdown, Card } from 'react-bootstrap'
+import Table from 'react-bootstrap/Table'
+import Dropdown from 'react-bootstrap/Dropdown'
+import Card from 'react-bootstrap/Card'
 
 const ClassTable = ({ fitnessClasses }) => {
   const renderFitnessClasses = () =>

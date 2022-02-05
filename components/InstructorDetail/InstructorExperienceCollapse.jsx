@@ -1,5 +1,11 @@
 import { useContext } from 'react'
-import { Container, Row, Col, Accordion, Card, AccordionContext, useAccordionButton } from 'react-bootstrap'
+import { AccordionContext, useAccordionButton } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Accordion from 'react-bootstrap/Accordion'
+import Card from 'react-bootstrap/Card'
+
 
 function ContextAwareToggle({ children, eventKey, callback }) {
   const { activeEventKey } = useContext(AccordionContext)

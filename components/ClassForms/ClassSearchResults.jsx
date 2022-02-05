@@ -1,4 +1,6 @@
-import { Card, Accordion, Button } from 'react-bootstrap'
+import Card from 'react-bootstrap/Card'
+import Accordion from 'react-bootstrap/Accordion'
+import Button from 'react-bootstrap/Button'
 import { renderListItems } from '@/hooks/utils'
 import { sampleClasses } from '@/copy/sampleClasses'
 

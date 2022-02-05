@@ -1,4 +1,5 @@
-import { Card, Button } from 'react-bootstrap'
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 import { renderListItems } from '@/hooks/utils'
 
 const InstructorClassDetails = ({ fitnessClass }) => {

@@ -1,5 +1,10 @@
 import { useState } from 'react'
-import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Form from 'react-bootstrap/Form'
+import Alert from 'react-bootstrap/Alert'
+import Button from 'react-bootstrap/Button'
 
 const Contact = () => {
   const [name, setName] = useState('')

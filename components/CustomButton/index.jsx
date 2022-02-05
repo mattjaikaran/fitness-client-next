@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { Button } from 'react-bootstrap'
+import Button from 'react-bootstrap/Button'
 
 const CustomButton = ({ variant, btnText, btnLink, onClick }) => {
   const router = useRouter()

@@ -1,16 +1,14 @@
 import { useState } from 'react'
 import Image from 'next/image'
-import { 
-  Container, 
-  Carousel, 
-  Row, 
-  Col, 
-  Tabs, 
-  Tab, 
-  Card, 
-  Form, 
-  Button 
-} from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Carousel from 'react-bootstrap/Carousel'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Card from 'react-bootstrap/Card'
+import Form from 'react-bootstrap/Form'
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
+import Button from 'react-bootstrap/Button'
 import DateTimePicker from 'react-datetime-picker/dist/entry.nostyle'
 import Box from '@/components/Box'
 import { boxStyles } from '@/copy/boxStyles'

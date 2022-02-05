@@ -1,4 +1,4 @@
-import { Container, Form, Button } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
 import InstructorBookAClass from './InstructorBookAClass'
 import StudentJoinAClass from './StudentJoinAClass'
 

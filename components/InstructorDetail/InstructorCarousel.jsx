@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { Container, Carousel } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Carousel from 'react-bootstrap/Carousel'
 
 const InstructorCarousel = ({ imagesArray, mobile }) => {
   const renderCarouselImages = () => {

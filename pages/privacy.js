@@ -1,4 +1,4 @@
-import { Container } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
 import MainLayout from '@/layouts/MainLayout'
 
 const PrivacyPage = () => {

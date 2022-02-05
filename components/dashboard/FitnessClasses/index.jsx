@@ -1,4 +1,5 @@
-import { Row, Col, Card } from 'react-bootstrap'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import ClassTable from './ClassTable'
 import FilterClasses from './FilterClasses'
 import { sampleClasses } from '@/copy/sampleClasses'

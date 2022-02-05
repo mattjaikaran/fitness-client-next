@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
-import { Container, Button } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Button from 'react-bootstrap/Button'
 import styles from './TextWithCTA.module.scss'
 
 const TextWithCTA = ({ text, text2, impact, btnText, btnLink }) => {

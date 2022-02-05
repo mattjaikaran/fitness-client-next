@@ -1,4 +1,5 @@
-import { Modal, Button } from 'react-bootstrap'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
 
 
 const InstructorContract = ({ handleShow, handleClose, show }) => {
