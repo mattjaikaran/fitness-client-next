@@ -1,9 +1,10 @@
 import DashboardLayout from '@/layouts/DashboardLayout'
 import FitnessClasses from '@/components/dashboard/FitnessClasses'
 import EditClass from '@/components/ClassForms/EditClass'
+import ChangeInstructor from '@/components/ClassForms/ChangeInstructor'
 import InstructorClassDetails from '@/components/dashboard/InstructorClassDetails'
 import InstructorStats from '@/components/dashboard/InstructorStats'
-import { Container } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
 import { sampleClasses } from '@/copy/sampleClasses'
 
 const DashboardPage = () => {
@@ -15,6 +16,7 @@ const DashboardPage = () => {
         <InstructorClassDetails fitnessClass={sampleClasses[0]} />
         <InstructorStats />
         <EditClass fitnessClass={sampleClasses[0]} />
+        <ChangeInstructor fitnessClass={sampleClasses[0]} />
       </Container>
     </DashboardLayout>
   )

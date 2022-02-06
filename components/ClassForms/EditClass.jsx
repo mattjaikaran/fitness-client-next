@@ -111,7 +111,7 @@ const EditClass = ({ fitnessClass }) => {
               <Form.Control
                 type="text"
                 value={classCapacity}
-                onChange={(e) => setCapacity(e.target.value)}
+                onChange={(e) => setClassCapacity(e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="editClassPrice">
@@ -156,18 +156,28 @@ const EditClass = ({ fitnessClass }) => {
             <Button size="lg" variant="outline-primary hidden-xs" type="submit">
               Submit
             </Button>
-            <div className="mt-3 d-grid">
+            <Button
+              size="lg"
+              variant="outline-secondary hidden-xs"
+              type="submit">
+              Cancel
+            </Button>
+            <div className="mt-3 d-grid visible-xs">
+              <Button size="lg" variant="outline-primary" type="submit">
+                Submit
+              </Button>
               <Button
                 size="lg"
-                variant="outline-primary visible-xs"
+                variant="outline-secondary"
+                className="mt-2"
                 type="submit">
-                Submit
+                Cancel
               </Button>
             </div>
           </Form>
 
           {showDetails && (
-            <Card className="orpheus mt-5  p-5">
+            <Card className="orpheus mt-5">
               <Card.Body>
                 <Card.Title>Confirm Class Details</Card.Title>
                 <p className="mt-3">
@@ -194,9 +204,33 @@ const EditClass = ({ fitnessClass }) => {
                 <p className="mt-3">
                   <strong>Class Description</strong> - {classDescription}
                 </p>
-                <Button size="lg" variant="outline-primary">
+                <Button
+                  size="lg"
+                  variant="outline-primary hidden-xs"
+                  type="submit">
                   Confirm
                 </Button>
+                <Button
+                  size="lg"
+                  variant="outline-secondary hidden-xs"
+                  type="submit">
+                  Cancel
+                </Button>
+                <div className="mt-3 d-grid">
+                  <Button
+                    size="lg"
+                    variant="outline-primary visible-xs"
+                    type="submit">
+                    Confirm
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline-secondary visible-xs"
+                    className="mt-3"
+                    type="submit">
+                    Cancel
+                  </Button>
+                </div>
               </Card.Body>
             </Card>
           )}

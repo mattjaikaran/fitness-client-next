@@ -10,10 +10,10 @@ const FitnessClasses = () => {
       <h6>All Classes</h6>
       <Row className="mb-3">
         <Col md={6}>
-          <FilterClasses />
+          <p>Add New Class</p>
         </Col>
         <Col md={6}>
-          <p>Add New Class</p>
+          <FilterClasses />
         </Col>
       </Row>
       <ClassTable fitnessClasses={sampleClasses} />

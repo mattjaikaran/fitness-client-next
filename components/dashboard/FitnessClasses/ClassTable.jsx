@@ -70,27 +70,23 @@ const ClassTable = ({ fitnessClasses }) => {
         </thead>
         <tbody>{renderFitnessClasses()}</tbody>
       </Table>
-      <Card className="visible-xs">
-        <Card.Body>
-          <Table bordered responsive>
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Location</th>
-                <th>Room</th>
-                <th>Title</th>
-                <th>Instructor</th>
-                <th>Status</th>
-                <th>Capacity</th>
-                <th>Price</th>
-                <th>Income</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>{renderFitnessClasses()}</tbody>
-          </Table>
-        </Card.Body>
-      </Card>
+      <Table bordered responsive className="visible-xs">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Room</th>
+            <th>Title</th>
+            <th>Instructor</th>
+            <th>Status</th>
+            <th>Capacity</th>
+            <th>Price</th>
+            <th>Income</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>{renderFitnessClasses()}</tbody>
+      </Table>
     </div>
   )
 }

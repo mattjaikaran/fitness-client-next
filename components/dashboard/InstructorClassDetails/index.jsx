@@ -25,7 +25,7 @@ const InstructorClassDetails = ({ fitnessClass }) => {
       <Card border="light" className="orpheus">
         <Card.Body>
           <Card.Title>{title}</Card.Title>
-          <Card.Subtitle>{description}</Card.Subtitle>
+          <p>Description: {description}</p>
           <div>
             <ul>
               <li>Location: {location}</li>
@@ -54,7 +54,14 @@ const InstructorClassDetails = ({ fitnessClass }) => {
               )}
             </ul>
           </div>
-          <Button variant="outline-primary" size="large">Edit Class</Button>
+          <Button variant="outline-primary hidden-xs" size="lg">
+            Edit Class
+          </Button>
+          <div className="mt-3 d-grid visible-xs">
+            <Button variant="outline-primary" size="lg">
+              Edit Class
+            </Button>
+          </div>
         </Card.Body>
       </Card>
     </div>
